@@ -1,0 +1,13 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 14.10it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.63it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.20it/s]
+{"step": 1, "loss": -8.940696716308594e-08, "grad_norm": 1.7642295360565186, "seconds": 406.74823172576725, "method": "memspo", "optimizer_updated": true, "informative_groups": 2, "judge": {"informative_groups": 2.0, "informative_interaction": 2.0, "judge_seconds": 65.79470274597406, "judged_groups": 2.0, "reward_spread": 0.5517264814121958, "score_sum_interaction": 5.099174715546448, "score_sum_persistence": 4.3518587677284915, "score_sum_position": 4.284736138575612}, "lr": 1e-06}
+{"step": 2, "loss": 5.46937883427745e-07, "grad_norm": 1.2201439142227173, "seconds": 403.03859359025955, "method": "memspo", "optimizer_updated": true, "informative_groups": 2, "judge": {"informative_groups": 2.0, "informative_interaction": 1.0, "judge_seconds": 65.24034756049514, "judged_groups": 2.0, "reward_spread": 0.2509343540330698, "score_sum_interaction": 6.611541484404222, "score_sum_persistence": 6.619013701827159, "score_sum_position": 5.5835297625728835}, "lr": 1e-06}
+{"step": 3, "loss": 3.188114021668298e-07, "grad_norm": 0.8928828239440918, "seconds": 400.7063613254577, "method": "memspo", "optimizer_updated": true, "informative_groups": 1, "judge": {"informative_groups": 1.0, "informative_interaction": 0.0, "judge_seconds": 63.88961490802467, "judged_groups": 2.0, "reward_spread": 0.03971332030385566, "score_sum_interaction": 6.994594947476644, "score_sum_persistence": 6.794247894595279, "score_sum_position": 5.583536122103269}, "lr": 1e-06}

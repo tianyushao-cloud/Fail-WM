@@ -1,0 +1,13 @@
+{
+  "state": "CONFIG_VALID",
+  "gpus": 8,
+  "steps": 50,
+  "global_batch": 16,
+  "accumulation_per_rank": 2,
+  "success_windows": 400,
+  "failure_windows": 400,
+  "horizon": 32,
+  "checkpoint_every": 5,
+  "initialization": "mixed SFT10k + codec34k",
+  "output": "/media/tyshao/Jev-WM/experiments/robocasa_object_memspo_8gpu50_20261024/train"
+}

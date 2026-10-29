@@ -1,0 +1,153 @@
+{
+  "state": "CONFIG_VALID",
+  "gpus": 8,
+  "steps": 30,
+  "global_batch": 16,
+  "accumulation_per_rank": 2,
+  "success_windows": 240,
+  "failure_windows": 240,
+  "horizon": 32,
+  "checkpoint_every": 5,
+  "initialization": "mixed SFT10k + codec34k, rule + state-v6 reward, 8 groups; identical to robocasa_state_memspo_g8_8gpu_20261025 except the state question",
+  "output": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train"
+}
+{
+  "state": "CONFIG_VALID",
+  "gpus": 8,
+  "steps": 30,
+  "global_batch": 16,
+  "accumulation_per_rank": 2,
+  "success_windows": 240,
+  "failure_windows": 240,
+  "horizon": 32,
+  "checkpoint_every": 5,
+  "initialization": "mixed SFT10k + codec34k, rule + state-v6 reward, 8 groups; identical to robocasa_state_memspo_g8_8gpu_20261025 except the state question",
+  "output": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train"
+}
+Starting steps 1..30; checkpoints: /media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints
+[rank1]:[W1027 21:34:01.149716651 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank4]:[W1027 21:34:01.294044403 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank7]:[W1027 21:34:01.446424164 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank2]:[W1027 21:34:01.460229620 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank3]:[W1027 21:34:01.474083426 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank5]:[W1027 21:34:01.479926957 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank6]:[W1027 21:34:01.480273602 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W1027 21:34:01.658537311 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 11.62it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 11.29it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 11.34it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 12.67it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 14.34it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 12.34it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 12.99it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 14.66it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.77it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.74it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.61it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.54it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.45it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.58it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.41it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.41it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.13it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.32it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.36it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.03it/s]
+
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.91it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.09it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.85it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.86it/s]
+{"step": 1, "loss": -2.2808090704984352e-07, "grad_norm": 0.4889368712902069, "seconds": 285.3618032075465, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 10.0, "informative_groups": 15.0, "judge_seconds": 377.7393869291991, "judged_groups": 16.0, "reward_spread": 2.6516896943305293, "score_sum_persistence": 12.94863678377087, "score_sum_position": 12.218875959963672, "score_sum_state": 13.246252873644645}, "lr": 2e-07}
+{"step": 2, "loss": -2.9339923912630184e-07, "grad_norm": 0.6807066202163696, "seconds": 280.91018489561975, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"gt_lift_windows": 10.0, "informative_groups": 13.0, "judge_seconds": 373.69927481003106, "judged_groups": 16.0, "reward_spread": 1.777802725068471, "score_sum_persistence": 13.144990801055508, "score_sum_position": 12.19846282267916, "score_sum_state": 14.06256037464517}, "lr": 4e-07}
+{"step": 3, "loss": 1.0303854196536122e-06, "grad_norm": 0.4089745283126831, "seconds": 281.76791119761765, "method": "memspo", "optimizer_updated": true, "informative_groups": 12, "judge": {"gt_lift_windows": 10.0, "informative_groups": 12.0, "judge_seconds": 374.7730708029121, "judged_groups": 16.0, "reward_spread": 1.9588115655060743, "score_sum_persistence": 13.938625002430197, "score_sum_position": 12.638027772354476, "score_sum_state": 13.939513612037995}, "lr": 6e-07}
+{"step": 4, "loss": 3.5504767765814904e-06, "grad_norm": 0.569179356098175, "seconds": 281.063892416656, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"gt_lift_windows": 8.0, "informative_groups": 14.0, "judge_seconds": 374.5780230332166, "judged_groups": 16.0, "reward_spread": 2.3540170958364834, "score_sum_persistence": 14.086905129443721, "score_sum_position": 13.584743737183121, "score_sum_state": 14.213001519694647}, "lr": 8e-07}
+{"step": 5, "loss": 8.615562364866491e-06, "grad_norm": 0.6354532241821289, "seconds": 281.1606108378619, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 9.0, "informative_groups": 15.0, "judge_seconds": 374.6014089528471, "judged_groups": 16.0, "reward_spread": 2.4070264703538635, "score_sum_persistence": 13.068907091206247, "score_sum_position": 12.78443516303504, "score_sum_state": 14.005620679664363}, "lr": 1e-06}
+{"step": 6, "loss": 1.4028767509444151e-05, "grad_norm": 0.4014839231967926, "seconds": 281.1940546352416, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"gt_lift_windows": 8.0, "informative_groups": 14.0, "judge_seconds": 373.3306279107928, "judged_groups": 16.0, "reward_spread": 1.9782562715181298, "score_sum_persistence": 13.326041691095895, "score_sum_position": 11.78767197141465, "score_sum_state": 13.474673154717228}, "lr": 1e-06}
+{"step": 7, "loss": 2.56328348768875e-05, "grad_norm": 0.49224382638931274, "seconds": 281.11889124661684, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 7.0, "informative_groups": 16.0, "judge_seconds": 374.00401887856424, "judged_groups": 16.0, "reward_spread": 2.610538038610424, "score_sum_persistence": 13.600621609249922, "score_sum_position": 12.42581262417365, "score_sum_state": 14.083630314105239}, "lr": 1e-06}
+{"step": 8, "loss": 3.281896351836622e-05, "grad_norm": 0.4592118561267853, "seconds": 280.9862009380013, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 11.0, "informative_groups": 15.0, "judge_seconds": 374.3253077734262, "judged_groups": 16.0, "reward_spread": 1.9396907494338962, "score_sum_persistence": 14.354668262733275, "score_sum_position": 13.39396959135782, "score_sum_state": 14.347432459706207}, "lr": 1e-06}
+{"step": 9, "loss": 4.782210089615546e-05, "grad_norm": 0.4733358323574066, "seconds": 280.8577435351908, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"gt_lift_windows": 10.0, "informative_groups": 14.0, "judge_seconds": 372.7330643068999, "judged_groups": 16.0, "reward_spread": 2.6365861424623387, "score_sum_persistence": 13.390917261316597, "score_sum_position": 13.101636310791255, "score_sum_state": 13.672298804899173}, "lr": 1e-06}
+{"step": 10, "loss": 5.3331052185967565e-05, "grad_norm": 0.3836630880832672, "seconds": 281.40254579111934, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 12.0, "informative_groups": 15.0, "judge_seconds": 373.63518047332764, "judged_groups": 16.0, "reward_spread": 1.7820837498607052, "score_sum_persistence": 13.849907040451164, "score_sum_position": 12.999978565534821, "score_sum_state": 13.65015228665497}, "lr": 1e-06}
+{"step": 11, "loss": 7.087068661348894e-05, "grad_norm": 0.4321020841598511, "seconds": 281.5144215878099, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 11.0, "informative_groups": 16.0, "judge_seconds": 373.1920984350145, "judged_groups": 16.0, "reward_spread": 2.5432061962865564, "score_sum_persistence": 13.177678383595191, "score_sum_position": 12.577514182201117, "score_sum_state": 13.96043984120903}, "lr": 1e-06}
+{"step": 12, "loss": 9.025818144436926e-05, "grad_norm": 0.45970454812049866, "seconds": 280.8582289069891, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 7.0, "informative_groups": 16.0, "judge_seconds": 374.2204684931785, "judged_groups": 16.0, "reward_spread": 2.995984444722601, "score_sum_persistence": 12.194409777350408, "score_sum_position": 11.579208874902994, "score_sum_state": 13.702176795562627}, "lr": 1e-06}
+{"step": 13, "loss": 9.527891961624846e-05, "grad_norm": 0.5082171559333801, "seconds": 280.8381175827235, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 9.0, "informative_groups": 16.0, "judge_seconds": 373.3285202924162, "judged_groups": 16.0, "reward_spread": 2.080286431555806, "score_sum_persistence": 13.502497677970803, "score_sum_position": 11.76204954519847, "score_sum_state": 13.210099611002196}, "lr": 1e-06}
+{"step": 14, "loss": 0.0001596492511453107, "grad_norm": 0.5230067372322083, "seconds": 280.9695880431682, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 10.0, "informative_groups": 15.0, "judge_seconds": 374.5175329018384, "judged_groups": 16.0, "reward_spread": 1.9240228994663866, "score_sum_persistence": 12.557442563511913, "score_sum_position": 11.648117356520736, "score_sum_state": 13.362021415952356}, "lr": 1e-06}
+{"step": 15, "loss": 0.00015944238111842424, "grad_norm": 0.5643588900566101, "seconds": 281.29004172608256, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 10.0, "informative_groups": 15.0, "judge_seconds": 374.10743088647723, "judged_groups": 16.0, "reward_spread": 1.4254195830412775, "score_sum_persistence": 14.939806829037146, "score_sum_position": 14.595723615565468, "score_sum_state": 14.35995764000546}, "lr": 1e-06}
+{"step": 16, "loss": 0.0001662935537751764, "grad_norm": 0.6929126381874084, "seconds": 280.8354873806238, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 10.0, "informative_groups": 15.0, "judge_seconds": 373.95462386496365, "judged_groups": 16.0, "reward_spread": 2.3813306520316124, "score_sum_persistence": 14.038315753831666, "score_sum_position": 13.184243208147109, "score_sum_state": 14.203409336891024}, "lr": 1e-06}
+{"step": 17, "loss": 0.00018239658675156534, "grad_norm": 0.48364341259002686, "seconds": 281.1212884467095, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 9.0, "informative_groups": 16.0, "judge_seconds": 373.76396078802645, "judged_groups": 16.0, "reward_spread": 2.6171681998325003, "score_sum_persistence": 13.460098693959486, "score_sum_position": 13.015329686223952, "score_sum_state": 13.89621295681706}, "lr": 1e-06}
+{"step": 18, "loss": 0.0002404732076684013, "grad_norm": 0.5237550735473633, "seconds": 281.3989736754447, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 10.0, "informative_groups": 15.0, "judge_seconds": 373.8341160286218, "judged_groups": 16.0, "reward_spread": 3.6954327117764283, "score_sum_persistence": 12.83951492775428, "score_sum_position": 12.16772279781041, "score_sum_state": 13.445821036790473}, "lr": 1e-06}
+{"step": 19, "loss": 0.0003248704015277326, "grad_norm": 0.49905693531036377, "seconds": 281.18409988842905, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 12.0, "informative_groups": 15.0, "judge_seconds": 374.03678901679814, "judged_groups": 16.0, "reward_spread": 3.3655325780225236, "score_sum_persistence": 12.636993002105719, "score_sum_position": 11.612941210061605, "score_sum_state": 13.633948421229933}, "lr": 1e-06}
+{"step": 20, "loss": 0.00033965034526772797, "grad_norm": 0.5168753862380981, "seconds": 280.7236950993538, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 9.0, "informative_groups": 16.0, "judge_seconds": 373.20647509396076, "judged_groups": 16.0, "reward_spread": 2.8975683927546143, "score_sum_persistence": 12.961167598644174, "score_sum_position": 12.25638519366278, "score_sum_state": 13.808678493754995}, "lr": 1e-06}
+{"step": 21, "loss": 0.00039507256587967277, "grad_norm": 0.5704398155212402, "seconds": 281.27366168424487, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 10.0, "informative_groups": 16.0, "judge_seconds": 374.4765979833901, "judged_groups": 16.0, "reward_spread": 2.5894922951396757, "score_sum_persistence": 13.166303012144057, "score_sum_position": 12.195616003377946, "score_sum_state": 13.838989408199486}, "lr": 1e-06}
+{"step": 22, "loss": 0.0004608388990163803, "grad_norm": 1.2680224180221558, "seconds": 281.52550811320543, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 10.0, "informative_groups": 16.0, "judge_seconds": 373.94118190929294, "judged_groups": 16.0, "reward_spread": 2.944129247404828, "score_sum_persistence": 13.484744060447202, "score_sum_position": 12.584689793103028, "score_sum_state": 14.081696125477617}, "lr": 1e-06}
+{"step": 23, "loss": 0.0004930780851282179, "grad_norm": 0.6469859480857849, "seconds": 281.6888646055013, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 6.0, "informative_groups": 16.0, "judge_seconds": 374.0257108025253, "judged_groups": 16.0, "reward_spread": 2.96454186368584, "score_sum_persistence": 12.654884372374092, "score_sum_position": 12.640003951159958, "score_sum_state": 14.07616373092867}, "lr": 1e-06}
+{"step": 24, "loss": 0.0005446812137961388, "grad_norm": 0.47002291679382324, "seconds": 280.64310194924474, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"gt_lift_windows": 13.0, "informative_groups": 15.0, "judge_seconds": 373.59433715604246, "judged_groups": 16.0, "reward_spread": 2.412405989434376, "score_sum_persistence": 14.040669219777438, "score_sum_position": 12.49962563648741, "score_sum_state": 13.889781355966285}, "lr": 1e-06}
+{"step": 25, "loss": 0.0006663571111857891, "grad_norm": 0.54173344373703, "seconds": 280.7080647870898, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 9.0, "informative_groups": 16.0, "judge_seconds": 374.46600090898573, "judged_groups": 16.0, "reward_spread": 2.9227668871621786, "score_sum_persistence": 13.97158352312449, "score_sum_position": 13.728984053546451, "score_sum_state": 14.015009130537125}, "lr": 1e-06}
+{"step": 26, "loss": 0.0008534513181075454, "grad_norm": 0.6488935351371765, "seconds": 281.07312700152397, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 8.0, "informative_groups": 16.0, "judge_seconds": 373.8211473301053, "judged_groups": 16.0, "reward_spread": 3.7316127534076875, "score_sum_persistence": 11.94913304131153, "score_sum_position": 11.127092351956488, "score_sum_state": 13.09524172831309}, "lr": 1e-06}
+{"step": 27, "loss": 0.0010527803096920252, "grad_norm": 0.7386919856071472, "seconds": 280.687992695719, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 9.0, "informative_groups": 16.0, "judge_seconds": 374.22342491336167, "judged_groups": 16.0, "reward_spread": 3.841192171805247, "score_sum_persistence": 11.583477312898008, "score_sum_position": 10.861651688975748, "score_sum_state": 12.998537559687305}, "lr": 1e-06}
+{"step": 28, "loss": 0.0011765945237129927, "grad_norm": 0.744526743888855, "seconds": 280.74820326268673, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 7.0, "informative_groups": 16.0, "judge_seconds": 373.9709544368088, "judged_groups": 16.0, "reward_spread": 4.677154117261653, "score_sum_persistence": 11.436201603970343, "score_sum_position": 11.704869826207139, "score_sum_state": 13.325889869320262}, "lr": 1e-06}
+{"step": 29, "loss": 0.0014239921001717448, "grad_norm": 0.5871388912200928, "seconds": 281.3805695977062, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 9.0, "informative_groups": 16.0, "judge_seconds": 374.32486749626696, "judged_groups": 16.0, "reward_spread": 3.460045129499381, "score_sum_persistence": 11.469068180683262, "score_sum_position": 11.176448293168027, "score_sum_state": 13.42200690798231}, "lr": 1e-06}
+{"step": 30, "loss": 0.0017576483078300953, "grad_norm": 1.133773684501648, "seconds": 280.81026175804436, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"gt_lift_windows": 9.0, "informative_groups": 16.0, "judge_seconds": 373.33998605795205, "judged_groups": 16.0, "reward_spread": 3.377945880557097, "score_sum_persistence": 11.435493177825975, "score_sum_position": 10.52485969770505, "score_sum_state": 13.248670028351725}, "lr": 1e-06}
+{
+  "state": "COMPLETE",
+  "steps": 30,
+  "optimizer_updates": 30,
+  "informative_groups": 457,
+  "checkpoint": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030",
+  "effectiveness": "Training complete; improvement is not evaluated by this launcher."
+}

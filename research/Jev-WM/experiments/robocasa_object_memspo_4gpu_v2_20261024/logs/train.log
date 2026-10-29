@@ -1,0 +1,111 @@
+{
+  "state": "CONFIG_VALID",
+  "gpus": 4,
+  "steps": 30,
+  "global_batch": 16,
+  "accumulation_per_rank": 4,
+  "success_windows": 240,
+  "failure_windows": 240,
+  "horizon": 32,
+  "checkpoint_every": 5,
+  "initialization": "Resume from step 15 with improved prompt",
+  "output": "/media/tyshao/Jev-WM/experiments/robocasa_object_memspo_4gpu_v2_20261024/train",
+  "resume_from": "/media/tyshao/Jev-WM/experiments/robocasa_object_memspo_4gpu50_20261024/train/checkpoints/step_000015"
+}
+{
+  "state": "CONFIG_VALID",
+  "gpus": 4,
+  "steps": 30,
+  "global_batch": 16,
+  "accumulation_per_rank": 4,
+  "success_windows": 240,
+  "failure_windows": 240,
+  "horizon": 32,
+  "checkpoint_every": 5,
+  "initialization": "Resume from step 15 with improved prompt",
+  "output": "/media/tyshao/Jev-WM/experiments/robocasa_object_memspo_4gpu_v2_20261024/train",
+  "resume_from": "/media/tyshao/Jev-WM/experiments/robocasa_object_memspo_4gpu50_20261024/train/checkpoints/step_000015"
+}
+Starting steps 1..30; checkpoints: /media/tyshao/Jev-WM/experiments/robocasa_object_memspo_4gpu_v2_20261024/train/checkpoints
+[rank2]:[W1024 19:18:14.704753369 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank1]:[W1024 19:18:14.704770748 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank3]:[W1024 19:18:14.704763046 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W1024 19:18:14.051415191 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+decoder num cross att blocks 1
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 12.94it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 16.48it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 13.80it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00, 17.82it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.58it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.30it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.70it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.23it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.82it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.38it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.94it/s]
+{"step": 1, "loss": 1.6521663326329872e-07, "grad_norm": 0.6355890035629272, "seconds": 334.1579624519218, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"informative_groups": 13.0, "informative_interaction": 8.0, "judge_seconds": 253.29571326775476, "judged_groups": 16.0, "reward_spread": 2.77281082453975, "score_sum_interaction": 61.07023045594601, "score_sum_persistence": 51.95843410351739, "score_sum_position": 49.15260575231157}, "lr": 1e-06}
+{"step": 2, "loss": 2.7906523882847978e-06, "grad_norm": 0.5723296403884888, "seconds": 329.2113987971097, "method": "memspo", "optimizer_updated": true, "informative_groups": 12, "judge": {"informative_groups": 12.0, "informative_interaction": 6.0, "judge_seconds": 251.68929684488103, "judged_groups": 16.0, "reward_spread": 2.4104348228314185, "score_sum_interaction": 58.102080997947155, "score_sum_persistence": 53.62973264015972, "score_sum_position": 49.920850142433125}, "lr": 1e-06}
+{"step": 3, "loss": 8.59619103721343e-06, "grad_norm": 0.4403078854084015, "seconds": 329.20738555304706, "method": "memspo", "optimizer_updated": true, "informative_groups": 11, "judge": {"informative_groups": 11.0, "informative_interaction": 5.0, "judge_seconds": 252.80560935800895, "judged_groups": 16.0, "reward_spread": 2.202956555491183, "score_sum_interaction": 60.29732324644866, "score_sum_persistence": 54.98724631361544, "score_sum_position": 50.86671670193848}, "lr": 1e-06}
+{"step": 4, "loss": 1.8266595361637883e-05, "grad_norm": 0.6992458701133728, "seconds": 329.0406326658558, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"informative_groups": 13.0, "informative_interaction": 3.0, "judge_seconds": 251.72209173766896, "judged_groups": 16.0, "reward_spread": 3.023524081384962, "score_sum_interaction": 61.067183495009374, "score_sum_persistence": 55.15856523438415, "score_sum_position": 52.545265558335146}, "lr": 1e-06}
+{"step": 5, "loss": 3.290271706646308e-05, "grad_norm": 0.5709350109100342, "seconds": 329.6742430902086, "method": "memspo", "optimizer_updated": true, "informative_groups": 12, "judge": {"informative_groups": 12.0, "informative_interaction": 6.0, "judge_seconds": 252.37521229614504, "judged_groups": 16.0, "reward_spread": 2.2889297998586167, "score_sum_interaction": 57.99110658458601, "score_sum_persistence": 53.18798015778704, "score_sum_position": 49.065201663253916}, "lr": 1e-06}
+{"step": 6, "loss": 3.9977221604203805e-05, "grad_norm": 0.5314592719078064, "seconds": 329.2247152910568, "method": "memspo", "optimizer_updated": true, "informative_groups": 12, "judge": {"informative_groups": 12.0, "informative_interaction": 5.0, "judge_seconds": 252.1444448144175, "judged_groups": 16.0, "reward_spread": 1.892220362882425, "score_sum_interaction": 57.87227155095138, "score_sum_persistence": 55.02585006905123, "score_sum_position": 49.109514304929974}, "lr": 1e-06}
+{"step": 7, "loss": 5.550572313950397e-05, "grad_norm": 0.6396278142929077, "seconds": 329.62238476006314, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"informative_groups": 16.0, "informative_interaction": 9.0, "judge_seconds": 253.21718251728453, "judged_groups": 16.0, "reward_spread": 2.9111979210224384, "score_sum_interaction": 57.96422313210006, "score_sum_persistence": 54.40543218958019, "score_sum_position": 48.904775295824095}, "lr": 1e-06}
+{"step": 8, "loss": 6.564138311659917e-05, "grad_norm": 0.5222160816192627, "seconds": 329.19076346303336, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_groups": 14.0, "informative_interaction": 4.0, "judge_seconds": 252.34664037427865, "judged_groups": 16.0, "reward_spread": 2.1333271907904927, "score_sum_interaction": 59.1831513580896, "score_sum_persistence": 55.955043779889124, "score_sum_position": 51.73021663963327}, "lr": 1e-06}
+{"step": 9, "loss": 8.579110726714134e-05, "grad_norm": 0.6021150350570679, "seconds": 329.14899101201445, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"informative_groups": 13.0, "informative_interaction": 8.0, "judge_seconds": 252.64282675273716, "judged_groups": 16.0, "reward_spread": 2.5683555662007764, "score_sum_interaction": 57.67023601954949, "score_sum_persistence": 52.525511110577156, "score_sum_position": 49.72878830079637}, "lr": 1e-06}
+{"step": 10, "loss": 8.971706847660244e-05, "grad_norm": 0.5299731492996216, "seconds": 328.237031040946, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"informative_groups": 15.0, "informative_interaction": 5.0, "judge_seconds": 251.22133141430095, "judged_groups": 16.0, "reward_spread": 2.579706844168991, "score_sum_interaction": 59.434672814331876, "score_sum_persistence": 53.02090665175132, "score_sum_position": 48.69285693121367}, "lr": 1e-06}
+{"step": 11, "loss": 0.00010588284931145608, "grad_norm": 0.5498154759407043, "seconds": 328.79122063005343, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"informative_groups": 13.0, "informative_interaction": 7.0, "judge_seconds": 253.2508797403425, "judged_groups": 16.0, "reward_spread": 2.520169499188835, "score_sum_interaction": 61.19603408273703, "score_sum_persistence": 54.67515307503242, "score_sum_position": 49.48580019599413}, "lr": 1e-06}
+{"step": 12, "loss": 0.00012059816799592227, "grad_norm": 0.5855510234832764, "seconds": 329.2340276541654, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_groups": 14.0, "informative_interaction": 10.0, "judge_seconds": 252.83054694975726, "judged_groups": 16.0, "reward_spread": 2.9904375511989274, "score_sum_interaction": 57.057240953451085, "score_sum_persistence": 46.67478094648733, "score_sum_position": 46.05254597064889}, "lr": 1e-06}
+{"step": 13, "loss": 0.00012746189895551652, "grad_norm": 0.574726939201355, "seconds": 328.74555521295406, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_groups": 14.0, "informative_interaction": 9.0, "judge_seconds": 252.72771116066724, "judged_groups": 16.0, "reward_spread": 2.3583954289841214, "score_sum_interaction": 58.62581555163582, "score_sum_persistence": 50.74210267769349, "score_sum_position": 44.5335652951422}, "lr": 1e-06}
+{"step": 14, "loss": 0.0001585936261108145, "grad_norm": 0.4826245605945587, "seconds": 328.21714170090854, "method": "memspo", "optimizer_updated": true, "informative_groups": 10, "judge": {"informative_groups": 10.0, "informative_interaction": 4.0, "judge_seconds": 252.67705526389182, "judged_groups": 16.0, "reward_spread": 2.5177415696556937, "score_sum_interaction": 52.59347413460591, "score_sum_persistence": 51.79589171592798, "score_sum_position": 47.00179815783125}, "lr": 1e-06}
+{"step": 15, "loss": 0.00016234774375334382, "grad_norm": 0.573453426361084, "seconds": 328.9736128190998, "method": "memspo", "optimizer_updated": true, "informative_groups": 11, "judge": {"informative_groups": 11.0, "informative_interaction": 5.0, "judge_seconds": 253.41298082494177, "judged_groups": 16.0, "reward_spread": 2.3326278613220013, "score_sum_interaction": 62.16122311269216, "score_sum_persistence": 56.88831707718045, "score_sum_position": 56.256358964652605}, "lr": 1e-06}
+{"step": 16, "loss": 0.00016659653920214623, "grad_norm": 0.6633080244064331, "seconds": 328.8682414779905, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"informative_groups": 13.0, "informative_interaction": 5.0, "judge_seconds": 253.57056547096, "judged_groups": 16.0, "reward_spread": 2.4366850561262283, "score_sum_interaction": 59.1370333522331, "score_sum_persistence": 55.803102961537874, "score_sum_position": 51.59949256514186}, "lr": 1e-06}
+{"step": 17, "loss": 0.00018032744992524385, "grad_norm": 0.5315757989883423, "seconds": 329.27523450297303, "method": "memspo", "optimizer_updated": true, "informative_groups": 12, "judge": {"informative_groups": 12.0, "informative_interaction": 6.0, "judge_seconds": 252.99283763533458, "judged_groups": 16.0, "reward_spread": 2.9535939662265265, "score_sum_interaction": 59.98576154067592, "score_sum_persistence": 54.42548722243437, "score_sum_position": 51.738120842419875}, "lr": 1e-06}
+{"step": 18, "loss": 0.00020408295677043498, "grad_norm": 0.6407192349433899, "seconds": 328.47287507588044, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"informative_groups": 16.0, "informative_interaction": 7.0, "judge_seconds": 252.96405651047826, "judged_groups": 16.0, "reward_spread": 3.2397474113754035, "score_sum_interaction": 56.015430022279915, "score_sum_persistence": 49.93793615232074, "score_sum_position": 46.7137658135481}, "lr": 1e-06}
+{"step": 19, "loss": 0.0002394865732640028, "grad_norm": 0.6721907258033752, "seconds": 328.419728953857, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"informative_groups": 15.0, "informative_interaction": 6.0, "judge_seconds": 252.708975068992, "judged_groups": 16.0, "reward_spread": 3.3340650222387698, "score_sum_interaction": 58.49678911299804, "score_sum_persistence": 51.634483834609156, "score_sum_position": 47.88966890343655}, "lr": 1e-06}
+{"step": 20, "loss": 0.0002649796660989523, "grad_norm": 0.6017887592315674, "seconds": 329.3172545749694, "method": "memspo", "optimizer_updated": true, "informative_groups": 12, "judge": {"informative_groups": 12.0, "informative_interaction": 5.0, "judge_seconds": 252.66038328199647, "judged_groups": 16.0, "reward_spread": 2.8074340745938384, "score_sum_interaction": 55.40703721046867, "score_sum_persistence": 50.37331397292651, "score_sum_position": 46.518681255960175}, "lr": 1e-06}
+{"step": 21, "loss": 0.00027260935166850686, "grad_norm": 0.5661872029304504, "seconds": 328.6572630999144, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"informative_groups": 13.0, "informative_interaction": 6.0, "judge_seconds": 252.6300136889331, "judged_groups": 16.0, "reward_spread": 2.4933069402956933, "score_sum_interaction": 56.21361787590446, "score_sum_persistence": 53.87261029047905, "score_sum_position": 49.27708072076554}, "lr": 1e-06}
+{"step": 22, "loss": 0.0002767625846900046, "grad_norm": 0.5405552387237549, "seconds": 328.4169771161396, "method": "memspo", "optimizer_updated": true, "informative_groups": 11, "judge": {"informative_groups": 11.0, "informative_interaction": 5.0, "judge_seconds": 252.19406028231606, "judged_groups": 16.0, "reward_spread": 2.401782707264094, "score_sum_interaction": 60.14960099454239, "score_sum_persistence": 53.84828641807558, "score_sum_position": 47.89820154462442}, "lr": 1e-06}
+{"step": 23, "loss": 0.0002986968611367047, "grad_norm": 0.6917553544044495, "seconds": 328.58706725598313, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"informative_groups": 13.0, "informative_interaction": 7.0, "judge_seconds": 252.4485897840932, "judged_groups": 16.0, "reward_spread": 2.827923761525223, "score_sum_interaction": 58.105786955114574, "score_sum_persistence": 50.41698134362791, "score_sum_position": 49.164038282209845}, "lr": 1e-06}
+{"step": 24, "loss": 0.0002962062135338783, "grad_norm": 0.5015555024147034, "seconds": 328.14809694699943, "method": "memspo", "optimizer_updated": true, "informative_groups": 12, "judge": {"informative_groups": 12.0, "informative_interaction": 4.0, "judge_seconds": 252.86976360855624, "judged_groups": 16.0, "reward_spread": 1.6209719095966904, "score_sum_interaction": 61.229128980092135, "score_sum_persistence": 55.555341846963444, "score_sum_position": 49.94369001627089}, "lr": 1e-06}
+{"step": 25, "loss": 0.0003476755227893591, "grad_norm": 0.5850276350975037, "seconds": 329.0701820910908, "method": "memspo", "optimizer_updated": true, "informative_groups": 12, "judge": {"informative_groups": 12.0, "informative_interaction": 8.0, "judge_seconds": 252.21345426002517, "judged_groups": 16.0, "reward_spread": 2.7009576404878457, "score_sum_interaction": 60.72351854967505, "score_sum_persistence": 55.50478395808669, "score_sum_position": 53.97413590751271}, "lr": 1e-06}
+{"step": 26, "loss": 0.00039377997745759785, "grad_norm": 0.99224454164505, "seconds": 329.380619274918, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_groups": 14.0, "informative_interaction": 5.0, "judge_seconds": 251.99635277688503, "judged_groups": 16.0, "reward_spread": 2.801227353255899, "score_sum_interaction": 59.270661266492425, "score_sum_persistence": 50.508546412274754, "score_sum_position": 45.365486104676464}, "lr": 1e-06}
+{"step": 27, "loss": 0.00045776471961289644, "grad_norm": 0.6264463663101196, "seconds": 328.78542748792097, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_groups": 14.0, "informative_interaction": 7.0, "judge_seconds": 251.86108736181632, "judged_groups": 16.0, "reward_spread": 3.7095701473765135, "score_sum_interaction": 57.34507916432826, "score_sum_persistence": 49.587608987244465, "score_sum_position": 43.908407531671834}, "lr": 1e-06}
+{"step": 28, "loss": 0.0004936428158544004, "grad_norm": 0.7315078377723694, "seconds": 328.89529731008224, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_groups": 14.0, "informative_interaction": 8.0, "judge_seconds": 251.78253776603378, "judged_groups": 16.0, "reward_spread": 3.222345776394348, "score_sum_interaction": 56.994967596464804, "score_sum_persistence": 45.840414211233096, "score_sum_position": 47.30880029455783}, "lr": 1e-06}
+{"step": 29, "loss": 0.0005670394748449326, "grad_norm": 0.8104925155639648, "seconds": 328.3711208680179, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"informative_groups": 16.0, "informative_interaction": 6.0, "judge_seconds": 251.93154483428225, "judged_groups": 16.0, "reward_spread": 3.9711623131731404, "score_sum_interaction": 56.85272465014925, "score_sum_persistence": 47.80372663281419, "score_sum_position": 41.82729861186406}, "lr": 1e-06}
+{"step": 30, "loss": 0.0006401404971256852, "grad_norm": 0.8987942934036255, "seconds": 328.5414179000072, "method": "memspo", "optimizer_updated": true, "informative_groups": 16, "judge": {"informative_groups": 16.0, "informative_interaction": 8.0, "judge_seconds": 251.46901320270263, "judged_groups": 16.0, "reward_spread": 4.063377366010426, "score_sum_interaction": 56.525574969872984, "score_sum_persistence": 49.77242253695635, "score_sum_position": 43.14175444918949}, "lr": 1e-06}
+{
+  "state": "COMPLETE",
+  "steps": 30,
+  "optimizer_updates": 30,
+  "informative_groups": 396,
+  "checkpoint": "/media/tyshao/Jev-WM/experiments/robocasa_object_memspo_4gpu_v2_20261024/train/checkpoints/step_000030",
+  "effectiveness": "Training complete; improvement is not evaluated by this launcher."
+}

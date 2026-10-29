@@ -1,0 +1,545 @@
+[rank1]:[W1021 19:55:40.796121035 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank2]:[W1021 19:55:40.796130983 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank3]:[W1021 19:55:40.846453925 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W1021 19:55:40.063213098 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+encoder num cross att blocks 2
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+decoder num cross att blocks 1
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+{"step": 1, "loss": 7.450582373280668e-10, "grad_norm": 0.17427591979503632, "seconds": 317.1852950844914, "method": "memspo", "optimizer_updated": true, "informative_groups": 11, "judge": {"informative_fidelity": 6.0, "informative_groups": 11.0, "informative_motion": 8.0, "informative_task": 8.0, "judge_seconds": 264.1113878013566, "judged_groups": 16.0, "score_sum_fidelity": 32.762249999999995, "score_sum_motion": 10.4690625, "score_sum_task": 35.505}}
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank0]:     main()
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank0]:     train(args.config)
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank0]:     synchronize_failure(error, world)
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank0]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank0]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank2]:     main()
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank2]:     train(args.config)
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank2]:     synchronize_failure(error, world)
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank2]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank2]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank3]:     main()
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank3]:     train(args.config)
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank3]:     synchronize_failure(error, world)
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank3]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank3]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank1]:     main()
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank1]:     train(args.config)
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank1]:     synchronize_failure(error, world)
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank1]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank1]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank0]:[W1021 20:09:03.533980601 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1021 20:09:04.470000 7940 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 7984 closing signal SIGTERM
+W1021 20:09:04.472000 7940 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 7985 closing signal SIGTERM
+E1021 20:09:04.837000 7940 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 7982) of binary: /media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+futureworlds FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-10-21_20:09:04
+  host      : job-9x7px81clycf-master-0
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 7983)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-21_20:09:04
+  host      : job-9x7px81clycf-master-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 7982)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[rank2]:[W1022 04:27:31.593735922 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank1]:[W1022 04:27:31.593735888 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank3]:[W1022 04:27:31.593735918 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W1022 04:27:32.846867384 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+{"step": 1, "loss": 7.450582373280668e-10, "grad_norm": 0.1742759346961975, "seconds": 320.13209259323776, "method": "memspo", "optimizer_updated": true, "informative_groups": 11, "judge": {"informative_fidelity": 6.0, "informative_groups": 11.0, "informative_motion": 8.0, "informative_task": 8.0, "judge_seconds": 265.84532034024596, "judged_groups": 16.0, "score_sum_fidelity": 32.762249999999995, "score_sum_motion": 10.4690625, "score_sum_task": 35.505}}
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank1]:     main()
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank1]:     train(args.config)
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank1]:     synchronize_failure(error, world)
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank1]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank1]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank0]:     main()
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank0]:     train(args.config)
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank0]:     synchronize_failure(error, world)
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank0]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank0]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank3]:     main()
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank3]:     train(args.config)
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank3]:     synchronize_failure(error, world)
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank3]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank3]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank2]:     main()
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank2]:     train(args.config)
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank2]:     synchronize_failure(error, world)
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank2]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank2]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank0]:[W1022 04:40:15.954666120 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1022 04:40:16.795000 354 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 404 closing signal SIGTERM
+W1022 04:40:16.796000 354 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 405 closing signal SIGTERM
+W1022 04:40:16.797000 354 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 406 closing signal SIGTERM
+E1022 04:40:17.162000 354 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 403) of binary: /media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+futureworlds FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-22_04:40:16
+  host      : job-3lxv0ppdknsv-master-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 403)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[rank2]:[W1022 04:40:55.152114633 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank3]:[W1022 04:40:55.157936111 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank1]:[W1022 04:40:55.157939264 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W1022 04:40:55.388660402 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank1]:     main()
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank1]:     train(args.config)
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank1]:     synchronize_failure(error, world)
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank1]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank1]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank0]:     main()
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank0]:     train(args.config)
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank0]:     synchronize_failure(error, world)
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank0]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank0]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank2]:     main()
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank2]:     train(args.config)
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank2]:     synchronize_failure(error, world)
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank2]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank2]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank3]:     main()
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank3]:     train(args.config)
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank3]:     synchronize_failure(error, world)
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank3]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank3]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank0]:[W1022 04:42:11.746800799 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1022 04:42:12.307000 17525 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 17559 closing signal SIGTERM
+W1022 04:42:12.308000 17525 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 17561 closing signal SIGTERM
+W1022 04:42:12.309000 17525 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 17562 closing signal SIGTERM
+E1022 04:42:12.687000 17525 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 17560) of binary: /media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+futureworlds FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-22_04:42:12
+  host      : job-3lxv0ppdknsv-master-0
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 17560)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[rank3]:[W1022 04:42:50.311329505 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank2]:[W1022 04:42:50.339392299 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank1]:[W1022 04:42:50.349726828 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W1022 04:42:51.776383468 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank2]:     main()
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank2]:     train(args.config)
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank2]:     synchronize_failure(error, world)
+[rank2]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank2]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank2]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank0]:     main()
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank0]:     train(args.config)
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank0]:     synchronize_failure(error, world)
+[rank0]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank0]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank0]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank1]:     main()
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank1]:     train(args.config)
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank1]:     synchronize_failure(error, world)
+[rank1]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank1]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank1]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/__main__.py", line 6, in <module>
+[rank3]:     main()
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/cli.py", line 112, in main
+[rank3]:     train(args.config)
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/training.py", line 504, in train
+[rank3]:     synchronize_failure(error, world)
+[rank3]:   File "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/source/src/futureworlds/jev_gt_reward.py", line 17, in synchronize_failure
+[rank3]:     raise RuntimeError("Judge failed before optimizer update: " + repr(messages))
+[rank3]: RuntimeError: Judge failed before optimizer update: ['RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced', 'RuntimeError: Official Decisions transport failed; no score produced']
+[rank0]:[W1022 04:44:06.759764407 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1022 04:44:07.418000 20178 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 20211 closing signal SIGTERM
+W1022 04:44:07.419000 20178 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 20212 closing signal SIGTERM
+E1022 04:44:07.734000 20178 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 2 (pid: 20213) of binary: /media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 923, in <module>
+    main()
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/tyshao/fail_WM/FutureWorlds_workspace/code/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+futureworlds FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-10-22_04:44:07
+  host      : job-3lxv0ppdknsv-master-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 20214)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-22_04:44:07
+  host      : job-3lxv0ppdknsv-master-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 20213)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[rank3]:[W1022 13:37:42.665708791 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank1]:[W1022 13:37:42.665706370 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank2]:[W1022 13:37:42.665707399 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+[rank0]:[W1022 13:37:42.944296793 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+encoder num cross att blocks 2
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+decoder num cross att blocks 1
+{"step": 2, "loss": 2.9385469613174564e-09, "grad_norm": 0.21031910181045532, "seconds": 1750.8660984374583, "method": "memspo", "optimizer_updated": true, "informative_groups": 11, "judge": {"informative_fidelity": 7.0, "informative_groups": 11.0, "informative_motion": 9.0, "informative_task": 11.0, "judge_seconds": 5434.580829877406, "judged_groups": 16.0, "score_sum_fidelity": 33.38100000000001, "score_sum_motion": 14.175, "score_sum_task": 36.7225}}
+{"step": 3, "loss": 1.6679093661764455e-08, "grad_norm": 0.25599202513694763, "seconds": 2042.9865738637745, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_fidelity": 5.0, "informative_groups": 14.0, "informative_motion": 11.0, "informative_task": 13.0, "judge_seconds": 6773.217174638063, "judged_groups": 16.0, "score_sum_fidelity": 33.11775, "score_sum_motion": 12.350781249999999, "score_sum_task": 35.16875}}
+{"step": 4, "loss": 2.7437229377369476e-08, "grad_norm": 0.21640513837337494, "seconds": 2298.957175973803, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_fidelity": 8.0, "informative_groups": 14.0, "informative_motion": 10.0, "informative_task": 13.0, "judge_seconds": 7887.1466626003385, "judged_groups": 16.0, "score_sum_fidelity": 38.72375, "score_sum_motion": 15.320156250000002, "score_sum_task": 37.15125}}
+{"step": 5, "loss": 6.537761976233014e-08, "grad_norm": 0.18457163870334625, "seconds": 2113.7009522356093, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"informative_fidelity": 2.0, "informative_groups": 13.0, "informative_motion": 9.0, "informative_task": 13.0, "judge_seconds": 7097.11055829376, "judged_groups": 16.0, "score_sum_fidelity": 30.502250000000004, "score_sum_motion": 12.549687500000001, "score_sum_task": 31.482499999999998}}
+{"step": 6, "loss": 8.807688800516189e-08, "grad_norm": 0.23462560772895813, "seconds": 2055.2276240438223, "method": "memspo", "optimizer_updated": true, "informative_groups": 12, "judge": {"informative_fidelity": 5.0, "informative_groups": 12.0, "informative_motion": 10.0, "informative_task": 10.0, "judge_seconds": 6885.164921283722, "judged_groups": 16.0, "score_sum_fidelity": 32.500750000000004, "score_sum_motion": 13.535625, "score_sum_task": 36.56875}}
+{"step": 7, "loss": 7.764643328300735e-08, "grad_norm": 0.2683282494544983, "seconds": 2151.7720970362425, "method": "memspo", "optimizer_updated": true, "informative_groups": 15, "judge": {"informative_fidelity": 5.0, "informative_groups": 15.0, "informative_motion": 13.0, "informative_task": 15.0, "judge_seconds": 7145.370953392237, "judged_groups": 16.0, "score_sum_fidelity": 33.316, "score_sum_motion": 19.90796875, "score_sum_task": 36.9975}}
+{"step": 8, "loss": 1.0012421114424797e-07, "grad_norm": 0.269132524728775, "seconds": 2029.0857426673174, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_fidelity": 6.0, "informative_groups": 14.0, "informative_motion": 12.0, "informative_task": 11.0, "judge_seconds": 6724.666164897382, "judged_groups": 16.0, "score_sum_fidelity": 32.89725, "score_sum_motion": 17.0225, "score_sum_task": 36.59}}
+{"step": 9, "loss": 1.5416151200042805e-07, "grad_norm": 0.21441829204559326, "seconds": 1988.0044260770082, "method": "memspo", "optimizer_updated": true, "informative_groups": 14, "judge": {"informative_fidelity": 7.0, "informative_groups": 14.0, "informative_motion": 13.0, "informative_task": 9.0, "judge_seconds": 6623.846049934626, "judged_groups": 16.0, "score_sum_fidelity": 39.25150000000001, "score_sum_motion": 18.85796875, "score_sum_task": 40.925}}
+{"step": 10, "loss": 2.900922595472366e-07, "grad_norm": 0.2144407033920288, "seconds": 2043.6321079097688, "method": "memspo", "optimizer_updated": true, "informative_groups": 13, "judge": {"informative_fidelity": 3.0, "informative_groups": 13.0, "informative_motion": 10.0, "informative_task": 12.0, "judge_seconds": 6712.124641530216, "judged_groups": 16.0, "score_sum_fidelity": 31.461000000000002, "score_sum_motion": 11.480937500000001, "score_sum_task": 35.557500000000005}}
