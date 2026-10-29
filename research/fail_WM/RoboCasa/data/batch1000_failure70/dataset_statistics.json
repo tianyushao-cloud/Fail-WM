@@ -1,0 +1,149 @@
+{
+  "episodes": 1000,
+  "initial_state_groups": 100,
+  "successes": 300,
+  "failures": 700,
+  "success_rate": 0.3,
+  "failure_types": {
+    "grasp_miss": 172,
+    "contact_without_lift": 157,
+    "dropped_before_goal": 112,
+    "lifted_but_not_placed": 163,
+    "object_off_counter": 96
+  },
+  "category_outcomes": {
+    "reference": {
+      "episodes": 125,
+      "successes": 125,
+      "failures": 0
+    },
+    "single": {
+      "episodes": 653,
+      "successes": 79,
+      "failures": 574
+    },
+    "double": {
+      "episodes": 122,
+      "successes": 3,
+      "failures": 119
+    },
+    "recovery": {
+      "episodes": 100,
+      "successes": 93,
+      "failures": 7
+    }
+  },
+  "perturbation_outcomes": {
+    "grasp_offset": {
+      "episodes": 93,
+      "successes": 29,
+      "failures": 64
+    },
+    "orientation_tilt": {
+      "episodes": 106,
+      "successes": 31,
+      "failures": 75
+    },
+    "early_close": {
+      "episodes": 114,
+      "successes": 25,
+      "failures": 89
+    },
+    "partial_close": {
+      "episodes": 70,
+      "successes": 0,
+      "failures": 70
+    },
+    "early_release": {
+      "episodes": 145,
+      "successes": 25,
+      "failures": 120
+    },
+    "place_offset": {
+      "episodes": 104,
+      "successes": 12,
+      "failures": 92
+    },
+    "push": {
+      "episodes": 137,
+      "successes": 18,
+      "failures": 119
+    },
+    "transport_short": {
+      "episodes": 102,
+      "successes": 0,
+      "failures": 102
+    },
+    "skip_descend": {
+      "episodes": 37,
+      "successes": 0,
+      "failures": 37
+    },
+    "waypoint": {
+      "episodes": 51,
+      "successes": 35,
+      "failures": 16
+    },
+    "delayed_close": {
+      "episodes": 35,
+      "successes": 0,
+      "failures": 35
+    },
+    "friction": {
+      "episodes": 2,
+      "successes": 2,
+      "failures": 0
+    },
+    "mass": {
+      "episodes": 1,
+      "successes": 1,
+      "failures": 0
+    }
+  },
+  "recovery": {
+    "requested": 100,
+    "attempted": 100,
+    "recovered_successfully": 93,
+    "failed_after_recovery": 7
+  },
+  "action_lengths": {
+    "min": 165,
+    "median": 237.0,
+    "mean": 260.962,
+    "max": 555
+  },
+  "total_actions": 260962,
+  "total_rgb_frames": 261962,
+  "simulated_transition_seconds": 13048.1,
+  "event_episode_counts": {
+    "contact": 828,
+    "grasp": 750,
+    "lift": 577,
+    "release": 580,
+    "place": 304,
+    "success": 301,
+    "drop": 138
+  },
+  "splits": {
+    "train": {
+      "episodes": 800,
+      "groups": 80
+    },
+    "val": {
+      "episodes": 100,
+      "groups": 10
+    },
+    "test": {
+      "episodes": 100,
+      "groups": 10
+    }
+  },
+  "split_group_overlap": 0,
+  "initial_state_hash_consistency_pass": true,
+  "validated_episodes": 1000,
+  "replay_max_qpos_error": 0.0,
+  "replay_max_qvel_error": 0.0,
+  "replay_max_target13_error": 0.0,
+  "replay_sampled_rgb_max_mae": 0.0005240885657258332,
+  "episode_bytes": 29568965087
+}

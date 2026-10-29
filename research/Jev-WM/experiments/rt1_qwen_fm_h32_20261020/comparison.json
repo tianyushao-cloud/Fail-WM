@@ -1,0 +1,434 @@
+{
+  "judge": {
+    "model": "/media/tyshao/Jev-WM/paper_assets/qwen/Qwen3-VL-8B-Instruct",
+    "scale": 2,
+    "batch_size": 4,
+    "arm": "arm_FM",
+    "calibration": "axes_confirm_centered",
+    "weights": {
+      "fidelity": 0.5,
+      "motion": 0.5
+    },
+    "taus": {
+      "fidelity": 0.03703754564589948,
+      "motion": 0.034309757291701035
+    },
+    "log_dir": "/media/tyshao/Jev-WM/experiments/rt1_qwen_fm_h32_20261020/judge_log"
+  },
+  "scheduled_batches": 100,
+  "optimizer_updates": 100,
+  "totals": {
+    "informative_fidelity": 856.0,
+    "informative_groups": 1277.0,
+    "informative_motion": 1019.0,
+    "judged_groups": 1600.0
+  },
+  "splits": {
+    "validation": {
+      "10": {
+        "lpips": {
+          "sft": 0.1436339694540948,
+          "qwen": 0.13403916591778398,
+          "r0_reference": 0.13123017749749125,
+          "delta": -0.009594803536310795,
+          "paired_episode_bootstrap_95ci": [
+            -0.015396677008247935,
+            -0.004524232780677271
+          ],
+          "relative_improvement": 6.680037857881022,
+          "improved_cases": 23,
+          "cases": 32
+        },
+        "psnr": {
+          "sft": 22.679849103093147,
+          "qwen": 23.33128381967545,
+          "r0_reference": 23.66922569870949,
+          "delta": 0.6514347165822983,
+          "paired_episode_bootstrap_95ci": [
+            0.19294725582003638,
+            1.1726784591376782
+          ],
+          "relative_improvement": 2.872306220474164,
+          "improved_cases": 21,
+          "cases": 32
+        },
+        "ssim": {
+          "sft": 0.8099465068429708,
+          "qwen": 0.8187358934432267,
+          "r0_reference": 0.8222929660230875,
+          "delta": 0.00878938660025596,
+          "paired_episode_bootstrap_95ci": [
+            0.0031866810936480756,
+            0.01528327378444373
+          ],
+          "relative_improvement": 1.085181123197314,
+          "improved_cases": 21,
+          "cases": 32
+        },
+        "mae": {
+          "sft": 0.039396970323286956,
+          "qwen": 0.03615218753111549,
+          "r0_reference": 0.03513676527072676,
+          "delta": -0.0032447827921714637,
+          "paired_episode_bootstrap_95ci": [
+            -0.005966697054827818,
+            -0.0010371716029476384
+          ],
+          "relative_improvement": 8.236122639749082,
+          "improved_cases": 19,
+          "cases": 32
+        },
+        "mse": {
+          "sft": 0.006912584098608932,
+          "qwen": 0.005501039304726873,
+          "r0_reference": 0.005326513975887792,
+          "delta": -0.001411544793882058,
+          "paired_episode_bootstrap_95ci": [
+            -0.0026113832978717252,
+            -0.0004662204180931441
+          ],
+          "relative_improvement": 20.41992941780069,
+          "improved_cases": 22,
+          "cases": 32
+        }
+      },
+      "20": {
+        "lpips": {
+          "sft": 0.16087398944655434,
+          "qwen": 0.1462256769533269,
+          "r0_reference": 0.14544147419510411,
+          "delta": -0.014648312493227424,
+          "paired_episode_bootstrap_95ci": [
+            -0.021669971529918258,
+            -0.00867974395892816
+          ],
+          "relative_improvement": 9.105457348090379,
+          "improved_cases": 27,
+          "cases": 32
+        },
+        "psnr": {
+          "sft": 21.68501185029745,
+          "qwen": 22.499748638272283,
+          "r0_reference": 22.647593764960767,
+          "delta": 0.8147367879748347,
+          "paired_episode_bootstrap_95ci": [
+            0.4256782642006877,
+            1.2328562915325165
+          ],
+          "relative_improvement": 3.757142461343221,
+          "improved_cases": 25,
+          "cases": 32
+        },
+        "ssim": {
+          "sft": 0.7904804846737534,
+          "qwen": 0.8038090782240033,
+          "r0_reference": 0.8055991027504206,
+          "delta": 0.013328593550249932,
+          "paired_episode_bootstrap_95ci": [
+            0.007135467831976715,
+            0.020584478210657824
+          ],
+          "relative_improvement": 1.6861382170302281,
+          "improved_cases": 25,
+          "cases": 32
+        },
+        "mae": {
+          "sft": 0.04477408004458994,
+          "qwen": 0.03998786049487535,
+          "r0_reference": 0.03963372369471472,
+          "delta": -0.004786219549714588,
+          "paired_episode_bootstrap_95ci": [
+            -0.007487167164435958,
+            -0.0024415031595708568
+          ],
+          "relative_improvement": 10.689710531066305,
+          "improved_cases": 26,
+          "cases": 32
+        },
+        "mse": {
+          "sft": 0.00879555618885206,
+          "qwen": 0.0067537615837864,
+          "r0_reference": 0.006841109626657271,
+          "delta": -0.002041794605065661,
+          "paired_episode_bootstrap_95ci": [
+            -0.0032962820968487,
+            -0.000987969133548177
+          ],
+          "relative_improvement": 23.213933959668594,
+          "improved_cases": 26,
+          "cases": 32
+        }
+      },
+      "32": {
+        "lpips": {
+          "sft": 0.18570840315078385,
+          "qwen": 0.16257428342942148,
+          "r0_reference": 0.16338155797711806,
+          "delta": -0.023134119721362367,
+          "paired_episode_bootstrap_95ci": [
+            -0.032902884633949726,
+            -0.014754583167268727
+          ],
+          "relative_improvement": 12.457228283083603,
+          "improved_cases": 27,
+          "cases": 32
+        },
+        "psnr": {
+          "sft": 20.534038082696497,
+          "qwen": 21.66550450026989,
+          "r0_reference": 21.74871077388525,
+          "delta": 1.1314664175733924,
+          "paired_episode_bootstrap_95ci": [
+            0.7082596531370655,
+            1.5753953775623808
+          ],
+          "relative_improvement": 5.510199275060515,
+          "improved_cases": 28,
+          "cases": 32
+        },
+        "ssim": {
+          "sft": 0.765566809423035,
+          "qwen": 0.7868090225383639,
+          "r0_reference": 0.7877212259336375,
+          "delta": 0.021242213115328923,
+          "paired_episode_bootstrap_95ci": [
+            0.012890531916491454,
+            0.0308857375777734
+          ],
+          "relative_improvement": 2.77470403025152,
+          "improved_cases": 27,
+          "cases": 32
+        },
+        "mae": {
+          "sft": 0.05328995296076755,
+          "qwen": 0.04503384156669199,
+          "r0_reference": 0.04493801572061784,
+          "delta": -0.00825611139407556,
+          "paired_episode_bootstrap_95ci": [
+            -0.011900820394203038,
+            -0.005072714399284451
+          ],
+          "relative_improvement": 15.49281043680742,
+          "improved_cases": 28,
+          "cases": 32
+        },
+        "mse": {
+          "sft": 0.01187431675134576,
+          "qwen": 0.008494410422258625,
+          "r0_reference": 0.00864106004075893,
+          "delta": -0.0033799063290871345,
+          "paired_episode_bootstrap_95ci": [
+            -0.005010100929172268,
+            -0.0019375692443503569
+          ],
+          "relative_improvement": 28.464006812889487,
+          "improved_cases": 28,
+          "cases": 32
+        }
+      }
+    },
+    "test": {
+      "10": {
+        "lpips": {
+          "sft": 0.1477949816733599,
+          "qwen": 0.13747255116468296,
+          "r0_reference": 0.13616018628235904,
+          "delta": -0.010322430508676917,
+          "paired_episode_bootstrap_95ci": [
+            -0.01605862813274143,
+            -0.005262172457587443
+          ],
+          "relative_improvement": 6.984290259252787,
+          "improved_cases": 43,
+          "cases": 64
+        },
+        "psnr": {
+          "sft": 23.045095649361613,
+          "qwen": 23.845545004308224,
+          "r0_reference": 23.90312238037586,
+          "delta": 0.8004493549466131,
+          "paired_episode_bootstrap_95ci": [
+            0.4370255043730138,
+            1.1855663417279716
+          ],
+          "relative_improvement": 3.4734043508679764,
+          "improved_cases": 44,
+          "cases": 64
+        },
+        "ssim": {
+          "sft": 0.8147424634546042,
+          "qwen": 0.8240210971795023,
+          "r0_reference": 0.8248214297927916,
+          "delta": 0.009278633724898094,
+          "paired_episode_bootstrap_95ci": [
+            0.00451678738929331,
+            0.014510336266830563
+          ],
+          "relative_improvement": 1.1388425350454414,
+          "improved_cases": 44,
+          "cases": 64
+        },
+        "mae": {
+          "sft": 0.040329506731359294,
+          "qwen": 0.03614057083759689,
+          "r0_reference": 0.03577850782603491,
+          "delta": -0.004188935893762392,
+          "paired_episode_bootstrap_95ci": [
+            -0.006404631835321198,
+            -0.0022255657705682105
+          ],
+          "relative_improvement": 10.386776911667932,
+          "improved_cases": 46,
+          "cases": 64
+        },
+        "mse": {
+          "sft": 0.0071978194068833545,
+          "qwen": 0.005602082246605277,
+          "r0_reference": 0.0054609583079582085,
+          "delta": -0.0015957371602780767,
+          "paired_episode_bootstrap_95ci": [
+            -0.002507759516540773,
+            -0.000810987461466084
+          ],
+          "relative_improvement": 22.169730442973542,
+          "improved_cases": 45,
+          "cases": 64
+        }
+      },
+      "20": {
+        "lpips": {
+          "sft": 0.17396894615376368,
+          "qwen": 0.15482699738349764,
+          "r0_reference": 0.1532639672223013,
+          "delta": -0.019141948770266023,
+          "paired_episode_bootstrap_95ci": [
+            -0.026119660859549185,
+            -0.012548987531772587
+          ],
+          "relative_improvement": 11.003083707449305,
+          "improved_cases": 54,
+          "cases": 64
+        },
+        "psnr": {
+          "sft": 21.492190946638583,
+          "qwen": 22.666452407091853,
+          "r0_reference": 22.80178291723132,
+          "delta": 1.174261460453272,
+          "paired_episode_bootstrap_95ci": [
+            0.7479829644411805,
+            1.5753838302753864
+          ],
+          "relative_improvement": 5.463665679170455,
+          "improved_cases": 52,
+          "cases": 64
+        },
+        "ssim": {
+          "sft": 0.7880845831241459,
+          "qwen": 0.8051542506553233,
+          "r0_reference": 0.8061126428190619,
+          "delta": 0.017069667531177397,
+          "paired_episode_bootstrap_95ci": [
+            0.01087015489349141,
+            0.023391284917015583
+          ],
+          "relative_improvement": 2.1659689704256575,
+          "improved_cases": 53,
+          "cases": 64
+        },
+        "mae": {
+          "sft": 0.04914066881610779,
+          "qwen": 0.04141166335248272,
+          "r0_reference": 0.04124289882747689,
+          "delta": -0.007729005463625071,
+          "paired_episode_bootstrap_95ci": [
+            -0.01089111959508955,
+            -0.004871023273626635
+          ],
+          "relative_improvement": 15.728327777849831,
+          "improved_cases": 51,
+          "cases": 64
+        },
+        "mse": {
+          "sft": 0.010226447346985877,
+          "qwen": 0.007305630051587286,
+          "r0_reference": 0.007208009118949121,
+          "delta": -0.0029208172953985923,
+          "paired_episode_bootstrap_95ci": [
+            -0.004213618441865492,
+            -0.001727761566864956
+          ],
+          "relative_improvement": 28.56140745944845,
+          "improved_cases": 54,
+          "cases": 64
+        }
+      },
+      "32": {
+        "lpips": {
+          "sft": 0.19477641805860912,
+          "qwen": 0.16887555758512462,
+          "r0_reference": 0.17002360425249208,
+          "delta": -0.0259008604734845,
+          "paired_episode_bootstrap_95ci": [
+            -0.0343986417468841,
+            -0.017784090256282078
+          ],
+          "relative_improvement": 13.297739393529051,
+          "improved_cases": 53,
+          "cases": 64
+        },
+        "psnr": {
+          "sft": 20.456382150761783,
+          "qwen": 21.805165693629533,
+          "r0_reference": 21.852545169647783,
+          "delta": 1.34878354286775,
+          "paired_episode_bootstrap_95ci": [
+            0.9290156681090593,
+            1.7611888082465155
+          ],
+          "relative_improvement": 6.593460822775654,
+          "improved_cases": 53,
+          "cases": 64
+        },
+        "ssim": {
+          "sft": 0.7672235446952982,
+          "qwen": 0.7908007735968567,
+          "r0_reference": 0.7892963778722333,
+          "delta": 0.023577228901558556,
+          "paired_episode_bootstrap_95ci": [
+            0.016095670209324453,
+            0.03154769045795547
+          ],
+          "relative_improvement": 3.0730585713349323,
+          "improved_cases": 51,
+          "cases": 64
+        },
+        "mae": {
+          "sft": 0.055870195002171386,
+          "qwen": 0.04566081314942494,
+          "r0_reference": 0.04647290523735137,
+          "delta": -0.010209381852746446,
+          "paired_episode_bootstrap_95ci": [
+            -0.013846401432203947,
+            -0.00682068529613389
+          ],
+          "relative_improvement": 18.2733957745264,
+          "improved_cases": 50,
+          "cases": 64
+        },
+        "mse": {
+          "sft": 0.012540029298435229,
+          "qwen": 0.008678373731157762,
+          "r0_reference": 0.008976813899494118,
+          "delta": -0.0038616555672774666,
+          "paired_episode_bootstrap_95ci": [
+            -0.005369113015185434,
+            -0.002460872673275105
+          ],
+          "relative_improvement": 30.79462954491926,
+          "improved_cases": 51,
+          "cases": 64
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "dataset": "robocasa",
+  "method": "memspo",
+  "reward": "R0",
+  "initial_variant": "sft",
+  "scope": "Local CounterCubePreview success-only experiment; not original paper reproduction",
+  "upstream_commit": "7b8f26a5d165c58645212093d2e0dfffc4278643",
+  "source_lock_sha256": "a3f7c67fa34d7a97661498cb42e374f3652813a6e635fa558bcbbbfe793b62ea",
+  "original_recipe_sha256": "04cd1dd6380ead19550d7ba90857d277387f01acf1556bcbecb1eda335eda43f",
+  "steps": 200,
+  "seed": 20260918,
+  "global_batch": 16,
+  "horizon": 10,
+  "world_size": 8,
+  "bundle": "/media/tyshao/Jev-WM/FutureWorlds/assets/local_success_sft",
+  "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+  "bundle_manifest_sha256": "7ba52ea43e7c47a9b564b151460de128430459710c3d04a0778cf3f48496085f",
+  "source_manifests": {
+    "train": "b176c6b75eb0118590cc4c3a558883a7abc1706364a09dd42d00910352ba5e66",
+    "validation": "bd2c107d39ae8ba28ec5146683f0f7a4a3200103a339f5f7a0e8b27ef3dbd7a1",
+    "test": "216304c45c848eaaf3ed50a85cd3fe3573dc66fab3704a2de5377fea49ca3e16"
+  },
+  "window_frames": 42,
+  "training_consumed_frames": 12,
+  "evaluation_consumed_frames": 34,
+  "train_start_policy": "original episode first two frames; source_start=0 only; upstream episode sampler records fixed schedule",
+  "evaluation_start_policy": "original episode first two frames; source_start=0 for every success episode",
+  "possible_train_windows": 443,
+  "scheduled_unique_windows": 443,
+  "scheduled_unique_episodes": 443,
+  "schedule_samples": 3200,
+  "success_episode_counts": {
+    "train": 443,
+    "validation": 53,
+    "test": 59
+  },
+  "original_window_generation_unavailable": true,
+  "paper_locked": false,
+  "checkpoint_selection": "final 200 only",
+  "initial_reference_policy": "original_episode_first_two",
+  "initial_observations": 2,
+  "gt_refresh": false
+}

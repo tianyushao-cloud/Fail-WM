@@ -1,0 +1,959 @@
+{
+  "id": "g00099_b01_s000000_n042",
+  "sha256": "72796dbf04c18bd4c01f336a0b8aa64d9735b12b38c222fcf6f85e99347d18dc",
+  "implementation": {
+    "source_sha256": "f219d4393dfa9c628deff97442d3514a80c6305f93443a04b4f048974fd81bff",
+    "versions": {
+      "torch": "2.5.1+cu121",
+      "torchvision": "0.20.1+cu121",
+      "transformers": "4.57.6",
+      "diffusers": "0.35.2",
+      "numpy": "2.5.3",
+      "piqa": "1.3.2",
+      "lpips": "0.1.4"
+    }
+  },
+  "metrics": [
+    {
+      "mse": 0.0003923547935755778,
+      "mae": 0.0049239433647016995,
+      "psnr": 35.44629591703415,
+      "lpips": 0.00924513497739099,
+      "ssim": 0.9849505517631769
+    },
+    {
+      "mse": 0.0011347521113975745,
+      "mae": 0.007269498586538248,
+      "psnr": 33.139125525951385,
+      "lpips": 0.020009355372167192,
+      "ssim": 0.9673015978187323
+    },
+    {
+      "mse": 0.0003833911130186607,
+      "mae": 0.004903467794065364,
+      "psnr": 35.804845452308655,
+      "lpips": 0.009022493424708955,
+      "ssim": 0.9853943362832069
+    },
+    {
+      "mse": 0.0012330980241586076,
+      "mae": 0.007535443131928332,
+      "psnr": 32.082756876945496,
+      "lpips": 0.020578203431796283,
+      "ssim": 0.965155715122819
+    }
+  ],
+  "trace": {
+    "strategy": "grouped_diverse_full_video_beam",
+    "groups": 4,
+    "beams_per_group": 2,
+    "active_paths": 8,
+    "returned_trajectories": 4,
+    "penalty": 0.1,
+    "unique_trajectories": 4,
+    "mean_pairwise_token_difference_fraction": 0.21204427629709244,
+    "pairwise_token_difference_fraction": [
+      0.24335937201976776,
+      0.083984375,
+      0.25507813692092896,
+      0.22109375894069672,
+      0.20624999701976776,
+      0.26250001788139343
+    ],
+    "different_token_positions": 829,
+    "different_positions_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      4,
+      1,
+      8,
+      12,
+      20,
+      32,
+      20,
+      24,
+      27,
+      16,
+      16,
+      5,
+      1,
+      1,
+      30,
+      52,
+      44,
+      44,
+      35,
+      19,
+      46,
+      55,
+      52,
+      45,
+      54,
+      54,
+      57,
+      55
+    ],
+    "model_log_scores": [
+      -494.2637789547764,
+      -532.0900352167814,
+      -490.9140701471747,
+      -550.6073716703938
+    ],
+    "search_scores": [
+      -494.2637789547764,
+      -722.8400352168028,
+      -702.9140701471781,
+      -741.0907050037428
+    ],
+    "score_is_behavior_logprob": false,
+    "on_policy_grpo": false,
+    "frames": [
+      {
+        "target": 2,
+        "retained": [
+          1
+        ],
+        "prefix_length": 1412,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 3,
+        "retained": [
+          1,
+          2
+        ],
+        "prefix_length": 1544,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 4,
+        "retained": [
+          1,
+          2,
+          3
+        ],
+        "prefix_length": 1676,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 5,
+        "retained": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "prefix_length": 1808,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 6,
+        "retained": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "prefix_length": 1940,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 7,
+        "retained": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "prefix_length": 2072,
+        "frame_parent_indices": [
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 8,
+        "retained": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 9,
+        "retained": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 10,
+        "retained": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 11,
+        "retained": [
+          1,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          5,
+          5,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 12,
+        "retained": [
+          1,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          5,
+          5,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 13,
+        "retained": [
+          1,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 14,
+        "retained": [
+          1,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 15,
+        "retained": [
+          1,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          7,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 16,
+        "retained": [
+          1,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 17,
+        "retained": [
+          1,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          5,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 18,
+        "retained": [
+          1,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 19,
+        "retained": [
+          1,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 20,
+        "retained": [
+          1,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 21,
+        "retained": [
+          1,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          3,
+          3,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 22,
+        "retained": [
+          1,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          5,
+          5,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 23,
+        "retained": [
+          1,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          7,
+          7
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 24,
+        "retained": [
+          1,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          6,
+          7
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 25,
+        "retained": [
+          1,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 26,
+        "retained": [
+          1,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          1,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 27,
+        "retained": [
+          1,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          5,
+          5,
+          7,
+          7
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 28,
+        "retained": [
+          1,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 29,
+        "retained": [
+          1,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 30,
+        "retained": [
+          1,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          7,
+          7
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 31,
+        "retained": [
+          1,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          5,
+          7,
+          7
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 32,
+        "retained": [
+          1,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      },
+      {
+        "target": 33,
+        "retained": [
+          1,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "prefix_length": 2204,
+        "frame_parent_indices": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6
+        ],
+        "positions_reset": true,
+        "kv_reset": true,
+        "future_observations": false,
+        "random_sampling": false
+      }
+    ]
+  },
+  "seconds": 50.422485552728176
+}

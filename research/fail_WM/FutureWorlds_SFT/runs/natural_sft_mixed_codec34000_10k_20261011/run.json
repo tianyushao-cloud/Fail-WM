@@ -1,0 +1,54 @@
+{
+  "fingerprint": "b41541c2d16059ee0a3d8f0f8483c456220b0ec4f4a4f98d12cf38801bdadb20",
+  "config": {
+    "dataset": "robocasa",
+    "method": "sft",
+    "bundle": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011",
+    "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+    "token_cache": "/media/tyshao/fail_WM/FutureWorlds_SFT/cache/token_cache/natural_sft_mixed_codec34000_10k_20261011",
+    "train_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+    "evaluation_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/val.json",
+    "initial_variant": "sft",
+    "device": "cuda",
+    "seed": 20261005,
+    "steps": 10000,
+    "global_batch": 64,
+    "micro_batch": 8,
+    "lr": 1e-05,
+    "adapter_lr": 0.0001,
+    "warmup_steps": 500,
+    "horizon": 10,
+    "sft_bf16": true,
+    "checkpoint_every": 2000,
+    "paper_locked": false,
+    "initial_checkpoint": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model",
+    "initial_sha256": "e5229f8a9de990d61cd900d05e6aaf5909a83e3634c5695d46ec8a46568dfe37",
+    "initialize_text_adapters": true,
+    "trainer_variant": "cached_batched_sft_v1",
+    "implementation": {
+      "source_sha256": "2eb8493d7f2a3910cc95ab3432c3ce78269361fccd16d2cc0bde4cfda963afcf",
+      "versions": {
+        "torch": "2.5.1+cu121",
+        "torchvision": "0.20.1+cu121",
+        "transformers": "4.57.6",
+        "diffusers": "0.35.2",
+        "numpy": "2.5.3",
+        "piqa": "1.3.2",
+        "lpips": "0.1.4"
+      }
+    },
+    "text_assets": {
+      "files": {
+        "config.json": "46dd7cb62d29c81fb551e0ef1ea274c24a46ba441eeb948897706252933df033",
+        "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+        "model.safetensors": "a90903540cc02cbeb7ff9f823f1a80eb778c7e22426a0e620b01c77a5ec8f5b4",
+        "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+        "tokenizer.json": "d2acde0d8d71dd30a711834b07781b9c89feaac33fd332f60507699282740066"
+      }
+    },
+    "train_manifest_sha256": "d5266a10b57557bf640ffaa18683296cd9def454247ca9d737ca76de2bf6d13d",
+    "bundle_manifest_sha256": "400075ad290d0569f1af106dd1ea1302046ceed846aec608f75da5bbc044ec73",
+    "world_size": 8,
+    "schedule_sha256": null
+  }
+}

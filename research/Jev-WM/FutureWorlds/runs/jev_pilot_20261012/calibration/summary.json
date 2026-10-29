@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "case": "g00054_b01",
+      "original_mean": 0.71,
+      "repeat_range": 0.0,
+      "scrambled_delta": 0.02749999999999997,
+      "blackout_delta": 0.48749999999999993,
+      "frozen_delta": 0.0774999999999999,
+      "scrambled_temporal_delta": 0.08499999999999996
+    },
+    {
+      "case": "g00065_b03",
+      "original_mean": 0.93,
+      "repeat_range": 0.0,
+      "scrambled_delta": 0.08500000000000008,
+      "blackout_delta": 0.5225,
+      "frozen_delta": -0.06499999999999995,
+      "scrambled_temporal_delta": 0.1499999999999999
+    },
+    {
+      "case": "g00023_b06",
+      "original_mean": 0.3725,
+      "repeat_range": 0.0,
+      "scrambled_delta": -0.10999999999999999,
+      "blackout_delta": 0.019999999999999962,
+      "frozen_delta": -0.5799999999999998,
+      "scrambled_temporal_delta": 0.10500000000000004
+    },
+    {
+      "case": "g00076_b04",
+      "original_mean": 0.82,
+      "repeat_range": 0.0,
+      "scrambled_delta": 0.05249999999999988,
+      "blackout_delta": 0.25749999999999995,
+      "frozen_delta": -0.01750000000000007,
+      "scrambled_temporal_delta": 0.11499999999999999
+    }
+  ],
+  "mean_repeat_range": 0.0,
+  "preference_counts": {
+    "scrambled": 3,
+    "blackout": 4,
+    "frozen": 1
+  },
+  "input_tokens": 31176,
+  "successful_calls": 24,
+  "note": "Frozen frames are an ambiguity/reward-hacking probe, not a valid negative without action/dynamics evidence; no human labels were collected."
+}

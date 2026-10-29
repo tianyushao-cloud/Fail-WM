@@ -1,0 +1,63 @@
+{
+  "model": "/media/tyshao/Jev-WM/paper_assets/qwen/Qwen3-VL-8B-Instruct",
+  "name": "smoke8b",
+  "cases": 2,
+  "max_pixels": null,
+  "gates": {
+    "gt_codec>freeze_all": {
+      "rate": 1.0,
+      "required": 0.9,
+      "passed": true
+    },
+    "gt_codec>black": {
+      "rate": 1.0,
+      "required": 0.9,
+      "passed": true
+    },
+    "gt_codec>other_episode": {
+      "rate": 1.0,
+      "required": 0.9,
+      "passed": true
+    },
+    "gt_codec>reverse": {
+      "rate": 1.0,
+      "required": 0.75,
+      "passed": true
+    },
+    "gt_codec>freeze_half": {
+      "rate": 1.0,
+      "required": 0.75,
+      "passed": true
+    },
+    "informative_groups": {
+      "rate": 0.0,
+      "required": 0.5,
+      "passed": false,
+      "tau": 0.008798968385983374
+    }
+  },
+  "all_gates_passed": false,
+  "diagnostics": {
+    "median_order_gap": 0.004399484192991687,
+    "mean_order_bias": -0.005541944661249604,
+    "median_group_spread": 0.004218452424605168,
+    "within_group_spearman_vs_neg_lpips": 0.0,
+    "within_group_spearman_vs_neg_repeats": 0.3,
+    "groups_with_repeat_variation": 2,
+    "pooled_spearman_vs_neg_lpips": -0.5000000000000001,
+    "mean_scores": {
+      "sft0": 0.9961135545012036,
+      "sft1": 0.995814425233546,
+      "sft2": 0.9961137598376402,
+      "sft3": 0.9983776227713533,
+      "gt_raw": 0.9989964739719416,
+      "gt_codec": 0.9996357341605194,
+      "freeze_all": 0.6796543467507317,
+      "freeze_half": 0.7311648271033034,
+      "reverse": 0.6446707541845498,
+      "black": 0.20648266572224946,
+      "other_episode": 0.11765205391297609
+    },
+    "seconds": 56.66556253656745
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "fingerprint": "8d3e09d575dfe73125c5f688dc634f326f79979704dcd12572bc3c70befdefb9",
+  "config": {
+    "dataset": "robocasa",
+    "method": "memspo",
+    "bundle": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle",
+    "train_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+    "evaluation_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/val.json",
+    "initial_variant": "sft",
+    "independent_reference": true,
+    "device": "cuda",
+    "seed": 20261025,
+    "steps": 50,
+    "cpu_threads": 2,
+    "global_batch": 16,
+    "lr": 1e-06,
+    "rl_warmup_steps": 5,
+    "horizon": 32,
+    "reward": "robocasa_state",
+    "clip": 0.2,
+    "kl_coef": 0.005,
+    "diversity_penalty": 0.1,
+    "checkpoint_every": 5,
+    "paper_locked": false,
+    "schedule": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_s50_20261026/schedule.json",
+    "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+    "rl_groups": 8,
+    "state_reward": {
+      "model": "/media/tyshao/Jev-WM/paper_assets/qwen/Qwen3-VL-8B-Instruct",
+      "batch_size": 8,
+      "log_dir": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_s50_20261026/judge_log",
+      "schedule": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_s50_20261026/schedule.json",
+      "train_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+      "weights": {
+        "position": 0.35,
+        "persistence": 0.15,
+        "state": 0.5
+      },
+      "minimum_group_spread": 0.02,
+      "crop": [
+        130,
+        40,
+        310,
+        220
+      ],
+      "save_clips": true
+    },
+    "continue_from": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030",
+    "continue_sha256": "a4aa4475967c2ecb347318ed89836263c0786ee6f9fd74cc0ee03f72550916bc",
+    "implementation": {
+      "source_sha256": "b6c4b45ad0946ffa2d75efe56b8b464f39405533903a444b68df3216022531e4",
+      "versions": {
+        "torch": "2.5.1+cu121",
+        "torchvision": "0.20.1+cu121",
+        "transformers": "4.57.6",
+        "diffusers": "0.35.2",
+        "numpy": "2.5.3",
+        "piqa": "1.3.2",
+        "lpips": "0.1.4"
+      }
+    },
+    "text_assets": {
+      "files": {
+        "config.json": "46dd7cb62d29c81fb551e0ef1ea274c24a46ba441eeb948897706252933df033",
+        "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+        "model.safetensors": "a90903540cc02cbeb7ff9f823f1a80eb778c7e22426a0e620b01c77a5ec8f5b4",
+        "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+        "tokenizer.json": "d2acde0d8d71dd30a711834b07781b9c89feaac33fd332f60507699282740066"
+      }
+    },
+    "train_manifest_sha256": "d5266a10b57557bf640ffaa18683296cd9def454247ca9d737ca76de2bf6d13d",
+    "bundle_manifest_sha256": "13b96143effa024620a7d78f8d6159a247c66b7db70b3090602b65cb64f79584",
+    "world_size": 8,
+    "schedule_sha256": "8e47d861097215d46c40593d002bfe409f8f6880006cfe30d91337d125515b3c"
+  }
+}

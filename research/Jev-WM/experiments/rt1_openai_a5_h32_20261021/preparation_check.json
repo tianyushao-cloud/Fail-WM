@@ -1,0 +1,29 @@
+{
+  "initial_variant": "sft",
+  "horizon": 32,
+  "method": "memspo",
+  "global_batch": 16,
+  "steps": 10,
+  "gpus": 4,
+  "accumulation_per_gpu": 4,
+  "protocol": "openai_pointwise_qwen_axes_v1",
+  "changed_existing_source": [
+    "src/futureworlds/training.py"
+  ],
+  "reward": "pure Decisions probability scores, original Qwen aggregation over calibrated axes",
+  "requested_weights": {
+    "fidelity": 0.2941176470588235,
+    "motion": 0.23529411764705882,
+    "physics": 0.23529411764705882,
+    "task": 0.23529411764705882
+  },
+  "weights": {
+    "fidelity": 0.3846153846153846,
+    "motion": 0.3076923076923077,
+    "task": 0.3076923076923077
+  },
+  "source_verified": true,
+  "schedule_sha256": "e793384764ce10619e4e5050a28a8ad916dffb11a26b983313d299285b880de8",
+  "feature_cache": "recomputed with the same codec and T5; old source fingerprint is not reused",
+  "status": "prepared; calibration and pilot must pass before formal training"
+}

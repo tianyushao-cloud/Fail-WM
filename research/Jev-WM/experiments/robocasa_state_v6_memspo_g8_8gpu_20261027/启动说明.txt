@@ -1,0 +1,23 @@
+RoboCasa state-reward MemSPO，state 问法 v6（8 卡，30 步）
+==========================================================
+和 robocasa_state_memspo_g8_8gpu_20261025（v0，已完成）只差一处：Qwen 逐帧 state 问法。
+  v0：0 在桌上 / 1 抬起 / 2 不可见
+  v6：0 在桌上、没被碰 / 1 在桌上但夹爪接触或夹住 / 2 抬起 / 3 不可见，
+      第 2 张图上用黄框标出红块起始位置（取自 GT 最后一帧上下文，所有候选相同）
+其余全部相同：mixed SFT10k 初始化、codec34k、schedule、seed、lr 1e-6、KL 0.005、8 组、
+horizon 32、权重 position .35 / persistence .15 / state .5。
+
+离线依据：experiments/state_reward_v2_20261027
+  GT 帧（仿真器标注）：夹住但没抬起被判抬起 v0 98% -> v6 0%，AUC 0.921 -> 0.967
+  训练候选 GT 没抬起组：没上升 vs 上升的区分 state v0 0.787 -> v6 0.865
+代码改动：只改 source/src/futureworlds/robocasa_state_reward.py；
+          已在 3 组日志 clip 上逐帧核对，与离线 v6 完全一致。
+
+启动（训练机，8 张卡可见）：
+  cd /media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027
+  bash run_8gpu.sh check
+  bash run_8gpu.sh train
+
+中断后：再执行一次 train，会从最新的 step_0000xx 恢复。
+预计：30 步 x ~4.7 分钟 ≈ 2.4 小时。checkpoint：train/checkpoints/step_000005 ... step_000030
+跑完后评测：val sibling 测试（step15 / step30），与 v0 的 step30 对比；test 只用于最终选定的 checkpoint。

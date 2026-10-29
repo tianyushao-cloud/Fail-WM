@@ -1,0 +1,118 @@
+{
+  "id": "control_v2_09",
+  "category": "control_v2",
+  "title": "新版对照 · 场景1 · GT 对冻结",
+  "task": "place water bottle upright",
+  "task_id": "8c9678c5a36ef5d99539599b76ccda2204ea86d741a0bf154a656e239dcbbe30_0000",
+  "physical_pair": [
+    0,
+    3
+  ],
+  "orders": [
+    {
+      "raw": "C",
+      "filtered": "C",
+      "probabilities": {
+        "A": 0.07,
+        "B": 0.05,
+        "C": 0.87,
+        "D": 0.01
+      },
+      "confidence": 0.83,
+      "model": "gpt-6-luna",
+      "request_id": "req_ddd5170eea3b475f92034a387356b74c"
+    },
+    {
+      "raw": "B",
+      "filtered": "B",
+      "probabilities": {
+        "A": 0.1,
+        "B": 0.89,
+        "C": 0.01,
+        "D": 0.0
+      },
+      "confidence": 0.85,
+      "model": "gpt-6-luna",
+      "request_id": "req_152d778af16b48edb668a2123d988405"
+    }
+  ],
+  "first_candidate_reward": 0,
+  "second_candidate_reward": 0,
+  "reason": "双顺序未形成同一实际视频获胜的偏好（平局、证据不足或判断不一致）。",
+  "paths": {
+    "initial": [
+      "assets/control_v2_0320e9655d14/initial/00.png",
+      "assets/control_v2_0320e9655d14/initial/01.png"
+    ],
+    "reference": [
+      "assets/control_v2_0320e9655d14/reference/00.png",
+      "assets/control_v2_0320e9655d14/reference/01.png",
+      "assets/control_v2_0320e9655d14/reference/02.png",
+      "assets/control_v2_0320e9655d14/reference/03.png",
+      "assets/control_v2_0320e9655d14/reference/04.png",
+      "assets/control_v2_0320e9655d14/reference/05.png",
+      "assets/control_v2_0320e9655d14/reference/06.png",
+      "assets/control_v2_0320e9655d14/reference/07.png",
+      "assets/control_v2_0320e9655d14/reference/08.png",
+      "assets/control_v2_0320e9655d14/reference/09.png"
+    ],
+    "candidate_0": [
+      "assets/control_v2_0320e9655d14/candidate_0/00.png",
+      "assets/control_v2_0320e9655d14/candidate_0/01.png",
+      "assets/control_v2_0320e9655d14/candidate_0/02.png",
+      "assets/control_v2_0320e9655d14/candidate_0/03.png",
+      "assets/control_v2_0320e9655d14/candidate_0/04.png",
+      "assets/control_v2_0320e9655d14/candidate_0/05.png",
+      "assets/control_v2_0320e9655d14/candidate_0/06.png",
+      "assets/control_v2_0320e9655d14/candidate_0/07.png",
+      "assets/control_v2_0320e9655d14/candidate_0/08.png",
+      "assets/control_v2_0320e9655d14/candidate_0/09.png"
+    ],
+    "candidate_1": [
+      "assets/control_v2_0320e9655d14/candidate_1/00.png",
+      "assets/control_v2_0320e9655d14/candidate_1/01.png",
+      "assets/control_v2_0320e9655d14/candidate_1/02.png",
+      "assets/control_v2_0320e9655d14/candidate_1/03.png",
+      "assets/control_v2_0320e9655d14/candidate_1/04.png",
+      "assets/control_v2_0320e9655d14/candidate_1/05.png",
+      "assets/control_v2_0320e9655d14/candidate_1/06.png",
+      "assets/control_v2_0320e9655d14/candidate_1/07.png",
+      "assets/control_v2_0320e9655d14/candidate_1/08.png",
+      "assets/control_v2_0320e9655d14/candidate_1/09.png"
+    ],
+    "candidate_2": [
+      "assets/control_v2_0320e9655d14/candidate_2/00.png",
+      "assets/control_v2_0320e9655d14/candidate_2/01.png",
+      "assets/control_v2_0320e9655d14/candidate_2/02.png",
+      "assets/control_v2_0320e9655d14/candidate_2/03.png",
+      "assets/control_v2_0320e9655d14/candidate_2/04.png",
+      "assets/control_v2_0320e9655d14/candidate_2/05.png",
+      "assets/control_v2_0320e9655d14/candidate_2/06.png",
+      "assets/control_v2_0320e9655d14/candidate_2/07.png",
+      "assets/control_v2_0320e9655d14/candidate_2/08.png",
+      "assets/control_v2_0320e9655d14/candidate_2/09.png"
+    ],
+    "candidate_3": [
+      "assets/control_v2_0320e9655d14/candidate_3/00.png",
+      "assets/control_v2_0320e9655d14/candidate_3/01.png",
+      "assets/control_v2_0320e9655d14/candidate_3/02.png",
+      "assets/control_v2_0320e9655d14/candidate_3/03.png",
+      "assets/control_v2_0320e9655d14/candidate_3/04.png",
+      "assets/control_v2_0320e9655d14/candidate_3/05.png",
+      "assets/control_v2_0320e9655d14/candidate_3/06.png",
+      "assets/control_v2_0320e9655d14/candidate_3/07.png",
+      "assets/control_v2_0320e9655d14/candidate_3/08.png",
+      "assets/control_v2_0320e9655d14/candidate_3/09.png"
+    ]
+  },
+  "video": "cases/control_v2_09/comparison.mp4",
+  "sheet": "cases/control_v2_09/contact_sheet.png",
+  "raw": [
+    "cases/control_v2_09/raw_AB.json",
+    "cases/control_v2_09/raw_BA.json"
+  ],
+  "metadata": "assets/control_v2_0320e9655d14/original_request_metadata.json",
+  "npz": "assets/control_v2_0320e9655d14/original_frames.npz",
+  "prompt": "assets/control_v2_0320e9655d14/prompt.txt",
+  "protocol": "gt_pair_v2_grouped_all10_full256x320"
+}

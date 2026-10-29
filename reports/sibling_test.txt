@@ -1,0 +1,20 @@
+== test_sft: 100 trajectories, 10 initial states
+  window-level lift prediction accuracy      0.880
+  GT lifts      -> predicted lift (recall)    1.000  (n=60)
+  GT no lift    -> predicted lift (OPTIMISM)  0.300  (n=40)
+  sibling pairs with different GT outcome: predicted outcome differs in the right direction 0.693 (n=228; 0.5 = ignores action)
+  initial states where predictions differ across siblings: 10/10
+  per-frame lift agreement 0.943; cube missing in pred 0.028
+  predicted-lift rate by type (gt_lift_in_window): {'contact_without_lift(0)': '0.07/14', 'dropped_before_goal(0)': '0.00/1', 'dropped_before_goal(1)': '1.00/3', 'grasp_miss(0)': '0.56/16', 'lifted_but_not_placed(1)': '1.00/6', 'object_off_counter(0)': '0.00/1', 'success(0)': '0.25/8', 'success(1)': '1.00/51'}
+== test_rl8g_step30: 100 trajectories, 10 initial states
+  window-level lift prediction accuracy      0.920
+  GT lifts      -> predicted lift (recall)    1.000  (n=60)
+  GT no lift    -> predicted lift (OPTIMISM)  0.200  (n=40)
+  sibling pairs with different GT outcome: predicted outcome differs in the right direction 0.794 (n=228; 0.5 = ignores action)
+  initial states where predictions differ across siblings: 10/10
+  per-frame lift agreement 0.950; cube missing in pred 0.018
+  predicted-lift rate by type (gt_lift_in_window): {'contact_without_lift(0)': '0.00/14', 'dropped_before_goal(0)': '0.00/1', 'dropped_before_goal(1)': '1.00/3', 'grasp_miss(0)': '0.44/16', 'lifted_but_not_placed(1)': '1.00/6', 'object_off_counter(0)': '0.00/1', 'success(0)': '0.12/8', 'success(1)': '1.00/51'}
+
+reference baselines on the same 100 windows: always-lift accuracy 0.600; 'full gripper close => lift' accuracy 0.600 (every window closes fully)
+
+test_sft -> test_rl8g_step30 on 100 common windows: fixed 5, broke 1

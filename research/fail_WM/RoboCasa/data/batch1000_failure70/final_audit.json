@@ -1,0 +1,37 @@
+{
+  "episodes": 1000,
+  "all_pass": true,
+  "all_float_fields_finite": true,
+  "all_action_state_rgb_alignment_pass": true,
+  "all_native_action_replay_pass": true,
+  "all_current_qpos_sampling_sync_pass": true,
+  "initial_state_groups": 100,
+  "split_group_overlap": 0,
+  "categories": {
+    "reference": 125,
+    "single": 653,
+    "double": 122,
+    "recovery": 100
+  },
+  "splits": {
+    "train": 800,
+    "test": 100,
+    "val": 100
+  },
+  "action_generation_versions": {
+    "2.0_cached_feedback": 390,
+    "2.1_synchronized_feedback": 610
+  },
+  "native_action_preserving_resampled_episodes": 390,
+  "resampling_max_original_trajectory_drift": 0.0,
+  "independent_geometry_audit_episodes": 30,
+  "independent_geometry_audit_all_timesteps": true,
+  "independent_geometry_max_error": 2.179492907286541e-07,
+  "successes": 300,
+  "failures": 700,
+  "outcome_conditioned_selection": true,
+  "original_source_file_identity_pass": true,
+  "final_success_matches_simulator_event_state": true,
+  "native_action_dimension": 12,
+  "target_and_executed_representation_dimension": 13
+}

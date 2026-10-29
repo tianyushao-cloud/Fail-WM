@@ -1,0 +1,416 @@
+{
+  "protocol": {
+    "source_repo": "https://github.com/Alexander-wu/FutureWorlds",
+    "commit": "7b8f26a5d165c58645212093d2e0dfffc4278643",
+    "recipe": "configs/train/rt1_memspo.json",
+    "all_original_training_hyperparameters_unchanged": true,
+    "training_hyperparameters": {
+      "dataset": "rt1",
+      "method": "memspo",
+      "initial_variant": "sft",
+      "device": "cuda",
+      "seed": 20260915,
+      "steps": 200,
+      "global_batch": 16,
+      "lr": 1e-06,
+      "adapter_lr": 0.0001,
+      "warmup_steps": 500,
+      "horizon": 10,
+      "reward": "R0",
+      "clip": 0.2,
+      "kl_coef": 0.001,
+      "diversity_penalty": 0.1,
+      "checkpoint_every": 50
+    },
+    "default_gpus": 4,
+    "accumulation_per_gpu": 4,
+    "evaluation_horizons": [
+      10,
+      20,
+      32
+    ],
+    "data_adaptation": {
+      "manifest_source": "/media/tyshao/Jev-WM/experiments/rt1_memspo_20261017/data_audit.json",
+      "counts": {
+        "train": 512,
+        "validation": 32,
+        "test": 64
+      },
+      "window_start": "one seeded pseudo-random legal 34-frame window per episode, fixed during preparation",
+      "schedule": "original RT1 Schedule permutation sampler, seed20260915; 3200 exposures of custom windows",
+      "original_window_generation": "not published; no claim of reproducing original paper windows",
+      "paper_locked": false
+    },
+    "cuda_launch_status": "COMPLETE",
+    "checkpoint_selection": "fixed step200; no selection by validation/test",
+    "primary_metric": "test mean LPIPS32; paired episode bootstrap 10000 resamples, seed20261017",
+    "evaluation": "2 initial frames, per-frame Beam4, FP32, TF32 off, no future GT refresh",
+    "actual_launch": {
+      "source_commit": "7b8f26a5d165c58645212093d2e0dfffc4278643",
+      "recipe_matches": true,
+      "gpus_requested": 4,
+      "accumulation_per_gpu": 4,
+      "training_steps": 200,
+      "training_horizon": 10,
+      "evaluation_horizons": [
+        10,
+        20,
+        32
+      ],
+      "schedule_entries": 3200,
+      "train_episodes": 512,
+      "test_episodes": 64,
+      "pid": 68,
+      "started_utc": "2026-10-16T22:53:41.815369+00:00"
+    }
+  },
+  "checkpoint": 200,
+  "splits": {
+    "validation": {
+      "10": {
+        "lpips": {
+          "sft": 0.1436339694540948,
+          "rl": 0.13123017749749125,
+          "rl_minus_sft": -0.01240379195660353,
+          "relative_improvement_percent": 8.635695305049534,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.019027325783390555,
+            -0.006066380167612808
+          ],
+          "episodes": 32
+        },
+        "psnr": {
+          "sft": 22.679849103093147,
+          "rl": 23.66922569870949,
+          "rl_minus_sft": 0.9893765956163405,
+          "relative_improvement_percent": 4.362359692602222,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.47183370172977435,
+            1.5499771887063976
+          ],
+          "episodes": 32
+        },
+        "ssim": {
+          "sft": 0.8099465068429708,
+          "rl": 0.8222929660230875,
+          "rl_minus_sft": 0.012346459180116641,
+          "relative_improvement_percent": 1.5243548895890813,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.00560572807677088,
+            0.019583507091738256
+          ],
+          "episodes": 32
+        },
+        "mae": {
+          "sft": 0.039396970323286956,
+          "rl": 0.03513676527072676,
+          "rl_minus_sft": -0.004260205052560195,
+          "relative_improvement_percent": 10.813534689600363,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.007086253498273435,
+            -0.001767609984526645
+          ],
+          "episodes": 32
+        },
+        "mse": {
+          "sft": 0.006912584098608932,
+          "rl": 0.005326513975887792,
+          "rl_minus_sft": -0.001586070122721139,
+          "relative_improvement_percent": 22.94467741868509,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.0028286189889149683,
+            -0.0005828327375093067
+          ],
+          "episodes": 32
+        }
+      },
+      "20": {
+        "lpips": {
+          "sft": 0.16087398944655434,
+          "rl": 0.14544147419510411,
+          "rl_minus_sft": -0.015432515251450243,
+          "relative_improvement_percent": 9.592921332119527,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.023027550432016146,
+            -0.008485412278969312
+          ],
+          "episodes": 32
+        },
+        "psnr": {
+          "sft": 21.68501185029745,
+          "rl": 22.647593764960767,
+          "rl_minus_sft": 0.962581914663315,
+          "relative_improvement_percent": 4.438927316749952,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.5052057484909899,
+            1.427671106643975
+          ],
+          "episodes": 32
+        },
+        "ssim": {
+          "sft": 0.7904804846737534,
+          "rl": 0.8055991027504206,
+          "rl_minus_sft": 0.015118618076667183,
+          "relative_improvement_percent": 1.9125858727438276,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.00817732033319771,
+            0.02272589845815673
+          ],
+          "episodes": 32
+        },
+        "mae": {
+          "sft": 0.04477408004458994,
+          "rl": 0.03963372369471472,
+          "rl_minus_sft": -0.0051403563498752195,
+          "relative_improvement_percent": 11.480652075388265,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.007912435734324388,
+            -0.0026942072940437357
+          ],
+          "episodes": 32
+        },
+        "mse": {
+          "sft": 0.00879555618885206,
+          "rl": 0.006841109626657271,
+          "rl_minus_sft": -0.0019544465621947893,
+          "relative_improvement_percent": 22.220841072813055,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.003246547066783023,
+            -0.000869525231987609
+          ],
+          "episodes": 32
+        }
+      },
+      "32": {
+        "lpips": {
+          "sft": 0.18570840315078385,
+          "rl": 0.16338155797711806,
+          "rl_minus_sft": -0.022326845173665788,
+          "relative_improvement_percent": 12.02252821889689,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.033353955421080175,
+            -0.012828333961988398
+          ],
+          "episodes": 32
+        },
+        "psnr": {
+          "sft": 20.534038082696497,
+          "rl": 21.74871077388525,
+          "rl_minus_sft": 1.2146726911887527,
+          "relative_improvement_percent": 5.915410725824678,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.7424060382414609,
+            1.7142716732108962
+          ],
+          "episodes": 32
+        },
+        "ssim": {
+          "sft": 0.765566809423035,
+          "rl": 0.7877212259336375,
+          "rl_minus_sft": 0.02215441651060246,
+          "relative_improvement_percent": 2.8938580196938015,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.012964291909884197,
+            0.03269791654165601
+          ],
+          "episodes": 32
+        },
+        "mae": {
+          "sft": 0.05328995296076755,
+          "rl": 0.04493801572061784,
+          "rl_minus_sft": -0.00835193724014971,
+          "relative_improvement_percent": 15.672630160320212,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.01215045627463951,
+            -0.0049252791211984006
+          ],
+          "episodes": 32
+        },
+        "mse": {
+          "sft": 0.01187431675134576,
+          "rl": 0.00864106004075893,
+          "rl_minus_sft": -0.0032332567105868293,
+          "relative_improvement_percent": 27.228991598362008,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.004910927484036165,
+            -0.0017708318942027301
+          ],
+          "episodes": 32
+        }
+      }
+    },
+    "test": {
+      "10": {
+        "lpips": {
+          "sft": 0.1477949816733599,
+          "rl": 0.13616018628235904,
+          "rl_minus_sft": -0.011634795391000808,
+          "relative_improvement_percent": 7.872253346676401,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.017524185745569413,
+            -0.006289465184672738
+          ],
+          "episodes": 64
+        },
+        "psnr": {
+          "sft": 23.045095649361613,
+          "rl": 23.90312238037586,
+          "rl_minus_sft": 0.858026731014252,
+          "relative_improvement_percent": 3.723250899321019,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.47003477670252364,
+            1.2573929543048146
+          ],
+          "episodes": 64
+        },
+        "ssim": {
+          "sft": 0.8147424634546042,
+          "rl": 0.8248214297927916,
+          "rl_minus_sft": 0.010078966338187459,
+          "relative_improvement_percent": 1.2370738963882382,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.0054603024711832515,
+            0.015221414854750032
+          ],
+          "episodes": 64
+        },
+        "mae": {
+          "sft": 0.040329506731359294,
+          "rl": 0.03577850782603491,
+          "rl_minus_sft": -0.004550998905324377,
+          "relative_improvement_percent": 11.284538974501352,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.006652490303386002,
+            -0.0027344198075297758
+          ],
+          "episodes": 64
+        },
+        "mse": {
+          "sft": 0.0071978194068833545,
+          "rl": 0.0054609583079582085,
+          "rl_minus_sft": -0.0017368610989251464,
+          "relative_improvement_percent": 24.130378948715585,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.002604401633127509,
+            -0.001036562251479154
+          ],
+          "episodes": 64
+        }
+      },
+      "20": {
+        "lpips": {
+          "sft": 0.17396894615376368,
+          "rl": 0.1532639672223013,
+          "rl_minus_sft": -0.020704978931462392,
+          "relative_improvement_percent": 11.901537250885081,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.027371292147581692,
+            -0.014641874226945217
+          ],
+          "episodes": 64
+        },
+        "psnr": {
+          "sft": 21.492190946638583,
+          "rl": 22.80178291723132,
+          "rl_minus_sft": 1.3095919705927372,
+          "relative_improvement_percent": 6.09333861700852,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.9407715481705963,
+            1.672467106617987
+          ],
+          "episodes": 64
+        },
+        "ssim": {
+          "sft": 0.7880845831241459,
+          "rl": 0.8061126428190619,
+          "rl_minus_sft": 0.018028059694916,
+          "relative_improvement_percent": 2.2875792879298236,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.012501570073654864,
+            0.023858030731789753
+          ],
+          "episodes": 64
+        },
+        "mae": {
+          "sft": 0.04914066881610779,
+          "rl": 0.04124289882747689,
+          "rl_minus_sft": -0.007897769988630898,
+          "relative_improvement_percent": 16.071759255425707,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.010608633769661539,
+            -0.005428966935796781
+          ],
+          "episodes": 64
+        },
+        "mse": {
+          "sft": 0.010226447346985877,
+          "rl": 0.007208009118949121,
+          "rl_minus_sft": -0.003018438228036757,
+          "relative_improvement_percent": 29.516000284560256,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.004096198223343208,
+            -0.002063262670091035
+          ],
+          "episodes": 64
+        }
+      },
+      "32": {
+        "lpips": {
+          "sft": 0.19477641805860912,
+          "rl": 0.17002360425249208,
+          "rl_minus_sft": -0.024752813806117047,
+          "relative_improvement_percent": 12.708321701792878,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.03297844352773609,
+            -0.017071495217624032
+          ],
+          "episodes": 64
+        },
+        "psnr": {
+          "sft": 20.456382150761783,
+          "rl": 21.852545169647783,
+          "rl_minus_sft": 1.396163018886,
+          "relative_improvement_percent": 6.8250730192484586,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.9998372905887664,
+            1.806404557346832
+          ],
+          "episodes": 64
+        },
+        "ssim": {
+          "sft": 0.7672235446952982,
+          "rl": 0.7892963778722333,
+          "rl_minus_sft": 0.02207283317693509,
+          "relative_improvement_percent": 2.876975469476929,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            0.014573906788791646,
+            0.03003451717086136
+          ],
+          "episodes": 64
+        },
+        "mae": {
+          "sft": 0.055870195002171386,
+          "rl": 0.04647290523735137,
+          "rl_minus_sft": -0.009397289764820016,
+          "relative_improvement_percent": 16.819862118710688,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.01301743831991189,
+            -0.006102756234440678
+          ],
+          "episodes": 64
+        },
+        "mse": {
+          "sft": 0.012540029298435229,
+          "rl": 0.008976813899494118,
+          "rl_minus_sft": -0.003563215398941111,
+          "relative_improvement_percent": 28.41472945669861,
+          "paired_episode_bootstrap_95ci_rl_minus_sft": [
+            -0.004981204464013444,
+            -0.0022900524775558047
+          ],
+          "episodes": 64
+        }
+      }
+    }
+  }
+}

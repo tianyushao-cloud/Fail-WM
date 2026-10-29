@@ -1,0 +1,1233 @@
+[
+  {
+    "episode_id": "01_reference",
+    "initial_state_id": "fixed_counter_0001",
+    "initial_state_sha256": "a8572cba9598add8e5e0fe9a523f1ecb728b1a962788c8124321ccae9d23f60f",
+    "seed": 20261003,
+    "split": "train",
+    "branch": "reference",
+    "success": true,
+    "failure_type": null,
+    "actions": 210,
+    "frames": 211,
+    "duration_seconds": 10.5,
+    "perturbation": {},
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 61,
+        "time_seconds": 3.04999999999983
+      },
+      {
+        "event": "grasp",
+        "state_index": 61,
+        "time_seconds": 3.04999999999983
+      },
+      {
+        "event": "lift",
+        "state_index": 78,
+        "time_seconds": 3.899999999999737
+      },
+      {
+        "event": "release",
+        "state_index": 154,
+        "time_seconds": 7.699999999999408
+      },
+      {
+        "event": "place",
+        "state_index": 155,
+        "time_seconds": 7.7499999999994245
+      },
+      {
+        "event": "success",
+        "state_index": 173,
+        "time_seconds": 8.649999999999725
+      }
+    ],
+    "event_summary": {
+      "contact": true,
+      "grasp": true,
+      "lift": true,
+      "drop": false,
+      "release": true,
+      "place": true,
+      "success": true
+    },
+    "action_dimension": 12,
+    "action_slices": {
+      "right": [
+        0,
+        6
+      ],
+      "right_gripper": [
+        6,
+        7
+      ],
+      "base": [
+        7,
+        10
+      ],
+      "torso": [
+        10,
+        11
+      ]
+    },
+    "goal_position_world": [
+      0.66,
+      -0.1,
+      0.942
+    ],
+    "task": "CounterCubePreview",
+    "standard_robocasa_benchmark": false,
+    "robot": "PandaOmron (Franka Panda arm; base and torso commands zero)",
+    "renderer": "MuJoCo EGL OpenGL",
+    "fps": 20,
+    "width": 640,
+    "height": 480,
+    "phase_ranges": {
+      "descend": {
+        "first_action": 30,
+        "last_action": 53
+      },
+      "retreat": {
+        "first_action": 164,
+        "last_action": 184
+      },
+      "transport": {
+        "first_action": 99,
+        "last_action": 123
+      },
+      "settle": {
+        "first_action": 185,
+        "last_action": 209
+      },
+      "lift": {
+        "first_action": 72,
+        "last_action": 98
+      },
+      "close": {
+        "first_action": 54,
+        "last_action": 71
+      },
+      "lower": {
+        "first_action": 124,
+        "last_action": 147
+      },
+      "release": {
+        "first_action": 148,
+        "last_action": 163
+      },
+      "approach": {
+        "first_action": 0,
+        "last_action": 29
+      }
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 99,
+        "time_seconds": 4.949999999999622,
+        "grasp_and_lift": true
+      }
+    ],
+    "schema_version": "2.1",
+    "action_generation_version": "2.0_cached_feedback",
+    "observation_resampled_from_native_replay": true,
+    "raw_action_sha256": "9e23d887779bc56a1310ad4cba4ccb8e2d3ef68a0c47eaea515a49e164730aed",
+    "actual_phase_intervals": [
+      {
+        "phase": "approach",
+        "start_action_index": 0,
+        "end_action_index_exclusive": 30,
+        "start_time_seconds": 0.0,
+        "end_time_seconds": 1.5000000000000009
+      },
+      {
+        "phase": "descend",
+        "start_action_index": 30,
+        "end_action_index_exclusive": 54,
+        "start_time_seconds": 1.5000000000000009,
+        "end_time_seconds": 2.6999999999998687
+      },
+      {
+        "phase": "close",
+        "start_action_index": 54,
+        "end_action_index_exclusive": 72,
+        "start_time_seconds": 2.6999999999998687,
+        "end_time_seconds": 3.59999999999977
+      },
+      {
+        "phase": "lift",
+        "start_action_index": 72,
+        "end_action_index_exclusive": 99,
+        "start_time_seconds": 3.59999999999977,
+        "end_time_seconds": 4.949999999999622
+      },
+      {
+        "phase": "transport",
+        "start_action_index": 99,
+        "end_action_index_exclusive": 124,
+        "start_time_seconds": 4.949999999999622,
+        "end_time_seconds": 6.199999999999484
+      },
+      {
+        "phase": "lower",
+        "start_action_index": 124,
+        "end_action_index_exclusive": 148,
+        "start_time_seconds": 6.199999999999484,
+        "end_time_seconds": 7.399999999999352
+      },
+      {
+        "phase": "release",
+        "start_action_index": 148,
+        "end_action_index_exclusive": 164,
+        "start_time_seconds": 7.399999999999352,
+        "end_time_seconds": 8.199999999999575
+      },
+      {
+        "phase": "retreat",
+        "start_action_index": 164,
+        "end_action_index_exclusive": 185,
+        "start_time_seconds": 8.199999999999575,
+        "end_time_seconds": 9.249999999999925
+      },
+      {
+        "phase": "settle",
+        "start_action_index": 185,
+        "end_action_index_exclusive": 210,
+        "start_time_seconds": 9.249999999999925,
+        "end_time_seconds": 10.500000000000343
+      }
+    ],
+    "outcome_metrics": {
+      "max_object_height_m": 1.1877556664385596,
+      "final_goal_xy_error_m": 0.0018461456724139986,
+      "final_object_speed_m_s": 2.1640247964216123e-14,
+      "object_off_counter": false
+    },
+    "success_changed_by_state_sync": false,
+    "sampling_fix_original_replay_errors": {
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "target13": 0.0,
+      "raw_actions_byte_identical": true
+    },
+    "validation": {
+      "alignment_pass": true,
+      "video_frames": 211,
+      "fps": 20,
+      "action_duration_seconds": 10.5,
+      "video_duration_seconds": 10.55,
+      "sampling_sync_pass": true,
+      "replay_max_executed13_error": 0.0,
+      "replay_max_object_pose_error": 0.0,
+      "replay_pass": true,
+      "replay_max_qpos_error": 0.0,
+      "replay_max_qvel_error": 0.0,
+      "replay_max_target13_error": 0.0,
+      "replay_sampled_rgb_max_error": 1,
+      "replay_sampled_rgb_max_mae": 0.00036024305154569447,
+      "replay_rgb_frames_checked": 7,
+      "replay_success_matches": true
+    },
+    "complete": true
+  },
+  {
+    "episode_id": "02_offset_miss",
+    "initial_state_id": "fixed_counter_0001",
+    "initial_state_sha256": "a8572cba9598add8e5e0fe9a523f1ecb728b1a962788c8124321ccae9d23f60f",
+    "seed": 20261003,
+    "split": "train",
+    "branch": "offset_miss",
+    "success": false,
+    "failure_type": "grasp_miss",
+    "actions": 213,
+    "frames": 214,
+    "duration_seconds": 10.65,
+    "perturbation": {
+      "type": "grasp_position_offset",
+      "xyz_m": [
+        -0.12,
+        0,
+        0
+      ],
+      "phase": "approach/descend"
+    },
+    "events": [
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 96,
+        "time_seconds": 4.799999999999638
+      }
+    ],
+    "event_summary": {
+      "contact": false,
+      "grasp": false,
+      "lift": false,
+      "drop": false,
+      "release": false,
+      "place": false,
+      "success": false
+    },
+    "action_dimension": 12,
+    "action_slices": {
+      "right": [
+        0,
+        6
+      ],
+      "right_gripper": [
+        6,
+        7
+      ],
+      "base": [
+        7,
+        10
+      ],
+      "torso": [
+        10,
+        11
+      ]
+    },
+    "goal_position_world": [
+      0.66,
+      -0.1,
+      0.942
+    ],
+    "task": "CounterCubePreview",
+    "standard_robocasa_benchmark": false,
+    "robot": "PandaOmron (Franka Panda arm; base and torso commands zero)",
+    "renderer": "MuJoCo EGL OpenGL",
+    "fps": 20,
+    "width": 640,
+    "height": 480,
+    "phase_ranges": {
+      "approach": {
+        "first_action": 0,
+        "last_action": 28
+      },
+      "lift": {
+        "first_action": 70,
+        "last_action": 95
+      },
+      "transport": {
+        "first_action": 96,
+        "last_action": 125
+      },
+      "settle": {
+        "first_action": 188,
+        "last_action": 212
+      },
+      "lower": {
+        "first_action": 126,
+        "last_action": 150
+      },
+      "release": {
+        "first_action": 151,
+        "last_action": 166
+      },
+      "descend": {
+        "first_action": 29,
+        "last_action": 51
+      },
+      "close": {
+        "first_action": 52,
+        "last_action": 69
+      },
+      "retreat": {
+        "first_action": 167,
+        "last_action": 187
+      }
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 96,
+        "time_seconds": 4.799999999999638,
+        "grasp_and_lift": false
+      }
+    ],
+    "schema_version": "2.1",
+    "action_generation_version": "2.0_cached_feedback",
+    "observation_resampled_from_native_replay": true,
+    "raw_action_sha256": "6f5f8c89aa147b8cf096c23ceb34e77174bcf514323a16a450600dfdc0cbcd1b",
+    "actual_phase_intervals": [
+      {
+        "phase": "approach",
+        "start_action_index": 0,
+        "end_action_index_exclusive": 29,
+        "start_time_seconds": 0.0,
+        "end_time_seconds": 1.450000000000001
+      },
+      {
+        "phase": "descend",
+        "start_action_index": 29,
+        "end_action_index_exclusive": 52,
+        "start_time_seconds": 1.450000000000001,
+        "end_time_seconds": 2.5999999999998797
+      },
+      {
+        "phase": "close",
+        "start_action_index": 52,
+        "end_action_index_exclusive": 70,
+        "start_time_seconds": 2.5999999999998797,
+        "end_time_seconds": 3.4999999999997806
+      },
+      {
+        "phase": "lift",
+        "start_action_index": 70,
+        "end_action_index_exclusive": 96,
+        "start_time_seconds": 3.4999999999997806,
+        "end_time_seconds": 4.799999999999638
+      },
+      {
+        "phase": "transport",
+        "start_action_index": 96,
+        "end_action_index_exclusive": 126,
+        "start_time_seconds": 4.799999999999638,
+        "end_time_seconds": 6.299999999999473
+      },
+      {
+        "phase": "lower",
+        "start_action_index": 126,
+        "end_action_index_exclusive": 151,
+        "start_time_seconds": 6.299999999999473,
+        "end_time_seconds": 7.549999999999358
+      },
+      {
+        "phase": "release",
+        "start_action_index": 151,
+        "end_action_index_exclusive": 167,
+        "start_time_seconds": 7.549999999999358,
+        "end_time_seconds": 8.349999999999625
+      },
+      {
+        "phase": "retreat",
+        "start_action_index": 167,
+        "end_action_index_exclusive": 188,
+        "start_time_seconds": 8.349999999999625,
+        "end_time_seconds": 9.399999999999975
+      },
+      {
+        "phase": "settle",
+        "start_action_index": 188,
+        "end_action_index_exclusive": 213,
+        "start_time_seconds": 9.399999999999975,
+        "end_time_seconds": 10.650000000000393
+      }
+    ],
+    "outcome_metrics": {
+      "max_object_height_m": 0.941,
+      "final_goal_xy_error_m": 0.10000000000000002,
+      "final_object_speed_m_s": 2.1671915821229632e-14,
+      "object_off_counter": false
+    },
+    "success_changed_by_state_sync": false,
+    "sampling_fix_original_replay_errors": {
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "target13": 0.0,
+      "raw_actions_byte_identical": true
+    },
+    "validation": {
+      "alignment_pass": true,
+      "video_frames": 214,
+      "fps": 20,
+      "action_duration_seconds": 10.65,
+      "video_duration_seconds": 10.7,
+      "sampling_sync_pass": true,
+      "replay_max_executed13_error": 0.0,
+      "replay_max_object_pose_error": 0.0,
+      "replay_pass": true,
+      "replay_max_qpos_error": 0.0,
+      "replay_max_qvel_error": 0.0,
+      "replay_max_target13_error": 0.0,
+      "replay_sampled_rgb_max_error": 1,
+      "replay_sampled_rgb_max_mae": 0.00035481771919876337,
+      "replay_rgb_frames_checked": 7,
+      "replay_success_matches": true
+    },
+    "complete": true
+  },
+  {
+    "episode_id": "03_early_close",
+    "initial_state_id": "fixed_counter_0001",
+    "initial_state_sha256": "a8572cba9598add8e5e0fe9a523f1ecb728b1a962788c8124321ccae9d23f60f",
+    "seed": 20261003,
+    "split": "train",
+    "branch": "early_close",
+    "success": false,
+    "failure_type": "contact_without_lift",
+    "actions": 310,
+    "frames": 311,
+    "duration_seconds": 15.5,
+    "perturbation": {
+      "type": "early_gripper_close",
+      "lead_seconds": 0.8,
+      "phase": "early_close"
+    },
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 63,
+        "time_seconds": 3.149999999999819
+      },
+      {
+        "event": "grasp",
+        "state_index": 64,
+        "time_seconds": 3.1999999999998137
+      },
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 199,
+        "time_seconds": 9.95000000000016
+      }
+    ],
+    "event_summary": {
+      "contact": true,
+      "grasp": true,
+      "lift": false,
+      "drop": false,
+      "release": false,
+      "place": false,
+      "success": false
+    },
+    "action_dimension": 12,
+    "action_slices": {
+      "right": [
+        0,
+        6
+      ],
+      "right_gripper": [
+        6,
+        7
+      ],
+      "base": [
+        7,
+        10
+      ],
+      "torso": [
+        10,
+        11
+      ]
+    },
+    "goal_position_world": [
+      0.66,
+      -0.1,
+      0.942
+    ],
+    "task": "CounterCubePreview",
+    "standard_robocasa_benchmark": false,
+    "robot": "PandaOmron (Franka Panda arm; base and torso commands zero)",
+    "renderer": "MuJoCo EGL OpenGL",
+    "fps": 20,
+    "width": 640,
+    "height": 480,
+    "phase_ranges": {
+      "close": {
+        "first_action": 156,
+        "last_action": 173
+      },
+      "transport": {
+        "first_action": 199,
+        "last_action": 223
+      },
+      "early_close": {
+        "first_action": 30,
+        "last_action": 45
+      },
+      "approach": {
+        "first_action": 0,
+        "last_action": 29
+      },
+      "lower": {
+        "first_action": 224,
+        "last_action": 247
+      },
+      "lift": {
+        "first_action": 174,
+        "last_action": 198
+      },
+      "settle": {
+        "first_action": 285,
+        "last_action": 309
+      },
+      "release": {
+        "first_action": 248,
+        "last_action": 263
+      },
+      "retreat": {
+        "first_action": 264,
+        "last_action": 284
+      },
+      "descend": {
+        "first_action": 46,
+        "last_action": 155
+      }
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 199,
+        "time_seconds": 9.95000000000016,
+        "grasp_and_lift": false
+      }
+    ],
+    "schema_version": "2.1",
+    "action_generation_version": "2.0_cached_feedback",
+    "observation_resampled_from_native_replay": true,
+    "raw_action_sha256": "b2a5d5a600f752c2a5ca2283fead498bfc5ea8884f7e7c2e40342bea7d8a2587",
+    "actual_phase_intervals": [
+      {
+        "phase": "approach",
+        "start_action_index": 0,
+        "end_action_index_exclusive": 30,
+        "start_time_seconds": 0.0,
+        "end_time_seconds": 1.5000000000000009
+      },
+      {
+        "phase": "early_close",
+        "start_action_index": 30,
+        "end_action_index_exclusive": 46,
+        "start_time_seconds": 1.5000000000000009,
+        "end_time_seconds": 2.299999999999913
+      },
+      {
+        "phase": "descend",
+        "start_action_index": 46,
+        "end_action_index_exclusive": 156,
+        "start_time_seconds": 2.299999999999913,
+        "end_time_seconds": 7.799999999999441
+      },
+      {
+        "phase": "close",
+        "start_action_index": 156,
+        "end_action_index_exclusive": 174,
+        "start_time_seconds": 7.799999999999441,
+        "end_time_seconds": 8.699999999999742
+      },
+      {
+        "phase": "lift",
+        "start_action_index": 174,
+        "end_action_index_exclusive": 199,
+        "start_time_seconds": 8.699999999999742,
+        "end_time_seconds": 9.95000000000016
+      },
+      {
+        "phase": "transport",
+        "start_action_index": 199,
+        "end_action_index_exclusive": 224,
+        "start_time_seconds": 9.95000000000016,
+        "end_time_seconds": 11.200000000000577
+      },
+      {
+        "phase": "lower",
+        "start_action_index": 224,
+        "end_action_index_exclusive": 248,
+        "start_time_seconds": 11.200000000000577,
+        "end_time_seconds": 12.400000000000977
+      },
+      {
+        "phase": "release",
+        "start_action_index": 248,
+        "end_action_index_exclusive": 264,
+        "start_time_seconds": 12.400000000000977,
+        "end_time_seconds": 13.200000000001245
+      },
+      {
+        "phase": "retreat",
+        "start_action_index": 264,
+        "end_action_index_exclusive": 285,
+        "start_time_seconds": 13.200000000001245,
+        "end_time_seconds": 14.250000000001595
+      },
+      {
+        "phase": "settle",
+        "start_action_index": 285,
+        "end_action_index_exclusive": 310,
+        "start_time_seconds": 14.250000000001595,
+        "end_time_seconds": 15.50000000000201
+      }
+    ],
+    "outcome_metrics": {
+      "max_object_height_m": 0.941,
+      "final_goal_xy_error_m": 0.09362079034510083,
+      "final_object_speed_m_s": 2.1645015101934984e-14,
+      "object_off_counter": false
+    },
+    "success_changed_by_state_sync": false,
+    "sampling_fix_original_replay_errors": {
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "target13": 0.0,
+      "raw_actions_byte_identical": true
+    },
+    "validation": {
+      "alignment_pass": true,
+      "video_frames": 311,
+      "fps": 20,
+      "action_duration_seconds": 15.5,
+      "video_duration_seconds": 15.55,
+      "sampling_sync_pass": true,
+      "replay_max_executed13_error": 0.0,
+      "replay_max_object_pose_error": 0.0,
+      "replay_pass": true,
+      "replay_max_qpos_error": 0.0,
+      "replay_max_qvel_error": 0.0,
+      "replay_max_target13_error": 0.0,
+      "replay_sampled_rgb_max_error": 1,
+      "replay_sampled_rgb_max_mae": 0.00031575519824400544,
+      "replay_rgb_frames_checked": 7,
+      "replay_success_matches": true
+    },
+    "complete": true
+  },
+  {
+    "episode_id": "04_early_release",
+    "initial_state_id": "fixed_counter_0001",
+    "initial_state_sha256": "a8572cba9598add8e5e0fe9a523f1ecb728b1a962788c8124321ccae9d23f60f",
+    "seed": 20261003,
+    "split": "train",
+    "branch": "early_release",
+    "success": false,
+    "failure_type": "dropped_before_goal",
+    "actions": 254,
+    "frames": 255,
+    "duration_seconds": 12.7,
+    "perturbation": {
+      "type": "release_in_transport",
+      "release_position_world": [
+        0.6,
+        -0.18,
+        1.12
+      ],
+      "phase": "early_release"
+    },
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 61,
+        "time_seconds": 3.04999999999983
+      },
+      {
+        "event": "grasp",
+        "state_index": 61,
+        "time_seconds": 3.04999999999983
+      },
+      {
+        "event": "lift",
+        "state_index": 78,
+        "time_seconds": 3.899999999999737
+      },
+      {
+        "event": "drop",
+        "state_index": 118,
+        "time_seconds": 5.899999999999517
+      },
+      {
+        "event": "release",
+        "state_index": 118,
+        "time_seconds": 5.899999999999517
+      }
+    ],
+    "event_summary": {
+      "contact": true,
+      "grasp": true,
+      "lift": true,
+      "drop": true,
+      "release": true,
+      "place": false,
+      "success": false
+    },
+    "action_dimension": 12,
+    "action_slices": {
+      "right": [
+        0,
+        6
+      ],
+      "right_gripper": [
+        6,
+        7
+      ],
+      "base": [
+        7,
+        10
+      ],
+      "torso": [
+        10,
+        11
+      ]
+    },
+    "goal_position_world": [
+      0.66,
+      -0.1,
+      0.942
+    ],
+    "task": "CounterCubePreview",
+    "standard_robocasa_benchmark": false,
+    "robot": "PandaOmron (Franka Panda arm; base and torso commands zero)",
+    "renderer": "MuJoCo EGL OpenGL",
+    "fps": 20,
+    "width": 640,
+    "height": 480,
+    "phase_ranges": {
+      "close": {
+        "first_action": 54,
+        "last_action": 71
+      },
+      "approach": {
+        "first_action": 0,
+        "last_action": 29
+      },
+      "transport": {
+        "first_action": 142,
+        "last_action": 167
+      },
+      "retreat": {
+        "first_action": 208,
+        "last_action": 228
+      },
+      "settle": {
+        "first_action": 229,
+        "last_action": 253
+      },
+      "lower": {
+        "first_action": 168,
+        "last_action": 191
+      },
+      "lift": {
+        "first_action": 72,
+        "last_action": 98
+      },
+      "transport_before_drop": {
+        "first_action": 99,
+        "last_action": 111
+      },
+      "descend": {
+        "first_action": 30,
+        "last_action": 53
+      },
+      "release": {
+        "first_action": 192,
+        "last_action": 207
+      },
+      "early_release": {
+        "first_action": 112,
+        "last_action": 141
+      }
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 99,
+        "time_seconds": 4.949999999999622,
+        "grasp_and_lift": true
+      }
+    ],
+    "schema_version": "2.1",
+    "action_generation_version": "2.0_cached_feedback",
+    "observation_resampled_from_native_replay": true,
+    "raw_action_sha256": "528a1809344d817bf33009e17f23758e1f5df0f5d14a0f8e5ca82f3a97bf8b33",
+    "actual_phase_intervals": [
+      {
+        "phase": "approach",
+        "start_action_index": 0,
+        "end_action_index_exclusive": 30,
+        "start_time_seconds": 0.0,
+        "end_time_seconds": 1.5000000000000009
+      },
+      {
+        "phase": "descend",
+        "start_action_index": 30,
+        "end_action_index_exclusive": 54,
+        "start_time_seconds": 1.5000000000000009,
+        "end_time_seconds": 2.6999999999998687
+      },
+      {
+        "phase": "close",
+        "start_action_index": 54,
+        "end_action_index_exclusive": 72,
+        "start_time_seconds": 2.6999999999998687,
+        "end_time_seconds": 3.59999999999977
+      },
+      {
+        "phase": "lift",
+        "start_action_index": 72,
+        "end_action_index_exclusive": 99,
+        "start_time_seconds": 3.59999999999977,
+        "end_time_seconds": 4.949999999999622
+      },
+      {
+        "phase": "transport_before_drop",
+        "start_action_index": 99,
+        "end_action_index_exclusive": 112,
+        "start_time_seconds": 4.949999999999622,
+        "end_time_seconds": 5.59999999999955
+      },
+      {
+        "phase": "early_release",
+        "start_action_index": 112,
+        "end_action_index_exclusive": 142,
+        "start_time_seconds": 5.59999999999955,
+        "end_time_seconds": 7.099999999999385
+      },
+      {
+        "phase": "transport",
+        "start_action_index": 142,
+        "end_action_index_exclusive": 168,
+        "start_time_seconds": 7.099999999999385,
+        "end_time_seconds": 8.399999999999642
+      },
+      {
+        "phase": "lower",
+        "start_action_index": 168,
+        "end_action_index_exclusive": 192,
+        "start_time_seconds": 8.399999999999642,
+        "end_time_seconds": 9.600000000000042
+      },
+      {
+        "phase": "release",
+        "start_action_index": 192,
+        "end_action_index_exclusive": 208,
+        "start_time_seconds": 9.600000000000042,
+        "end_time_seconds": 10.40000000000031
+      },
+      {
+        "phase": "retreat",
+        "start_action_index": 208,
+        "end_action_index_exclusive": 229,
+        "start_time_seconds": 10.40000000000031,
+        "end_time_seconds": 11.45000000000066
+      },
+      {
+        "phase": "settle",
+        "start_action_index": 229,
+        "end_action_index_exclusive": 254,
+        "start_time_seconds": 11.45000000000066,
+        "end_time_seconds": 12.700000000001078
+      }
+    ],
+    "outcome_metrics": {
+      "max_object_height_m": 1.1792986439163051,
+      "final_goal_xy_error_m": 0.1008629450078171,
+      "final_object_speed_m_s": 2.1512317753501462e-14,
+      "object_off_counter": false
+    },
+    "success_changed_by_state_sync": false,
+    "sampling_fix_original_replay_errors": {
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "target13": 0.0,
+      "raw_actions_byte_identical": true
+    },
+    "validation": {
+      "alignment_pass": true,
+      "video_frames": 255,
+      "fps": 20,
+      "action_duration_seconds": 12.7,
+      "video_duration_seconds": 12.75,
+      "sampling_sync_pass": true,
+      "replay_max_executed13_error": 0.0,
+      "replay_max_object_pose_error": 0.0,
+      "replay_pass": true,
+      "replay_max_qpos_error": 0.0,
+      "replay_max_qvel_error": 0.0,
+      "replay_max_target13_error": 0.0,
+      "replay_sampled_rgb_max_error": 1,
+      "replay_sampled_rgb_max_mae": 0.0002853732730727643,
+      "replay_rgb_frames_checked": 7,
+      "replay_success_matches": true
+    },
+    "complete": true
+  },
+  {
+    "episode_id": "05_recovery",
+    "initial_state_id": "fixed_counter_0001",
+    "initial_state_sha256": "a8572cba9598add8e5e0fe9a523f1ecb728b1a962788c8124321ccae9d23f60f",
+    "seed": 20261003,
+    "split": "train",
+    "branch": "recovery",
+    "success": true,
+    "failure_type": null,
+    "actions": 317,
+    "frames": 318,
+    "duration_seconds": 15.85,
+    "perturbation": {
+      "type": "grasp_position_offset_then_retry",
+      "xyz_m": [
+        -0.12,
+        0,
+        0
+      ],
+      "reset_between_attempts": false
+    },
+    "events": [
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 96,
+        "time_seconds": 4.799999999999638
+      },
+      {
+        "event": "contact",
+        "state_index": 168,
+        "time_seconds": 8.399999999999642
+      },
+      {
+        "event": "grasp",
+        "state_index": 168,
+        "time_seconds": 8.399999999999642
+      },
+      {
+        "event": "lift",
+        "state_index": 185,
+        "time_seconds": 9.249999999999925
+      },
+      {
+        "event": "release",
+        "state_index": 261,
+        "time_seconds": 13.050000000001194
+      },
+      {
+        "event": "place",
+        "state_index": 262,
+        "time_seconds": 13.100000000001211
+      },
+      {
+        "event": "success",
+        "state_index": 280,
+        "time_seconds": 14.000000000001512
+      }
+    ],
+    "event_summary": {
+      "contact": true,
+      "grasp": true,
+      "lift": true,
+      "drop": false,
+      "release": true,
+      "place": true,
+      "success": true
+    },
+    "action_dimension": 12,
+    "action_slices": {
+      "right": [
+        0,
+        6
+      ],
+      "right_gripper": [
+        6,
+        7
+      ],
+      "base": [
+        7,
+        10
+      ],
+      "torso": [
+        10,
+        11
+      ]
+    },
+    "goal_position_world": [
+      0.66,
+      -0.1,
+      0.942
+    ],
+    "task": "CounterCubePreview",
+    "standard_robocasa_benchmark": false,
+    "robot": "PandaOmron (Franka Panda arm; base and torso commands zero)",
+    "renderer": "MuJoCo EGL OpenGL",
+    "fps": 20,
+    "width": 640,
+    "height": 480,
+    "phase_ranges": {
+      "descend": {
+        "first_action": 29,
+        "last_action": 160
+      },
+      "retreat": {
+        "first_action": 271,
+        "last_action": 291
+      },
+      "transport": {
+        "first_action": 206,
+        "last_action": 230
+      },
+      "settle": {
+        "first_action": 292,
+        "last_action": 316
+      },
+      "lift": {
+        "first_action": 70,
+        "last_action": 205
+      },
+      "close": {
+        "first_action": 52,
+        "last_action": 178
+      },
+      "lower": {
+        "first_action": 231,
+        "last_action": 254
+      },
+      "release": {
+        "first_action": 255,
+        "last_action": 270
+      },
+      "approach": {
+        "first_action": 0,
+        "last_action": 136
+      },
+      "recovery_pause": {
+        "first_action": 96,
+        "last_action": 120
+      }
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 96,
+        "time_seconds": 4.799999999999638,
+        "grasp_and_lift": false
+      },
+      {
+        "attempt_index": 1,
+        "end_state_index": 206,
+        "time_seconds": 10.300000000000276,
+        "grasp_and_lift": true
+      }
+    ],
+    "schema_version": "2.1",
+    "action_generation_version": "2.0_cached_feedback",
+    "observation_resampled_from_native_replay": true,
+    "raw_action_sha256": "c82d29a635e6c70d107559e7f39549eb7786dcc4b37a19b0d8039c4140a924bd",
+    "actual_phase_intervals": [
+      {
+        "phase": "approach",
+        "start_action_index": 0,
+        "end_action_index_exclusive": 29,
+        "start_time_seconds": 0.0,
+        "end_time_seconds": 1.450000000000001
+      },
+      {
+        "phase": "descend",
+        "start_action_index": 29,
+        "end_action_index_exclusive": 52,
+        "start_time_seconds": 1.450000000000001,
+        "end_time_seconds": 2.5999999999998797
+      },
+      {
+        "phase": "close",
+        "start_action_index": 52,
+        "end_action_index_exclusive": 70,
+        "start_time_seconds": 2.5999999999998797,
+        "end_time_seconds": 3.4999999999997806
+      },
+      {
+        "phase": "lift",
+        "start_action_index": 70,
+        "end_action_index_exclusive": 96,
+        "start_time_seconds": 3.4999999999997806,
+        "end_time_seconds": 4.799999999999638
+      },
+      {
+        "phase": "recovery_pause",
+        "start_action_index": 96,
+        "end_action_index_exclusive": 121,
+        "start_time_seconds": 4.799999999999638,
+        "end_time_seconds": 6.049999999999501
+      },
+      {
+        "phase": "approach",
+        "start_action_index": 121,
+        "end_action_index_exclusive": 137,
+        "start_time_seconds": 6.049999999999501,
+        "end_time_seconds": 6.849999999999413
+      },
+      {
+        "phase": "descend",
+        "start_action_index": 137,
+        "end_action_index_exclusive": 161,
+        "start_time_seconds": 6.849999999999413,
+        "end_time_seconds": 8.049999999999525
+      },
+      {
+        "phase": "close",
+        "start_action_index": 161,
+        "end_action_index_exclusive": 179,
+        "start_time_seconds": 8.049999999999525,
+        "end_time_seconds": 8.949999999999825
+      },
+      {
+        "phase": "lift",
+        "start_action_index": 179,
+        "end_action_index_exclusive": 206,
+        "start_time_seconds": 8.949999999999825,
+        "end_time_seconds": 10.300000000000276
+      },
+      {
+        "phase": "transport",
+        "start_action_index": 206,
+        "end_action_index_exclusive": 231,
+        "start_time_seconds": 10.300000000000276,
+        "end_time_seconds": 11.550000000000693
+      },
+      {
+        "phase": "lower",
+        "start_action_index": 231,
+        "end_action_index_exclusive": 255,
+        "start_time_seconds": 11.550000000000693,
+        "end_time_seconds": 12.750000000001094
+      },
+      {
+        "phase": "release",
+        "start_action_index": 255,
+        "end_action_index_exclusive": 271,
+        "start_time_seconds": 12.750000000001094,
+        "end_time_seconds": 13.550000000001361
+      },
+      {
+        "phase": "retreat",
+        "start_action_index": 271,
+        "end_action_index_exclusive": 292,
+        "start_time_seconds": 13.550000000001361,
+        "end_time_seconds": 14.600000000001712
+      },
+      {
+        "phase": "settle",
+        "start_action_index": 292,
+        "end_action_index_exclusive": 317,
+        "start_time_seconds": 14.600000000001712,
+        "end_time_seconds": 15.850000000001817
+      }
+    ],
+    "outcome_metrics": {
+      "max_object_height_m": 1.189010297137822,
+      "final_goal_xy_error_m": 0.0019016965052015967,
+      "final_object_speed_m_s": 2.1214812537739936e-14,
+      "object_off_counter": false
+    },
+    "success_changed_by_state_sync": false,
+    "sampling_fix_original_replay_errors": {
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "target13": 0.0,
+      "raw_actions_byte_identical": true
+    },
+    "validation": {
+      "alignment_pass": true,
+      "video_frames": 318,
+      "fps": 20,
+      "action_duration_seconds": 15.85,
+      "video_duration_seconds": 15.9,
+      "sampling_sync_pass": true,
+      "replay_max_executed13_error": 0.0,
+      "replay_max_object_pose_error": 0.0,
+      "replay_pass": true,
+      "replay_max_qpos_error": 0.0,
+      "replay_max_qvel_error": 0.0,
+      "replay_max_target13_error": 0.0,
+      "replay_sampled_rgb_max_error": 1,
+      "replay_sampled_rgb_max_mae": 0.00034505207440815866,
+      "replay_rgb_frames_checked": 7,
+      "replay_success_matches": true
+    },
+    "complete": true
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "fingerprint": "f7dffb01e6b88d3439283a5204236f315361f09abdd7f117d3debed4f6a4cf73",
+  "config": {
+    "dataset": "robocasa",
+    "method": "memspo",
+    "bundle": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle",
+    "train_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+    "evaluation_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/val.json",
+    "initial_variant": "sft",
+    "independent_reference": true,
+    "device": "cuda",
+    "seed": 20261024,
+    "steps": 50,
+    "cpu_threads": 2,
+    "global_batch": 16,
+    "lr": 1e-06,
+    "rl_warmup_steps": 5,
+    "horizon": 32,
+    "reward": "robocasa_object",
+    "clip": 0.2,
+    "kl_coef": 0.001,
+    "diversity_penalty": 0.1,
+    "checkpoint_every": 5,
+    "paper_locked": false,
+    "schedule": "/media/tyshao/Jev-WM/experiments/robocasa_object_memspo_4gpu50_20261024/schedule.json",
+    "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+    "object_reward": {
+      "model": "/media/tyshao/Jev-WM/paper_assets/qwen/Qwen3-VL-8B-Instruct",
+      "batch_size": 1,
+      "log_dir": "/media/tyshao/Jev-WM/experiments/robocasa_object_memspo_4gpu50_20261024/judge_log",
+      "weights": {
+        "position": 0.5,
+        "persistence": 0.25,
+        "interaction": 0.25
+      },
+      "minimum_group_spread": 0.02,
+      "crop": [
+        130,
+        40,
+        310,
+        220
+      ]
+    },
+    "implementation": {
+      "source_sha256": "4380f666a5c931dfb62ebe11844edbb2bffef8949acfeaf7e0455199f87ee497",
+      "versions": {
+        "torch": "2.5.1+cu121",
+        "torchvision": "0.20.1+cu121",
+        "transformers": "4.57.6",
+        "diffusers": "0.35.2",
+        "numpy": "2.5.3",
+        "piqa": "1.3.2",
+        "lpips": "0.1.4"
+      }
+    },
+    "text_assets": {
+      "files": {
+        "config.json": "46dd7cb62d29c81fb551e0ef1ea274c24a46ba441eeb948897706252933df033",
+        "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+        "model.safetensors": "a90903540cc02cbeb7ff9f823f1a80eb778c7e22426a0e620b01c77a5ec8f5b4",
+        "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+        "tokenizer.json": "d2acde0d8d71dd30a711834b07781b9c89feaac33fd332f60507699282740066"
+      }
+    },
+    "train_manifest_sha256": "d5266a10b57557bf640ffaa18683296cd9def454247ca9d737ca76de2bf6d13d",
+    "bundle_manifest_sha256": "13b96143effa024620a7d78f8d6159a247c66b7db70b3090602b65cb64f79584",
+    "world_size": 4,
+    "schedule_sha256": "2488dd928e456e01d46e21a17f8b21af42d9bfdbb38c44c384d36bc1ec481d6c"
+  }
+}

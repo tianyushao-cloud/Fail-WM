@@ -1,0 +1,31 @@
+{
+  "fingerprint": "a9feb659bd74742c8e8033f0b67a7dae64f64b530767eb8a5aaf4b7721b5fa52",
+  "config": {
+    "source_codec": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/tokenizer",
+    "train_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+    "val_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/val.json",
+    "output": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009",
+    "seed": 20261007,
+    "world_size": 8,
+    "steps": 50000,
+    "global_batch": 32,
+    "lr": 5e-05,
+    "warmup": 5000,
+    "discriminator_start": 10000,
+    "gan_weight": 0.1,
+    "gradient_penalty_weight": 10.0,
+    "validate_every": 2000,
+    "checkpoint_every": 2000,
+    "reference_codec": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_robocasa_codec_10k/robocasa/codec",
+    "test_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/test.json",
+    "selection": {
+      "score": "failure_roi_mae_255 + 32 * failure_miss_rate",
+      "miss_penalty": 32.0,
+      "success_roi_max_ratio": 1.1,
+      "success_roi_tolerance": 0.25,
+      "success_miss_max_increase": 0.01,
+      "reference": "fixed codec used by original two 10k WM models",
+      "require_failure_score_improvement": true
+    }
+  }
+}

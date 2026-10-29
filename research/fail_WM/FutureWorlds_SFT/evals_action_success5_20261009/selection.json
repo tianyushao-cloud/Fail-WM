@@ -1,0 +1,121 @@
+{
+  "manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/val.json",
+  "manifest_sha256": "bd2c107d39ae8ba28ec5146683f0f7a4a3200103a339f5f7a0e8b27ef3dbd7a1",
+  "cases": [
+    {
+      "id": "g00006_b00",
+      "episode_id": "g00006_b00",
+      "file": "cases/000060.npz",
+      "sha256": "c8668b9c321a367580ee05feacdf6b8e032c5d5b32929d079dfc0ca2d641f101",
+      "split": "val",
+      "frames": 54,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00006",
+      "initial_state_sha256": "5e58d2f2a2d543851357ab877eb2d86feda1c705f7f501e9247ce4d72c92bbbe",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00006_b00/trajectory.h5",
+      "source_h5_sha256": "2f164f85fa100797e93c1f6218ac1a924dee07aef3fddc905c86efc7eea81b4c",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320"
+    },
+    {
+      "id": "g00014_b00",
+      "episode_id": "g00014_b00",
+      "file": "cases/000140.npz",
+      "sha256": "f9337c3d05854fab8aba5b8d5d6ca15a6ff72c873b727923f6a458ffd7463179",
+      "split": "val",
+      "frames": 55,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00014",
+      "initial_state_sha256": "c6c57ffffeda9c57d7e7fe6679bf6ef5da7ad448fcec5420bcc3402475d538c1",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00014_b00/trajectory.h5",
+      "source_h5_sha256": "8bc6d2f49ec913e7ddb20811b96603b80b72b6123080200523fd50629491294f",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320"
+    },
+    {
+      "id": "g00022_b00",
+      "episode_id": "g00022_b00",
+      "file": "cases/000220.npz",
+      "sha256": "84a2532b0afd11459a178a35b41031ae245c0141daac6f488c6c17222fc5f4dd",
+      "split": "val",
+      "frames": 53,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00022",
+      "initial_state_sha256": "98b612e5045fc19f822d956d67981d2fa8ce3992204d3cf9123a19dbae694e10",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00022_b00/trajectory.h5",
+      "source_h5_sha256": "b83265778534404e3eeef895db87d56c5794a1fe2cf5d040f62c522b69c485e3",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320"
+    },
+    {
+      "id": "g00037_b00",
+      "episode_id": "g00037_b00",
+      "file": "cases/000370.npz",
+      "sha256": "8a3c93c144bae4187ec8088669cccf8362ca9432dceaf2eb9bb9e26a62652ebe",
+      "split": "val",
+      "frames": 55,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00037",
+      "initial_state_sha256": "daca1e6056220b5237dd6030a0593ed2459adcd75cc9953578992d0f8bb4c9ce",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00037_b00/trajectory.h5",
+      "source_h5_sha256": "c98793e12169529c016d632a3f20175c003d5f55125c8370db7d310200448278",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320"
+    },
+    {
+      "id": "g00059_b00",
+      "episode_id": "g00059_b00",
+      "file": "cases/000590.npz",
+      "sha256": "ec4230fe2cfd86c11a8e411038a9f4e930c3a9a71e7c4accfe3593164ace438e",
+      "split": "val",
+      "frames": 54,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00059",
+      "initial_state_sha256": "54343139b17215422b59d6d722d5a01c6769b532ac4013466a76bc220a5ef1aa",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00059_b00/trajectory.h5",
+      "source_h5_sha256": "55219c4e2f57b13872c76a45c6e7d77c7506c585dc7f03ef173c6779a362f61d",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320"
+    }
+  ],
+  "selection": "first GT-success episode in each of first five different validation initial-state groups; not selected by model quality",
+  "actions": {
+    "seed": 20261009,
+    "modified_rows_start_inclusive_end_exclusive": [
+      8,
+      26
+    ],
+    "variants": [
+      "original",
+      "random_xyz",
+      "flip_gripper"
+    ],
+    "implementation_sha256": "47d6fe75a09998125ee57a82c8be573b662d70e9bbced0e6137c7c1e3275d972",
+    "note": "Exact existing intervention: smoothed random XYZ offset clipped to [-1,1], or gripper dim6 sign flip, four13D control blocks per action row. Same intervention direction across cases."
+  },
+  "beam": 4,
+  "memory": "full",
+  "initial_real_frames": 2,
+  "prediction_seed": 0,
+  "bundles": {
+    "success": {
+      "path": "/media/tyshao/fail_WM/FutureWorlds_SFT/evals_diagnostics_20261009/success_bundle",
+      "manifest_sha256": "41d84e06755e7a416a35e39c1b6d67546ed09290cecfc975c8b07c372b68bd27"
+    },
+    "natural": {
+      "path": "/media/tyshao/fail_WM/FutureWorlds_SFT/evals_diagnostics_20261009/natural_bundle",
+      "manifest_sha256": "dbcf74ea937b62ae594ffe491a10e531153809055bb8dcc5a523965a470eb29d"
+    }
+  },
+  "limitation": "Only original actions have a ground-truth future. Action sensitivity does not establish counterfactual physical correctness."
+}

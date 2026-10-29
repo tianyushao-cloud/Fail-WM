@@ -1,0 +1,21 @@
+{
+  "seed": 20261024,
+  "steps": 50,
+  "global_batch": 12,
+  "world_size": 3,
+  "accumulation_per_rank": 4,
+  "groups": 600,
+  "success": 300,
+  "failure": 300,
+  "counts": {
+    "lifted_but_not_placed": 54,
+    "success": 300,
+    "grasp_miss": 115,
+    "contact_without_lift": 76,
+    "dropped_before_goal": 35,
+    "object_off_counter": 20
+  },
+  "sampling": "Classwise shuffled without replacement; reshuffle when exhausted. Each update six successes and six failures. Each rank two successes and two failures.",
+  "window": "Original first two GT frames followed by 32 predicted frames. Episode failure event may fall outside this window.",
+  "initialization": "Original mixed SFT step010000, fresh RL optimizer; no single-/four-/eight-GPU RL checkpoint resume."
+}

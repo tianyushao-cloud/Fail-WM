@@ -1,0 +1,303 @@
+{
+  "all": {
+    "n": 6,
+    "lpips_improved_cases": 2,
+    "sft": {
+      "10": {
+        "lpips": 0.024251953481386104,
+        "ssim": 0.9540297021468481,
+        "psnr": 29.958469613393145,
+        "mae": 0.009982443313735226,
+        "mse": 0.0016825240857239502
+      },
+      "20": {
+        "lpips": 0.02878427372003595,
+        "ssim": 0.9493026768167813,
+        "psnr": 28.837594779332477,
+        "mae": 0.010685688765564312,
+        "mse": 0.0019064863418558767
+      },
+      "32": {
+        "lpips": 0.03450371869257651,
+        "ssim": 0.9405109252159795,
+        "psnr": 27.645856549342472,
+        "mae": 0.012036426463358415,
+        "mse": 0.0024448938710672032
+      },
+      "roi": {
+        "lpips": 0.07048472054399706,
+        "ssim": 0.8628283770134052,
+        "psnr": 23.84607097506523,
+        "mae": 0.02432101079709052
+      },
+      "object": {
+        "position": 0.5982261244228847,
+        "persistence": 0.7955623885709766,
+        "track_error_px_capped100": 12.20457598384862,
+        "missing_rate": 0.026041666666666668,
+        "duplicate_rate": 0.005208333333333333,
+        "motion_error_px_capped50": 4.384222164136383,
+        "false_lift_proxy_rate": 0.13581730769230768
+      }
+    },
+    "rl20": {
+      "10": {
+        "lpips": 0.024369681129852928,
+        "ssim": 0.9530286610126496,
+        "psnr": 29.759610303242997,
+        "mae": 0.010102890618145467,
+        "mse": 0.0017378066152256603
+      },
+      "20": {
+        "lpips": 0.02953547893557697,
+        "ssim": 0.9432516773541768,
+        "psnr": 27.821828683217362,
+        "mae": 0.011553041664107392,
+        "mse": 0.0022254922757080444
+      },
+      "32": {
+        "lpips": 0.03809594196597269,
+        "ssim": 0.9315408837671081,
+        "psnr": 26.51164139310519,
+        "mae": 0.013832229075584715,
+        "mse": 0.0031158366670448836
+      },
+      "roi": {
+        "lpips": 0.07994915643454685,
+        "ssim": 0.8399991594875852,
+        "psnr": 22.692204008499782,
+        "mae": 0.02846691297842578
+      },
+      "object": {
+        "position": 0.5693311305258847,
+        "persistence": 0.6885384160524478,
+        "track_error_px_capped100": 19.43449595188094,
+        "missing_rate": 0.109375,
+        "duplicate_rate": 0.015625,
+        "motion_error_px_capped50": 9.339560694533203,
+        "false_lift_proxy_rate": 0.1294070512820513
+      }
+    },
+    "lpips32_relative_improvement_pct": -10.41111917646444
+  },
+  "success": {
+    "n": 3,
+    "lpips_improved_cases": 0,
+    "sft": {
+      "10": {
+        "lpips": 0.017387483393152554,
+        "ssim": 0.9656154831250509,
+        "psnr": 31.536908849080405,
+        "mae": 0.008044594759121537,
+        "mse": 0.0009914445846031109
+      },
+      "20": {
+        "lpips": 0.019796505570411682,
+        "ssim": 0.961807468533516,
+        "psnr": 30.87780516942342,
+        "mae": 0.008371254607724646,
+        "mse": 0.0010146930474244679
+      },
+      "32": {
+        "lpips": 0.025427700059177976,
+        "ssim": 0.9504856821149588,
+        "psnr": 29.263050238291424,
+        "mae": 0.010009254154283553,
+        "mse": 0.0016608367424548003
+      },
+      "roi": {
+        "lpips": 0.05117078095402879,
+        "ssim": 0.8861965425312519,
+        "psnr": 25.454293330510456,
+        "mae": 0.01958843308966607
+      },
+      "object": {
+        "position": 0.8260477443388464,
+        "persistence": 0.9372831359710879,
+        "track_error_px_capped100": 4.9113123417956155,
+        "missing_rate": 0.010416666666666666,
+        "duplicate_rate": 0.0,
+        "motion_error_px_capped50": 2.1080279198345724,
+        "false_lift_proxy_rate": 0.0
+      }
+    },
+    "rl20": {
+      "10": {
+        "lpips": 0.017117137927562,
+        "ssim": 0.9633959452311198,
+        "psnr": 31.15051104227702,
+        "mae": 0.008363263541832566,
+        "mse": 0.0011266712492215448
+      },
+      "20": {
+        "lpips": 0.02276340009023746,
+        "ssim": 0.9500935385624567,
+        "psnr": 28.748835659027097,
+        "mae": 0.010248060415809354,
+        "mse": 0.0017931079639917395
+      },
+      "32": {
+        "lpips": 0.03304121179583793,
+        "ssim": 0.9344899915158749,
+        "psnr": 27.09313201904297,
+        "mae": 0.013303806898572171,
+        "mse": 0.0029504928026350776
+      },
+      "roi": {
+        "lpips": 0.06972972416163732,
+        "ssim": 0.846780264750123,
+        "psnr": 23.266820808251698,
+        "mae": 0.027339929452864453
+      },
+      "object": {
+        "position": 0.8438695619148578,
+        "persistence": 0.8515661263881783,
+        "track_error_px_capped100": 5.119574314765836,
+        "missing_rate": 0.03125,
+        "duplicate_rate": 0.010416666666666666,
+        "motion_error_px_capped50": 3.5316260557057144,
+        "false_lift_proxy_rate": 0.0
+      }
+    },
+    "lpips32_relative_improvement_pct": -29.941802518281253
+  },
+  "failure": {
+    "n": 3,
+    "lpips_improved_cases": 2,
+    "sft": {
+      "10": {
+        "lpips": 0.031116423569619658,
+        "ssim": 0.9424439211686453,
+        "psnr": 28.380030377705893,
+        "mae": 0.011920291868348915,
+        "mse": 0.0023736035868447895
+      },
+      "20": {
+        "lpips": 0.03777204186966022,
+        "ssim": 0.9367978851000468,
+        "psnr": 26.79738438924154,
+        "mae": 0.01300012292340398,
+        "mse": 0.0027982796362872858
+      },
+      "32": {
+        "lpips": 0.04357973732597505,
+        "ssim": 0.930536168317,
+        "psnr": 26.028662860393524,
+        "mae": 0.014063598772433275,
+        "mse": 0.0032289509996796064
+      },
+      "roi": {
+        "lpips": 0.08979866013396531,
+        "ssim": 0.8394602114955584,
+        "psnr": 22.237848619620006,
+        "mae": 0.029053588504514966
+      },
+      "object": {
+        "position": 0.3704045045069229,
+        "persistence": 0.6538416411708653,
+        "track_error_px_capped100": 19.497839625901623,
+        "missing_rate": 0.041666666666666664,
+        "duplicate_rate": 0.010416666666666666,
+        "motion_error_px_capped50": 6.660416408438192,
+        "false_lift_proxy_rate": 0.27163461538461536
+      }
+    },
+    "rl20": {
+      "10": {
+        "lpips": 0.031622224332143865,
+        "ssim": 0.9426613767941793,
+        "psnr": 28.368709564208984,
+        "mae": 0.011842517694458368,
+        "mse": 0.002348941981229776
+      },
+      "20": {
+        "lpips": 0.03630755778091649,
+        "ssim": 0.9364098161458969,
+        "psnr": 26.894821707407633,
+        "mae": 0.012858022912405431,
+        "mse": 0.00265787658742435
+      },
+      "32": {
+        "lpips": 0.04315067213610746,
+        "ssim": 0.9285917760183414,
+        "psnr": 25.930150767167408,
+        "mae": 0.01436065125259726,
+        "mse": 0.0032811805314546896
+      },
+      "roi": {
+        "lpips": 0.09016858870745637,
+        "ssim": 0.8332180542250475,
+        "psnr": 22.117587208747864,
+        "mae": 0.0295938965039871
+      },
+      "object": {
+        "position": 0.29479269913691153,
+        "persistence": 0.5255107057167173,
+        "track_error_px_capped100": 33.749417588996046,
+        "missing_rate": 0.1875,
+        "duplicate_rate": 0.020833333333333332,
+        "motion_error_px_capped50": 15.147495333360693,
+        "false_lift_proxy_rate": 0.2588141025641026
+      }
+    },
+    "lpips32_relative_improvement_pct": 0.9845520331116252
+  },
+  "limitations": [
+    "Fixed six-case exploratory validation subset, three initial groups; not a random population or held-out test estimate.",
+    "Three failure cases were previously inspected; cohort fixed before RL20 generation.",
+    "Only 32 future frames; late failure events may fall outside horizon.",
+    "Object metrics are 2D red-cube image proxies; position/persistence partly reuse training reward and are not independent validation.",
+    "Track error caps missing detections at 100px; motion error caps missing detections at 50px.",
+    "Same original actions, two initial observations, beam4, codec34k, float32, no GT history refresh."
+  ],
+  "per_case": [
+    {
+      "id": "g00059_b07",
+      "success": false,
+      "failure_type": "grasp_miss",
+      "lpips_gain": 0.003348797225044109,
+      "roi_lpips_gain": 0.006593997677555308,
+      "track_error_reduction": -41.86359467269376
+    },
+    {
+      "id": "g00084_b08",
+      "success": false,
+      "failure_type": "grasp_miss",
+      "lpips_gain": 0.0011347070976626128,
+      "roi_lpips_gain": 0.00487514041014947,
+      "track_error_reduction": -0.5595068642030654
+    },
+    {
+      "id": "g00014_b06",
+      "success": false,
+      "failure_type": "grasp_miss",
+      "lpips_gain": -0.003196308753103949,
+      "roi_lpips_gain": -0.012578923808177933,
+      "track_error_reduction": -0.33163235238644617
+    },
+    {
+      "id": "g00014_b00",
+      "success": true,
+      "failure_type": null,
+      "lpips_gain": -0.0033784565894166008,
+      "roi_lpips_gain": -0.007256710639921948,
+      "track_error_reduction": 0.24749274149610545
+    },
+    {
+      "id": "g00084_b00",
+      "success": true,
+      "failure_type": null,
+      "lpips_gain": -0.004305470429244451,
+      "roi_lpips_gain": -0.012855461332947016,
+      "track_error_reduction": 6.375946641283576
+    },
+    {
+      "id": "g00059_b00",
+      "success": true,
+      "failure_type": null,
+      "lpips_gain": -0.01515660819131881,
+      "roi_lpips_gain": -0.035564657649956644,
+      "track_error_reduction": -7.2482253016903435
+    }
+  ]
+}

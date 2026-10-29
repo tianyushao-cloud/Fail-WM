@@ -1,0 +1,7 @@
+探索性 RoboCasa 物体奖励 MemSPO；仅固定视角红方块场景。
+初始化：natural_sft_mixed_codec34000_10k_20261011 step010000，使用已有验证过的 natural_bundle。codec固定mixed34k，actor和KL reference分别从同一SFT权重加载，RL优化器全新。
+第一轮仅3次更新：global_batch2，每步同一初态组各1条成功/抓空失败，horizon32，4候选，MemSPO group beam，每组2beam，lr1e-6，KL0.001。训练数据全部来自train，不使用展示过的val样本更新。
+奖励：位置0.5、存在/面积/重复/轨迹变化0.25、Qwen3-VL-8B的GT交互一致性0.25。前三者规则覆盖所有32帧；Qwen统一裁剪相同ROI，每2帧取样并包含末帧，参考/预测两种顺序平均。交互候选差异未超过顺序偏差或0.03时不参与排序；最终组分差小于0.02时不更新该组。
+未来真实画面只用于rollout完成后的打分。物体检测缺失不忽略，GT遮挡时不强制坐标监督。未单独奖励锐度。
+运行：服务器此目录内使用 FutureWorlds_workspace/code/.venv/bin/python -u run.py。日志logs/train.log，指标train/metrics.jsonl，权重train/checkpoints，逐候选奖励和视频帧judge_log。
+这是管线跑通实验，不代表效果提升；需要查看候选奖励是否可靠后才能扩展训练。

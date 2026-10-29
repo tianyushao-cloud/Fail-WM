@@ -1,0 +1,52 @@
+{
+  "fingerprint": "86972f0f9c6c0f96b41a788dc0dfe104fa439dc6d88ef655bf9b3b13f48678b8",
+  "config": {
+    "dataset": "robocasa",
+    "method": "sft",
+    "bundle": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa",
+    "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+    "token_cache": "/media/tyshao/fail_WM/FutureWorlds_SFT/cache/token_cache/failure_augmented70_scholar_sft_10k",
+    "train_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_scholar_failure_augmented.json",
+    "evaluation_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/val.json",
+    "schedule": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/failure_augmented70_scholar_sft_10k_schedule.json",
+    "initial_variant": "sft",
+    "device": "cuda",
+    "seed": 20261005,
+    "steps": 1,
+    "global_batch": 1,
+    "micro_batch": 1,
+    "lr": 1e-05,
+    "adapter_lr": 0.0001,
+    "warmup_steps": 1,
+    "horizon": 10,
+    "sft_bf16": true,
+    "checkpoint_every": 1,
+    "paper_locked": false,
+    "trainer_variant": "cached_batched_sft_v1",
+    "implementation": {
+      "source_sha256": "2eb8493d7f2a3910cc95ab3432c3ce78269361fccd16d2cc0bde4cfda963afcf",
+      "versions": {
+        "torch": "2.5.1+cu121",
+        "torchvision": "0.20.1+cu121",
+        "transformers": "4.57.6",
+        "diffusers": "0.35.2",
+        "numpy": "2.5.3",
+        "piqa": "1.3.2",
+        "lpips": "0.1.4"
+      }
+    },
+    "text_assets": {
+      "files": {
+        "config.json": "46dd7cb62d29c81fb551e0ef1ea274c24a46ba441eeb948897706252933df033",
+        "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+        "model.safetensors": "a90903540cc02cbeb7ff9f823f1a80eb778c7e22426a0e620b01c77a5ec8f5b4",
+        "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+        "tokenizer.json": "d2acde0d8d71dd30a711834b07781b9c89feaac33fd332f60507699282740066"
+      }
+    },
+    "train_manifest_sha256": "65b264a5a79f3c7cd53bd0dbb156a02adbd79fc45891e551f976a2caefe12ef5",
+    "bundle_manifest_sha256": "9f2f4b3c77621a42989ff606a57a95e86ee15b4aa9a2bad480105e252822648d",
+    "world_size": 1,
+    "schedule_sha256": "4fddfe618f56abc94427da836cc03a8e7879384321ac8e571bda8d06790db172"
+  }
+}

@@ -1,0 +1,1411 @@
+{
+  "schema": 1,
+  "metrics_version": "spatial_v1",
+  "manifest_sha256": "bd2c107d39ae8ba28ec5146683f0f7a4a3200103a339f5f7a0e8b27ef3dbd7a1",
+  "selection": "2 success and 2 failure per initial group; failures prefer endpoint >=8px from both start and goal, then dropped/off-counter, separation; second failure prefers another type; before generated outputs",
+  "cases": [
+    {
+      "id": "g00006_b00",
+      "episode_id": "g00006_b00",
+      "file": "cases/000060.npz",
+      "sha256": "c8668b9c321a367580ee05feacdf6b8e032c5d5b32929d079dfc0ca2d641f101",
+      "split": "val",
+      "frames": 54,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00006",
+      "initial_state_sha256": "5e58d2f2a2d543851357ab877eb2d86feda1c705f7f501e9247ce4d72c92bbbe",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00006_b00/trajectory.h5",
+      "source_h5_sha256": "2f164f85fa100797e93c1f6218ac1a924dee07aef3fddc905c86efc7eea81b4c",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          213.12,
+          161.93333333333334
+        ],
+        "goal": [
+          212.29752066115702,
+          166.5785123966942
+        ],
+        "start": [
+          234.5050505050505,
+          183.56565656565655
+        ],
+        "real_to_start": 30.418379206185048,
+        "real_to_goal": 4.717431588641192,
+        "start_to_goal": 27.959568107975674,
+        "real_last_area": 75
+      }
+    },
+    {
+      "id": "g00006_b01",
+      "episode_id": "g00006_b01",
+      "file": "cases/000061.npz",
+      "sha256": "8e11d93534d136153d5ba78b7aab9a77cfb0ef7565534005881d3c7da8ca8f30",
+      "split": "val",
+      "frames": 54,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00006",
+      "initial_state_sha256": "5e58d2f2a2d543851357ab877eb2d86feda1c705f7f501e9247ce4d72c92bbbe",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00006_b01/trajectory.h5",
+      "source_h5_sha256": "e70d4f7dd34c578ce87cb7ecff37979f3e2109df16a3c0886135b3a18cfe4ba8",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          213.12,
+          161.93333333333334
+        ],
+        "goal": [
+          212.29752066115702,
+          166.5785123966942
+        ],
+        "start": [
+          234.5050505050505,
+          183.56565656565655
+        ],
+        "real_to_start": 30.418379206185048,
+        "real_to_goal": 4.717431588641192,
+        "start_to_goal": 27.959568107975674,
+        "real_last_area": 75
+      }
+    },
+    {
+      "id": "g00006_b05",
+      "episode_id": "g00006_b05",
+      "file": "cases/000065.npz",
+      "sha256": "1b094a4a15b0ae06ce3fd37dc3e596674405fd3b2055b9208049caefffcd32ef",
+      "split": "val",
+      "frames": 55,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00006",
+      "initial_state_sha256": "5e58d2f2a2d543851357ab877eb2d86feda1c705f7f501e9247ce4d72c92bbbe",
+      "success": false,
+      "failure_type": "lifted_but_not_placed",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00006_b05/trajectory.h5",
+      "source_h5_sha256": "c5cf4cba216453d00dbb4814c814370943bd0708bec94ff603885d0470a70db9",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          205.25333333333333,
+          154.21333333333334
+        ],
+        "goal": [
+          212.64285714285714,
+          165.36263736263737
+        ],
+        "start": [
+          234.5050505050505,
+          183.56565656565655
+        ],
+        "real_to_start": 41.43937543724463,
+        "real_to_goal": 13.37580062909785,
+        "start_to_goal": 28.448293564138712,
+        "real_last_area": 75
+      }
+    },
+    {
+      "id": "g00006_b04",
+      "episode_id": "g00006_b04",
+      "file": "cases/000064.npz",
+      "sha256": "a276d7ba36a9d4bdadd9fd9a780d80e9da952a8cbfe1215d98218ee05fe642c3",
+      "split": "val",
+      "frames": 64,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00006",
+      "initial_state_sha256": "5e58d2f2a2d543851357ab877eb2d86feda1c705f7f501e9247ce4d72c92bbbe",
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00006_b04/trajectory.h5",
+      "source_h5_sha256": "6efb7d435784c880e1f7d010df0c46959edc1908601f4b19b1bfc4456f649cc5",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          232.04,
+          180.96
+        ],
+        "goal": [
+          212.54395604395606,
+          165.36263736263737
+        ],
+        "start": [
+          234.5050505050505,
+          183.56565656565655
+        ],
+        "real_to_start": 3.586909551493985,
+        "real_to_goal": 24.967447830673304,
+        "start_to_goal": 28.524368144353307,
+        "real_last_area": 100
+      }
+    },
+    {
+      "id": "g00014_b00",
+      "episode_id": "g00014_b00",
+      "file": "cases/000140.npz",
+      "sha256": "f9337c3d05854fab8aba5b8d5d6ca15a6ff72c873b727923f6a458ffd7463179",
+      "split": "val",
+      "frames": 55,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00014",
+      "initial_state_sha256": "c6c57ffffeda9c57d7e7fe6679bf6ef5da7ad448fcec5420bcc3402475d538c1",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00014_b00/trajectory.h5",
+      "source_h5_sha256": "8bc6d2f49ec913e7ddb20811b96603b80b72b6123080200523fd50629491294f",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          250.22093023255815,
+          180.04651162790697
+        ],
+        "goal": [
+          249.36969696969697,
+          184.87878787878788
+        ],
+        "start": [
+          225.4375,
+          179.90625
+        ],
+        "real_to_start": 24.78382713416837,
+        "real_to_goal": 4.90667828909018,
+        "start_to_goal": 24.44332597565956,
+        "real_last_area": 86
+      }
+    },
+    {
+      "id": "g00014_b01",
+      "episode_id": "g00014_b01",
+      "file": "cases/000141.npz",
+      "sha256": "f6290e2d1b20b080113a9f9b1b37ac707c75158a996f3bf0cbcfdf7153e27037",
+      "split": "val",
+      "frames": 56,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00014",
+      "initial_state_sha256": "c6c57ffffeda9c57d7e7fe6679bf6ef5da7ad448fcec5420bcc3402475d538c1",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00014_b01/trajectory.h5",
+      "source_h5_sha256": "20735db8b4ab1709a20d80b4b85df8855f64f73a2e586963827bd021c3d01111",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          250.22093023255815,
+          180.04651162790697
+        ],
+        "goal": [
+          249.36969696969697,
+          184.87878787878788
+        ],
+        "start": [
+          225.4375,
+          179.90625
+        ],
+        "real_to_start": 24.78382713416837,
+        "real_to_goal": 4.90667828909018,
+        "start_to_goal": 24.44332597565956,
+        "real_last_area": 86
+      }
+    },
+    {
+      "id": "g00014_b03",
+      "episode_id": "g00014_b03",
+      "file": "cases/000143.npz",
+      "sha256": "19b548b49e02a0c0ea872ba3682f830262217e928f647c0c43caf1a7855afed7",
+      "split": "val",
+      "frames": 65,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00014",
+      "initial_state_sha256": "c6c57ffffeda9c57d7e7fe6679bf6ef5da7ad448fcec5420bcc3402475d538c1",
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00014_b03/trajectory.h5",
+      "source_h5_sha256": "7ca2dafa45c55ee6e2cd948eeb2cd3d204b73b95b0d5a3064a7c80165db7f168",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          234.0612244897959,
+          180.14285714285714
+        ],
+        "goal": [
+          249.6375,
+          183.72083333333333
+        ],
+        "start": [
+          225.4375,
+          179.90625
+        ],
+        "real_to_start": 8.626969747017585,
+        "real_to_goal": 15.981935814831633,
+        "start_to_goal": 24.49879682774123,
+        "real_last_area": 98
+      }
+    },
+    {
+      "id": "g00014_b04",
+      "episode_id": "g00014_b04",
+      "file": "cases/000144.npz",
+      "sha256": "73041f7e729ed120658d7ebb7979d8de8f6d39ac554c31dded3edbc2e42c3f1f",
+      "split": "val",
+      "frames": 55,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00014",
+      "initial_state_sha256": "c6c57ffffeda9c57d7e7fe6679bf6ef5da7ad448fcec5420bcc3402475d538c1",
+      "success": false,
+      "failure_type": "lifted_but_not_placed",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00014_b04/trajectory.h5",
+      "source_h5_sha256": "3e8ef7eaff0efeb68f4618653dbb1dc01394c8b3ef64859b020cbfb6ac389cdf",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          246.87058823529412,
+          172.96470588235294
+        ],
+        "goal": [
+          249.66964285714286,
+          184.08035714285714
+        ],
+        "start": [
+          225.4375,
+          179.90625
+        ],
+        "real_to_start": 22.52914348214649,
+        "real_to_goal": 11.462652822154272,
+        "start_to_goal": 24.589020271028097,
+        "real_last_area": 85
+      }
+    },
+    {
+      "id": "g00022_b00",
+      "episode_id": "g00022_b00",
+      "file": "cases/000220.npz",
+      "sha256": "84a2532b0afd11459a178a35b41031ae245c0141daac6f488c6c17222fc5f4dd",
+      "split": "val",
+      "frames": 53,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00022",
+      "initial_state_sha256": "98b612e5045fc19f822d956d67981d2fa8ce3992204d3cf9123a19dbae694e10",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00022_b00/trajectory.h5",
+      "source_h5_sha256": "b83265778534404e3eeef895db87d56c5794a1fe2cf5d040f62c522b69c485e3",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          214.76,
+          173.94666666666666
+        ],
+        "goal": [
+          214.41447368421052,
+          178.75
+        ],
+        "start": [
+          237.26136363636363,
+          177.5909090909091
+        ],
+        "real_to_start": 22.794557866791717,
+        "real_to_goal": 4.815744962725314,
+        "start_to_goal": 22.87627312787928,
+        "real_last_area": 75
+      }
+    },
+    {
+      "id": "g00022_b01",
+      "episode_id": "g00022_b01",
+      "file": "cases/000221.npz",
+      "sha256": "3612229136a0705613e92a474320a2b48978b441e1f5871da0e63cef61ab24ee",
+      "split": "val",
+      "frames": 53,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00022",
+      "initial_state_sha256": "98b612e5045fc19f822d956d67981d2fa8ce3992204d3cf9123a19dbae694e10",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00022_b01/trajectory.h5",
+      "source_h5_sha256": "b4a8072ba7264f313e031d105eb0db82e0c6077b26b980638e02e727e2680118",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          214.77027027027026,
+          173.8783783783784
+        ],
+        "goal": [
+          214.41447368421052,
+          178.75
+        ],
+        "start": [
+          237.26136363636363,
+          177.5909090909091
+        ],
+        "real_to_start": 22.795441761321776,
+        "real_to_goal": 4.884597059625591,
+        "start_to_goal": 22.87627312787928,
+        "real_last_area": 74
+      }
+    },
+    {
+      "id": "g00022_b04",
+      "episode_id": "g00022_b04",
+      "file": "cases/000224.npz",
+      "sha256": "b8ef1259cba89ad7a759a93b2d7da33f5d359c0199bf94c33aa27cefa300d921",
+      "split": "val",
+      "frames": 52,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00022",
+      "initial_state_sha256": "98b612e5045fc19f822d956d67981d2fa8ce3992204d3cf9123a19dbae694e10",
+      "success": false,
+      "failure_type": "lifted_but_not_placed",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00022_b04/trajectory.h5",
+      "source_h5_sha256": "6f455c1a53b5ec3f20941c50faf9e0af3f5c48bd8411de6097fef5cd7c4dbfa8",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          225.91463414634146,
+          175.58536585365854
+        ],
+        "goal": [
+          213.95609756097562,
+          177.5268292682927
+        ],
+        "start": [
+          237.26136363636363,
+          177.5909090909091
+        ],
+        "real_to_start": 11.522607074625958,
+        "real_to_goal": 12.115109469331923,
+        "start_to_goal": 23.305354171698347,
+        "real_last_area": 82
+      }
+    },
+    {
+      "id": "g00022_b06",
+      "episode_id": "g00022_b06",
+      "file": "cases/000226.npz",
+      "sha256": "a76d10ebef1d245e4044ff1d4b90966b19a0d693ce4f20cf3dc49a81e1e88234",
+      "split": "val",
+      "frames": 83,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00022",
+      "initial_state_sha256": "98b612e5045fc19f822d956d67981d2fa8ce3992204d3cf9123a19dbae694e10",
+      "success": false,
+      "failure_type": "object_off_counter",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00022_b06/trajectory.h5",
+      "source_h5_sha256": "0b94b66fe97bd79e00638fd8ffa0479b1b10abc9b578282ae8e7721f8472a063",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": null,
+        "goal": [
+          214.5339366515837,
+          177.52488687782807
+        ],
+        "start": [
+          237.26136363636363,
+          177.5909090909091
+        ],
+        "real_to_start": null,
+        "real_to_goal": null,
+        "start_to_goal": 22.72752288044438,
+        "real_last_area": 0
+      }
+    },
+    {
+      "id": "g00037_b00",
+      "episode_id": "g00037_b00",
+      "file": "cases/000370.npz",
+      "sha256": "8a3c93c144bae4187ec8088669cccf8362ca9432dceaf2eb9bb9e26a62652ebe",
+      "split": "val",
+      "frames": 55,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00037",
+      "initial_state_sha256": "daca1e6056220b5237dd6030a0593ed2459adcd75cc9953578992d0f8bb4c9ce",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00037_b00/trajectory.h5",
+      "source_h5_sha256": "c98793e12169529c016d632a3f20175c003d5f55125c8370db7d310200448278",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          234.46376811594203,
+          163.91304347826087
+        ],
+        "goal": [
+          234.0962962962963,
+          168.27407407407406
+        ],
+        "start": [
+          224.91860465116278,
+          177.1627906976744
+        ],
+        "real_to_start": 16.32990958173723,
+        "real_to_goal": 4.376485278834204,
+        "start_to_goal": 12.776513888687418,
+        "real_last_area": 69
+      }
+    },
+    {
+      "id": "g00037_b01",
+      "episode_id": "g00037_b01",
+      "file": "cases/000371.npz",
+      "sha256": "560eafd89b79f7056d50794e5d7b5aa6b312d4a95988f1228c1f79c2a03de1bf",
+      "split": "val",
+      "frames": 56,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00037",
+      "initial_state_sha256": "daca1e6056220b5237dd6030a0593ed2459adcd75cc9953578992d0f8bb4c9ce",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00037_b01/trajectory.h5",
+      "source_h5_sha256": "ba9815f675ee77720908e824a899b8ccdb620ea25d690a8153fb6a3879f21685",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          234.46376811594203,
+          163.91304347826087
+        ],
+        "goal": [
+          234.0962962962963,
+          168.27407407407406
+        ],
+        "start": [
+          224.91860465116278,
+          177.1627906976744
+        ],
+        "real_to_start": 16.32990958173723,
+        "real_to_goal": 4.376485278834204,
+        "start_to_goal": 12.776513888687418,
+        "real_last_area": 69
+      }
+    },
+    {
+      "id": "g00037_b05",
+      "episode_id": "g00037_b05",
+      "file": "cases/000375.npz",
+      "sha256": "a5012f7bcc76d00f4167cdd96dcb325864388d41b43454b39a959e93f744afbb",
+      "split": "val",
+      "frames": 64,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00037",
+      "initial_state_sha256": "daca1e6056220b5237dd6030a0593ed2459adcd75cc9953578992d0f8bb4c9ce",
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00037_b05/trajectory.h5",
+      "source_h5_sha256": "0c11a0d185d274f319acafa08e42635c1a6cc87874c49d8c7156ab944619ad3a",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          229.33333333333334,
+          171.26923076923077
+        ],
+        "goal": [
+          235.44827586206895,
+          166.73103448275862
+        ],
+        "start": [
+          224.91860465116278,
+          177.1627906976744
+        ],
+        "real_to_start": 7.3636864386892515,
+        "real_to_goal": 7.614968658129142,
+        "start_to_goal": 14.822129183663883,
+        "real_last_area": 78
+      }
+    },
+    {
+      "id": "g00037_b06",
+      "episode_id": "g00037_b06",
+      "file": "cases/000376.npz",
+      "sha256": "49bfce72c68c1f8de51224547f72f303b774ade3799509eedf32d6d82f6227f2",
+      "split": "val",
+      "frames": 53,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00037",
+      "initial_state_sha256": "daca1e6056220b5237dd6030a0593ed2459adcd75cc9953578992d0f8bb4c9ce",
+      "success": false,
+      "failure_type": "lifted_but_not_placed",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00037_b06/trajectory.h5",
+      "source_h5_sha256": "92c8f9d7ad33960e04b42659ab1ed243724d06ea931271c71839ea900cb2f1ac",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          236.0,
+          171.5
+        ],
+        "goal": [
+          233.25,
+          166.24242424242425
+        ],
+        "start": [
+          224.91860465116278,
+          177.1627906976744
+        ],
+        "real_to_start": 12.444457455546184,
+        "real_to_goal": 5.9333466818186364,
+        "start_to_goal": 13.735594343732615,
+        "real_last_area": 76
+      }
+    },
+    {
+      "id": "g00059_b00",
+      "episode_id": "g00059_b00",
+      "file": "cases/000590.npz",
+      "sha256": "ec4230fe2cfd86c11a8e411038a9f4e930c3a9a71e7c4accfe3593164ace438e",
+      "split": "val",
+      "frames": 54,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00059",
+      "initial_state_sha256": "54343139b17215422b59d6d722d5a01c6769b532ac4013466a76bc220a5ef1aa",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00059_b00/trajectory.h5",
+      "source_h5_sha256": "55219c4e2f57b13872c76a45c6e7d77c7506c585dc7f03ef173c6779a362f61d",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          211.78787878787878,
+          164.28787878787878
+        ],
+        "goal": [
+          211.31428571428572,
+          168.60714285714286
+        ],
+        "start": [
+          243.1264367816092,
+          179.5632183908046
+        ],
+        "real_to_start": 34.86317852851512,
+        "real_to_goal": 4.3451504576241105,
+        "start_to_goal": 33.64592912418248,
+        "real_last_area": 66
+      }
+    },
+    {
+      "id": "g00059_b01",
+      "episode_id": "g00059_b01",
+      "file": "cases/000591.npz",
+      "sha256": "1c34508d37808b8a2c0b8a13bf1f701b5913d772ad27f58471c48ba305231c7d",
+      "split": "val",
+      "frames": 54,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00059",
+      "initial_state_sha256": "54343139b17215422b59d6d722d5a01c6769b532ac4013466a76bc220a5ef1aa",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00059_b01/trajectory.h5",
+      "source_h5_sha256": "b17c009cefad3db6d08c5d8970087cdab0ee8187daf33f42317d5a1f0598e623",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          211.78787878787878,
+          164.28787878787878
+        ],
+        "goal": [
+          211.31428571428572,
+          168.60714285714286
+        ],
+        "start": [
+          243.1264367816092,
+          179.5632183908046
+        ],
+        "real_to_start": 34.86317852851512,
+        "real_to_goal": 4.3451504576241105,
+        "start_to_goal": 33.64592912418248,
+        "real_last_area": 66
+      }
+    },
+    {
+      "id": "g00059_b08",
+      "episode_id": "g00059_b08",
+      "file": "cases/000598.npz",
+      "sha256": "efedd84ac71726b401a85cce90a619c8157c5937a7698f2cd453ffd21b455198",
+      "split": "val",
+      "frames": 60,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00059",
+      "initial_state_sha256": "54343139b17215422b59d6d722d5a01c6769b532ac4013466a76bc220a5ef1aa",
+      "success": false,
+      "failure_type": "lifted_but_not_placed",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00059_b08/trajectory.h5",
+      "source_h5_sha256": "0009342c8281d5ed9613b142b5f63aa6e4fc58313b360785a3e9b678cde30fee",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          188.9240506329114,
+          169.9746835443038
+        ],
+        "goal": [
+          211.453125,
+          167.76041666666666
+        ],
+        "start": [
+          243.1264367816092,
+          179.5632183908046
+        ],
+        "real_to_start": 55.043970284810555,
+        "real_to_goal": 22.637627297117735,
+        "start_to_goal": 33.80095868099508,
+        "real_last_area": 79
+      }
+    },
+    {
+      "id": "g00059_b03",
+      "episode_id": "g00059_b03",
+      "file": "cases/000593.npz",
+      "sha256": "4a49e7bc15040502b38ce634857fe39ff21c79d37ecf0c22fd036549cf2ad1fb",
+      "split": "val",
+      "frames": 85,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00059",
+      "initial_state_sha256": "54343139b17215422b59d6d722d5a01c6769b532ac4013466a76bc220a5ef1aa",
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00059_b03/trajectory.h5",
+      "source_h5_sha256": "b9d5fff9e36f5a5aa7dd1c81ade4cb8a5e75587d34897bcb0f16a0b4fd6f529c",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          251.02564102564102,
+          168.37179487179486
+        ],
+        "goal": [
+          211.38659793814432,
+          167.70618556701032
+        ],
+        "start": [
+          243.1264367816092,
+          179.5632183908046
+        ],
+        "real_to_start": 13.698371730639183,
+        "real_to_goal": 39.64463106952864,
+        "start_to_goal": 33.88224604706211,
+        "real_last_area": 78
+      }
+    },
+    {
+      "id": "g00061_b00",
+      "episode_id": "g00061_b00",
+      "file": "cases/000610.npz",
+      "sha256": "fb7152a3627884f8f1114591e2ca0ca0e6c79220a039e3e732aa876ba25866e2",
+      "split": "val",
+      "frames": 52,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00061",
+      "initial_state_sha256": "b9b36788ac65dd4bb8f02c997f1d3ee3c661169c7ae5920637b4523262dc5e1f",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00061_b00/trajectory.h5",
+      "source_h5_sha256": "ea7b22f700e3b5fb359c3a274e0be4e4188a4c94c53e82fba27d5cfa028f1224",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          223.1492537313433,
+          164.8507462686567
+        ],
+        "goal": [
+          222.68939393939394,
+          169.32575757575756
+        ],
+        "start": [
+          229.43820224719101,
+          179.46067415730337
+        ],
+        "real_to_start": 15.90600095393053,
+        "real_to_goal": 4.4985772447444115,
+        "start_to_goal": 12.176327348190135,
+        "real_last_area": 67
+      }
+    },
+    {
+      "id": "g00061_b01",
+      "episode_id": "g00061_b01",
+      "file": "cases/000611.npz",
+      "sha256": "cdfa4b1a60ba716030e3eaf5c96f458861ecfa743fa22e30632b56fe69246bdc",
+      "split": "val",
+      "frames": 53,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00061",
+      "initial_state_sha256": "b9b36788ac65dd4bb8f02c997f1d3ee3c661169c7ae5920637b4523262dc5e1f",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00061_b01/trajectory.h5",
+      "source_h5_sha256": "377d61ad05b706c6ebf6681197ceddd14fd510a75a0f70ac81c8ca8e95a4f5d8",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          223.1492537313433,
+          164.8507462686567
+        ],
+        "goal": [
+          222.7218045112782,
+          169.30827067669173
+        ],
+        "start": [
+          229.43820224719101,
+          179.46067415730337
+        ],
+        "real_to_start": 15.90600095393053,
+        "real_to_goal": 4.4779723853505695,
+        "start_to_goal": 12.172973957916366,
+        "real_last_area": 67
+      }
+    },
+    {
+      "id": "g00061_b03",
+      "episode_id": "g00061_b03",
+      "file": "cases/000613.npz",
+      "sha256": "aecc48fe487cc35bcece053dad56030cbc2abf714e6d5e76aa28783196619740",
+      "split": "val",
+      "frames": 53,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00061",
+      "initial_state_sha256": "b9b36788ac65dd4bb8f02c997f1d3ee3c661169c7ae5920637b4523262dc5e1f",
+      "success": false,
+      "failure_type": "lifted_but_not_placed",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00061_b03/trajectory.h5",
+      "source_h5_sha256": "7d3ac804c867973d73c80e26939cd0386e4d09c7cf6957c2597181ece3e0c711",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          210.4142857142857,
+          155.84285714285716
+        ],
+        "goal": [
+          222.85714285714286,
+          168.35449735449737
+        ],
+        "start": [
+          229.43820224719101,
+          179.46067415730337
+        ],
+        "real_to_start": 30.32673211506332,
+        "real_to_goal": 17.645561330348308,
+        "start_to_goal": 12.909589686373739,
+        "real_last_area": 70
+      }
+    },
+    {
+      "id": "g00061_b06",
+      "episode_id": "g00061_b06",
+      "file": "cases/000616.npz",
+      "sha256": "471e48df4130db361201815f33319b5fb6dbbc0d980ac1c2a7d3d2f460c777be",
+      "split": "val",
+      "frames": 83,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00061",
+      "initial_state_sha256": "b9b36788ac65dd4bb8f02c997f1d3ee3c661169c7ae5920637b4523262dc5e1f",
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00061_b06/trajectory.h5",
+      "source_h5_sha256": "b4915e72f367cda60ea5ead9769730a74ccaefc35489fec448c0f2cf1aec08b7",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          217.40217391304347,
+          174.45652173913044
+        ],
+        "goal": [
+          223.62111801242236,
+          167.67701863354037
+        ],
+        "start": [
+          229.43820224719101,
+          179.46067415730337
+        ],
+        "real_to_start": 13.034857862083062,
+        "real_to_goal": 9.199833045762562,
+        "start_to_goal": 13.141271114207498,
+        "real_last_area": 92
+      }
+    },
+    {
+      "id": "g00071_b00",
+      "episode_id": "g00071_b00",
+      "file": "cases/000710.npz",
+      "sha256": "510ad5b91cc1448afa6e95dfea5e0eb57eb8fb542f3f32b10132e61050ccab86",
+      "split": "val",
+      "frames": 56,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00071",
+      "initial_state_sha256": "faedde733dab1d145316604bdbbb0ec59576a85876240cfbbce2546a4f1d15fc",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00071_b00/trajectory.h5",
+      "source_h5_sha256": "4cf797623b090b67ba937e9669428b104944c2b0d797ee220f0dba854e6be343",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          254.4,
+          172.9625
+        ],
+        "goal": [
+          253.65986394557822,
+          177.57823129251702
+        ],
+        "start": [
+          233.65656565656565,
+          183.15151515151516
+        ],
+        "real_to_start": 23.11073555986865,
+        "real_to_goal": 4.67469536374038,
+        "start_to_goal": 20.765197697401838,
+        "real_last_area": 80
+      }
+    },
+    {
+      "id": "g00071_b01",
+      "episode_id": "g00071_b01",
+      "file": "cases/000711.npz",
+      "sha256": "42a1f3b546e3b195e64823529da0a8163a5748ed450e1783a529a47f00ffee1c",
+      "split": "val",
+      "frames": 56,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00071",
+      "initial_state_sha256": "faedde733dab1d145316604bdbbb0ec59576a85876240cfbbce2546a4f1d15fc",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00071_b01/trajectory.h5",
+      "source_h5_sha256": "a24ca92ff66afc0d61a385ff8a103e604555db753f480339e484f9267dc127bf",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          254.4,
+          172.9625
+        ],
+        "goal": [
+          253.65986394557822,
+          177.57823129251702
+        ],
+        "start": [
+          233.65656565656565,
+          183.15151515151516
+        ],
+        "real_to_start": 23.11073555986865,
+        "real_to_goal": 4.67469536374038,
+        "start_to_goal": 20.765197697401838,
+        "real_last_area": 80
+      }
+    },
+    {
+      "id": "g00071_b05",
+      "episode_id": "g00071_b05",
+      "file": "cases/000715.npz",
+      "sha256": "99a8ebcbdeff322fc45857fea27f503a5aa0d791d569e23edef5057b963da983",
+      "split": "val",
+      "frames": 87,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00071",
+      "initial_state_sha256": "faedde733dab1d145316604bdbbb0ec59576a85876240cfbbce2546a4f1d15fc",
+      "success": false,
+      "failure_type": "lifted_but_not_placed",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00071_b05/trajectory.h5",
+      "source_h5_sha256": "f9e81ced07ce2097dcb11aad6dfd5fb513d4630a63638c6d4ea4c2601cefe6ea",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          269.30864197530866,
+          163.55555555555554
+        ],
+        "goal": [
+          253.73023255813953,
+          176.46046511627907
+        ],
+        "start": [
+          233.65656565656565,
+          183.15151515151516
+        ],
+        "real_to_start": 40.68257831460487,
+        "real_to_goal": 20.229274103125825,
+        "start_to_goal": 21.159448325733255,
+        "real_last_area": 81
+      }
+    },
+    {
+      "id": "g00071_b04",
+      "episode_id": "g00071_b04",
+      "file": "cases/000714.npz",
+      "sha256": "deeb9f6169769ba13e736135381eff08280301a57feebb0f9aad4413512317eb",
+      "split": "val",
+      "frames": 67,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00071",
+      "initial_state_sha256": "faedde733dab1d145316604bdbbb0ec59576a85876240cfbbce2546a4f1d15fc",
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00071_b04/trajectory.h5",
+      "source_h5_sha256": "9b9c188e43fb6d9b61d3c8302d67a88a5b042d8dcec370a2af006d3e3cd8919a",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          237.48958333333334,
+          181.42708333333334
+        ],
+        "goal": [
+          253.80184331797236,
+          176.4331797235023
+        ],
+        "start": [
+          233.65656565656565,
+          183.15151515151516
+        ],
+        "real_to_start": 4.203057173769048,
+        "real_to_goal": 17.05956913496759,
+        "start_to_goal": 21.236012878562327,
+        "real_last_area": 96
+      }
+    },
+    {
+      "id": "g00080_b00",
+      "episode_id": "g00080_b00",
+      "file": "cases/000800.npz",
+      "sha256": "da859346970a1bb85b5fc52abb388b70374d89f3add57b45a61f89f15a558b07",
+      "split": "val",
+      "frames": 53,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00080",
+      "initial_state_sha256": "01d2ccfcb66e545d4ad6179fe0e4b0318767fb22611e2773b880ffec8c1d4f1c",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00080_b00/trajectory.h5",
+      "source_h5_sha256": "a6075accca53e1649cf73599ee557305cfa479dc07f8b65baff32010367bdaad",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          230.54166666666666,
+          162.55555555555554
+        ],
+        "goal": [
+          229.8130081300813,
+          167.03252032520325
+        ],
+        "start": [
+          228.7391304347826,
+          176.3695652173913
+        ],
+        "real_to_start": 13.931116244025343,
+        "real_to_goal": 4.535874426348846,
+        "start_to_goal": 9.398596736917444,
+        "real_last_area": 72
+      }
+    },
+    {
+      "id": "g00080_b01",
+      "episode_id": "g00080_b01",
+      "file": "cases/000801.npz",
+      "sha256": "7c4e4f834d64cd935f2b239960ffb1e4c28af66a39ecd9dbf61c1a5bb72d1d30",
+      "split": "val",
+      "frames": 54,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00080",
+      "initial_state_sha256": "01d2ccfcb66e545d4ad6179fe0e4b0318767fb22611e2773b880ffec8c1d4f1c",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00080_b01/trajectory.h5",
+      "source_h5_sha256": "243a708e73aad583b219bc0377ccd311a357ea8a7d957df04c991700158f6c86",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          230.56338028169014,
+          162.49295774647888
+        ],
+        "goal": [
+          229.8130081300813,
+          167.03252032520325
+        ],
+        "start": [
+          228.7391304347826,
+          176.3695652173913
+        ],
+        "real_to_start": 13.99600380129003,
+        "real_to_goal": 4.601161459030182,
+        "start_to_goal": 9.398596736917444,
+        "real_last_area": 71
+      }
+    },
+    {
+      "id": "g00080_b08",
+      "episode_id": "g00080_b08",
+      "file": "cases/000808.npz",
+      "sha256": "24de0779520089c229ab4e602c718fc57a18d49ae0423fe691e23009d7149897",
+      "split": "val",
+      "frames": 53,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00080",
+      "initial_state_sha256": "01d2ccfcb66e545d4ad6179fe0e4b0318767fb22611e2773b880ffec8c1d4f1c",
+      "success": false,
+      "failure_type": "grasp_miss",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00080_b08/trajectory.h5",
+      "source_h5_sha256": "864941735c3c0fa0c044e44d79cca671056e03c595941972f884657ec43e12e9",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          228.75,
+          176.4891304347826
+        ],
+        "goal": [
+          229.90555555555557,
+          165.61666666666667
+        ],
+        "start": [
+          228.7391304347826,
+          176.3695652173913
+        ],
+        "real_to_start": 0.1200582719259288,
+        "real_to_goal": 10.933699146719228,
+        "start_to_goal": 10.815977755364804,
+        "real_last_area": 92
+      }
+    },
+    {
+      "id": "g00080_b07",
+      "episode_id": "g00080_b07",
+      "file": "cases/000807.npz",
+      "sha256": "9dbf7cea9e996dc65b254269555fc94bf2d5c96086528aa3b1a2073a4af4265b",
+      "split": "val",
+      "frames": 67,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00080",
+      "initial_state_sha256": "01d2ccfcb66e545d4ad6179fe0e4b0318767fb22611e2773b880ffec8c1d4f1c",
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00080_b07/trajectory.h5",
+      "source_h5_sha256": "6214f265274f2f5f86affa6786f29bd6500aca5a2e5ba4e2ea9a9a8f9d575540",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          228.6304347826087,
+          176.3804347826087
+        ],
+        "goal": [
+          229.8988764044944,
+          165.5561797752809
+        ],
+        "start": [
+          228.7391304347826,
+          176.3695652173913
+        ],
+        "real_to_start": 0.10923777849043684,
+        "real_to_goal": 10.898322834812374,
+        "start_to_goal": 10.875399552839806,
+        "real_last_area": 92
+      }
+    },
+    {
+      "id": "g00084_b00",
+      "episode_id": "g00084_b00",
+      "file": "cases/000840.npz",
+      "sha256": "02c73bbbfc06ce1127730d1b301059b0929c1b0614eea2f188e6cf5665be5e93",
+      "split": "val",
+      "frames": 52,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00084",
+      "initial_state_sha256": "055c73bb9f331d7a954a610e80fc8bf8b914519cf5965c7776d8505cd8221549",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00084_b00/trajectory.h5",
+      "source_h5_sha256": "07c543674e02f385d2dd28f32fc271366744abc09bc74bd3f76156071684d154",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          234.68,
+          163.89333333333335
+        ],
+        "goal": [
+          233.81451612903226,
+          168.61290322580646
+        ],
+        "start": [
+          241.21782178217822,
+          182.88118811881188
+        ],
+        "real_to_start": 20.08187598333243,
+        "real_to_goal": 4.798270761518574,
+        "start_to_goal": 16.074603832812475,
+        "real_last_area": 75
+      }
+    },
+    {
+      "id": "g00084_b01",
+      "episode_id": "g00084_b01",
+      "file": "cases/000841.npz",
+      "sha256": "f1b2918bc6334a8604c6e82448eae96f27683b326194b084c2d02eeb35736706",
+      "split": "val",
+      "frames": 53,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00084",
+      "initial_state_sha256": "055c73bb9f331d7a954a610e80fc8bf8b914519cf5965c7776d8505cd8221549",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00084_b01/trajectory.h5",
+      "source_h5_sha256": "54d998e32502620ace3083363c7dadf4d86a8318a83c690ca5354504c0d341a2",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          234.68,
+          163.89333333333335
+        ],
+        "goal": [
+          233.81451612903226,
+          168.61290322580646
+        ],
+        "start": [
+          241.21782178217822,
+          182.88118811881188
+        ],
+        "real_to_start": 20.08187598333243,
+        "real_to_goal": 4.798270761518574,
+        "start_to_goal": 16.074603832812475,
+        "real_last_area": 75
+      }
+    },
+    {
+      "id": "g00084_b05",
+      "episode_id": "g00084_b05",
+      "file": "cases/000845.npz",
+      "sha256": "2b6e567741165c85c4dfd534bd99aac9d96c17e385afe0aedaeb011b9fc94469",
+      "split": "val",
+      "frames": 56,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00084",
+      "initial_state_sha256": "055c73bb9f331d7a954a610e80fc8bf8b914519cf5965c7776d8505cd8221549",
+      "success": false,
+      "failure_type": "lifted_but_not_placed",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00084_b05/trajectory.h5",
+      "source_h5_sha256": "a7be7e5a7bd9c937b73bf2f9abe1df7b71033cfdc156e66b6414c4cb3daa885a",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          249.39285714285714,
+          165.96428571428572
+        ],
+        "goal": [
+          234.01069518716577,
+          167.4385026737968
+        ],
+        "start": [
+          241.21782178217822,
+          182.88118811881188
+        ],
+        "real_to_start": 18.78863459947565,
+        "real_to_goal": 15.452644501017588,
+        "start_to_goal": 17.041690277382013,
+        "real_last_area": 84
+      }
+    },
+    {
+      "id": "g00084_b04",
+      "episode_id": "g00084_b04",
+      "file": "cases/000844.npz",
+      "sha256": "0b0f08b5252ad81bd4b943f1786510107414a786df3e30f08b580015ed4c1a81",
+      "split": "val",
+      "frames": 63,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00084",
+      "initial_state_sha256": "055c73bb9f331d7a954a610e80fc8bf8b914519cf5965c7776d8505cd8221549",
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00084_b04/trajectory.h5",
+      "source_h5_sha256": "38f1c8758e4df4d11ce1d4d40a7c8b7edf22324d4eaf0fda780f3219109814bf",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          238.95744680851064,
+          176.12765957446808
+        ],
+        "goal": [
+          233.52631578947367,
+          166.8830409356725
+        ],
+        "start": [
+          241.21782178217822,
+          182.88118811881188
+        ],
+        "real_to_start": 7.121758407924908,
+        "real_to_goal": 10.721947487406942,
+        "start_to_goal": 17.751055679288488,
+        "real_last_area": 94
+      }
+    },
+    {
+      "id": "g00098_b00",
+      "episode_id": "g00098_b00",
+      "file": "cases/000980.npz",
+      "sha256": "8edcb30b17ac557d488d15cfd77ae6d0a0af80b2da9c86a2ff1b86e72225ff3e",
+      "split": "val",
+      "frames": 51,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00098",
+      "initial_state_sha256": "e20eb89afdaf2aa0590418a605530f5d272289b75215bdb65f7d5f6e8686bae1",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00098_b00/trajectory.h5",
+      "source_h5_sha256": "018b6c77a8ef91f067cdcc67a4f0744fe6eaeed53206fb7ffd338921094157fc",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          226.80519480519482,
+          166.45454545454547
+        ],
+        "goal": [
+          225.7734375,
+          171.2890625
+        ],
+        "start": [
+          238.72549019607843,
+          181.7941176470588
+        ],
+        "real_to_start": 19.426680551634387,
+        "real_to_goal": 4.943387320412319,
+        "start_to_goal": 16.676685902323015,
+        "real_last_area": 77
+      }
+    },
+    {
+      "id": "g00098_b01",
+      "episode_id": "g00098_b01",
+      "file": "cases/000981.npz",
+      "sha256": "2546f044bf70527c058dd206927800f9488f97e2544f8c118dcd4b1e4f51ee56",
+      "split": "val",
+      "frames": 52,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00098",
+      "initial_state_sha256": "e20eb89afdaf2aa0590418a605530f5d272289b75215bdb65f7d5f6e8686bae1",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00098_b01/trajectory.h5",
+      "source_h5_sha256": "4d95b88e48011133c3802eeb6e2d5a581811dfa82415265d3e2a1941c7a9391a",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          226.67948717948718,
+          166.5897435897436
+        ],
+        "goal": [
+          225.8015873015873,
+          171.32539682539684
+        ],
+        "start": [
+          238.72549019607843,
+          181.7941176470588
+        ],
+        "real_to_start": 19.397916876574286,
+        "real_to_goal": 4.816338834007601,
+        "start_to_goal": 16.631938602223595,
+        "real_last_area": 78
+      }
+    },
+    {
+      "id": "g00098_b03",
+      "episode_id": "g00098_b03",
+      "file": "cases/000983.npz",
+      "sha256": "b6c3569797e4e7ce946cf1bd18c4d406ed1156d98d4439e9d026b4276d17a09d",
+      "split": "val",
+      "frames": 87,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00098",
+      "initial_state_sha256": "e20eb89afdaf2aa0590418a605530f5d272289b75215bdb65f7d5f6e8686bae1",
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00098_b03/trajectory.h5",
+      "source_h5_sha256": "4b74ed1a51e69a5ee82402e92569cb98205cebdd1569836ed9dfdf696bebaf00",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          219.0126582278481,
+          173.56962025316454
+        ],
+        "goal": [
+          227.40506329113924,
+          169.70886075949366
+        ],
+        "start": [
+          238.72549019607843,
+          181.7941176470588
+        ],
+        "real_to_start": 21.359730840763344,
+        "real_to_goal": 9.237852922315042,
+        "start_to_goal": 16.559151528641554,
+        "real_last_area": 79
+      }
+    },
+    {
+      "id": "g00098_b07",
+      "episode_id": "g00098_b07",
+      "file": "cases/000987.npz",
+      "sha256": "768709a3493125308526a981effe9f7b0e1421ee5831919c085856d4526bca65",
+      "split": "val",
+      "frames": 51,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00098",
+      "initial_state_sha256": "e20eb89afdaf2aa0590418a605530f5d272289b75215bdb65f7d5f6e8686bae1",
+      "success": false,
+      "failure_type": "grasp_miss",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00098_b07/trajectory.h5",
+      "source_h5_sha256": "34d3f13243120af0c8ae380e41fb416dd26878fd23571db6428733fce2cfe9b7",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320",
+      "geometry": {
+        "real": [
+          238.68627450980392,
+          181.99019607843138
+        ],
+        "goal": [
+          226.01020408163265,
+          169.96938775510205
+        ],
+        "start": [
+          238.72549019607843,
+          181.7941176470588
+        ],
+        "real_to_start": 0.19996154955267703,
+        "real_to_goal": 17.469476072457983,
+        "start_to_goal": 17.363834196108684,
+        "real_last_area": 102
+      }
+    }
+  ],
+  "groups": 10,
+  "counts": {
+    "success": 20,
+    "failure": 20
+  },
+  "failure_three_way_identifiable": 11
+}

@@ -1,0 +1,2155 @@
+{
+  "schema": 1,
+  "splits": [
+    "val"
+  ],
+  "manifest_sha256": {
+    "val": "bd2c107d39ae8ba28ec5146683f0f7a4a3200103a339f5f7a0e8b27ef3dbd7a1"
+  },
+  "rise_threshold_px": 21.166353715161407,
+  "gt_rise_max_unlifted": 3.1150918047469816,
+  "gt_rise_min_lifted": 39.21761562557583,
+  "lift_window": 10,
+  "release_settle": 3,
+  "counts": {
+    "unlifted_failure": 24,
+    "release_failure": 7,
+    "success_control": 20
+  },
+  "cases": [
+    {
+      "id": "g00006_b03",
+      "split": "val",
+      "file": "cases/000063.npz",
+      "group": "counter_group_00006",
+      "frames": 54,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "partial_close"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.0,
+      "category": "unlifted_failure",
+      "anchor": 21,
+      "end": 31,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 15,
+          "label": "-6"
+        },
+        {
+          "k": 18,
+          "label": "-3"
+        },
+        {
+          "k": 21,
+          "label": "+0"
+        },
+        {
+          "k": 23,
+          "label": "+2"
+        },
+        {
+          "k": 25,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00006_b04",
+      "split": "val",
+      "file": "cases/000064.npz",
+      "group": "counter_group_00006",
+      "frames": 64,
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "factors": [
+        "early_release"
+      ],
+      "gt_lift": true,
+      "gt_rise_px": 39.984492753623186,
+      "category": "release_failure",
+      "anchor": 30,
+      "end": 41,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 24,
+          "label": "-6"
+        },
+        {
+          "k": 27,
+          "label": "-3"
+        },
+        {
+          "k": 30,
+          "label": "+0"
+        },
+        {
+          "k": 32,
+          "label": "+2"
+        }
+      ]
+    },
+    {
+      "id": "g00006_b07",
+      "split": "val",
+      "file": "cases/000067.npz",
+      "group": "counter_group_00006",
+      "frames": 49,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "skip_descend"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.0,
+      "category": "unlifted_failure",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00006_b08",
+      "split": "val",
+      "file": "cases/000068.npz",
+      "group": "counter_group_00006",
+      "frames": 52,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "partial_close",
+        "transport_short"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 0.37999999999999545,
+      "category": "unlifted_failure",
+      "anchor": 21,
+      "end": 31,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 15,
+          "label": "-6"
+        },
+        {
+          "k": 18,
+          "label": "-3"
+        },
+        {
+          "k": 21,
+          "label": "+0"
+        },
+        {
+          "k": 23,
+          "label": "+2"
+        },
+        {
+          "k": 25,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00006_b00",
+      "split": "val",
+      "file": "cases/000060.npz",
+      "group": "counter_group_00006",
+      "frames": 54,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 58.86666666666666,
+      "category": "success_control",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00006_b01",
+      "split": "val",
+      "file": "cases/000061.npz",
+      "group": "counter_group_00006",
+      "frames": 54,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 60.11639639639638,
+      "category": "success_control",
+      "anchor": 21,
+      "end": 31,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 15,
+          "label": "-6"
+        },
+        {
+          "k": 18,
+          "label": "-3"
+        },
+        {
+          "k": 21,
+          "label": "+0"
+        },
+        {
+          "k": 23,
+          "label": "+2"
+        },
+        {
+          "k": 25,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00014_b03",
+      "split": "val",
+      "file": "cases/000143.npz",
+      "group": "counter_group_00014",
+      "frames": 65,
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "factors": [
+        "early_release"
+      ],
+      "gt_lift": true,
+      "gt_rise_px": 39.385143570536826,
+      "category": "release_failure",
+      "anchor": 30,
+      "end": 40,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 24,
+          "label": "-6"
+        },
+        {
+          "k": 27,
+          "label": "-3"
+        },
+        {
+          "k": 30,
+          "label": "+0"
+        },
+        {
+          "k": 32,
+          "label": "+2"
+        }
+      ]
+    },
+    {
+      "id": "g00014_b06",
+      "split": "val",
+      "file": "cases/000146.npz",
+      "group": "counter_group_00014",
+      "frames": 44,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "skip_descend"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.0416666666666572,
+      "category": "unlifted_failure",
+      "anchor": 13,
+      "end": 23,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 7,
+          "label": "-6"
+        },
+        {
+          "k": 10,
+          "label": "-3"
+        },
+        {
+          "k": 13,
+          "label": "+0"
+        },
+        {
+          "k": 15,
+          "label": "+2"
+        },
+        {
+          "k": 17,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00014_b07",
+      "split": "val",
+      "file": "cases/000147.npz",
+      "group": "counter_group_00014",
+      "frames": 86,
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "factors": [
+        "push"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.0429042904290213,
+      "category": "unlifted_failure",
+      "anchor": 51,
+      "end": 61,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 45,
+          "label": "-6"
+        },
+        {
+          "k": 48,
+          "label": "-3"
+        },
+        {
+          "k": 51,
+          "label": "+0"
+        },
+        {
+          "k": 53,
+          "label": "+2"
+        },
+        {
+          "k": 55,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00014_b08",
+      "split": "val",
+      "file": "cases/000148.npz",
+      "group": "counter_group_00014",
+      "frames": 67,
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "factors": [
+        "partial_close",
+        "transport_short"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.8793285752048519,
+      "category": "unlifted_failure",
+      "anchor": 21,
+      "end": 31,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 15,
+          "label": "-6"
+        },
+        {
+          "k": 18,
+          "label": "-3"
+        },
+        {
+          "k": 21,
+          "label": "+0"
+        },
+        {
+          "k": 23,
+          "label": "+2"
+        },
+        {
+          "k": 25,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00014_b00",
+      "split": "val",
+      "file": "cases/000140.npz",
+      "group": "counter_group_00014",
+      "frames": 55,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 40.595906432748535,
+      "category": "success_control",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00014_b01",
+      "split": "val",
+      "file": "cases/000141.npz",
+      "group": "counter_group_00014",
+      "frames": 56,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 39.983273251622194,
+      "category": "success_control",
+      "anchor": 21,
+      "end": 31,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 15,
+          "label": "-6"
+        },
+        {
+          "k": 18,
+          "label": "-3"
+        },
+        {
+          "k": 21,
+          "label": "+0"
+        },
+        {
+          "k": 23,
+          "label": "+2"
+        },
+        {
+          "k": 25,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00022_b05",
+      "split": "val",
+      "file": "cases/000225.npz",
+      "group": "counter_group_00022",
+      "frames": 47,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "skip_descend"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.0313358302122424,
+      "category": "unlifted_failure",
+      "anchor": 16,
+      "end": 26,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 10,
+          "label": "-6"
+        },
+        {
+          "k": 13,
+          "label": "-3"
+        },
+        {
+          "k": 16,
+          "label": "+0"
+        },
+        {
+          "k": 18,
+          "label": "+2"
+        },
+        {
+          "k": 20,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00022_b08",
+      "split": "val",
+      "file": "cases/000228.npz",
+      "group": "counter_group_00022",
+      "frames": 65,
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "factors": [
+        "partial_close",
+        "transport_short"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.8960426179604326,
+      "category": "unlifted_failure",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00022_b00",
+      "split": "val",
+      "file": "cases/000220.npz",
+      "group": "counter_group_00022",
+      "frames": 53,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 41.201923076923066,
+      "category": "success_control",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00022_b01",
+      "split": "val",
+      "file": "cases/000221.npz",
+      "group": "counter_group_00022",
+      "frames": 53,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 41.29941860465115,
+      "category": "success_control",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00037_b03",
+      "split": "val",
+      "file": "cases/000373.npz",
+      "group": "counter_group_00037",
+      "frames": 57,
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "factors": [
+        "delayed_close"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.2303448275862081,
+      "category": "unlifted_failure",
+      "anchor": 23,
+      "end": 33,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 17,
+          "label": "-6"
+        },
+        {
+          "k": 20,
+          "label": "-3"
+        },
+        {
+          "k": 23,
+          "label": "+0"
+        },
+        {
+          "k": 25,
+          "label": "+2"
+        },
+        {
+          "k": 27,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00037_b04",
+      "split": "val",
+      "file": "cases/000374.npz",
+      "group": "counter_group_00037",
+      "frames": 55,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "partial_close"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 2.0960012951271096,
+      "category": "unlifted_failure",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00037_b05",
+      "split": "val",
+      "file": "cases/000375.npz",
+      "group": "counter_group_00037",
+      "frames": 64,
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "factors": [
+        "early_release"
+      ],
+      "gt_lift": true,
+      "gt_rise_px": 45.973697607330735,
+      "category": "release_failure",
+      "anchor": 29,
+      "end": 40,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 23,
+          "label": "-6"
+        },
+        {
+          "k": 26,
+          "label": "-3"
+        },
+        {
+          "k": 29,
+          "label": "+0"
+        },
+        {
+          "k": 31,
+          "label": "+2"
+        }
+      ]
+    },
+    {
+      "id": "g00037_b08",
+      "split": "val",
+      "file": "cases/000378.npz",
+      "group": "counter_group_00037",
+      "frames": 63,
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "factors": [
+        "orientation_tilt",
+        "early_release"
+      ],
+      "gt_lift": true,
+      "gt_rise_px": 42.823638173801754,
+      "category": "release_failure",
+      "anchor": 28,
+      "end": 38,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 22,
+          "label": "-6"
+        },
+        {
+          "k": 25,
+          "label": "-3"
+        },
+        {
+          "k": 28,
+          "label": "+0"
+        },
+        {
+          "k": 30,
+          "label": "+2"
+        }
+      ]
+    },
+    {
+      "id": "g00037_b00",
+      "split": "val",
+      "file": "cases/000370.npz",
+      "group": "counter_group_00037",
+      "frames": 55,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 50.43986998916576,
+      "category": "success_control",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00037_b01",
+      "split": "val",
+      "file": "cases/000371.npz",
+      "group": "counter_group_00037",
+      "frames": 56,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 49.816239316239304,
+      "category": "success_control",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00059_b03",
+      "split": "val",
+      "file": "cases/000593.npz",
+      "group": "counter_group_00059",
+      "frames": 85,
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "factors": [
+        "push"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 3.1150918047469816,
+      "category": "unlifted_failure",
+      "anchor": 51,
+      "end": 61,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 45,
+          "label": "-6"
+        },
+        {
+          "k": 48,
+          "label": "-3"
+        },
+        {
+          "k": 51,
+          "label": "+0"
+        },
+        {
+          "k": 53,
+          "label": "+2"
+        },
+        {
+          "k": 55,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00059_b07",
+      "split": "val",
+      "file": "cases/000597.npz",
+      "group": "counter_group_00059",
+      "frames": 56,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "grasp_offset"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 0.568181818181813,
+      "category": "unlifted_failure",
+      "anchor": 22,
+      "end": 32,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 16,
+          "label": "-6"
+        },
+        {
+          "k": 19,
+          "label": "-3"
+        },
+        {
+          "k": 22,
+          "label": "+0"
+        },
+        {
+          "k": 24,
+          "label": "+2"
+        },
+        {
+          "k": 26,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00059_b00",
+      "split": "val",
+      "file": "cases/000590.npz",
+      "group": "counter_group_00059",
+      "frames": 54,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 50.60544340302812,
+      "category": "success_control",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00059_b01",
+      "split": "val",
+      "file": "cases/000591.npz",
+      "group": "counter_group_00059",
+      "frames": 54,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 51.18063633253507,
+      "category": "success_control",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00061_b05",
+      "split": "val",
+      "file": "cases/000615.npz",
+      "group": "counter_group_00061",
+      "frames": 47,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "skip_descend"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.0408580183861034,
+      "category": "unlifted_failure",
+      "anchor": 18,
+      "end": 28,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 12,
+          "label": "-6"
+        },
+        {
+          "k": 15,
+          "label": "-3"
+        },
+        {
+          "k": 18,
+          "label": "+0"
+        },
+        {
+          "k": 20,
+          "label": "+2"
+        },
+        {
+          "k": 22,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00061_b06",
+      "split": "val",
+      "file": "cases/000616.npz",
+      "group": "counter_group_00061",
+      "frames": 83,
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "factors": [
+        "push"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.7336191059399937,
+      "category": "unlifted_failure",
+      "anchor": 51,
+      "end": 61,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 45,
+          "label": "-6"
+        },
+        {
+          "k": 48,
+          "label": "-3"
+        },
+        {
+          "k": 51,
+          "label": "+0"
+        },
+        {
+          "k": 53,
+          "label": "+2"
+        },
+        {
+          "k": 55,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00061_b08",
+      "split": "val",
+      "file": "cases/000618.npz",
+      "group": "counter_group_00061",
+      "frames": 75,
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "factors": [
+        "orientation_tilt",
+        "early_release"
+      ],
+      "gt_lift": true,
+      "gt_rise_px": 46.05913043478259,
+      "category": "release_failure",
+      "anchor": 43,
+      "end": 53,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 37,
+          "label": "-6"
+        },
+        {
+          "k": 40,
+          "label": "-3"
+        },
+        {
+          "k": 43,
+          "label": "+0"
+        },
+        {
+          "k": 45,
+          "label": "+2"
+        }
+      ]
+    },
+    {
+      "id": "g00061_b00",
+      "split": "val",
+      "file": "cases/000610.npz",
+      "group": "counter_group_00061",
+      "frames": 52,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 52.16182432432433,
+      "category": "success_control",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00061_b01",
+      "split": "val",
+      "file": "cases/000611.npz",
+      "group": "counter_group_00061",
+      "frames": 53,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 52.16182432432433,
+      "category": "success_control",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00071_b03",
+      "split": "val",
+      "file": "cases/000713.npz",
+      "group": "counter_group_00071",
+      "frames": 57,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "partial_close"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.9122222222222263,
+      "category": "unlifted_failure",
+      "anchor": 21,
+      "end": 31,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 15,
+          "label": "-6"
+        },
+        {
+          "k": 18,
+          "label": "-3"
+        },
+        {
+          "k": 21,
+          "label": "+0"
+        },
+        {
+          "k": 23,
+          "label": "+2"
+        },
+        {
+          "k": 25,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00071_b04",
+      "split": "val",
+      "file": "cases/000714.npz",
+      "group": "counter_group_00071",
+      "frames": 67,
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "factors": [
+        "early_release"
+      ],
+      "gt_lift": true,
+      "gt_rise_px": 41.438129899216136,
+      "category": "release_failure",
+      "anchor": 30,
+      "end": 41,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 24,
+          "label": "-6"
+        },
+        {
+          "k": 27,
+          "label": "-3"
+        },
+        {
+          "k": 30,
+          "label": "+0"
+        },
+        {
+          "k": 32,
+          "label": "+2"
+        }
+      ]
+    },
+    {
+      "id": "g00071_b07",
+      "split": "val",
+      "file": "cases/000717.npz",
+      "group": "counter_group_00071",
+      "frames": 45,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "skip_descend"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 0.9337623762376381,
+      "category": "unlifted_failure",
+      "anchor": 13,
+      "end": 23,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 7,
+          "label": "-6"
+        },
+        {
+          "k": 10,
+          "label": "-3"
+        },
+        {
+          "k": 13,
+          "label": "+0"
+        },
+        {
+          "k": 15,
+          "label": "+2"
+        },
+        {
+          "k": 17,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00071_b00",
+      "split": "val",
+      "file": "cases/000710.npz",
+      "group": "counter_group_00071",
+      "frames": 56,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 48.70709382151031,
+      "category": "success_control",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00071_b01",
+      "split": "val",
+      "file": "cases/000711.npz",
+      "group": "counter_group_00071",
+      "frames": 56,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 50.395459803354555,
+      "category": "success_control",
+      "anchor": 21,
+      "end": 31,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 15,
+          "label": "-6"
+        },
+        {
+          "k": 18,
+          "label": "-3"
+        },
+        {
+          "k": 21,
+          "label": "+0"
+        },
+        {
+          "k": 23,
+          "label": "+2"
+        },
+        {
+          "k": 25,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00080_b07",
+      "split": "val",
+      "file": "cases/000807.npz",
+      "group": "counter_group_00080",
+      "frames": 67,
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "factors": [
+        "orientation_tilt"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": -0.5064325917984434,
+      "category": "unlifted_failure",
+      "anchor": 36,
+      "end": 46,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 30,
+          "label": "-6"
+        },
+        {
+          "k": 33,
+          "label": "-3"
+        },
+        {
+          "k": 36,
+          "label": "+0"
+        },
+        {
+          "k": 38,
+          "label": "+2"
+        },
+        {
+          "k": 40,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00080_b08",
+      "split": "val",
+      "file": "cases/000808.npz",
+      "group": "counter_group_00080",
+      "frames": 53,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "grasp_offset",
+        "early_close"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.0488446579730066,
+      "category": "unlifted_failure",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00080_b00",
+      "split": "val",
+      "file": "cases/000800.npz",
+      "group": "counter_group_00080",
+      "frames": 53,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 51.43438650901339,
+      "category": "success_control",
+      "anchor": 18,
+      "end": 28,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 12,
+          "label": "-6"
+        },
+        {
+          "k": 15,
+          "label": "-3"
+        },
+        {
+          "k": 18,
+          "label": "+0"
+        },
+        {
+          "k": 20,
+          "label": "+2"
+        },
+        {
+          "k": 22,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00080_b01",
+      "split": "val",
+      "file": "cases/000801.npz",
+      "group": "counter_group_00080",
+      "frames": 54,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 52.04411764705881,
+      "category": "success_control",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00084_b03",
+      "split": "val",
+      "file": "cases/000843.npz",
+      "group": "counter_group_00084",
+      "frames": 53,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "partial_close"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 1.499517024873228,
+      "category": "unlifted_failure",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00084_b04",
+      "split": "val",
+      "file": "cases/000844.npz",
+      "group": "counter_group_00084",
+      "frames": 63,
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "factors": [
+        "early_release"
+      ],
+      "gt_lift": true,
+      "gt_rise_px": 40.124341412012654,
+      "category": "release_failure",
+      "anchor": 29,
+      "end": 40,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 23,
+          "label": "-6"
+        },
+        {
+          "k": 26,
+          "label": "-3"
+        },
+        {
+          "k": 29,
+          "label": "+0"
+        },
+        {
+          "k": 31,
+          "label": "+2"
+        }
+      ]
+    },
+    {
+      "id": "g00084_b07",
+      "split": "val",
+      "file": "cases/000847.npz",
+      "group": "counter_group_00084",
+      "frames": 48,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "skip_descend"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 0.9499009900989961,
+      "category": "unlifted_failure",
+      "anchor": 18,
+      "end": 28,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 12,
+          "label": "-6"
+        },
+        {
+          "k": 15,
+          "label": "-3"
+        },
+        {
+          "k": 18,
+          "label": "+0"
+        },
+        {
+          "k": 20,
+          "label": "+2"
+        },
+        {
+          "k": 22,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00084_b08",
+      "split": "val",
+      "file": "cases/000848.npz",
+      "group": "counter_group_00084",
+      "frames": 58,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "grasp_offset",
+        "early_close"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 0.9399339933993645,
+      "category": "unlifted_failure",
+      "anchor": 22,
+      "end": 32,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 16,
+          "label": "-6"
+        },
+        {
+          "k": 19,
+          "label": "-3"
+        },
+        {
+          "k": 22,
+          "label": "+0"
+        },
+        {
+          "k": 24,
+          "label": "+2"
+        },
+        {
+          "k": 26,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00084_b00",
+      "split": "val",
+      "file": "cases/000840.npz",
+      "group": "counter_group_00084",
+      "frames": 52,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 56.09972602739727,
+      "category": "success_control",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00084_b01",
+      "split": "val",
+      "file": "cases/000841.npz",
+      "group": "counter_group_00084",
+      "frames": 53,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 57.10336239103363,
+      "category": "success_control",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00098_b03",
+      "split": "val",
+      "file": "cases/000983.npz",
+      "group": "counter_group_00098",
+      "frames": 87,
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "factors": [
+        "push"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 0.6282051282051384,
+      "category": "unlifted_failure",
+      "anchor": 55,
+      "end": 65,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 49,
+          "label": "-6"
+        },
+        {
+          "k": 52,
+          "label": "-3"
+        },
+        {
+          "k": 55,
+          "label": "+0"
+        },
+        {
+          "k": 57,
+          "label": "+2"
+        },
+        {
+          "k": 59,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00098_b07",
+      "split": "val",
+      "file": "cases/000987.npz",
+      "group": "counter_group_00098",
+      "frames": 51,
+      "success": false,
+      "failure_type": "grasp_miss",
+      "factors": [
+        "grasp_offset"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 0.39531930333816945,
+      "category": "unlifted_failure",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00098_b08",
+      "split": "val",
+      "file": "cases/000988.npz",
+      "group": "counter_group_00098",
+      "frames": 52,
+      "success": false,
+      "failure_type": "contact_without_lift",
+      "factors": [
+        "partial_close",
+        "transport_short"
+      ],
+      "gt_lift": false,
+      "gt_rise_px": 0.9785378940308362,
+      "category": "unlifted_failure",
+      "anchor": 20,
+      "end": 30,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 14,
+          "label": "-6"
+        },
+        {
+          "k": 17,
+          "label": "-3"
+        },
+        {
+          "k": 20,
+          "label": "+0"
+        },
+        {
+          "k": 22,
+          "label": "+2"
+        },
+        {
+          "k": 24,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00098_b00",
+      "split": "val",
+      "file": "cases/000980.npz",
+      "group": "counter_group_00098",
+      "frames": 51,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 52.653985507246375,
+      "category": "success_control",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    },
+    {
+      "id": "g00098_b01",
+      "split": "val",
+      "file": "cases/000981.npz",
+      "group": "counter_group_00098",
+      "frames": 52,
+      "success": true,
+      "failure_type": null,
+      "factors": [],
+      "gt_lift": true,
+      "gt_rise_px": 52.93176328502415,
+      "category": "success_control",
+      "anchor": 19,
+      "end": 29,
+      "handoffs": [
+        {
+          "k": 2,
+          "label": "start"
+        },
+        {
+          "k": 13,
+          "label": "-6"
+        },
+        {
+          "k": 16,
+          "label": "-3"
+        },
+        {
+          "k": 19,
+          "label": "+0"
+        },
+        {
+          "k": 21,
+          "label": "+2"
+        },
+        {
+          "k": 23,
+          "label": "+4"
+        }
+      ]
+    }
+  ],
+  "rule": "all failures with a lift phase and no GT lift; all failures with early_release; first 2 successes by id in each group that has a selected failure. Frozen before any handoff generation."
+}

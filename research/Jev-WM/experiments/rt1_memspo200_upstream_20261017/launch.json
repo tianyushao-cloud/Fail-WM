@@ -1,0 +1,18 @@
+{
+  "source_commit": "7b8f26a5d165c58645212093d2e0dfffc4278643",
+  "recipe_matches": true,
+  "gpus_requested": 4,
+  "accumulation_per_gpu": 4,
+  "training_steps": 200,
+  "training_horizon": 10,
+  "evaluation_horizons": [
+    10,
+    20,
+    32
+  ],
+  "schedule_entries": 3200,
+  "train_episodes": 512,
+  "test_episodes": 64,
+  "pid": 68,
+  "started_utc": "2026-10-16T22:53:41.815369+00:00"
+}

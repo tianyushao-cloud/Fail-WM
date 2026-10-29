@@ -1,0 +1,99 @@
+{
+  "cases": [
+    {
+      "id": "g00006_b00",
+      "episode_id": "g00006_b00",
+      "file": "cases/000060.npz",
+      "sha256": "c8668b9c321a367580ee05feacdf6b8e032c5d5b32929d079dfc0ca2d641f101",
+      "split": "val",
+      "frames": 54,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00006",
+      "initial_state_sha256": "5e58d2f2a2d543851357ab877eb2d86feda1c705f7f501e9247ce4d72c92bbbe",
+      "success": true,
+      "failure_type": null,
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00006_b00/trajectory.h5",
+      "source_h5_sha256": "2f164f85fa100797e93c1f6218ac1a924dee07aef3fddc905c86efc7eea81b4c",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320"
+    },
+    {
+      "id": "g00006_b03",
+      "episode_id": "g00006_b03",
+      "file": "cases/000063.npz",
+      "sha256": "ba82a35c4a4cb25cd542fcdaa301a7f357343b6041a0bcd788f3329ea2f98cf6",
+      "split": "val",
+      "frames": 54,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00006",
+      "initial_state_sha256": "5e58d2f2a2d543851357ab877eb2d86feda1c705f7f501e9247ce4d72c92bbbe",
+      "success": false,
+      "failure_type": "grasp_miss",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00006_b03/trajectory.h5",
+      "source_h5_sha256": "b9061a3a2aa3cc3c80c6aa11aa5e9f1c9793f194e4cd341652628093274b49ca",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320"
+    },
+    {
+      "id": "g00006_b04",
+      "episode_id": "g00006_b04",
+      "file": "cases/000064.npz",
+      "sha256": "a276d7ba36a9d4bdadd9fd9a780d80e9da952a8cbfe1215d98218ee05fe642c3",
+      "split": "val",
+      "frames": 64,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00006",
+      "initial_state_sha256": "5e58d2f2a2d543851357ab877eb2d86feda1c705f7f501e9247ce4d72c92bbbe",
+      "success": false,
+      "failure_type": "dropped_before_goal",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00006_b04/trajectory.h5",
+      "source_h5_sha256": "6efb7d435784c880e1f7d010df0c46959edc1908601f4b19b1bfc4456f649cc5",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320"
+    },
+    {
+      "id": "g00014_b06",
+      "episode_id": "g00014_b06",
+      "file": "cases/000146.npz",
+      "sha256": "d1b419922db1e38d35cdf655160c569170113b41f0bb290fa60a4168dd1c867a",
+      "split": "val",
+      "frames": 44,
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00014",
+      "initial_state_sha256": "c6c57ffffeda9c57d7e7fe6679bf6ef5da7ad448fcec5420bcc3402475d538c1",
+      "success": false,
+      "failure_type": "grasp_miss",
+      "source_h5": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/episodes/g00014_b06/trajectory.h5",
+      "source_h5_sha256": "18fb3eccb9f460f3d5234953b590e3d55aed51c49a7de75a01c53822fa07a0d9",
+      "pack": 4,
+      "resize": "Pillow-BICUBIC 480x640 -> 256x320"
+    }
+  ],
+  "models": {
+    "success": {
+      "bundle": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle",
+      "checkpoint": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000",
+      "checkpoint_receipt_sha256": "804a864569cbabf6ccc9cae162772c10466d0eadd69d545096c51ee659f58ff7",
+      "codec_sha256": "d0d9cf1e8e8d335f2f2a08f6cff4a7cba007d5bb3419bfba8e74c6baf0c35d59"
+    },
+    "natural": {
+      "bundle": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle",
+      "checkpoint": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000",
+      "checkpoint_receipt_sha256": "70a2e5040fdd7d36becf8f351ade017026a777fd0757b2f00c7a21fdb50d9180",
+      "codec_sha256": "d0d9cf1e8e8d335f2f2a08f6cff4a7cba007d5bb3419bfba8e74c6baf0c35d59"
+    }
+  },
+  "manifest_sha256": "bd2c107d39ae8ba28ec5146683f0f7a4a3200103a339f5f7a0e8b27ef3dbd7a1",
+  "selection": "Fixed before generation: one successful grasp/place, one missed grasp, one early release, one old-codec false-lift case",
+  "initial_GT_frames": 2,
+  "actions": "original unchanged actions",
+  "horizon": "entire remaining episode",
+  "beam": 4,
+  "memory": "full",
+  "seed": 0,
+  "labels": {
+    "success": "SUCCESS_ONLY: 443 success",
+    "natural": "MIXED: 443 success + 357 failure"
+  },
+  "no_judge": "Exploratory videos only, no success-rate estimate, no new 720-rollout evaluation"
+}

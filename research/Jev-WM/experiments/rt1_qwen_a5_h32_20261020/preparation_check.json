@@ -1,0 +1,223 @@
+{
+  "gpus": 4,
+  "accumulation_per_gpu": 4,
+  "scheduled_batches": 100,
+  "global_batch": 16,
+  "horizon": 32,
+  "initial_variant": "sft",
+  "reward": "pure GT-referenced local Qwen-VL judge; no R0 reward or R0 selection",
+  "judge": {
+    "model": "/media/tyshao/Jev-WM/paper_assets/qwen/Qwen3-VL-8B-Instruct",
+    "scale": 2,
+    "batch_size": 4,
+    "arm": "arm_A5",
+    "calibration": "axes_confirm_centered",
+    "weights": {
+      "fidelity": 0.2941176470588235,
+      "motion": 0.23529411764705882,
+      "physics": 0.23529411764705882,
+      "task": 0.23529411764705882
+    },
+    "taus": {
+      "fidelity": 0.03703754564589948,
+      "motion": 0.034309757291701035,
+      "physics": 0.022513194279625157,
+      "task": 0.009511864508435386
+    },
+    "log_dir": "/media/tyshao/Jev-WM/experiments/rt1_qwen_a5_h32_20261020/judge_log"
+  },
+  "calibration": {
+    "name": "axes_confirm_centered",
+    "axes": {
+      "fidelity": {
+        "controls": {
+          "freeze_all": {
+            "rate": 1.0,
+            "required": 0.9,
+            "passed": true
+          },
+          "black": {
+            "rate": 1.0,
+            "required": 0.9,
+            "passed": true
+          },
+          "other_episode": {
+            "rate": 1.0,
+            "required": 0.9,
+            "passed": true
+          },
+          "reverse": {
+            "rate": 1.0,
+            "required": 0.75,
+            "passed": true
+          }
+        },
+        "diagnostic_gt_beats": {
+          "flicker": 1.0
+        },
+        "tau": 0.03703754564589948,
+        "informative": 0.5416666666666666,
+        "mean_view_gap": -0.19969948763324982,
+        "included": true,
+        "mean_scores": {
+          "sft0": 0.7042921984710766,
+          "sft1": 0.6421960340827612,
+          "sft2": 0.6763578084935274,
+          "sft3": 0.7006682274706918,
+          "gt_codec": 0.9790026167116737,
+          "freeze_all": 0.2572203059035221,
+          "black": 0.09315260430761728,
+          "other_episode": 0.21938861349906594,
+          "reverse": 0.5271134426958146,
+          "flicker": 0.8739816764706391
+        },
+        "median_group_spread": 0.05412045040655272,
+        "within_group_spearman_views": 0.3666666666666667,
+        "within_group_spearman_vs_neg_lpips": 0.2333333333333333,
+        "within_group_spearman_vs_neg_repeats": 0.14166666666666664
+      },
+      "motion": {
+        "controls": {
+          "freeze_all": {
+            "rate": 1.0,
+            "required": 0.9,
+            "passed": true
+          },
+          "freeze_second_half": {
+            "rate": 1.0,
+            "required": 0.9,
+            "passed": true
+          }
+        },
+        "diagnostic_gt_beats": {
+          "flicker": 1.0
+        },
+        "tau": 0.034309757291701035,
+        "informative": 0.625,
+        "mean_view_gap": -0.01992180803389081,
+        "included": true,
+        "mean_scores": {
+          "sft0": 0.27797924989289874,
+          "sft1": 0.2573451487053622,
+          "sft2": 0.2664562309072033,
+          "sft3": 0.26089486593401107,
+          "gt_codec": 0.8004425120755355,
+          "freeze_all": 1.3411381600260207e-06,
+          "freeze_second_half": 0.2114131094110263,
+          "flicker": 0.5771821163045283
+        },
+        "median_group_spread": 0.05031278527563618,
+        "within_group_spearman_views": 0.21666666666666665,
+        "within_group_spearman_vs_neg_lpips": 0.19166666666666665,
+        "within_group_spearman_vs_neg_repeats": 0.3583333333333334
+      },
+      "physics": {
+        "controls": {
+          "duplicate": {
+            "rate": 1.0,
+            "required": 0.75,
+            "passed": true
+          },
+          "erase": {
+            "rate": 0.7916666666666666,
+            "required": 0.75,
+            "passed": true
+          },
+          "splice": {
+            "rate": 0.9166666666666666,
+            "required": 0.75,
+            "passed": true
+          }
+        },
+        "diagnostic_gt_beats": {},
+        "tau": 0.022513194279625157,
+        "informative": 0.6666666666666666,
+        "mean_view_gap": 0.036692404882579216,
+        "included": true,
+        "mean_scores": {
+          "sft0": 0.9041274902640662,
+          "sft1": 0.888004250605964,
+          "sft2": 0.8841160889927245,
+          "sft3": 0.8945772598457405,
+          "gt_codec": 0.9581532282264553,
+          "duplicate": 0.8793509381022364,
+          "erase": 0.928832948458,
+          "splice": 0.8643019616703108
+        },
+        "median_group_spread": 0.053433748925358515,
+        "within_group_spearman_views": 0.6083333333333333,
+        "within_group_spearman_vs_neg_lpips": 0.21666666666666667,
+        "within_group_spearman_vs_neg_repeats": -0.04166666666666668
+      },
+      "task": {
+        "controls": {
+          "wrong_task": {
+            "rate": 0.9583333333333334,
+            "required": 0.75,
+            "passed": true
+          }
+        },
+        "diagnostic_gt_beats": {},
+        "tau": 0.009511864508435386,
+        "informative": 0.6666666666666666,
+        "mean_view_gap": 0.0032553134304829957,
+        "included": true,
+        "mean_scores": {
+          "sft0": 0.5939278374916843,
+          "sft1": 0.5830875794224644,
+          "sft2": 0.5703384535629853,
+          "sft3": 0.6038724926215512,
+          "gt_codec": 0.9401161975825619,
+          "wrong_task": 0.49409392941298186
+        },
+        "median_group_spread": 0.03463594041857826,
+        "within_group_spearman_views": 0.6833333333333332,
+        "within_group_spearman_vs_neg_lpips": 0.19999999999999998,
+        "within_group_spearman_vs_neg_repeats": 0.25833333333333336
+      },
+      "smooth": {
+        "controls": {
+          "flicker": {
+            "rate": 0.041666666666666664,
+            "required": 0.9,
+            "passed": false
+          },
+          "blur": {
+            "rate": 1.0,
+            "required": 0.75,
+            "passed": true
+          },
+          "splice": {
+            "rate": 0.7916666666666666,
+            "required": 0.75,
+            "passed": true
+          }
+        },
+        "diagnostic_gt_beats": {},
+        "tau": 0.054349893028576235,
+        "informative": 0.7083333333333334,
+        "mean_view_gap": 0.14038645372179337,
+        "included": false,
+        "mean_scores": {
+          "sft0": 0.5937378065609572,
+          "sft1": 0.5494753853125728,
+          "sft2": 0.6033041917467911,
+          "sft3": 0.5402013952590542,
+          "gt_codec": 0.6570309130546687,
+          "flicker": 0.7592206185377036,
+          "blur": 0.4894140338813588,
+          "splice": 0.6086430654349831
+        },
+        "median_group_spread": 0.10529638160264843,
+        "within_group_spearman_views": 0.5916666666666667,
+        "within_group_spearman_vs_neg_lpips": 0.30833333333333335,
+        "within_group_spearman_vs_neg_repeats": 0.05000000000000001
+      }
+    }
+  },
+  "changed_source_files": [
+    "src/futureworlds/training.py"
+  ],
+  "source_verified": true,
+  "caveat": "axes with group spread <= tau contribute zero; all-tied global batches skip the optimizer"
+}

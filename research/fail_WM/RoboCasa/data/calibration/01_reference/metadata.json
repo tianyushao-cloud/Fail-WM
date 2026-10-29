@@ -1,0 +1,124 @@
+{
+  "episode_id": "01_reference",
+  "initial_state_id": "fixed_counter_0001",
+  "initial_state_sha256": "801f6fe376fb787fe84978e232fad3f5fe59c48c23813837c89f20cf8db642e8",
+  "seed": 20261003,
+  "split": "train",
+  "branch": "reference",
+  "success": false,
+  "failure_type": "not_placed_at_goal",
+  "actions": 680,
+  "frames": 681,
+  "duration_seconds": 34.0,
+  "perturbation": {},
+  "events": [
+    {
+      "event": "contact",
+      "state_index": 188,
+      "time_seconds": 9.399999999999975
+    },
+    {
+      "event": "grasp",
+      "state_index": 188,
+      "time_seconds": 9.399999999999975
+    },
+    {
+      "event": "lift",
+      "state_index": 206,
+      "time_seconds": 10.300000000000276
+    },
+    {
+      "event": "place",
+      "state_index": 349,
+      "time_seconds": 17.45000000000093
+    },
+    {
+      "event": "release",
+      "state_index": 537,
+      "time_seconds": 26.84999999999572
+    },
+    {
+      "event": "contact",
+      "state_index": 661,
+      "time_seconds": 33.04999999999504
+    }
+  ],
+  "event_summary": {
+    "contact": true,
+    "grasp": true,
+    "lift": true,
+    "drop": false,
+    "release": true,
+    "place": true,
+    "success": false
+  },
+  "action_dimension": 12,
+  "action_slices": {
+    "right": [
+      0,
+      6
+    ],
+    "right_gripper": [
+      6,
+      7
+    ],
+    "base": [
+      7,
+      10
+    ],
+    "torso": [
+      10,
+      11
+    ]
+  },
+  "goal_position_world": [
+    0.66,
+    -0.1,
+    0.942
+  ],
+  "task": "CounterCubePreview",
+  "standard_robocasa_benchmark": false,
+  "robot": "PandaOmron (Franka Panda arm; base and torso commands zero)",
+  "renderer": "MuJoCo EGL OpenGL",
+  "fps": 20,
+  "width": 640,
+  "height": 480,
+  "phase_ranges": {
+    "release": {
+      "first_action": 529,
+      "last_action": 544
+    },
+    "transport": {
+      "first_action": 309,
+      "last_action": 418
+    },
+    "lower": {
+      "first_action": 419,
+      "last_action": 528
+    },
+    "retreat": {
+      "first_action": 545,
+      "last_action": 654
+    },
+    "lift": {
+      "first_action": 199,
+      "last_action": 308
+    },
+    "close": {
+      "first_action": 181,
+      "last_action": 198
+    },
+    "approach": {
+      "first_action": 0,
+      "last_action": 159
+    },
+    "descend": {
+      "first_action": 160,
+      "last_action": 180
+    },
+    "settle": {
+      "first_action": 655,
+      "last_action": 679
+    }
+  }
+}

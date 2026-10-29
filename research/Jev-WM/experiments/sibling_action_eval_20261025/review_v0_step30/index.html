@@ -1,0 +1,53 @@
+<!doctype html><meta charset="utf-8"><title>v0 step30 典型样例</title>
+<style>body{font-family:sans-serif;max-width:1020px;margin:20px auto;color:#222}section{margin:34px 0;border-top:1px solid #ccc}code{font-size:12px}</style>
+<h1>RoboCasa WM：SFT vs RL（v0 state reward, step30），val sibling 测试</h1>
+<p>每段视频三列：GT（仿真器真值）| SFT | RL step30。上排整帧，下排红块区域放大。前 2 帧是真实上下文帧，之后 32 帧是模型预测（beam 4，确定性解码）。
+右上角标签：GT 列为仿真器 lift 标记；预测列为 tracker 判定（红块比起始位置高 8 px 以上）。播放 4 fps。</p>
+<section><h2>1. 修好：碰到但没抬起（SFT 假抬起 → RL 正确留在桌上）</h2>
+<p><b>g00098_b03</b> · 仿真结果 <b>contact_without_lift</b> · 夹爪指令 <code>oooooooooooFFFFFFFFFFFFFFFFooooo</code>（o 开 / h 半闭 / F 全闭，每 4 帧一个）· 末端开度 7.8 cm<br>
+窗口内 GT 抬起：<b>否</b> · SFT 预测抬起：<b>是</b> · RL 预测抬起：<b>否</b>
+· ROI LPIPS(32f) SFT 0.151 / RL 0.183</p>
+<video src="g00098_b03.mp4" controls loop muted playsinline width="984"></video>
+<p>关键帧放大（行：GT / SFT / RL；列：t=2,10,18,26,33）</p><img src="g00098_b03_sheet.jpg" width="984"></section>
+<section><h2>2. 修好：碰到但没抬起，夹爪全闭合在红块上</h2>
+<p><b>g00037_b03</b> · 仿真结果 <b>contact_without_lift</b> · 夹爪指令 <code>ooooooooooooooooFFFFFFFFFFFFFFFF</code>（o 开 / h 半闭 / F 全闭，每 4 帧一个）· 末端开度 0.1 cm<br>
+窗口内 GT 抬起：<b>否</b> · SFT 预测抬起：<b>是</b> · RL 预测抬起：<b>否</b>
+· ROI LPIPS(32f) SFT 0.093 / RL 0.102</p>
+<video src="g00037_b03.mp4" controls loop muted playsinline width="984"></video>
+<p>关键帧放大（行：GT / SFT / RL；列：t=2,10,18,26,33）</p><img src="g00037_b03_sheet.jpg" width="984"></section>
+<section><h2>3. 修好召回：真抬起后掉落（SFT 漏判 → RL 抬起）</h2>
+<p><b>g00037_b08</b> · 仿真结果 <b>dropped_before_goal</b> · 夹爪指令 <code>oooooooooooFFFFFFFFFFFFFFFoooooo</code>（o 开 / h 半闭 / F 全闭，每 4 帧一个）· 末端开度 7.8 cm<br>
+窗口内 GT 抬起：<b>是</b> · SFT 预测抬起：<b>否</b> · RL 预测抬起：<b>是</b>
+· ROI LPIPS(32f) SFT 0.155 / RL 0.145</p>
+<video src="g00037_b08.mp4" controls loop muted playsinline width="984"></video>
+<p>关键帧放大（行：GT / SFT / RL；列：t=2,10,18,26,33）</p><img src="g00037_b08_sheet.jpg" width="984"></section>
+<section><h2>4. 没修好：夹爪全闭合但没抓住，SFT 和 RL 都假抬起</h2>
+<p><b>g00098_b07</b> · 仿真结果 <b>grasp_miss</b> · 夹爪指令 <code>ooooooooooooFFFFFFFFFFFFFFFFFFFF</code>（o 开 / h 半闭 / F 全闭，每 4 帧一个）· 末端开度 0.1 cm<br>
+窗口内 GT 抬起：<b>否</b> · SFT 预测抬起：<b>是</b> · RL 预测抬起：<b>是</b>
+· ROI LPIPS(32f) SFT 0.075 / RL 0.068</p>
+<video src="g00098_b07.mp4" controls loop muted playsinline width="984"></video>
+<p>关键帧放大（行：GT / SFT / RL；列：t=2,10,18,26,33）</p><img src="g00098_b07_sheet.jpg" width="984"></section>
+<section><h2>5. 没修好：没抓住（开度 0.1 cm 闭合在空处），都假抬起</h2>
+<p><b>g00059_b07</b> · 仿真结果 <b>grasp_miss</b> · 夹爪指令 <code>oooooooooooooooFFFFFFFFFFFFFFFFF</code>（o 开 / h 半闭 / F 全闭，每 4 帧一个）· 末端开度 0.1 cm<br>
+窗口内 GT 抬起：<b>否</b> · SFT 预测抬起：<b>是</b> · RL 预测抬起：<b>是</b>
+· ROI LPIPS(32f) SFT 0.124 / RL 0.136</p>
+<video src="g00059_b07.mp4" controls loop muted playsinline width="984"></video>
+<p>关键帧放大（行：GT / SFT / RL；列：t=2,10,18,26,33）</p><img src="g00059_b07_sheet.jpg" width="984"></section>
+<section><h2>6. 弄坏：半闭合没抓住，SFT 正确 → RL 假抬起</h2>
+<p><b>g00071_b03</b> · 仿真结果 <b>grasp_miss</b> · 夹爪指令 <code>oooooooooooooohhhhhhhhhhhhhhhhhh</code>（o 开 / h 半闭 / F 全闭，每 4 帧一个）· 末端开度 6.4 cm<br>
+窗口内 GT 抬起：<b>否</b> · SFT 预测抬起：<b>否</b> · RL 预测抬起：<b>是</b>
+· ROI LPIPS(32f) SFT 0.054 / RL 0.066</p>
+<video src="g00071_b03.mp4" controls loop muted playsinline width="984"></video>
+<p>关键帧放大（行：GT / SFT / RL；列：t=2,10,18,26,33）</p><img src="g00071_b03_sheet.jpg" width="984"></section>
+<section><h2>7. 画质变差：成功抬起，两者都对，RL 的 ROI LPIPS 明显变差</h2>
+<p><b>g00006_b01</b> · 仿真结果 <b>success</b> · 夹爪指令 <code>oooooooooooooFFFFFFFFFFFFFFFFFFF</code>（o 开 / h 半闭 / F 全闭，每 4 帧一个）· 末端开度 3.8 cm<br>
+窗口内 GT 抬起：<b>是</b> · SFT 预测抬起：<b>是</b> · RL 预测抬起：<b>是</b>
+· ROI LPIPS(32f) SFT 0.078 / RL 0.136</p>
+<video src="g00006_b01.mp4" controls loop muted playsinline width="984"></video>
+<p>关键帧放大（行：GT / SFT / RL；列：t=2,10,18,26,33）</p><img src="g00006_b01_sheet.jpg" width="984"></section>
+<section><h2>8. 画质变好：没抓住，RL LPIPS 最大改善，但仍假抬起</h2>
+<p><b>g00006_b07</b> · 仿真结果 <b>grasp_miss</b> · 夹爪指令 <code>ooooooooooooFFFFFFFFFFFFFFFFFFFo</code>（o 开 / h 半闭 / F 全闭，每 4 帧一个）· 末端开度 0.3 cm<br>
+窗口内 GT 抬起：<b>否</b> · SFT 预测抬起：<b>是</b> · RL 预测抬起：<b>是</b>
+· ROI LPIPS(32f) SFT 0.124 / RL 0.063</p>
+<video src="g00006_b07.mp4" controls loop muted playsinline width="984"></video>
+<p>关键帧放大（行：GT / SFT / RL；列：t=2,10,18,26,33）</p><img src="g00006_b07_sheet.jpg" width="984"></section>

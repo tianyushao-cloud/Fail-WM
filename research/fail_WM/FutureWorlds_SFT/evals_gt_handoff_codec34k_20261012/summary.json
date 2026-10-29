@@ -1,0 +1,2388 @@
+{
+  "rise_threshold_px": 21.166353715161407,
+  "cases_done": 102,
+  "cases_expected": 102,
+  "codec_recon": {
+    "success_control": {
+      "lifted": 40
+    },
+    "unlifted_failure": {
+      "not_lifted": 46,
+      "lifted": 2
+    },
+    "release_failure": {
+      "fell_like_gt": 14
+    }
+  },
+  "lift": [
+    {
+      "model": "c34_natural",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 4
+    },
+    {
+      "model": "c34_natural",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 158,
+      "vanished_any": 74,
+      "not_lifted": 2
+    },
+    {
+      "model": "c34_natural",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 8
+    },
+    {
+      "model": "c34_natural",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 74
+    },
+    {
+      "model": "c34_natural",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 24,
+      "not_lifted": 12,
+      "vanished_any": 5,
+      "lifted": 12
+    },
+    {
+      "model": "c34_natural",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 192,
+      "not_lifted": 85,
+      "vanished_any": 94,
+      "lifted": 107
+    },
+    {
+      "model": "c34_natural",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 24,
+      "not_lifted": 10,
+      "vanished_any": 4,
+      "lifted": 14
+    },
+    {
+      "model": "c34_natural",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 192,
+      "not_lifted": 75,
+      "vanished_any": 88,
+      "lifted": 117
+    },
+    {
+      "model": "c34_success",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "c34_success",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 9
+    },
+    {
+      "model": "c34_success",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "c34_success",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 22
+    },
+    {
+      "model": "c34_success",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 23,
+      "vanished_any": 11,
+      "not_lifted": 1
+    },
+    {
+      "model": "c34_success",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 180,
+      "vanished_any": 111,
+      "not_lifted": 12
+    },
+    {
+      "model": "c34_success",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 23,
+      "vanished_any": 9,
+      "not_lifted": 1
+    },
+    {
+      "model": "c34_success",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 189,
+      "vanished_any": 87,
+      "not_lifted": 3
+    }
+  ],
+  "release": [
+    {
+      "model": "c34_natural",
+      "handoff": "start",
+      "decode": "beam4",
+      "vanished": 4,
+      "fell_like_gt": 3
+    },
+    {
+      "model": "c34_natural",
+      "handoff": "start",
+      "decode": "sampling",
+      "fell_like_gt": 27,
+      "vanished": 19,
+      "other": 3,
+      "still_high": 7
+    },
+    {
+      "model": "c34_natural",
+      "handoff": "+2",
+      "decode": "beam4",
+      "fell_like_gt": 3,
+      "vanished": 4
+    },
+    {
+      "model": "c34_natural",
+      "handoff": "+2",
+      "decode": "sampling",
+      "fell_like_gt": 33,
+      "vanished": 20,
+      "still_high": 1,
+      "other": 2
+    },
+    {
+      "model": "c34_success",
+      "handoff": "start",
+      "decode": "beam4",
+      "fell_like_gt": 2,
+      "other": 4,
+      "vanished": 1
+    },
+    {
+      "model": "c34_success",
+      "handoff": "start",
+      "decode": "sampling",
+      "other": 16,
+      "fell_like_gt": 20,
+      "vanished": 11,
+      "still_high": 9
+    },
+    {
+      "model": "c34_success",
+      "handoff": "+2",
+      "decode": "beam4",
+      "fell_like_gt": 3,
+      "still_high": 3,
+      "other": 1
+    },
+    {
+      "model": "c34_success",
+      "handoff": "+2",
+      "decode": "sampling",
+      "fell_like_gt": 21,
+      "other": 12,
+      "still_high": 10,
+      "vanished": 13
+    }
+  ],
+  "per_case": [
+    {
+      "model": "c34_natural",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 6
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 5,
+        "other": 2,
+        "vanished": 2
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 5,
+        "fell_like_gt": 4
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 18,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 25,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 5,
+        "fell_like_gt": 4
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 5,
+        "fell_like_gt": 3,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 2,
+        "still_high": 3,
+        "other": 1
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 7,
+        "fell_like_gt": 1,
+        "other": 1
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 1,
+        "still_high": 3,
+        "vanished": 5
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 45,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 9
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 5,
+        "still_high": 1,
+        "vanished": 3
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "other": 1,
+        "vanished": 2
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 38,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 2,
+        "fell_like_gt": 7
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 4,
+        "fell_like_gt": 5
+      }
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 57,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "c34_natural",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "other": 3
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 9
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 5,
+        "vanished": 2,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 3,
+        "other": 4,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 3,
+        "other": 2,
+        "still_high": 2,
+        "vanished": 2
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 4,
+        "still_high": 3,
+        "other": 1,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 3,
+        "fell_like_gt": 4,
+        "vanished": 1,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 2,
+        "other": 2,
+        "vanished": 5
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 3,
+        "still_high": 4,
+        "fell_like_gt": 1,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 45,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 4,
+        "vanished": 3,
+        "still_high": 1,
+        "fell_like_gt": 1
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 6,
+        "vanished": 2,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 38,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 5,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 4,
+        "vanished": 4,
+        "fell_like_gt": 1
+      }
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 57,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "c34_success",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    }
+  ]
+}

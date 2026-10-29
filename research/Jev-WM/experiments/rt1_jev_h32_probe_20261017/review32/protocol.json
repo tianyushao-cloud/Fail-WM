@@ -1,0 +1,14 @@
+{
+  "initials": "same first three scheduled windows as h10 probe",
+  "horizons": [
+    10,
+    32
+  ],
+  "paired": "Generate 32 once, judge its first10 and full32 with identical candidate IDs and pairs",
+  "model": "same released SFT",
+  "updates": 0,
+  "prompt": "unchanged except actual frame count",
+  "thresholds": "unchanged",
+  "gt": "judge only",
+  "note": "32-frame beam search may select different surviving histories than independently completed 10-frame search; prefix comparison uses same 32-frame surviving candidates"
+}

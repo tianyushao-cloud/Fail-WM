@@ -1,0 +1,90 @@
+{
+  "state": "APPROVED_GATE_2.5X",
+  "config_sha256": {
+    "B": "7c4efacf089eda5f753eb4a1563d99805d6b1bda2378953016ab345d2eaee775",
+    "C": "f00e6937f23e3710773dd0dc51b6965ff282f454ea66d040f2925b698f16deca",
+    "D": "2b8395f775dcd80f03d3385edef32050184e0e26b4300c710f06d97e9ea380c2"
+  },
+  "revision": "Opus 2026-10-12 11:50: retain p=.5; revise coverage gate 3x -> 2.5x before training; retain uniform coverage for late transport/lower state persistence",
+  "expectation": "B tests more event exposure; closed-gripper never-lift share within lift targets changes 26.0% -> 32.3%, not a balanced conditional outcome prior. Dropout is a hypothesis, not a guaranteed improvement.",
+  "sampler_probability": 0.5,
+  "gate": 2.5,
+  "actual_exposure_ratio": 2.500289610868306,
+  "schedule_sha256": "1023f46edd8d85fcbc139546a0511947ea3b332a5eb3d014c76c6d7ae7bd70a5",
+  "selection_sha256": "d5f7fa98ff9f25513dbd66d28cfb66111dcd49ede7c9ea858bb030833f97f98c",
+  "feature_fingerprint": "ccc32a67d596b4c17b04c2a67b5ce133a55b50bb83f51d986e1e5ba75ab7229b",
+  "implementation": {
+    "source_sha256": "2eb8493d7f2a3910cc95ab3432c3ce78269361fccd16d2cc0bde4cfda963afcf",
+    "versions": {
+      "torch": "2.5.1+cu121",
+      "torchvision": "0.20.1+cu121",
+      "transformers": "4.57.6",
+      "diffusers": "0.35.2",
+      "numpy": "2.5.3",
+      "piqa": "1.3.2",
+      "lpips": "0.1.4"
+    }
+  },
+  "manifest_sha256": {
+    "train_manifest": "d5266a10b57557bf640ffaa18683296cd9def454247ca9d737ca76de2bf6d13d",
+    "evaluation_manifest": "bd2c107d39ae8ba28ec5146683f0f7a4a3200103a339f5f7a0e8b27ef3dbd7a1"
+  },
+  "bundle_manifest_sha256": "400075ad290d0569f1af106dd1ea1302046ceed846aec608f75da5bbc044ec73",
+  "source_sha256": {
+    "/media/tyshao/fail_WM/FutureWorlds_SFT/action_dropout_20261012.py": "2be37d26f6d6074dfbcf4fbb1621ee7dff02fc7c7c294cece47c9093e9447aa2",
+    "/media/tyshao/fail_WM/FutureWorlds_SFT/batched_sft_adrop_20261012.py": "6427c74225b531df11d145dbb7e3b2200d50a99fab3d7af0d089ef6905a2f260",
+    "/media/tyshao/fail_WM/FutureWorlds_SFT/smoke_2x2_20261012.py": "6f195de35129fe1842057919f9547d33820a9871c13b1c895fbdc2801ef1b71e",
+    "/media/tyshao/fail_WM/FutureWorlds_SFT/prepare_2x2_20261012.py": "383fa78dc0ed78ed01881f9efc10956451b2e6575c71854ca154c9ddb2390b4e",
+    "/media/tyshao/fail_WM/FutureWorlds_SFT/handoff_2x2_worker_20261012.py": "3af20b6f8ee1d35103639fd1a883d8d631b2e4f25e3d3fb622d7d9222f832081",
+    "/media/tyshao/fail_WM/FutureWorlds_SFT/report_2x2_20261012.py": "8ecc5c8f07f34461662ce14b2d51994fa6b7b2a6e9de6a14d632f58088526efb",
+    "/media/tyshao/fail_WM/FutureWorlds_SFT/run_2x2_8gpu_20261012.sh": "f61b3565a80719e98d53973c7f6c5e688688cb0d0247870d8f6ef24a79d5e677",
+    "/media/tyshao/fail_WM/FutureWorlds_SFT/spatial_outcome_metrics.py": "d965925c093362fb1da351d74a451325116b9b657750da5eda9abfe5309c00ce"
+  },
+  "event_script_sha256": "8d1e6c7026292125787f05a207d47c1b97ad2255db3677be8bb00e6227bbfbbc",
+  "metric_weight": {
+    "path": "/media/tyshao/cache/torch/hub/checkpoints/vgg16-397923af.pth",
+    "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0"
+  },
+  "dropout_expected": {
+    "all": 0.250490625,
+    "success": 0.25050757413402214,
+    "failure": 0.250469562535918
+  },
+  "A_run": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011",
+  "A_events": "/media/tyshao/fail_WM/FutureWorlds_SFT/evals_gt_handoff_codec34k_20261012",
+  "event_eval": {
+    "labels": [
+      "start",
+      "+2"
+    ],
+    "beam": 4,
+    "samples": 8,
+    "selection_cases": 51,
+    "bootstrap_unit": "initial_state_group",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20261012
+  },
+  "frame_eval": {
+    "split": "val",
+    "horizons": [
+      10,
+      20
+    ],
+    "beam": 4,
+    "memory": "full",
+    "models": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "note": "A fixed-horizon metrics are required for the LPIPS ratio; A event generation is not repeated"
+  },
+  "safeguards": {
+    "success_lift_min": 0.95,
+    "partial_close_max": "A",
+    "early_release_vanished_max": "A",
+    "lpips20_max_ratio": 1.05
+  },
+  "scope": "No test-set access, no P7/70%-failure/E4/E5/success-only training"
+}

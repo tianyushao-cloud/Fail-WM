@@ -1,0 +1,28 @@
+                                           | rule(.35pos+.15pers) state_v0(VLM) v0_train_total T_cube T_grip T_rel T_cube+grip T_full(.5/.25/.25)
+== A. lift-timeline label (tracker vs h5, diff>=.25; benchmark def, partly circular for cube terms)
+ALL                                n=  447 | 0.79 0.87 0.89 0.77 0.49 0.71 0.75 0.73
+GT no lift                         n=  367 | 0.76 0.87 0.87 0.74 0.47 0.67 0.72 0.69
+GT lifts                           n=   80 | 0.90 0.86 0.97 0.90 0.56 0.89 0.90 0.91
+  contact_without_lift             n=  110 | 0.58 0.76 0.69 0.55 0.61 0.49 0.55 0.51
+  dropped_before_goal              n=   14 | 0.64 0.86 0.93 0.71 0.93 0.93 0.93 0.93
+  grasp_miss                       n=  143 | 0.88 0.97 0.99 0.92 0.47 0.92 0.92 0.91
+  lifted_but_not_placed            n=    0 | 
+  object_off_counter               n=   89 | 0.80 0.84 0.91 0.64 0.37 0.45 0.54 0.52
+  success                          n=   91 | 0.90 0.88 0.97 0.91 0.43 0.85 0.90 0.88
+== B. artifact label (fewer dup+vanish+jump frames, diff>=4), restricted to pairs with equal lift agreement (+-.05)
+equal-lift artifact pairs          n=  707 | 0.95 0.63 0.90 0.87 0.55 0.81 0.81 0.83
+== C. group contrast: fraction of groups with score range > .02 / median range
+  rule(.35pos+.15pers)   all 0.85 med 0.086 | GT-no-lift 0.85 med 0.114
+  state_v0(VLM)          all 0.79 med 0.090 | GT-no-lift 0.95 med 0.212
+  v0_train_total         all 0.90 med 0.119 | GT-no-lift 0.95 med 0.190
+  T_cube                 all 0.81 med 0.156 | GT-no-lift 0.87 med 0.278
+  T_grip                 all 0.92 med 0.079 | GT-no-lift 0.97 med 0.119
+  T_rel                  all 0.89 med 0.157 | GT-no-lift 0.98 med 0.253
+  T_cube+grip            all 0.89 med 0.117 | GT-no-lift 0.94 med 0.192
+  T_full(.5/.25/.25)     all 0.88 med 0.126 | GT-no-lift 0.96 med 0.203
+== D. GT-no-lift groups where EVERY candidate fake-lifts (>=3 risen frames): rank by fewer fake-lift frames
+  34 / 198 GT-no-lift groups are all-fake
+all-fake, fewer fake frames (>=3)  n=  260 | 0.60 0.82 0.87 0.78 0.54 0.85 0.77 0.80
+== E. mean per-frame errors (px)
+  GT no lift: cube 5.70 grip 6.07 rel 9.61 match 0.86
+  GT lifts: cube 1.51 grip 2.81 rel 2.80 match 0.93

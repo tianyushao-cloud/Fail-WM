@@ -1,0 +1,30 @@
+{
+  "purpose": "Calibrate a local Qwen-VL judge as the ONLY RL reward (no R0/LPIPS/MAE in reward or selection); goal: RL beats released RT-1 SFT50k.",
+  "fixed_before_scoring": "2026-10-19",
+  "data": "rt1_memspo200_upstream_20261017 validation split (32 windows). Not RL training windows, not test.",
+  "candidates": "SFT, MemSPO group beam 4x2, horizon 10, diversity 0.1; R0-RL candidates are a diagnostic only",
+  "judge": "pointwise, GT-referenced, aligned REFERENCE/PREDICTION per timestamp, both presentation orders averaged; expected digit level over 0-4 from logits; weights structure 0.2 dynamics 0.4 interaction 0.4",
+  "control_gates": {
+    "freeze_all": 0.9,
+    "black": 0.9,
+    "other_episode": 0.9,
+    "reverse": 0.75,
+    "freeze_half": 0.75
+  },
+  "tie_multiplier": 2.0,
+  "tie_rule": "tau = tie_multiplier * median |order0 - order1| over SFT candidates; a group with max-min spread <= tau is a tie (zero advantage) in RL",
+  "informative_required": 0.5,
+  "diagnostics_not_gates": [
+    "within-group Spearman vs -LPIPS",
+    "within-group Spearman vs -frame repeats",
+    "R0-RL minus SFT window mean score",
+    "order bias"
+  ],
+  "selection_rule": {
+    "written": "2026-10-19, after dev_8b_s1/dev_8b_s2, before dev_4b_s2 results were read",
+    "dev": "validation cases 0-15; candidates 8B scale1, 8B scale2, 4B scale2",
+    "rule": "among configs passing all gates on dev, pick highest within_group_spearman_order0_vs_order1; ties (<0.05) broken by faster config",
+    "confirm": "run the selected config unchanged on held-out validation cases 16-31; it must pass all gates again; tau for RL = that confirm run's tau",
+    "if_confirm_fails": "no RL launch; report"
+  }
+}

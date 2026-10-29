@@ -1,0 +1,30 @@
+{
+  "pid": 3665462,
+  "started_utc": "2026-10-21T09:22:50.622557+00:00",
+  "steps": 10,
+  "checkpoints": [
+    5,
+    10
+  ],
+  "stage_order": [
+    "calibrate",
+    "pilot",
+    "train",
+    "export",
+    "evaluate",
+    "report"
+  ],
+  "proxy": "server 127.0.0.1:17897 -> SSH -> user machine 127.0.0.1:7897",
+  "initial_variant": "sft",
+  "gpus": 1,
+  "previous_launcher_pid": 3665140,
+  "offline_tests": "6 passed",
+  "restarted_utc": "2026-10-21T09:58:31.751686+00:00",
+  "proxy_service": "local launchd com.codex.jevwm.rt1openai.proxy, auto reconnect",
+  "active_axes": [
+    "fidelity",
+    "motion",
+    "task"
+  ],
+  "calibration": "complete; physics excluded by original A5 inclusion rule"
+}

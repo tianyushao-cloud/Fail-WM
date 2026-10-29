@@ -1,0 +1,58 @@
+{
+  "dataset": "rt1",
+  "method": "memspo",
+  "seed": 20261017,
+  "steps": 200,
+  "global_batch": 16,
+  "gpus": 1,
+  "gradient_accumulation": 16,
+  "horizon": 10,
+  "lr": 1e-06,
+  "reward": "R0=-mean(MAE+LPIPS_VGG)",
+  "clip": 0.2,
+  "kl_coef": 0.001,
+  "diversity_penalty": 0.1,
+  "candidates": "4 groups x 2 beams; 4 returned candidate videos",
+  "checkpoint_every": 10,
+  "comparison_checkpoint": "fixed final step200; no test-based or validation-based checkpoint selection",
+  "evaluation": {
+    "horizons": [
+      10,
+      20,
+      32
+    ],
+    "beam_width": 4,
+    "memory": "full (anchor1+recent6)",
+    "precision": "FP32",
+    "tf32": false,
+    "initial_observations": 2,
+    "ground_truth_refresh": false
+  },
+  "primary_metric": "test mean LPIPS at 32 generated frames; report absolute and relative change plus paired episode bootstrap 95% CI",
+  "other_metrics": [
+    "psnr",
+    "ssim",
+    "mae",
+    "mse"
+  ],
+  "split_counts": {
+    "validation": 32,
+    "test": 64,
+    "train": 512
+  },
+  "manifest_sha256": {
+    "validation": "4d9aac2344ea76593560bd49c658c690d64d475984898112b49f59fce6711f74",
+    "test": "ec65041784ff7c89636c0aef1f3d538b91bc954f5c04dc913532fce9cd0ec7f6",
+    "train": "fb745cc109d534df4736d50e733cde4dfcff7ea4f2d0a3beced25d0b64046635"
+  },
+  "bundle_manifest_sha256": "ec7fb7b49de1f8fc417b4da3d706550b7bb365990ad2283f441d69ba793d7490",
+  "source_commit": "7b8f26a5d165c58645212093d2e0dfffc4278643",
+  "source_lock_verified": true,
+  "paper_reproduction": false,
+  "limitations": [
+    "One RL seed and limited data",
+    "Evaluation episodes excluded from this RL run; overlap with original SFT training is unknown",
+    "Prediction metrics do not measure robot task success",
+    "Short horizon10 training is compared at horizons10/20/32"
+  ]
+}

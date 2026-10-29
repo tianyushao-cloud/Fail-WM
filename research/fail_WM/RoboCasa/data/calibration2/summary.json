@@ -1,0 +1,136 @@
+[
+  {
+    "episode_id": "01_reference",
+    "initial_state_id": "fixed_counter_0001",
+    "initial_state_sha256": "bfddeb95e80ab8c04f43ea25162823ca67d1963f212ddf6c694920bd2228bc04",
+    "seed": 20261003,
+    "split": "train",
+    "branch": "reference",
+    "success": false,
+    "failure_type": "not_placed_at_goal",
+    "actions": 769,
+    "frames": 770,
+    "duration_seconds": 38.45,
+    "perturbation": {},
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 513,
+        "time_seconds": 25.649999999996385
+      },
+      {
+        "event": "grasp",
+        "state_index": 514,
+        "time_seconds": 25.699999999996358
+      },
+      {
+        "event": "contact",
+        "state_index": 648,
+        "time_seconds": 32.39999999999424
+      },
+      {
+        "event": "contact",
+        "state_index": 654,
+        "time_seconds": 32.69999999999461
+      },
+      {
+        "event": "contact",
+        "state_index": 658,
+        "time_seconds": 32.899999999994854
+      },
+      {
+        "event": "contact",
+        "state_index": 662,
+        "time_seconds": 33.0999999999951
+      },
+      {
+        "event": "contact",
+        "state_index": 666,
+        "time_seconds": 33.29999999999534
+      },
+      {
+        "event": "contact",
+        "state_index": 677,
+        "time_seconds": 33.849999999996015
+      }
+    ],
+    "event_summary": {
+      "contact": true,
+      "grasp": true,
+      "lift": false,
+      "drop": false,
+      "release": false,
+      "place": false,
+      "success": false
+    },
+    "action_dimension": 12,
+    "action_slices": {
+      "right": [
+        0,
+        6
+      ],
+      "right_gripper": [
+        6,
+        7
+      ],
+      "base": [
+        7,
+        10
+      ],
+      "torso": [
+        10,
+        11
+      ]
+    },
+    "goal_position_world": [
+      0.66,
+      -0.1,
+      0.942
+    ],
+    "task": "CounterCubePreview",
+    "standard_robocasa_benchmark": false,
+    "robot": "PandaOmron (Franka Panda arm; base and torso commands zero)",
+    "renderer": "MuJoCo EGL OpenGL",
+    "fps": 20,
+    "width": 640,
+    "height": 480,
+    "phase_ranges": {
+      "lift": {
+        "first_action": 288,
+        "last_action": 397
+      },
+      "approach": {
+        "first_action": 0,
+        "last_action": 159
+      },
+      "close": {
+        "first_action": 270,
+        "last_action": 287
+      },
+      "retreat": {
+        "first_action": 634,
+        "last_action": 743
+      },
+      "transport": {
+        "first_action": 398,
+        "last_action": 507
+      },
+      "lower": {
+        "first_action": 508,
+        "last_action": 617
+      },
+      "descend": {
+        "first_action": 160,
+        "last_action": 269
+      },
+      "release": {
+        "first_action": 618,
+        "last_action": 633
+      },
+      "settle": {
+        "first_action": 744,
+        "last_action": 768
+      }
+    }
+  }
+]

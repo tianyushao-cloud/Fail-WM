@@ -1,0 +1,41 @@
+{
+  "dataset": "robocasa",
+  "method": "memspo",
+  "bundle": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle",
+  "train_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+  "evaluation_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/val.json",
+  "output": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train",
+  "initial_variant": "sft",
+  "independent_reference": true,
+  "device": "cuda",
+  "seed": 20261025,
+  "steps": 30,
+  "cpu_threads": 2,
+  "global_batch": 16,
+  "lr": 1e-06,
+  "rl_warmup_steps": 5,
+  "horizon": 32,
+  "reward": "robocasa_traj",
+  "clip": 0.2,
+  "kl_coef": 0.005,
+  "diversity_penalty": 0.1,
+  "checkpoint_every": 5,
+  "paper_locked": false,
+  "schedule": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/schedule.json",
+  "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+  "rl_groups": 8,
+  "traj_reward": {
+    "log_dir": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/judge_log",
+    "schedule": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/schedule.json",
+    "train_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+    "weights": {
+      "cube": 0.5,
+      "gripper": 0.25,
+      "relative": 0.25
+    },
+    "cap": 80,
+    "vanish": 8,
+    "minimum_group_spread": 0.02,
+    "save_clips": true
+  }
+}

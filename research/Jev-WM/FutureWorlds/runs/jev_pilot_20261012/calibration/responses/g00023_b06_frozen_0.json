@@ -1,0 +1,80 @@
+{
+  "case": "g00023_b06",
+  "kind": "frozen",
+  "repeat": 0,
+  "packet": "456a9a85b03a1602e87b43abe2bbf8fd6c03b2bda181789dcea3e791747a64a5",
+  "scores": {
+    "object_consistency": 0.96,
+    "temporal_interaction": 0.945
+  },
+  "reward": 0.9524999999999999,
+  "response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "score",
+        "name": "object_consistency",
+        "score": 1.92,
+        "probabilities": [
+          {
+            "value": 0,
+            "label": "incorrect",
+            "probability": 0.02
+          },
+          {
+            "value": 1,
+            "label": "minor_error",
+            "probability": 0.04
+          },
+          {
+            "value": 2,
+            "label": "consistent",
+            "probability": 0.94
+          }
+        ],
+        "confidence": 0.88
+      },
+      {
+        "type": "score",
+        "name": "temporal_interaction",
+        "score": 1.89,
+        "probabilities": [
+          {
+            "value": 0,
+            "label": "incorrect",
+            "probability": 0.01
+          },
+          {
+            "value": 1,
+            "label": "minor_error",
+            "probability": 0.09
+          },
+          {
+            "value": 2,
+            "label": "consistent",
+            "probability": 0.9
+          }
+        ],
+        "confidence": 0.84
+      }
+    ],
+    "usage": {
+      "input_tokens": 1299,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1299
+    }
+  },
+  "transport": {
+    "endpoint": "https://api.openai.com/v1/decisions",
+    "request_id": "req_71b02d8c11914568a60e63c12c1b216b",
+    "seconds": 9.32825773768127,
+    "attempts": 1
+  }
+}

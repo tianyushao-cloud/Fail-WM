@@ -1,0 +1,105 @@
+{
+  "files": 145,
+  "logical_gib": 20.196412741206586,
+  "unique_gib": 15.864457318559289,
+  "models": [
+    {
+      "path": "bundles/robocasa_original_release",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa",
+      "reason": "上游原始 RoboCasa 发布 bundle，原 manifest 保持完整",
+      "bytes": 3107377348,
+      "files": 29
+    },
+    {
+      "path": "bundles/rt1_original_release",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1",
+      "reason": "早期 RT-1 对照的原始发布 bundle",
+      "bytes": 3107363292,
+      "files": 29
+    },
+    {
+      "path": "initialization/rt1_upstream",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream",
+      "reason": "混合数据 SFT/codec 的实际原始初始化",
+      "bytes": 1035410944,
+      "files": 11
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init",
+      "reason": "原始 RT-1 初始化适配到 RoboCasa 的配置与动作范围",
+      "bytes": 1035751150,
+      "files": 9
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011",
+      "reason": "实际训练混合 SFT10k 的 codec34k 初始化 bundle",
+      "bytes": 1035751429,
+      "files": 9
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle",
+      "reason": "全部主要 RoboCasa RL 的 mixed SFT10k 初始化，可直接推理",
+      "bytes": 1035751429,
+      "files": 9
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle",
+      "reason": "成功-only SFT10k 对照，可直接推理",
+      "bytes": 1035751429,
+      "files": 9
+    },
+    {
+      "path": "codecs/robocasa_mixed_step034000",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000",
+      "reason": "实际配套 codec34k；含优化器/判别器/RNG，支持续训",
+      "bytes": 1629312892,
+      "files": 4
+    },
+    {
+      "path": "checkpoints/robocasa_sft_mixed_step010000",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000",
+      "reason": "混合 SFT10k 完整 checkpoint",
+      "bytes": 1553885235,
+      "files": 6
+    },
+    {
+      "path": "checkpoints/robocasa_sft_success_step010000",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000",
+      "reason": "成功-only SFT10k 完整 checkpoint",
+      "bytes": 1553885245,
+      "files": 6
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v0_step000030",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030",
+      "reason": "已做 val/test 的 V0 状态奖励 RL30 对照",
+      "bytes": 1553885190,
+      "files": 6
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v6_step000030",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030",
+      "reason": "最新 V6 状态奖励 RL30；未找到正式效果评测",
+      "bytes": 1553885202,
+      "files": 6
+    },
+    {
+      "path": "checkpoints/robocasa_rl_trajectory_step000030",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030",
+      "reason": "最新纯二维轨迹奖励 RL30；未找到正式效果评测",
+      "bytes": 1553885039,
+      "files": 6
+    },
+    {
+      "path": "dependencies/t5-base",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+      "reason": "推理必需、体积小，固定原始 T5 版本，支持离线加载",
+      "bytes": 893837231,
+      "files": 6
+    }
+  ]
+}

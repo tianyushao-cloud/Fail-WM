@@ -1,0 +1,207 @@
+{
+  "model": "/media/tyshao/Jev-WM/paper_assets/qwen/Qwen3-VL-8B-Instruct",
+  "scale": 2,
+  "cases_folder": "sft_train_h32",
+  "cases": [
+    0
+  ],
+  "axes": {
+    "fidelity": {
+      "controls": {
+        "freeze_all": {
+          "rate": 1.0,
+          "required": 0.9,
+          "passed": true
+        },
+        "black": {
+          "rate": 1.0,
+          "required": 0.9,
+          "passed": true
+        },
+        "other_episode": {
+          "rate": 1.0,
+          "required": 0.9,
+          "passed": true
+        },
+        "reverse": {
+          "rate": 1.0,
+          "required": 0.75,
+          "passed": true
+        }
+      },
+      "tau": 0.4211762144116731,
+      "informative": 0.0,
+      "included": false,
+      "mean_scores": {
+        "sft0": 0.2663413966713669,
+        "sft1": 0.29432079478642986,
+        "sft2": 0.2352367039439504,
+        "sft3": 0.19647518839690342,
+        "gt_codec": 0.9999999639738619,
+        "freeze_all": 0.1551046796771135,
+        "black": 0.034040478949190586,
+        "other_episode": 0.3791913302122625,
+        "reverse": 0.35980196760460215
+      },
+      "median_group_spread": 0.09784560638952644,
+      "within_group_spearman_views": 1.0,
+      "within_group_spearman_vs_neg_lpips": 1.0,
+      "within_group_spearman_vs_neg_repeats": -0.39999999999999997
+    },
+    "motion": {
+      "controls": {
+        "freeze_all": {
+          "rate": 1.0,
+          "required": 0.9,
+          "passed": true
+        },
+        "freeze_second_half": {
+          "rate": 1.0,
+          "required": 0.9,
+          "passed": true
+        }
+      },
+      "tau": 0.01557429741849034,
+      "informative": 1.0,
+      "included": true,
+      "mean_scores": {
+        "sft0": 0.15111648836587765,
+        "sft1": 0.13179745573327567,
+        "sft2": 0.14239785334428368,
+        "sft3": 0.13701923531769084,
+        "gt_codec": 0.769956473455991,
+        "freeze_all": 1.7983823055840903e-06,
+        "freeze_second_half": 0.21642199416776337
+      },
+      "median_group_spread": 0.019319032632601985,
+      "within_group_spearman_views": -0.39999999999999997,
+      "within_group_spearman_vs_neg_lpips": -0.19999999999999998,
+      "within_group_spearman_vs_neg_repeats": 0.7999999999999999
+    },
+    "physics": {
+      "controls": {
+        "duplicate": {
+          "rate": 1.0,
+          "required": 0.75,
+          "passed": true
+        },
+        "erase": {
+          "rate": 1.0,
+          "required": 0.75,
+          "passed": true
+        },
+        "splice": {
+          "rate": 1.0,
+          "required": 0.75,
+          "passed": true
+        }
+      },
+      "tau": 0.1902970493307644,
+      "informative": 0.0,
+      "included": false,
+      "mean_scores": {
+        "sft0": 0.5631759139684037,
+        "sft1": 0.6140210191229186,
+        "sft2": 0.6030455803595449,
+        "sft3": 0.5459249989029489,
+        "gt_codec": 0.9999702485852137,
+        "duplicate": 0.8621455619686764,
+        "erase": 0.9997532773076784,
+        "splice": 0.6910723401996921
+      },
+      "median_group_spread": 0.06809602021996974,
+      "within_group_spearman_views": 0.6000000000000001,
+      "within_group_spearman_vs_neg_lpips": 0.7999999999999999,
+      "within_group_spearman_vs_neg_repeats": -0.7999999999999999
+    },
+    "task": {
+      "controls": {
+        "wrong_task": {
+          "rate": 1.0,
+          "required": 0.75,
+          "passed": true
+        }
+      },
+      "tau": 0.10654375367043722,
+      "informative": 0.0,
+      "included": false,
+      "mean_scores": {
+        "sft0": 0.29096959413694856,
+        "sft1": 0.38060085300073454,
+        "sft2": 0.38958117317025565,
+        "sft3": 0.359208168139078,
+        "gt_codec": 0.9999880912441891,
+        "wrong_task": 0.9999055575428992
+      },
+      "median_group_spread": 0.09861157903330708,
+      "within_group_spearman_views": 0.19999999999999998,
+      "within_group_spearman_vs_neg_lpips": 0.0,
+      "within_group_spearman_vs_neg_repeats": -0.7999999999999999
+    },
+    "smooth": {
+      "controls": {
+        "flicker": {
+          "rate": 0.0,
+          "required": 0.9,
+          "passed": false
+        },
+        "blur": {
+          "rate": 1.0,
+          "required": 0.75,
+          "passed": true
+        },
+        "splice": {
+          "rate": 1.0,
+          "required": 0.75,
+          "passed": true
+        }
+      },
+      "tau": 0.04828192940404885,
+      "informative": 1.0,
+      "included": false,
+      "mean_scores": {
+        "sft0": 0.3380285408470663,
+        "sft1": 0.39688620839481303,
+        "sft2": 0.31504299285080106,
+        "sft3": 0.2630156184605593,
+        "gt_codec": 0.7136475667477408,
+        "flicker": 0.8709043489979922,
+        "blur": 0.5009404352667173,
+        "splice": 0.6650677714359875
+      },
+      "median_group_spread": 0.13387058993425371,
+      "within_group_spearman_views": 0.7999999999999999,
+      "within_group_spearman_vs_neg_lpips": 1.0,
+      "within_group_spearman_vs_neg_repeats": -0.39999999999999997
+    }
+  },
+  "within_group_axis_spearman": {
+    "fidelity~motion": -0.19999999999999998,
+    "fidelity~physics": 0.7999999999999999,
+    "fidelity~task": 0.0,
+    "fidelity~smooth": 1.0,
+    "motion~physics": -0.39999999999999997,
+    "motion~task": -0.39999999999999997,
+    "motion~smooth": -0.19999999999999998,
+    "physics~task": 0.6000000000000001,
+    "physics~smooth": 0.7999999999999999,
+    "smooth~task": 0.0
+  },
+  "arms": {
+    "arm_FM": {
+      "launchable": false,
+      "weights": null,
+      "taus": {
+        "motion": 0.01557429741849034
+      }
+    },
+    "arm_A5": {
+      "launchable": false,
+      "weights": null,
+      "taus": {
+        "motion": 0.01557429741849034
+      }
+    }
+  },
+  "seconds": 206.93293489143252
+}

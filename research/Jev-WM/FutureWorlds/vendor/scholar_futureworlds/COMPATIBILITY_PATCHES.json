@@ -1,0 +1,11 @@
+{
+  "base_commit": "7b8f26a5d165c58645212093d2e0dfffc4278643",
+  "scope": "Evaluation-only beam score validation and explicit generation defaults; training/search/reward/objective unchanged.",
+  "files": {
+    "src/futureworlds/decoding.py": {
+      "original_sha256": "41440c10b70e3f72b3dddeef1063220d3b98f917a2ad97a94c0c542cae51000f",
+      "patched_sha256": "9e3cb962a193670767cd3b7d8ab56cfa535c6bf58c4fdf27f72071d15736d39f",
+      "reason": "Reconstruct score by left-to-right FP32 addition rather than parallel sum; keep 2e-4 invariant tolerance and original HF candidate ranking. Explicit use_model_defaults=False avoids misleading BOS/EOS fallback warning."
+    }
+  }
+}

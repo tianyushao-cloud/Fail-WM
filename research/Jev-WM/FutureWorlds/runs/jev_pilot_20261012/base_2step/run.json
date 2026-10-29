@@ -1,0 +1,52 @@
+{
+  "fingerprint": "639668800d4c08bca8286f2a52b29175dc3a220b1bf7c55afa36ad76e93e0494",
+  "config": {
+    "dataset": "robocasa",
+    "method": "memspo",
+    "bundle": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa",
+    "train_manifest": "/media/tyshao/Jev-WM/FutureWorlds/runs/jev_pilot_20261012/data/train/manifest.json",
+    "evaluation_manifest": "/media/tyshao/Jev-WM/FutureWorlds/runs/jev_pilot_20261012/data/validation/manifest.json",
+    "initial_variant": "sft",
+    "device": "cuda",
+    "seed": 20261012,
+    "steps": 2,
+    "global_batch": 2,
+    "lr": 1e-06,
+    "adapter_lr": 0.0001,
+    "warmup_steps": 500,
+    "horizon": 4,
+    "reward": "R0",
+    "clip": 0.2,
+    "kl_coef": 0.001,
+    "diversity_penalty": 0.1,
+    "checkpoint_every": 2,
+    "paper_locked": false,
+    "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+    "schedule": "/media/tyshao/Jev-WM/FutureWorlds/runs/jev_pilot_20261012/schedule.json",
+    "implementation": {
+      "source_sha256": "8ac0c64d12518de151f4a76239b0680bd40248cee6e9feae3c8980a89d10996c",
+      "versions": {
+        "torch": "2.5.1+cu121",
+        "torchvision": "0.20.1+cu121",
+        "transformers": "4.57.6",
+        "diffusers": "0.35.2",
+        "numpy": "2.5.3",
+        "piqa": "1.3.2",
+        "lpips": "0.1.4"
+      }
+    },
+    "text_assets": {
+      "files": {
+        "config.json": "46dd7cb62d29c81fb551e0ef1ea274c24a46ba441eeb948897706252933df033",
+        "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+        "model.safetensors": "a90903540cc02cbeb7ff9f823f1a80eb778c7e22426a0e620b01c77a5ec8f5b4",
+        "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+        "tokenizer.json": "d2acde0d8d71dd30a711834b07781b9c89feaac33fd332f60507699282740066"
+      }
+    },
+    "train_manifest_sha256": "d563e785a1bbd0d7f4fd3df097f34160e77957970689f061c77c37bb4d13a3e8",
+    "bundle_manifest_sha256": "9f2f4b3c77621a42989ff606a57a95e86ee15b4aa9a2bad480105e252822648d",
+    "world_size": 1,
+    "schedule_sha256": "e08898764b7e63ff787a3b8f32171f841eab792de49ac47cdc41075ba60c0a78"
+  }
+}

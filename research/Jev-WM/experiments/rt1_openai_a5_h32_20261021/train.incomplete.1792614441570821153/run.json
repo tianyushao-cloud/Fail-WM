@@ -1,0 +1,76 @@
+{
+  "fingerprint": "570f2fe182276b2f5dbb4e134d25402df04e59f2bfecd52fa921f0bad1a4e797",
+  "config": {
+    "dataset": "rt1",
+    "method": "memspo",
+    "bundle": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1",
+    "train_manifest": "/media/tyshao/Jev-WM/experiments/rt1_memspo200_upstream_20261017/data/train/manifest.json",
+    "evaluation_manifest": "/media/tyshao/Jev-WM/experiments/rt1_memspo200_upstream_20261017/data/test/manifest.json",
+    "initial_variant": "sft",
+    "device": "cuda",
+    "seed": 20260915,
+    "steps": 10,
+    "global_batch": 16,
+    "lr": 1e-06,
+    "adapter_lr": 0.0001,
+    "warmup_steps": 500,
+    "horizon": 32,
+    "reward": "openai_gt",
+    "clip": 0.2,
+    "kl_coef": 0.001,
+    "diversity_penalty": 0.1,
+    "checkpoint_every": 5,
+    "paper_locked": false,
+    "schedule": "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/schedule.json",
+    "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+    "openai_judge": {
+      "model": "gpt-6-luna",
+      "scale": 2,
+      "weights": {
+        "fidelity": 0.3846153846153846,
+        "motion": 0.3076923076923077,
+        "task": 0.3076923076923077
+      },
+      "calibration_file": "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/calibration/summary.json",
+      "review_dir": "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/reviews",
+      "log_dir": "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/judge_log",
+      "max_http_attempts": 12000,
+      "timeout_seconds": 90,
+      "retries": 2,
+      "spacing_seconds": 0.25,
+      "workers": 4,
+      "requested_weights": {
+        "fidelity": 0.2941176470588235,
+        "motion": 0.23529411764705882,
+        "physics": 0.23529411764705882,
+        "task": 0.23529411764705882
+      },
+      "calibration_sha256": "e55f3a82d23eb245e7146456c9ae7293dd740b568f06d25dfc9bee6d8e6b7135"
+    },
+    "implementation": {
+      "source_sha256": "48d775587513375b6adb1f32c8d72d5b1925c1d8693869074d52dec2e6dec701",
+      "versions": {
+        "torch": "2.5.1+cu121",
+        "torchvision": "0.20.1+cu121",
+        "transformers": "4.57.6",
+        "diffusers": "0.35.2",
+        "numpy": "2.5.3",
+        "piqa": "1.3.2",
+        "lpips": "0.1.4"
+      }
+    },
+    "text_assets": {
+      "files": {
+        "config.json": "46dd7cb62d29c81fb551e0ef1ea274c24a46ba441eeb948897706252933df033",
+        "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+        "model.safetensors": "a90903540cc02cbeb7ff9f823f1a80eb778c7e22426a0e620b01c77a5ec8f5b4",
+        "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+        "tokenizer.json": "d2acde0d8d71dd30a711834b07781b9c89feaac33fd332f60507699282740066"
+      }
+    },
+    "train_manifest_sha256": "fb745cc109d534df4736d50e733cde4dfcff7ea4f2d0a3beced25d0b64046635",
+    "bundle_manifest_sha256": "ec7fb7b49de1f8fc417b4da3d706550b7bb365990ad2283f441d69ba793d7490",
+    "world_size": 4,
+    "schedule_sha256": "e793384764ce10619e4e5050a28a8ad916dffb11a26b983313d299285b880de8"
+  }
+}

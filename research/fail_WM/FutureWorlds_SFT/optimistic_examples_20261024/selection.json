@@ -1,0 +1,55 @@
+{
+  "checkpoint": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000",
+  "codec": "mixed step034000",
+  "cases": [
+    {
+      "id": "g00014_b06",
+      "split": "val",
+      "true_success": false,
+      "failure_type": "grasp_miss",
+      "source": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/g00014_b06/natural.mp4",
+      "video": "/media/tyshao/fail_WM/FutureWorlds_SFT/optimistic_examples_20261024/g00014_b06_GT_vs_mixed.mp4",
+      "frames": 42,
+      "fps": 5,
+      "initial_GT_frames": 2,
+      "actions": "original unchanged",
+      "decode": "beam4",
+      "memory": "full",
+      "shown_frame_start": 2,
+      "shown_frame_end": 43
+    },
+    {
+      "id": "g00084_b08",
+      "split": "val",
+      "true_success": false,
+      "failure_type": "grasp_miss",
+      "source": "/media/tyshao/fail_WM/FutureWorlds_SFT/diagnostics_drift_generalization_20261012/cases/val/g00084_b08/start.npz",
+      "video": "/media/tyshao/fail_WM/FutureWorlds_SFT/optimistic_examples_20261024/g00084_b08_GT_vs_mixed.mp4",
+      "frames": 31,
+      "fps": 5,
+      "initial_GT_frames": 2,
+      "actions": "original unchanged",
+      "decode": "beam4",
+      "memory": "anchor + recent 6 frames",
+      "shown_frame_start": 2,
+      "shown_frame_end": 32
+    },
+    {
+      "id": "g00059_b07",
+      "split": "val",
+      "true_success": false,
+      "failure_type": "grasp_miss",
+      "source": "/media/tyshao/fail_WM/FutureWorlds_SFT/diagnostics_drift_generalization_20261012/cases/val/g00059_b07/start.npz",
+      "video": "/media/tyshao/fail_WM/FutureWorlds_SFT/optimistic_examples_20261024/g00059_b07_GT_vs_mixed.mp4",
+      "frames": 31,
+      "fps": 5,
+      "initial_GT_frames": 2,
+      "actions": "original unchanged",
+      "decode": "beam4",
+      "memory": "anchor + recent 6 frames",
+      "shown_frame_start": 2,
+      "shown_frame_end": 32
+    }
+  ],
+  "note": "Selected existing predictions after visual review; not a rate estimate. Only first case has full episode prediction; other two end at lift-window end."
+}

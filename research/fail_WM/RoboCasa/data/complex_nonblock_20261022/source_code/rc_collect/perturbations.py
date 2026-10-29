@@ -1,0 +1,2 @@
+# Branch choices specify actions, never success / failure labels.
+BRANCHES=[('reference',{}),('offset_miss',{'type':'grasp_position_offset','xyz_m':[-.12,0,0],'phase':'approach/descend'}),('early_close',{'type':'early_gripper_close','lead_seconds':.8,'phase':'early_close'}),('early_release',{'type':'release_in_transport','release_position_world':[.60,-.18,1.12],'phase':'early_release'}),('recovery',{'type':'grasp_position_offset_then_retry','xyz_m':[-.12,0,0],'reset_between_attempts':False})]

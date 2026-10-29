@@ -1,0 +1,6896 @@
+{
+  "rise_threshold_px": 21.166353715161407,
+  "cases_done": 102,
+  "cases_expected": 102,
+  "codec_recon": {
+    "success_control": {
+      "lifted": 40
+    },
+    "unlifted_failure": {
+      "not_lifted": 36,
+      "lifted": 12
+    },
+    "release_failure": {
+      "fell_like_gt": 8,
+      "vanished": 6
+    }
+  },
+  "lift": [
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 2
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 58
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "-6",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "-6",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 31
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "-3",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "-3",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 31
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "+0",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 1
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "+0",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 43
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 2
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 33
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "+4",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 2
+    },
+    {
+      "model": "natural",
+      "category": "success_control",
+      "handoff": "+4",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 30
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 19,
+      "vanished_any": 10,
+      "not_lifted": 5
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 192,
+      "not_lifted": 41,
+      "vanished_any": 111,
+      "lifted": 151
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "-6",
+      "decode": "beam4",
+      "n": 24,
+      "not_lifted": 7,
+      "vanished_any": 6,
+      "lifted": 17
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "-6",
+      "decode": "sampling",
+      "n": 192,
+      "not_lifted": 40,
+      "vanished_any": 93,
+      "lifted": 152
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "-3",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 20,
+      "vanished_any": 13,
+      "not_lifted": 4
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "-3",
+      "decode": "sampling",
+      "n": 192,
+      "not_lifted": 48,
+      "vanished_any": 105,
+      "lifted": 144
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "+0",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 18,
+      "vanished_any": 8,
+      "not_lifted": 6
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "+0",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 151,
+      "vanished_any": 94,
+      "not_lifted": 41
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 16,
+      "vanished_any": 5,
+      "not_lifted": 8
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 148,
+      "vanished_any": 87,
+      "not_lifted": 44
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "+4",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 17,
+      "vanished_any": 7,
+      "not_lifted": 7
+    },
+    {
+      "model": "natural",
+      "category": "unlifted_failure",
+      "handoff": "+4",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 142,
+      "vanished_any": 81,
+      "not_lifted": 50
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 10
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "-6",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "-6",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 2
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "-3",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "-3",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 6
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "+0",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "+0",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 5
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 9
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "+4",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 0
+    },
+    {
+      "model": "success",
+      "category": "success_control",
+      "handoff": "+4",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 7
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 24,
+      "vanished_any": 7
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 187,
+      "vanished_any": 74,
+      "not_lifted": 5
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "-6",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 23,
+      "vanished_any": 7,
+      "not_lifted": 1
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "-6",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 183,
+      "vanished_any": 68,
+      "not_lifted": 9
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "-3",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 23,
+      "vanished_any": 7,
+      "not_lifted": 1
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "-3",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 189,
+      "vanished_any": 56,
+      "not_lifted": 3
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "+0",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 23,
+      "vanished_any": 3,
+      "not_lifted": 1
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "+0",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 186,
+      "vanished_any": 58,
+      "not_lifted": 6
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 23,
+      "vanished_any": 3,
+      "not_lifted": 1
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 187,
+      "vanished_any": 56,
+      "not_lifted": 5
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "+4",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 24,
+      "vanished_any": 8
+    },
+    {
+      "model": "success",
+      "category": "unlifted_failure",
+      "handoff": "+4",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 187,
+      "vanished_any": 59,
+      "not_lifted": 5
+    }
+  ],
+  "release": [
+    {
+      "model": "natural",
+      "handoff": "start",
+      "decode": "beam4",
+      "vanished": 5,
+      "still_high": 1,
+      "fell_like_gt": 1
+    },
+    {
+      "model": "natural",
+      "handoff": "start",
+      "decode": "sampling",
+      "fell_like_gt": 15,
+      "still_high": 8,
+      "vanished": 27,
+      "other": 6
+    },
+    {
+      "model": "natural",
+      "handoff": "-6",
+      "decode": "beam4",
+      "vanished": 4,
+      "fell_like_gt": 3
+    },
+    {
+      "model": "natural",
+      "handoff": "-6",
+      "decode": "sampling",
+      "still_high": 8,
+      "vanished": 26,
+      "fell_like_gt": 19,
+      "other": 3
+    },
+    {
+      "model": "natural",
+      "handoff": "-3",
+      "decode": "beam4",
+      "fell_like_gt": 3,
+      "vanished": 2,
+      "still_high": 2
+    },
+    {
+      "model": "natural",
+      "handoff": "-3",
+      "decode": "sampling",
+      "still_high": 12,
+      "fell_like_gt": 21,
+      "vanished": 21,
+      "other": 2
+    },
+    {
+      "model": "natural",
+      "handoff": "+0",
+      "decode": "beam4",
+      "fell_like_gt": 2,
+      "vanished": 5
+    },
+    {
+      "model": "natural",
+      "handoff": "+0",
+      "decode": "sampling",
+      "vanished": 30,
+      "fell_like_gt": 19,
+      "other": 1,
+      "still_high": 6
+    },
+    {
+      "model": "natural",
+      "handoff": "+2",
+      "decode": "beam4",
+      "vanished": 5,
+      "fell_like_gt": 2
+    },
+    {
+      "model": "natural",
+      "handoff": "+2",
+      "decode": "sampling",
+      "still_high": 7,
+      "fell_like_gt": 18,
+      "vanished": 29,
+      "other": 2
+    },
+    {
+      "model": "success",
+      "handoff": "start",
+      "decode": "beam4",
+      "fell_like_gt": 3,
+      "still_high": 2,
+      "other": 2
+    },
+    {
+      "model": "success",
+      "handoff": "start",
+      "decode": "sampling",
+      "fell_like_gt": 16,
+      "other": 12,
+      "still_high": 22,
+      "vanished": 6
+    },
+    {
+      "model": "success",
+      "handoff": "-6",
+      "decode": "beam4",
+      "other": 2,
+      "still_high": 2,
+      "fell_like_gt": 3
+    },
+    {
+      "model": "success",
+      "handoff": "-6",
+      "decode": "sampling",
+      "other": 8,
+      "fell_like_gt": 27,
+      "still_high": 16,
+      "vanished": 5
+    },
+    {
+      "model": "success",
+      "handoff": "-3",
+      "decode": "beam4",
+      "other": 2,
+      "fell_like_gt": 5
+    },
+    {
+      "model": "success",
+      "handoff": "-3",
+      "decode": "sampling",
+      "other": 5,
+      "fell_like_gt": 29,
+      "vanished": 10,
+      "still_high": 12
+    },
+    {
+      "model": "success",
+      "handoff": "+0",
+      "decode": "beam4",
+      "fell_like_gt": 3,
+      "other": 2,
+      "still_high": 1,
+      "vanished": 1
+    },
+    {
+      "model": "success",
+      "handoff": "+0",
+      "decode": "sampling",
+      "fell_like_gt": 13,
+      "still_high": 16,
+      "other": 12,
+      "vanished": 15
+    },
+    {
+      "model": "success",
+      "handoff": "+2",
+      "decode": "beam4",
+      "fell_like_gt": 2,
+      "other": 1,
+      "vanished": 3,
+      "still_high": 1
+    },
+    {
+      "model": "success",
+      "handoff": "+2",
+      "decode": "sampling",
+      "still_high": 17,
+      "vanished": 11,
+      "fell_like_gt": 22,
+      "other": 6
+    }
+  ],
+  "per_case": [
+    {
+      "model": "natural",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 4,
+        "still_high": 2
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 24,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 6,
+        "still_high": 2,
+        "fell_like_gt": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 27,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 4,
+        "still_high": 4,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "vanished": 2
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 4,
+        "still_high": 1,
+        "fell_like_gt": 4
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 6,
+        "still_high": 1,
+        "other": 2
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 24,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 7,
+        "other": 1,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 27,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 6,
+        "other": 1,
+        "still_high": 1,
+        "fell_like_gt": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 8,
+        "other": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 7,
+        "other": 2
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 7,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 10,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 45,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 48,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 51,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 55,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 10,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 13,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 16,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 18,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 27,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 7,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 23,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 4,
+        "fell_like_gt": 5
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 26,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "vanished": 1,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 29,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 6,
+        "still_high": 2,
+        "fell_like_gt": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "vanished": 3
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 5,
+        "other": 3,
+        "fell_like_gt": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 22,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 4,
+        "vanished": 5
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 25,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 6,
+        "still_high": 1,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 28,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 7,
+        "fell_like_gt": 1,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 5,
+        "fell_like_gt": 3,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 45,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 48,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 51,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 55,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 26,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 12,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 15,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 18,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 45,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 48,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 51,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 55,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 3,
+        "still_high": 2,
+        "other": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 37,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 4,
+        "vanished": 4,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 40,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 2,
+        "vanished": 5,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 43,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 6
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 45,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 7,
+        "still_high": 1,
+        "fell_like_gt": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 3,
+        "vanished": 4,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 24,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "other": 2,
+        "still_high": 4
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 27,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 5,
+        "other": 1,
+        "vanished": 2,
+        "fell_like_gt": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 6,
+        "still_high": 3
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 2,
+        "still_high": 4
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 7,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 10,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "-6",
+      "k": 12,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "-3",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+0",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+4",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 30,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 33,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 36,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 38,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 40,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 4,
+        "vanished": 4,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 23,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 26,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "vanished": 2
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 29,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "vanished": 3
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 4,
+        "vanished": 5
+      }
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 12,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 15,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 18,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 22,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 26,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 49,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 52,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 55,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 57,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 59,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "natural",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 4,
+        "other": 5
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 24,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 5,
+        "fell_like_gt": 4
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 27,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 2,
+        "fell_like_gt": 6,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 5,
+        "still_high": 3,
+        "other": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "still_high": 1,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 6,
+        "other": 2,
+        "fell_like_gt": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 24,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 5,
+        "vanished": 1,
+        "other": 1,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 27,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 5,
+        "still_high": 3,
+        "other": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 8,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 4,
+        "still_high": 5
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 7,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 10,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 45,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 48,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 51,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 55,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 10,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 27,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 1,
+        "still_high": 3,
+        "vanished": 3,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 23,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "other": 1,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 26,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "other": 1,
+        "still_high": 1,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 29,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "still_high": 1,
+        "other": 1,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 2,
+        "fell_like_gt": 4,
+        "still_high": 2,
+        "other": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 4,
+        "still_high": 3,
+        "other": 2
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 22,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 1,
+        "fell_like_gt": 6,
+        "still_high": 2
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 25,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "vanished": 3
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 28,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 4,
+        "other": 2,
+        "vanished": 3
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 6,
+        "vanished": 2,
+        "other": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 45,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 48,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 51,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 55,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 16,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 26,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 12,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 45,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 48,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 51,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 55,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 2,
+        "fell_like_gt": 1,
+        "vanished": 2,
+        "still_high": 4
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 37,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 2,
+        "still_high": 3,
+        "vanished": 3,
+        "other": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 40,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "vanished": 1,
+        "still_high": 2
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 43,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "other": 1,
+        "still_high": 3,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 45,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 7,
+        "other": 2
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 24,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 6,
+        "other": 1,
+        "fell_like_gt": 2
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 27,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 2,
+        "vanished": 1,
+        "still_high": 6
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 1,
+        "vanished": 3,
+        "still_high": 5
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 4,
+        "still_high": 4,
+        "other": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 7,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 10,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "-6",
+      "k": 12,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "-3",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+0",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+4",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 30,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 33,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 36,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 38,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 40,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "vanished": 1,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "-6",
+      "k": 23,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "vanished": 1,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "-3",
+      "k": 26,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 5,
+        "vanished": 3,
+        "other": 1
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "+0",
+      "k": 29,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 3,
+        "still_high": 1,
+        "vanished": 5
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 4,
+        "fell_like_gt": 5
+      }
+    },
+    {
+      "model": "success",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 12,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 18,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 26,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 49,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 52,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 55,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 57,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 59,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 13,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 16,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 19,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-6",
+      "k": 14,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "-3",
+      "k": 17,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+0",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "success",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+4",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    }
+  ]
+}

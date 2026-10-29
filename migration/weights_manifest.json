@@ -1,0 +1,1124 @@
+{
+  "schema": 1,
+  "github": "tianyushao-cloud/Fail-WM",
+  "repo_id": "tianyushao1124/Fail-WM",
+  "private": true,
+  "scope": "Selected original initialization, codec34k, mixed/success SFT10k, V0/V6/trajectory RL30; no training data or bulk historical rollouts",
+  "models": [
+    {
+      "path": "bundles/robocasa_original_release",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa",
+      "reason": "上游原始 RoboCasa 发布 bundle，原 manifest 保持完整",
+      "bytes": 3107377348,
+      "files": 29
+    },
+    {
+      "path": "bundles/rt1_original_release",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1",
+      "reason": "早期 RT-1 对照的原始发布 bundle",
+      "bytes": 3107363292,
+      "files": 29
+    },
+    {
+      "path": "initialization/rt1_upstream",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream",
+      "reason": "混合数据 SFT/codec 的实际原始初始化",
+      "bytes": 1035410944,
+      "files": 11
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init",
+      "reason": "原始 RT-1 初始化适配到 RoboCasa 的配置与动作范围",
+      "bytes": 1035751150,
+      "files": 9
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011",
+      "reason": "实际训练混合 SFT10k 的 codec34k 初始化 bundle",
+      "bytes": 1035751429,
+      "files": 9
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle",
+      "reason": "全部主要 RoboCasa RL 的 mixed SFT10k 初始化，可直接推理",
+      "bytes": 1035751429,
+      "files": 9
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle",
+      "reason": "成功-only SFT10k 对照，可直接推理",
+      "bytes": 1035751429,
+      "files": 9
+    },
+    {
+      "path": "codecs/robocasa_mixed_step034000",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000",
+      "reason": "实际配套 codec34k；含优化器/判别器/RNG，支持续训",
+      "bytes": 1629312892,
+      "files": 4
+    },
+    {
+      "path": "checkpoints/robocasa_sft_mixed_step010000",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000",
+      "reason": "混合 SFT10k 完整 checkpoint",
+      "bytes": 1553885235,
+      "files": 6
+    },
+    {
+      "path": "checkpoints/robocasa_sft_success_step010000",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000",
+      "reason": "成功-only SFT10k 完整 checkpoint",
+      "bytes": 1553885245,
+      "files": 6
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v0_step000030",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030",
+      "reason": "已做 val/test 的 V0 状态奖励 RL30 对照",
+      "bytes": 1553885190,
+      "files": 6
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v6_step000030",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030",
+      "reason": "最新 V6 状态奖励 RL30；未找到正式效果评测",
+      "bytes": 1553885202,
+      "files": 6
+    },
+    {
+      "path": "checkpoints/robocasa_rl_trajectory_step000030",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030",
+      "reason": "最新纯二维轨迹奖励 RL30；未找到正式效果评测",
+      "bytes": 1553885039,
+      "files": 6
+    },
+    {
+      "path": "dependencies/t5-base",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+      "reason": "推理必需、体积小，固定原始 T5 版本，支持离线加载",
+      "bytes": 893837231,
+      "files": 6
+    }
+  ],
+  "files": [
+    {
+      "path": "bundles/robocasa_original_release/manifest.json",
+      "bytes": 4839,
+      "sha256": "9f2f4b3c77621a42989ff606a57a95e86ee15b4aa9a2bad480105e252822648d",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/manifest.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/manifest.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/release_manifest.json",
+      "bytes": 16161,
+      "sha256": "2bdd816138195b3117fc2c7cb834410d9afe00c477cc1deceab8cdb1250664ba",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/release_manifest.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/release_manifest.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/README.md",
+      "bytes": 2484,
+      "sha256": "6a27e8faae489dd4e1475e83a6ddbb4b2cf7865da3602f96f53d0f07d01c58ce",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/README.md",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/README.md"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/codec/config.json",
+      "bytes": 839,
+      "sha256": "bcca7b2a901b508938f60af4c16f62ce698d90138b7fbf0d3a3824d527b45c02",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/codec/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/codec/config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "bytes": 517850360,
+      "sha256": "4ea6133eae9d3deba4fc546ac7d0cb318363d0d79372b29a8e7d1a753023b77d",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/codec/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/futureworlds_config.json",
+      "bytes": 1759,
+      "sha256": "1584e877e1b47239e53742dd898249de0aaee9bd91dbe354426e484e259da8d6",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/futureworlds_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/futureworlds_config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/grpo200/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/grpo200/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/grpo200/config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/grpo200/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/grpo200/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/grpo200/generation_config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/grpo200/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "af36ba44677963a0de2753dcf933c46f616505792fe4d6668138adc2d8e59720",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/grpo200/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/grpo200/model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/grpo200/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "eba7ba8715d82c79f8909a8d65cf3ede5f1874b0963efcd3a351f2f8ca13633c",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/grpo200/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/grpo200/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/main/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/main/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/main/config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/main/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/main/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/main/generation_config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/main/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "a0d4420b480f44f9f1f970edbfc96a95adb5e428dc6b49ca3d1b2c61fddb5807",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/main/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/main/model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/main/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "92ad8666771696ee22f6c7aaee12d9bd8bd6195569298defb1b89b3bcba11d1e",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/main/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/main/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/memspo200/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/memspo200/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/memspo200/config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/memspo200/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/memspo200/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/memspo200/generation_config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/memspo200/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "6193281a747b6155cb32b7e4e3844f1ff05ac0e07d9df4cd3f11bba4c8711d92",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/memspo200/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/memspo200/model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/memspo200/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "2c9f8ac2cc6c128fc29305546a29effbd99250f47905e7711a8330a397bfd7c0",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/memspo200/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/memspo200/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/ordinary200/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/ordinary200/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/ordinary200/config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/ordinary200/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/ordinary200/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/ordinary200/generation_config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/ordinary200/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "486a6c324466839121a4fb392450b1093e98d7482dbb9b6c794baf4ebb7b1519",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/ordinary200/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/ordinary200/model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/ordinary200/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "c4fc6d76fe21e5687fa7dd4cb2c82da0b3c52554490be6211e22aa4fabc85900",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/ordinary200/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/ordinary200/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/sft/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/sft/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/sft/config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/sft/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/sft/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/sft/generation_config.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/sft/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "a86d465e8b5c1cc824238b010aed477ea61d6d8307102135b886b32ca065463c",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/sft/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/sft/model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/models/sft/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "ef8a06e8ba6451ad1873d9476400c04ae581ce8e654ca77958f7cc56d9f6b380",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/sft/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/models/sft/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/preprocessing/action_ranges.pt",
+      "bytes": 2003,
+      "sha256": "55531c0e5296d01b8eb78aa941b422bde30e80e458a24d362f874671f2dbfaf4",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/preprocessing/action_ranges.pt",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/preprocessing/action_ranges.pt"
+    },
+    {
+      "path": "bundles/robocasa_original_release/robocasa/training_recipe.json",
+      "bytes": 386,
+      "sha256": "6d82b2f238a866dd0e1f792e0944488ab96382096503ed4ed26520037250349e",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/training_recipe.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/robocasa/training_recipe.json"
+    },
+    {
+      "path": "bundles/robocasa_original_release/weights_manifest.json",
+      "bytes": 18897,
+      "sha256": "3c66ffe9d3593accb46a27b3eb624bbdc4368481ce784a7fe6018511bea86773",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/weights_manifest.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_scholar_robocasa/weights_manifest.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/README.md",
+      "bytes": 3003,
+      "sha256": "414311ba7ae89f680207295d303e524d9a694bf1b9c609dfa6aa1618296dae63",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/README.md",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/README.md"
+    },
+    {
+      "path": "bundles/rt1_original_release/manifest.json",
+      "bytes": 4715,
+      "sha256": "ec7fb7b49de1f8fc417b4da3d706550b7bb365990ad2283f441d69ba793d7490",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/manifest.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/manifest.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/README.md",
+      "bytes": 2470,
+      "sha256": "68edbf4ecbc7a84f70e41e898617ee44693aa0041f4ecf533e5f403bbbafb522",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/README.md",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/README.md"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/codec/config.json",
+      "bytes": 844,
+      "sha256": "9739df1c8157400c8efc54e67370f1e6be9db074c059ef25b26e475fc0fe9d9d",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/codec/config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/codec/config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/codec/diffusion_pytorch_model.safetensors",
+      "bytes": 517850360,
+      "sha256": "7c8194f83617137ef0a002a15d60c6ee222bcd2442afb4ed704a7918496cc073",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/codec/diffusion_pytorch_model.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/codec/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/futureworlds_config.json",
+      "bytes": 1724,
+      "sha256": "06584370456a83520812b39ddeb5d1299b54beea9f42bb41ab6c42ffb8a1a86a",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/futureworlds_config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/futureworlds_config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/grpo200/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/grpo200/config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/grpo200/config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/grpo200/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/grpo200/generation_config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/grpo200/generation_config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/grpo200/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "be5c61ec234336324d8d0bbb2c6cd020be580da6d055f900c15767c5d0170e9e",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/grpo200/model.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/grpo200/model.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/grpo200/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "9b1912039edd5e6806e5cf156d9e45dd5ac92ef81a44c89d4d883f315d51d398",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/grpo200/text_adapters.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/grpo200/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/main/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/main/config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/main/config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/main/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/main/generation_config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/main/generation_config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/main/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "9f5cde05fc628a550fa321343573c66919eb72338438e37883cecc45bc28d068",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/main/model.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/main/model.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/main/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "c426c478c690679230b613401b59f8d17bc7863b33450ba12964d42722b489cd",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/main/text_adapters.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/main/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/memspo200/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/memspo200/config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/memspo200/config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/memspo200/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/memspo200/generation_config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/memspo200/generation_config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/memspo200/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "dcaf1123b9c7baed05bb74489906523bb2c29fbee4bafc3d06b1dca519985917",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/memspo200/model.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/memspo200/model.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/memspo200/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "0ff10442a71858b8d87296539843c34427743987bce486790b1032eb013df491",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/memspo200/text_adapters.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/memspo200/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/ordinary200/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/ordinary200/config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/ordinary200/config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/ordinary200/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/ordinary200/generation_config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/ordinary200/generation_config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/ordinary200/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "efb718ff37f3c1ecf89e48912c9a3013121fbbec663cf43859a96fe9db925981",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/ordinary200/model.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/ordinary200/model.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/ordinary200/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "188351646fe1aa823b5cffe54f73ddf038e7197b0411054d0f1c1db297930905",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/ordinary200/text_adapters.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/ordinary200/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/sft/config.json",
+      "bytes": 695,
+      "sha256": "b78291f41d3c8cfaa996cf7cf8402fac3cf33dc316b814f61efdabb4f1822605",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/sft/config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/sft/config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/sft/generation_config.json",
+      "bytes": 117,
+      "sha256": "59078ac9810218a5538a78fb3818208cadbe4c7df503940282c91fb33ca8252f",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/sft/generation_config.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/sft/generation_config.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/sft/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "072b972d52a73e1a7c28b4dae7385dcd434dca57634c66f9742cccc1337f8cc7",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/sft/model.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/sft/model.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/models/sft/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "006511fd5bbfdeb2f6975695415243b5cec4912517c7f187e65864a48ecfcf07",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/models/sft/text_adapters.safetensors",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/models/sft/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/preprocessing/frac_action_ranges.pth",
+      "bytes": 1274,
+      "sha256": "7b22a29492c55958ab63b16c91a6825b0c844e06afb4107f6fccf8f3d437db60",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/preprocessing/frac_action_ranges.pth",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/preprocessing/frac_action_ranges.pth"
+    },
+    {
+      "path": "bundles/rt1_original_release/rt1/training_recipe.json",
+      "bytes": 385,
+      "sha256": "8fd3e475be3ea72ac2f4318a3d10b2e5e40ee82163fa8dd5148baa082169fbf9",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/rt1/training_recipe.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/rt1/training_recipe.json"
+    },
+    {
+      "path": "bundles/rt1_original_release/weights_manifest.json",
+      "bytes": 18897,
+      "sha256": "3c66ffe9d3593accb46a27b3eb624bbdc4368481ce784a7fe6018511bea86773",
+      "original_path": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1/weights_manifest.json",
+      "restore_path": "Jev-WM/paper_assets/futureworlds_rt1/weights_manifest.json"
+    },
+    {
+      "path": "initialization/rt1_upstream/model/.gitattributes",
+      "bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/.gitattributes",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/.gitattributes"
+    },
+    {
+      "path": "initialization/rt1_upstream/model/README.md",
+      "bytes": 434,
+      "sha256": "fa58854c4962df6324d9089a1eeef61edae79768c4241696fd53bb2f6fca4db7",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/README.md",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/README.md"
+    },
+    {
+      "path": "initialization/rt1_upstream/model/config.json",
+      "bytes": 701,
+      "sha256": "b9ab9946cea336e363eddd4fe695dab937bd7e4d83013443bb22691fa6b8e7ff",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/config.json",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/config.json"
+    },
+    {
+      "path": "initialization/rt1_upstream/model/generation_config.json",
+      "bytes": 139,
+      "sha256": "d4e800de4276bb1c5314e67aba53e8eba922ff37bfc1654e8fbdb70d81538a80",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/generation_config.json"
+    },
+    {
+      "path": "initialization/rt1_upstream/model/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "e5229f8a9de990d61cd900d05e6aaf5909a83e3634c5695d46ec8a46568dfe37",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/model.safetensors"
+    },
+    {
+      "path": "initialization/rt1_upstream/model/tokenizer.json",
+      "bytes": 9085528,
+      "sha256": "d8e66d2ed8ba80929af0d0d120ab7b3dcadd7aeb0ab852d3cb82fa510d664f77",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/tokenizer.json",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/tokenizer.json"
+    },
+    {
+      "path": "initialization/rt1_upstream/model/tokenizer_config.json",
+      "bytes": 50396,
+      "sha256": "157b63a78bcc6f9cb1ed0200699da0f823f2689e394be40e6b41e6d54aadde30",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/tokenizer_config.json",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/model/tokenizer_config.json"
+    },
+    {
+      "path": "initialization/rt1_upstream/tokenizer/.gitattributes",
+      "bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/tokenizer/.gitattributes",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/tokenizer/.gitattributes"
+    },
+    {
+      "path": "initialization/rt1_upstream/tokenizer/README.md",
+      "bytes": 424,
+      "sha256": "2f3cd0c00fe603c47e2ec87d0ff1bcbb1eb2983215bde4a2a36f23c9182d3050",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/tokenizer/README.md",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/tokenizer/README.md"
+    },
+    {
+      "path": "initialization/rt1_upstream/tokenizer/config.json",
+      "bytes": 844,
+      "sha256": "9739df1c8157400c8efc54e67370f1e6be9db074c059ef25b26e475fc0fe9d9d",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/tokenizer/config.json",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/tokenizer/config.json"
+    },
+    {
+      "path": "initialization/rt1_upstream/tokenizer/diffusion_pytorch_model.safetensors",
+      "bytes": 517850360,
+      "sha256": "7c8194f83617137ef0a002a15d60c6ee222bcd2442afb4ed704a7918496cc073",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/rt1-upstream/tokenizer/diffusion_pytorch_model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/rt1-upstream/tokenizer/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization/manifest.json",
+      "bytes": 1435,
+      "sha256": "63300f66e8fdb04ffd37536b25d8f5aa6f677f730de16e057af71bb6b5622be1",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/manifest.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/manifest.json"
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization/robocasa/codec/config.json",
+      "bytes": 844,
+      "sha256": "9739df1c8157400c8efc54e67370f1e6be9db074c059ef25b26e475fc0fe9d9d",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/codec/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/codec/config.json"
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "bytes": 517850360,
+      "sha256": "7c8194f83617137ef0a002a15d60c6ee222bcd2442afb4ed704a7918496cc073",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/codec/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization/robocasa/futureworlds_config.json",
+      "bytes": 965,
+      "sha256": "d75d1833c6af46961abea7859dff70f5f13eb3fb2a6f3fd7262079dfa2d54924",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/futureworlds_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/futureworlds_config.json"
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization/robocasa/models/sft/config.json",
+      "bytes": 701,
+      "sha256": "b9ab9946cea336e363eddd4fe695dab937bd7e4d83013443bb22691fa6b8e7ff",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/models/sft/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/models/sft/config.json"
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization/robocasa/models/sft/generation_config.json",
+      "bytes": 139,
+      "sha256": "d4e800de4276bb1c5314e67aba53e8eba922ff37bfc1654e8fbdb70d81538a80",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/models/sft/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/models/sft/generation_config.json"
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization/robocasa/models/sft/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "e5229f8a9de990d61cd900d05e6aaf5909a83e3634c5695d46ec8a46568dfe37",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/models/sft/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/models/sft/model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization/robocasa/models/sft/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "b4828e3c0ac33f8e62161acfc5f84417adbae95d1009018d6e675c760014df1d",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/models/sft/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/models/sft/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_rt1_initialization/robocasa/preprocessing/action_ranges.pt",
+      "bytes": 1594,
+      "sha256": "7e519fa479c9fc1c0ab6c5084cfe8c9e16a5d1f2e27325a4ffaf47e245036a69",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/preprocessing/action_ranges.pt",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_rt1_init/robocasa/preprocessing/action_ranges.pt"
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization/manifest.json",
+      "bytes": 1622,
+      "sha256": "400075ad290d0569f1af106dd1ea1302046ceed846aec608f75da5bbc044ec73",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/manifest.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/manifest.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization/robocasa/codec/config.json",
+      "bytes": 936,
+      "sha256": "9168cbf4eaf771e2e67fd8a6f4a5f98ad8a322e9a0a38a4bc6d5cf51c3a3a724",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/codec/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/codec/config.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "bytes": 517850360,
+      "sha256": "d0d9cf1e8e8d335f2f2a08f6cff4a7cba007d5bb3419bfba8e74c6baf0c35d59",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/codec/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization/robocasa/futureworlds_config.json",
+      "bytes": 965,
+      "sha256": "d75d1833c6af46961abea7859dff70f5f13eb3fb2a6f3fd7262079dfa2d54924",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/futureworlds_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/futureworlds_config.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization/robocasa/models/sft/config.json",
+      "bytes": 701,
+      "sha256": "b9ab9946cea336e363eddd4fe695dab937bd7e4d83013443bb22691fa6b8e7ff",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/models/sft/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/models/sft/config.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization/robocasa/models/sft/generation_config.json",
+      "bytes": 139,
+      "sha256": "d4e800de4276bb1c5314e67aba53e8eba922ff37bfc1654e8fbdb70d81538a80",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/models/sft/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/models/sft/generation_config.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization/robocasa/models/sft/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "e5229f8a9de990d61cd900d05e6aaf5909a83e3634c5695d46ec8a46568dfe37",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/models/sft/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/models/sft/model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization/robocasa/models/sft/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "b4828e3c0ac33f8e62161acfc5f84417adbae95d1009018d6e675c760014df1d",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/models/sft/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/models/sft/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_mixed_codec34k_initialization/robocasa/preprocessing/action_ranges.pt",
+      "bytes": 1594,
+      "sha256": "7e519fa479c9fc1c0ab6c5084cfe8c9e16a5d1f2e27325a4ffaf47e245036a69",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/preprocessing/action_ranges.pt",
+      "restore_path": "fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011/robocasa/preprocessing/action_ranges.pt"
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k/manifest.json",
+      "bytes": 1633,
+      "sha256": "13b96143effa024620a7d78f8d6159a247c66b7db70b3090602b65cb64f79584",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/manifest.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/manifest.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k/robocasa/codec/config.json",
+      "bytes": 936,
+      "sha256": "9168cbf4eaf771e2e67fd8a6f4a5f98ad8a322e9a0a38a4bc6d5cf51c3a3a724",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/codec/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/codec/config.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "bytes": 517850360,
+      "sha256": "d0d9cf1e8e8d335f2f2a08f6cff4a7cba007d5bb3419bfba8e74c6baf0c35d59",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/codec/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k/robocasa/futureworlds_config.json",
+      "bytes": 982,
+      "sha256": "d7f2e5f6783476991b0402a02cede81944b6f081e8e65d763565046a51b2132c",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/futureworlds_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/futureworlds_config.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k/robocasa/models/main/config.json",
+      "bytes": 695,
+      "sha256": "172bd64d770f18e026af1ac01ab93763aebedd3c58b5cef2af84b4b36033c514",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/models/main/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/models/main/config.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k/robocasa/models/main/generation_config.json",
+      "bytes": 117,
+      "sha256": "e5c51f65054a499de0e596e7b52d60d3616bd0246606280b1e5f246432f49fa6",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/models/main/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/models/main/generation_config.json"
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k/robocasa/models/main/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "f262e98584cccd7f556c8221f89bbcc5efe985a400a00aae7801f3f9c8c48b05",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/models/main/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/models/main/model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k/robocasa/models/main/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "0d7c3136a50c11cef98f8be0e96b05939ca4da54d4488f02133f54c61a823535",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/models/main/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/models/main/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_mixed_sft10k/robocasa/preprocessing/action_ranges.pt",
+      "bytes": 1594,
+      "sha256": "7e519fa479c9fc1c0ab6c5084cfe8c9e16a5d1f2e27325a4ffaf47e245036a69",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/preprocessing/action_ranges.pt",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/natural_bundle/robocasa/preprocessing/action_ranges.pt"
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k/manifest.json",
+      "bytes": 1633,
+      "sha256": "44c168b2448fce97d0029101fdfa5adb3e29dbb59c85f02371088cb08c9a9433",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/manifest.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/manifest.json"
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k/robocasa/codec/config.json",
+      "bytes": 936,
+      "sha256": "9168cbf4eaf771e2e67fd8a6f4a5f98ad8a322e9a0a38a4bc6d5cf51c3a3a724",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/codec/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/codec/config.json"
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "bytes": 517850360,
+      "sha256": "d0d9cf1e8e8d335f2f2a08f6cff4a7cba007d5bb3419bfba8e74c6baf0c35d59",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/codec/diffusion_pytorch_model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/codec/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k/robocasa/futureworlds_config.json",
+      "bytes": 982,
+      "sha256": "d7f2e5f6783476991b0402a02cede81944b6f081e8e65d763565046a51b2132c",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/futureworlds_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/futureworlds_config.json"
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k/robocasa/models/main/config.json",
+      "bytes": 695,
+      "sha256": "172bd64d770f18e026af1ac01ab93763aebedd3c58b5cef2af84b4b36033c514",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/models/main/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/models/main/config.json"
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k/robocasa/models/main/generation_config.json",
+      "bytes": 117,
+      "sha256": "e5c51f65054a499de0e596e7b52d60d3616bd0246606280b1e5f246432f49fa6",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/models/main/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/models/main/generation_config.json"
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k/robocasa/models/main/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "8645cc3797b2b5985cd9c6e3f61ca17d0d5efa7ed4ff871912aa6b660f400bf5",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/models/main/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/models/main/model.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k/robocasa/models/main/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "e518f44beebdcb388d6b9463366930c3a43d45d5ff77b2ad42e224ed1e674db2",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/models/main/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/models/main/text_adapters.safetensors"
+    },
+    {
+      "path": "bundles/robocasa_success_sft10k/robocasa/preprocessing/action_ranges.pt",
+      "bytes": 1594,
+      "sha256": "7e519fa479c9fc1c0ab6c5084cfe8c9e16a5d1f2e27325a4ffaf47e245036a69",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/preprocessing/action_ranges.pt",
+      "restore_path": "fail_WM/FutureWorlds_SFT/previews_wm_codec34k_20261012/success_bundle/robocasa/preprocessing/action_ranges.pt"
+    },
+    {
+      "path": "codecs/robocasa_mixed_step034000/config.json",
+      "bytes": 936,
+      "sha256": "9168cbf4eaf771e2e67fd8a6f4a5f98ad8a322e9a0a38a4bc6d5cf51c3a3a724",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000/config.json"
+    },
+    {
+      "path": "codecs/robocasa_mixed_step034000/diffusion_pytorch_model.safetensors",
+      "bytes": 517850360,
+      "sha256": "d0d9cf1e8e8d335f2f2a08f6cff4a7cba007d5bb3419bfba8e74c6baf0c35d59",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000/diffusion_pytorch_model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "path": "codecs/robocasa_mixed_step034000/experiment.json",
+      "bytes": 1642,
+      "sha256": "14c5b00e955f9ea3e86aa8bfbce216ccb17f4fe5b103b4b4852a2c05fc8bdd8c",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000/experiment.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000/experiment.json"
+    },
+    {
+      "path": "codecs/robocasa_mixed_step034000/training_state.pt",
+      "bytes": 1111459954,
+      "sha256": "6c5d566b28061e992f35a0d2b188587c8d92e1f607e6e73da80687987710b432",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000/training_state.pt",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/paper_adapt_mixed_codec_20261009/checkpoints/step_034000/training_state.pt"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_mixed_step010000/config.json",
+      "bytes": 695,
+      "sha256": "172bd64d770f18e026af1ac01ab93763aebedd3c58b5cef2af84b4b36033c514",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_mixed_step010000/experiment.json",
+      "bytes": 1936,
+      "sha256": "70a2e5040fdd7d36becf8f351ade017026a777fd0757b2f00c7a21fdb50d9180",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/experiment.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/experiment.json"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_mixed_step010000/generation_config.json",
+      "bytes": 117,
+      "sha256": "e5c51f65054a499de0e596e7b52d60d3616bd0246606280b1e5f246432f49fa6",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/generation_config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_mixed_step010000/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "f262e98584cccd7f556c8221f89bbcc5efe985a400a00aae7801f3f9c8c48b05",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/model.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_mixed_step010000/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "0d7c3136a50c11cef98f8be0e96b05939ca4da54d4488f02133f54c61a823535",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/text_adapters.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_mixed_step010000/training_state.pt",
+      "bytes": 1035987375,
+      "sha256": "d070dd3920cec51decb2c5f0d1834e1b6e852c5eb262cb012ed280e9be6fd3de",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/training_state.pt",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/training_state.pt"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_success_step010000/config.json",
+      "bytes": 695,
+      "sha256": "172bd64d770f18e026af1ac01ab93763aebedd3c58b5cef2af84b4b36033c514",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_success_step010000/experiment.json",
+      "bytes": 1946,
+      "sha256": "804a864569cbabf6ccc9cae162772c10466d0eadd69d545096c51ee659f58ff7",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/experiment.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/experiment.json"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_success_step010000/generation_config.json",
+      "bytes": 117,
+      "sha256": "e5c51f65054a499de0e596e7b52d60d3616bd0246606280b1e5f246432f49fa6",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/generation_config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_success_step010000/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "8645cc3797b2b5985cd9c6e3f61ca17d0d5efa7ed4ff871912aa6b660f400bf5",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/model.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_success_step010000/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "e518f44beebdcb388d6b9463366930c3a43d45d5ff77b2ad42e224ed1e674db2",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/text_adapters.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/text_adapters.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_sft_success_step010000/training_state.pt",
+      "bytes": 1035987375,
+      "sha256": "224b19b30b61e1febd89c909e7c3f26c04b1a720990a8899258f83182051255d",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/training_state.pt",
+      "restore_path": "fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011/checkpoints/step_010000/training_state.pt"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v0_step000030/config.json",
+      "bytes": 695,
+      "sha256": "172bd64d770f18e026af1ac01ab93763aebedd3c58b5cef2af84b4b36033c514",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/config.json",
+      "restore_path": "Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v0_step000030/experiment.json",
+      "bytes": 2403,
+      "sha256": "334424e73f952b1b9782d2b21527aa18e589addcb88c8445d05ba4c2e7b19d4e",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/experiment.json",
+      "restore_path": "Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/experiment.json"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v0_step000030/generation_config.json",
+      "bytes": 117,
+      "sha256": "e5c51f65054a499de0e596e7b52d60d3616bd0246606280b1e5f246432f49fa6",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/generation_config.json",
+      "restore_path": "Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/generation_config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v0_step000030/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "a4aa4475967c2ecb347318ed89836263c0786ee6f9fd74cc0ee03f72550916bc",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/model.safetensors",
+      "restore_path": "Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/model.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v0_step000030/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "dbec8e1e18a68f86af4ddd94f5c7597d15d91bac8c576c8d608a6f9ca5987bd8",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/text_adapters.safetensors",
+      "restore_path": "Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/text_adapters.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v0_step000030/training_state.pt",
+      "bytes": 1035986863,
+      "sha256": "8eda9bddbf8bff6a885ed1b0c46c45706a9243cdb2337dcc245e54294de44481",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/training_state.pt",
+      "restore_path": "Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030/training_state.pt"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v6_step000030/config.json",
+      "bytes": 695,
+      "sha256": "172bd64d770f18e026af1ac01ab93763aebedd3c58b5cef2af84b4b36033c514",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/config.json",
+      "restore_path": "Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v6_step000030/experiment.json",
+      "bytes": 2415,
+      "sha256": "b526d21e38578175c62b1c164bda1aae43e115ea9488a4785ea00454c0cbc89f",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/experiment.json",
+      "restore_path": "Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/experiment.json"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v6_step000030/generation_config.json",
+      "bytes": 117,
+      "sha256": "e5c51f65054a499de0e596e7b52d60d3616bd0246606280b1e5f246432f49fa6",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/generation_config.json",
+      "restore_path": "Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/generation_config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v6_step000030/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "0f005176894d6f7aeeffb0d3734d71cd0dcc237fb7c5049249107c654afde5a5",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/model.safetensors",
+      "restore_path": "Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/model.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v6_step000030/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "d7e50755fc579cd913b9b6db4e111ff6543ea296016faafe78fe07fa4bbfdf0d",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/text_adapters.safetensors",
+      "restore_path": "Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/text_adapters.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_state_v6_step000030/training_state.pt",
+      "bytes": 1035986863,
+      "sha256": "eac13542ead5ce3f71327a4f60c6e4697c9416d5fadaa9b73d233a9417ec4e0f",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/training_state.pt",
+      "restore_path": "Jev-WM/experiments/robocasa_state_v6_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/training_state.pt"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_trajectory_step000030/config.json",
+      "bytes": 695,
+      "sha256": "172bd64d770f18e026af1ac01ab93763aebedd3c58b5cef2af84b4b36033c514",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/config.json",
+      "restore_path": "Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_trajectory_step000030/experiment.json",
+      "bytes": 2252,
+      "sha256": "9bf0113b7e06ac561149a15806c34d5b18c9941ba230c6f181c50328fb4fa7a3",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/experiment.json",
+      "restore_path": "Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/experiment.json"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_trajectory_step000030/generation_config.json",
+      "bytes": 117,
+      "sha256": "e5c51f65054a499de0e596e7b52d60d3616bd0246606280b1e5f246432f49fa6",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/generation_config.json",
+      "restore_path": "Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/generation_config.json"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_trajectory_step000030/model.safetensors",
+      "bytes": 508419080,
+      "sha256": "2e6735c1c9944c9a65491dc7361227f3b82551ff0a4e0dacfc799a22ea54b5c2",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/model.safetensors",
+      "restore_path": "Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/model.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_trajectory_step000030/text_adapters.safetensors",
+      "bytes": 9476032,
+      "sha256": "828dff71ac3e8c7ab971f09b496e4ffe5c68733f7aca9e09e1905ea6af191fd4",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/text_adapters.safetensors",
+      "restore_path": "Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/text_adapters.safetensors"
+    },
+    {
+      "path": "checkpoints/robocasa_rl_trajectory_step000030/training_state.pt",
+      "bytes": 1035986863,
+      "sha256": "b189e1cba161a27cde41246468c770922384fc1c9a6f204178a0e2720e4bd9d9",
+      "original_path": "/media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/training_state.pt",
+      "restore_path": "Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027/train/checkpoints/step_000030/training_state.pt"
+    },
+    {
+      "path": "dependencies/t5-base/README.md",
+      "bytes": 8477,
+      "sha256": "c43c23f205b6839a6adb10f0757265f76c1c6f96b7793a4e53582d3a61cbfb23",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base/README.md",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/t5-base/README.md"
+    },
+    {
+      "path": "dependencies/t5-base/config.json",
+      "bytes": 1208,
+      "sha256": "46dd7cb62d29c81fb551e0ef1ea274c24a46ba441eeb948897706252933df033",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base/config.json",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/t5-base/config.json"
+    },
+    {
+      "path": "dependencies/t5-base/generation_config.json",
+      "bytes": 147,
+      "sha256": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base/generation_config.json",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/t5-base/generation_config.json"
+    },
+    {
+      "path": "dependencies/t5-base/model.safetensors",
+      "bytes": 891646390,
+      "sha256": "a90903540cc02cbeb7ff9f823f1a80eb778c7e22426a0e620b01c77a5ec8f5b4",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base/model.safetensors",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/t5-base/model.safetensors"
+    },
+    {
+      "path": "dependencies/t5-base/spiece.model",
+      "bytes": 791656,
+      "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base/spiece.model",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/t5-base/spiece.model"
+    },
+    {
+      "path": "dependencies/t5-base/tokenizer.json",
+      "bytes": 1389353,
+      "sha256": "d2acde0d8d71dd30a711834b07781b9c89feaac33fd332f60507699282740066",
+      "original_path": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base/tokenizer.json",
+      "restore_path": "fail_WM/FutureWorlds_workspace/assets/t5-base/tokenizer.json"
+    }
+  ]
+}

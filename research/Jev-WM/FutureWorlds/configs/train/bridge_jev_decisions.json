@@ -1,0 +1,31 @@
+{
+  "dataset": "bridge",
+  "method": "memspo",
+  "bundle": "/path/to/weights",
+  "train_manifest": "/path/to/data/bridge/train/manifest.json",
+  "evaluation_manifest": "/path/to/data/bridge/evaluation/manifest.json",
+  "output": "/path/to/output/bridge_jev_decisions",
+  "initial_variant": "sft",
+  "device": "cuda",
+  "seed": 20260915,
+  "steps": 10,
+  "global_batch": 1,
+  "lr": 1e-06,
+  "adapter_lr": 0.0001,
+  "warmup_steps": 500,
+  "horizon": 10,
+  "reward": "decisions",
+  "clip": 0.2,
+  "kl_coef": 0.001,
+  "diversity_penalty": 0.1,
+  "checkpoint_every": 1,
+  "paper_locked": false,
+  "decisions": {
+    "backend": "api",
+    "model": "gpt-6-luna",
+    "review_dir": "/path/to/decision_reviews/bridge_jev_decisions",
+    "max_api_calls": 40,
+    "timeout_seconds": 60,
+    "retries": 0
+  }
+}

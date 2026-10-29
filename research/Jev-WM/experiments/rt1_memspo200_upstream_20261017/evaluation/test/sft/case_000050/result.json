@@ -1,0 +1,917 @@
+{
+  "id": "00e2a55f29be871205befa4bab83072fb057f2b9954f2f98372a5a51896c6727_0000",
+  "fingerprint": "ebee459ff4d2f30dbacf75f5088c0e3046e9d17739b3968008eed6520de3f878",
+  "prediction_sha256": "edf7017b747b50757dfd40f3fce13056f9ff40653917fb8cac0c5535147b5531",
+  "per_frame": {
+    "mse": [
+      0.003380384063348174,
+      0.013054111041128635,
+      0.019412757828831673,
+      0.017932945862412453,
+      0.01948198489844799,
+      0.016456011682748795,
+      0.01922406069934368,
+      0.017940443009138107,
+      0.019527237862348557,
+      0.02099565602838993,
+      0.021667465567588806,
+      0.019248897209763527,
+      0.019001323729753494,
+      0.014821424148976803,
+      0.01562696322798729,
+      0.01304616592824459,
+      0.013428815640509129,
+      0.011654801666736603,
+      0.013643372803926468,
+      0.012882032431662083,
+      0.01232998725026846,
+      0.012526147998869419,
+      0.010843934491276741,
+      0.010174835100769997,
+      0.00863039493560791,
+      0.008766699582338333,
+      0.008522364310920238,
+      0.00831406656652689,
+      0.008480804972350597,
+      0.008308819495141506,
+      0.007868644781410694,
+      0.007963776588439941
+    ],
+    "mae": [
+      0.02437717653810978,
+      0.0729111060500145,
+      0.09334395080804825,
+      0.08182984590530396,
+      0.0960550308227539,
+      0.06118591129779816,
+      0.06603851914405823,
+      0.070315882563591,
+      0.07364141196012497,
+      0.07316404581069946,
+      0.07108532637357712,
+      0.06805345416069031,
+      0.0958423763513565,
+      0.06608250737190247,
+      0.07469732314348221,
+      0.05811512842774391,
+      0.05721898749470711,
+      0.053011201322078705,
+      0.05591261014342308,
+      0.051265425980091095,
+      0.04853280633687973,
+      0.04975470155477524,
+      0.04645882919430733,
+      0.045805782079696655,
+      0.0419241301715374,
+      0.04711751639842987,
+      0.04355039820075035,
+      0.043523333966732025,
+      0.04413854330778122,
+      0.04347413778305054,
+      0.04052852466702461,
+      0.044227104634046555
+    ],
+    "psnr": [
+      24.71034049987793,
+      18.842527389526367,
+      17.119129180908203,
+      17.463483810424805,
+      17.103668212890625,
+      17.836753845214844,
+      17.161548614501953,
+      17.461668014526367,
+      17.09359359741211,
+      16.778705596923828,
+      16.64192008972168,
+      17.155941009521484,
+      17.212162017822266,
+      18.291099548339844,
+      18.061254501342773,
+      18.845172882080078,
+      18.719623565673828,
+      19.334949493408203,
+      18.650781631469727,
+      18.900156021118164,
+      19.090373992919922,
+      19.021825790405273,
+      19.64813232421875,
+      19.924726486206055,
+      20.639694213867188,
+      20.571640014648438,
+      20.694398880004883,
+      20.80186653137207,
+      20.71562957763672,
+      20.804607391357422,
+      21.04100227355957,
+      20.98880958557129
+    ],
+    "lpips": [
+      0.101680226624012,
+      0.15670807659626007,
+      0.18666726350784302,
+      0.18713471293449402,
+      0.1970738172531128,
+      0.20521599054336548,
+      0.2223922312259674,
+      0.23101510107517242,
+      0.2360900640487671,
+      0.24189013242721558,
+      0.230377659201622,
+      0.22844412922859192,
+      0.21220754086971283,
+      0.19432228803634644,
+      0.19623121619224548,
+      0.1966782808303833,
+      0.19351986050605774,
+      0.193279430270195,
+      0.19612836837768555,
+      0.19450093805789948,
+      0.19328971207141876,
+      0.19398659467697144,
+      0.19239383935928345,
+      0.18757294118404388,
+      0.18351872265338898,
+      0.18360230326652527,
+      0.18862776458263397,
+      0.18831026554107666,
+      0.18727664649486542,
+      0.19702231884002686,
+      0.1994452327489853,
+      0.20352604985237122
+    ],
+    "ssim": [
+      0.8420319557189941,
+      0.7466123700141907,
+      0.7209832668304443,
+      0.7360279560089111,
+      0.7051693201065063,
+      0.7344422340393066,
+      0.7224375009536743,
+      0.7307031154632568,
+      0.7306897044181824,
+      0.7257742285728455,
+      0.7227622866630554,
+      0.6905164122581482,
+      0.6612571477890015,
+      0.7530571222305298,
+      0.7353913187980652,
+      0.7602806091308594,
+      0.7584478259086609,
+      0.7620062828063965,
+      0.748942494392395,
+      0.7604978084564209,
+      0.7617611885070801,
+      0.7511817812919617,
+      0.7687232494354248,
+      0.7710269689559937,
+      0.7823663353919983,
+      0.7724050879478455,
+      0.7605544924736023,
+      0.7629084587097168,
+      0.7667787075042725,
+      0.7643328309059143,
+      0.7711437344551086,
+      0.7383677363395691
+    ]
+  },
+  "metrics": {
+    "10": {
+      "mse": 0.0167405592976138,
+      "mae": 0.07128628809005022,
+      "psnr": 18.157141876220702,
+      "lpips": 0.196586761623621,
+      "ssim": 0.7394871652126312
+    },
+    "20": {
+      "mse": 0.01612134276656434,
+      "mae": 0.06820736108347773,
+      "psnr": 18.169223976135253,
+      "lpips": 0.20007786639034747,
+      "ssim": 0.7374015480279923
+    },
+    "32": {
+      "mse": 0.013598666606412735,
+      "mae": 0.059474469686392695,
+      "psnr": 18.97897458076477,
+      "lpips": 0.1968790537212044,
+      "ssim": 0.7474869228899479
+    }
+  },
+  "trace": [
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -84.39095306396484,
+        -84.41187286376953,
+        -84.48725891113281,
+        -84.50331115722656
+      ],
+      "score_reconstruction_max_error": 2.288818359375e-05,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 2,
+      "retained": [
+        1
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -52.70745849609375,
+        -53.297218322753906,
+        -53.480281829833984,
+        -53.55286407470703
+      ],
+      "score_reconstruction_max_error": 7.62939453125e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 3,
+      "retained": [
+        1,
+        2
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -36.12915802001953,
+        -36.997005462646484,
+        -37.07273483276367,
+        -37.325706481933594
+      ],
+      "score_reconstruction_max_error": 7.62939453125e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 4,
+      "retained": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -28.3934326171875,
+        -29.301145553588867,
+        -29.462221145629883,
+        -29.52828598022461
+      ],
+      "score_reconstruction_max_error": 5.7220458984375e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 5,
+      "retained": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -22.298492431640625,
+        -23.432891845703125,
+        -23.46747398376465,
+        -23.71381378173828
+      ],
+      "score_reconstruction_max_error": 5.7220458984375e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 6,
+      "retained": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -18.289270401000977,
+        -19.42250633239746,
+        -19.581872940063477,
+        -19.949867248535156
+      ],
+      "score_reconstruction_max_error": 5.7220458984375e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 7,
+      "retained": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -16.780908584594727,
+        -17.754589080810547,
+        -18.22530174255371,
+        -18.306222915649414
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 8,
+      "retained": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -19.30211067199707,
+        -20.279268264770508,
+        -20.570873260498047,
+        -20.75816535949707
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 9,
+      "retained": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -48.18087387084961,
+        -48.229454040527344,
+        -48.30949783325195,
+        -48.38649368286133
+      ],
+      "score_reconstruction_max_error": 1.1444091796875e-05,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 10,
+      "retained": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -56.0066032409668,
+        -56.07053756713867,
+        -56.25204849243164,
+        -56.27373504638672
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 11,
+      "retained": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -61.18633270263672,
+        -61.3428955078125,
+        -61.35287094116211,
+        -61.6715202331543
+      ],
+      "score_reconstruction_max_error": 7.62939453125e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 12,
+      "retained": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -73.33988952636719,
+        -73.35037231445312,
+        -73.43711853027344,
+        -73.49722290039062
+      ],
+      "score_reconstruction_max_error": 1.52587890625e-05,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 13,
+      "retained": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -65.82614135742188,
+        -65.98445892333984,
+        -66.08439636230469,
+        -66.10973358154297
+      ],
+      "score_reconstruction_max_error": 1.52587890625e-05,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 14,
+      "retained": [
+        1,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -55.524131774902344,
+        -55.6555290222168,
+        -55.693904876708984,
+        -55.741050720214844
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 15,
+      "retained": [
+        1,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -22.457748413085938,
+        -23.84719467163086,
+        -24.072162628173828,
+        -24.182682037353516
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 16,
+      "retained": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -20.87908363342285,
+        -21.96503448486328,
+        -22.456554412841797,
+        -22.684436798095703
+      ],
+      "score_reconstruction_max_error": 5.7220458984375e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 17,
+      "retained": [
+        1,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -16.532819747924805,
+        -18.153688430786133,
+        -18.26917839050293,
+        -18.390941619873047
+      ],
+      "score_reconstruction_max_error": 1.9073486328125e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 18,
+      "retained": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -15.304835319519043,
+        -16.86309051513672,
+        -17.0054874420166,
+        -17.00779914855957
+      ],
+      "score_reconstruction_max_error": 5.7220458984375e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 19,
+      "retained": [
+        1,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -14.672903060913086,
+        -16.24102020263672,
+        -16.348979949951172,
+        -16.37078857421875
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 20,
+      "retained": [
+        1,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -17.698068618774414,
+        -19.150102615356445,
+        -19.40718650817871,
+        -19.865583419799805
+      ],
+      "score_reconstruction_max_error": 1.9073486328125e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 21,
+      "retained": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -15.188458442687988,
+        -16.655719757080078,
+        -16.90135955810547,
+        -16.96663475036621
+      ],
+      "score_reconstruction_max_error": 5.7220458984375e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 22,
+      "retained": [
+        1,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -16.936744689941406,
+        -18.31862449645996,
+        -18.612789154052734,
+        -18.718786239624023
+      ],
+      "score_reconstruction_max_error": 7.62939453125e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 23,
+      "retained": [
+        1,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -16.34035873413086,
+        -17.810100555419922,
+        -18.042800903320312,
+        -18.104843139648438
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 24,
+      "retained": [
+        1,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -14.58072566986084,
+        -16.150075912475586,
+        -16.33683967590332,
+        -16.34560775756836
+      ],
+      "score_reconstruction_max_error": 1.9073486328125e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 25,
+      "retained": [
+        1,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -15.85267448425293,
+        -17.436298370361328,
+        -17.540771484375,
+        -17.63028335571289
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 26,
+      "retained": [
+        1,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -16.452974319458008,
+        -18.12698745727539,
+        -18.205101013183594,
+        -18.26480484008789
+      ],
+      "score_reconstruction_max_error": 7.62939453125e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 27,
+      "retained": [
+        1,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -13.839049339294434,
+        -15.582429885864258,
+        -15.650724411010742,
+        -15.720158576965332
+      ],
+      "score_reconstruction_max_error": 9.5367431640625e-07,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 28,
+      "retained": [
+        1,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -13.681525230407715,
+        -15.418306350708008,
+        -15.48793888092041,
+        -15.506324768066406
+      ],
+      "score_reconstruction_max_error": 1.9073486328125e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 29,
+      "retained": [
+        1,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -19.193613052368164,
+        -20.87296485900879,
+        -20.927841186523438,
+        -21.15869140625
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 30,
+      "retained": [
+        1,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -29.15069580078125,
+        -30.344968795776367,
+        -30.65286636352539,
+        -30.76275634765625
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 31,
+      "retained": [
+        1,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -15.23166561126709,
+        -16.730091094970703,
+        -17.083833694458008,
+        -17.093585968017578
+      ],
+      "score_reconstruction_max_error": 3.814697265625e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 32,
+      "retained": [
+        1,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -16.287752151489258,
+        -17.732559204101562,
+        -18.135896682739258,
+        -18.181711196899414
+      ],
+      "score_reconstruction_max_error": 5.7220458984375e-06,
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 33,
+      "retained": [
+        1,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    }
+  ]
+}

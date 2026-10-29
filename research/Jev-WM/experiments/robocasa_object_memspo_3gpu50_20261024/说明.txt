@@ -1,0 +1,11 @@
+3卡50步 RoboCasa 物体奖励 MemSPO
+检查：bash run_3gpu.sh check
+启动/续训：CUDA_VISIBLE_DEVICES=0,1,2 bash run_3gpu.sh train
+
+单机3卡，global_batch12，每卡梯度累积4组，每组4个候选。每步6成功+6失败，每卡各2条；50步共600组轨迹（300成功、300失败），比4/8卡版本的800组少25%。
+初始化为原混合SFT10k；codec固定mixed34k；KL reference独立加载冻结。不会接之前单卡试跑或4/8卡RL权重。
+Horizon32，原始前2帧输入及后续32帧预测。奖励以窗口GT为准，整条轨迹失败不代表该窗口已出现失败事件。
+位置0.5、存在/闪现0.25、Qwen3-VL-8B GT交互0.25。lr1e-6，warmup5，KL0.001。每卡本地Qwen，无外部API。
+每5步存checkpoint，最终train/checkpoints/step_000050；重复启动自动从本目录最近完整checkpoint续训，保留中断产物于interrupted/。源码/数据/配置更改后禁止直接续训。
+日志logs/train.log，指标train/metrics.jsonl，评分与候选帧judge_log/。
+此脚本只做了配置和语法检查，尚未执行3卡训练。

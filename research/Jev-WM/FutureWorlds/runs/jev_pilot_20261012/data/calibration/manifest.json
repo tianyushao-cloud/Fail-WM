@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "dataset": "robocasa",
+  "cases": [
+    {
+      "id": "g00054_b01",
+      "episode_id": "g00054_b01",
+      "file": "000.npz",
+      "sha256": "9bd1126024a03f932c6138423a4c01e29960e7ecd4cd1601c5ab92dab7a43232",
+      "frames": 10,
+      "split": "val",
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00054",
+      "success": true,
+      "source_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+      "source_file": "cases/000541.npz",
+      "source_sha256": "b180fae2feea7b2e8b3a58ac14b56eba1db3bd6fb0fc2e8d9bed810bf07be11c",
+      "source_start": 22
+    },
+    {
+      "id": "g00065_b03",
+      "episode_id": "g00065_b03",
+      "file": "001.npz",
+      "sha256": "b9beab4fd11c430906b6d6783e739a113cbed3db8f9eea50570e38472a403e51",
+      "frames": 10,
+      "split": "val",
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00065",
+      "success": false,
+      "source_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+      "source_file": "cases/000653.npz",
+      "source_sha256": "28993a866bd1c556f70903cc96a50cfeaa6eb70c35e560b83f1c2c067e65401f",
+      "source_start": 20
+    },
+    {
+      "id": "g00023_b06",
+      "episode_id": "g00023_b06",
+      "file": "002.npz",
+      "sha256": "2e56ad5244817b367c1b6c16f83d6005112fdbda123066cad45c5d8a38204d14",
+      "frames": 10,
+      "split": "val",
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00023",
+      "success": true,
+      "source_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+      "source_file": "cases/000236.npz",
+      "source_sha256": "9a7119653ea71c9430dcf96aed44aef71f58c42faa56f565139636ef5b30776a",
+      "source_start": 37
+    },
+    {
+      "id": "g00076_b04",
+      "episode_id": "g00076_b04",
+      "file": "003.npz",
+      "sha256": "a4e346fc0e8a404e73aceb99752887404814c31649e1c50e43b5e4fe531f0d50",
+      "frames": 10,
+      "split": "val",
+      "task": "CounterCubePreview",
+      "initial_state_id": "counter_group_00076",
+      "success": false,
+      "source_manifest": "/media/tyshao/fail_WM/FutureWorlds_SFT/robocasa_data/train_natural.json",
+      "source_file": "cases/000764.npz",
+      "source_sha256": "e44bb2b55a454d755c35443c27f6a64d2d5e4273111126c3bf529188fa697fa2",
+      "source_start": 21
+    }
+  ],
+  "source_manifest_sha256": "d5266a10b57557bf640ffaa18683296cd9def454247ca9d737ca76de2bf6d13d",
+  "selection": "seeded unique initial states; balanced outcomes; centered ten-frame window"
+}

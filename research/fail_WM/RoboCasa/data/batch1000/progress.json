@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "requested_episodes": 1000,
+  "completed": 1000,
+  "workers": 4,
+  "wall_seconds_this_run": 1166.08,
+  "successes": 555,
+  "failures": 445,
+  "actual_failure_types": {
+    "grasp_miss": 170,
+    "contact_without_lift": 116,
+    "dropped_before_goal": 56,
+    "lifted_but_not_placed": 81,
+    "object_off_counter": 22
+  },
+  "completed_by_category": {
+    "reference": 300,
+    "single": 500,
+    "double": 100,
+    "recovery": 100
+  },
+  "perturbation_counts": {
+    "grasp_offset": 89,
+    "orientation_tilt": 64,
+    "early_close": 89,
+    "delayed_close": 39,
+    "partial_close": 64,
+    "early_release": 89,
+    "place_offset": 63,
+    "transport_short": 63,
+    "skip_descend": 38,
+    "push": 63,
+    "waypoint": 63,
+    "mass": 38,
+    "friction": 38
+  },
+  "recovery_attempted": 100,
+  "recovery_successes": 93,
+  "replay_passed": 1000,
+  "alignment_passed": 1000,
+  "total_actions": 245368,
+  "total_rgb_frames": 246368,
+  "groups_by_split": {
+    "train": 80,
+    "val": 10,
+    "test": 10
+  },
+  "split_group_overlap": 0,
+  "unresolved_errors": []
+}

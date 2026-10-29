@@ -1,0 +1,15 @@
+within-group Spearman(reward, -ROI MSE), mean over groups [GT-no-lift | GT-lift]
+  rule     all +0.327  [+0.156 | +0.445]
+  VLMst    all -0.037  [-0.028 | -0.043]
+  v0tot    all +0.257  [+0.072 | +0.387]
+  T_cube   all +0.347  [+0.176 | +0.468]
+  T_grip   all +0.714  [+0.685 | +0.735]
+  T_full   all +0.510  [+0.417 | +0.576]
+  Tc+VLM   all +0.142  [+0.011 | +0.235]
+mean gripper shift px by failure type (frames 0-15 / 16-31)
+  contact_without_lift       5.9 /   9.6
+  dropped_before_goal        5.4 /   8.5
+  grasp_miss                 1.7 /   4.8
+  lifted_but_not_placed      0.3 /   3.0
+  object_off_counter         4.0 /  22.7
+  success                    2.2 /   4.3

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/media/tyshao/Jev-WM/experiments/rt1_qwen_a5_h32_20261020/source/src/futureworlds/__main__.py", line 6, in <module>
+    main()
+  File "/media/tyshao/Jev-WM/experiments/rt1_qwen_a5_h32_20261020/source/src/futureworlds/cli.py", line 112, in main
+    train(args.config)
+  File "/media/tyshao/Jev-WM/experiments/rt1_qwen_a5_h32_20261020/source/src/futureworlds/training.py", line 249, in train
+    raise ValueError("Use a fresh output or resume identical configuration")
+ValueError: Use a fresh output or resume identical configuration

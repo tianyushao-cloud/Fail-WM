@@ -1,0 +1,981 @@
+{
+  "id": "g00061_b07_s000000_n042",
+  "fingerprint": "78f40bfed9ee4ad77de96e705f943e2b16bbe05115b8ab923072ba196ff90bf2",
+  "prediction_sha256": "01998140c817feae4c3733ce80d9d5a27bea5240ac340f7452b35591cfbf38e0",
+  "per_frame": {
+    "mse": [
+      0.0001322834868915379,
+      0.00012319891538936645,
+      0.00019477811292745173,
+      0.00019208702724426985,
+      0.0007358756265603006,
+      0.0006374639924615622,
+      0.0006339590181596577,
+      0.0006211814470589161,
+      0.0012517531868070364,
+      0.00047786839422769845,
+      0.0004782892356161028,
+      0.00046705224667675793,
+      0.0005528334877453744,
+      0.000536006351467222,
+      0.0004762464086525142,
+      0.00045607570791617036,
+      0.0004044390225317329,
+      0.0005175504484213889,
+      0.0014806566759943962,
+      0.0017639260040596128,
+      0.0018514778930693865,
+      0.001980146626010537,
+      0.0014137390535324812,
+      0.0006338272942230105,
+      0.002095026895403862,
+      0.0046548787504434586,
+      0.007996490225195885,
+      0.00831302348524332,
+      0.007917551323771477,
+      0.006340394727885723,
+      0.008414298295974731,
+      0.008431968279182911
+    ],
+    "mae": [
+      0.004111346788704395,
+      0.003560636192560196,
+      0.004561220295727253,
+      0.00444414746016264,
+      0.007023693528026342,
+      0.006843086797744036,
+      0.006559556350111961,
+      0.00674240430817008,
+      0.007087723817676306,
+      0.005387310869991779,
+      0.005234630312770605,
+      0.005490313284099102,
+      0.005307846702635288,
+      0.0051779979839921,
+      0.005303176585584879,
+      0.00538252666592598,
+      0.005164502654224634,
+      0.0057482970878481865,
+      0.008921864442527294,
+      0.009292688220739365,
+      0.009143136441707611,
+      0.009399618953466415,
+      0.00808991864323616,
+      0.006416422314941883,
+      0.010556962341070175,
+      0.017215238884091377,
+      0.024447770789265633,
+      0.02524375729262829,
+      0.023431647568941116,
+      0.019924305379390717,
+      0.025305280461907387,
+      0.025269178673624992
+    ],
+    "psnr": [
+      38.784942626953125,
+      39.093929290771484,
+      37.10459899902344,
+      37.16501998901367,
+      31.33195686340332,
+      31.9554443359375,
+      31.979389190673828,
+      32.06781768798828,
+      29.02481460571289,
+      33.20691680908203,
+      33.203094482421875,
+      33.30634689331055,
+      32.574058532714844,
+      32.70830154418945,
+      33.221683502197266,
+      33.409629821777344,
+      33.93146896362305,
+      32.8604736328125,
+      28.29545783996582,
+      27.535198211669922,
+      27.324813842773438,
+      27.03302764892578,
+      28.496307373046875,
+      31.98029327392578,
+      26.788105010986328,
+      23.320919036865234,
+      20.97100830078125,
+      20.802410125732422,
+      21.01409149169922,
+      21.978837966918945,
+      20.749820709228516,
+      20.74070930480957
+    ],
+    "lpips": [
+      0.006182147655636072,
+      0.005161265842616558,
+      0.00558463716879487,
+      0.0055996025912463665,
+      0.008990056812763214,
+      0.010365755297243595,
+      0.008532390929758549,
+      0.008400730788707733,
+      0.010648975148797035,
+      0.006801934447139502,
+      0.006734341848641634,
+      0.005493483506143093,
+      0.0071929763071238995,
+      0.0065769171342253685,
+      0.0069394647143781185,
+      0.006162592209875584,
+      0.005894386675208807,
+      0.013382579199969769,
+      0.018408413976430893,
+      0.014152104035019875,
+      0.018200915306806564,
+      0.01904483512043953,
+      0.01753467693924904,
+      0.015740379691123962,
+      0.02184058539569378,
+      0.061009593307971954,
+      0.0805061087012291,
+      0.081024169921875,
+      0.0775802806019783,
+      0.06978597491979599,
+      0.08048927038908005,
+      0.08420541882514954
+    ],
+    "ssim": [
+      0.9922394156455994,
+      0.9935893416404724,
+      0.9911491274833679,
+      0.9913228750228882,
+      0.9768688678741455,
+      0.9746721982955933,
+      0.9808111190795898,
+      0.9813876748085022,
+      0.9709025621414185,
+      0.9858811497688293,
+      0.985969066619873,
+      0.9881707429885864,
+      0.9840731620788574,
+      0.9858047962188721,
+      0.9852301478385925,
+      0.9873362183570862,
+      0.9881134629249573,
+      0.9746716618537903,
+      0.954128086566925,
+      0.9588115811347961,
+      0.9513194561004639,
+      0.9508736729621887,
+      0.9555743932723999,
+      0.9672755002975464,
+      0.9373765587806702,
+      0.9038566946983337,
+      0.8848178386688232,
+      0.8860985040664673,
+      0.8963015675544739,
+      0.9126359224319458,
+      0.8842472434043884,
+      0.8877474665641785
+    ]
+  },
+  "metrics": {
+    "10": {
+      "mse": 0.0005000449207727797,
+      "mae": 0.005632112640887499,
+      "psnr": 34.17148303985596,
+      "lpips": 0.007626749668270349,
+      "ssim": 0.9838824331760406
+    },
+    "20": {
+      "mse": 0.0006066762398404535,
+      "mae": 0.005867248517461121,
+      "psnr": 33.13802719116211,
+      "lpips": 0.008360237814486027,
+      "ssim": 0.9815566629171372
+    },
+    "32": {
+      "mse": 0.002255510863960808,
+      "mae": 0.010055881502921693,
+      "psnr": 29.811277747154236,
+      "lpips": 0.02481771766906604,
+      "ssim": 0.9577893149107695
+    }
+  },
+  "trace": [
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -7.473286151885986,
+        -7.753540992736816,
+        -7.884432792663574,
+        -7.919485569000244
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 9.5367431640625e-07,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 2,
+      "retained": [
+        1
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -6.8668928146362305,
+        -7.168764114379883,
+        -7.209065914154053,
+        -7.509547233581543
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.430511474609375e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 3,
+      "retained": [
+        1,
+        2
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -12.094175338745117,
+        -12.213496208190918,
+        -12.670516014099121,
+        -12.721048355102539
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 9.5367431640625e-07,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 4,
+      "retained": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -16.626585006713867,
+        -16.644744873046875,
+        -16.772863388061523,
+        -16.80715560913086
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 5.7220458984375e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 5,
+      "retained": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -16.30381965637207,
+        -16.573469161987305,
+        -17.261629104614258,
+        -17.418962478637695
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.9073486328125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 6,
+      "retained": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -14.697515487670898,
+        -14.959085464477539,
+        -15.485525131225586,
+        -15.660553932189941
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.9073486328125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 7,
+      "retained": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -18.026081085205078,
+        -18.27196502685547,
+        -18.58619499206543,
+        -18.777761459350586
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.9073486328125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 8,
+      "retained": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -13.850397109985352,
+        -14.249868392944336,
+        -14.59068489074707,
+        -14.737735748291016
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 3.814697265625e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 9,
+      "retained": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -14.230718612670898,
+        -14.558295249938965,
+        -14.910207748413086,
+        -15.043371200561523
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 4.76837158203125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 10,
+      "retained": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -17.18905258178711,
+        -17.4608211517334,
+        -17.642955780029297,
+        -17.715866088867188
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.9073486328125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 11,
+      "retained": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -15.912651062011719,
+        -16.08323860168457,
+        -16.47246742248535,
+        -16.900503158569336
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 3.814697265625e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 12,
+      "retained": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -10.887496948242188,
+        -10.895447731018066,
+        -11.033323287963867,
+        -11.071635246276855
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 9.5367431640625e-07,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 13,
+      "retained": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -11.983777046203613,
+        -11.998519897460938,
+        -12.055529594421387,
+        -12.452827453613281
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 3.814697265625e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 14,
+      "retained": [
+        1,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -12.29803466796875,
+        -12.567535400390625,
+        -12.852709770202637,
+        -12.89052677154541
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 9.5367431640625e-07,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 15,
+      "retained": [
+        1,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -9.489520072937012,
+        -9.514650344848633,
+        -9.951589584350586,
+        -10.357882499694824
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.9073486328125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 16,
+      "retained": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -7.483321666717529,
+        -7.514329433441162,
+        -7.781980514526367,
+        -7.810220718383789
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 9.5367431640625e-07,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 17,
+      "retained": [
+        1,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -6.073860168457031,
+        -6.386882781982422,
+        -6.3885722160339355,
+        -7.306853771209717
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.430511474609375e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 18,
+      "retained": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -8.886329650878906,
+        -9.221731185913086,
+        -9.59264850616455,
+        -9.626434326171875
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 9.5367431640625e-07,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 19,
+      "retained": [
+        1,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -17.72090721130371,
+        -17.878189086914062,
+        -17.904565811157227,
+        -18.334077835083008
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 5.7220458984375e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 20,
+      "retained": [
+        1,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -17.20871925354004,
+        -17.225980758666992,
+        -17.426528930664062,
+        -18.190366744995117
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 3.814697265625e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 21,
+      "retained": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -18.03742218017578,
+        -18.090097427368164,
+        -18.319549560546875,
+        -18.433382034301758
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.9073486328125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 22,
+      "retained": [
+        1,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -14.087933540344238,
+        -14.354523658752441,
+        -14.793316841125488,
+        -15.081748008728027
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 2.86102294921875e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 23,
+      "retained": [
+        1,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -17.51072883605957,
+        -18.15633773803711,
+        -18.38300132751465,
+        -19.077350616455078
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 7.62939453125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 24,
+      "retained": [
+        1,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -15.337556838989258,
+        -15.678078651428223,
+        -16.657682418823242,
+        -17.21015739440918
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 3.814697265625e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 25,
+      "retained": [
+        1,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -22.306299209594727,
+        -22.643917083740234,
+        -22.670860290527344,
+        -22.96725082397461
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 3.814697265625e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 26,
+      "retained": [
+        1,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -24.85894203186035,
+        -25.062641143798828,
+        -25.45291519165039,
+        -25.74310302734375
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.9073486328125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 27,
+      "retained": [
+        1,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -20.98419952392578,
+        -21.11023712158203,
+        -21.245620727539062,
+        -21.790142059326172
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 3.814697265625e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 28,
+      "retained": [
+        1,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -21.968265533447266,
+        -22.153972625732422,
+        -23.1024227142334,
+        -23.18579864501953
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 5.7220458984375e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 29,
+      "retained": [
+        1,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -17.96689796447754,
+        -18.42563819885254,
+        -18.59050750732422,
+        -18.858659744262695
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 5.7220458984375e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 30,
+      "retained": [
+        1,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -19.030839920043945,
+        -19.40676498413086,
+        -19.74237823486328,
+        -19.918760299682617
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 7.62939453125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 31,
+      "retained": [
+        1,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -22.49211311340332,
+        -22.563600540161133,
+        -22.91070556640625,
+        -23.270938873291016
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 3.814697265625e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 32,
+      "retained": [
+        1,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "beam_width": 4,
+      "tokens_per_frame": 80,
+      "selected_index": 0,
+      "candidate_scores": [
+        -22.93958282470703,
+        -23.07345199584961,
+        -23.637115478515625,
+        -23.659025192260742
+      ],
+      "score_reconstruction_max_error": 0.0,
+      "parallel_sum_max_error": 1.9073486328125e-06,
+      "score_reconstruction_order": "left-to-right FP32, matching HF beam accumulation",
+      "score_definition": "Sum of log probabilities renormalized over valid visual tokens only; no length penalty or GT/image reward.",
+      "target": 33,
+      "retained": [
+        1,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    }
+  ]
+}

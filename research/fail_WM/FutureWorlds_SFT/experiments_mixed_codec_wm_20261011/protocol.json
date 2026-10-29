@@ -1,0 +1,52 @@
+{
+  "codec_step": 34000,
+  "codec_sha256": "d0d9cf1e8e8d335f2f2a08f6cff4a7cba007d5bb3419bfba8e74c6baf0c35d59",
+  "variants": {
+    "success": {
+      "config": "/media/tyshao/fail_WM/FutureWorlds_SFT/experiments_mixed_codec_wm_20261011/success.json",
+      "original": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_new_codec_10k.json",
+      "config_changes": {
+        "output": [
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_new_codec_10k",
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/success_only_sft_mixed_codec34000_10k_20261011"
+        ],
+        "token_cache": [
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/cache/token_cache/success_new_codec_10k",
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/cache/token_cache/success_only_sft_mixed_codec34000_10k_20261011"
+        ],
+        "bundle": [
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_robocasa_codec_10k",
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011"
+        ]
+      },
+      "train_cases": 443,
+      "train_success": 443,
+      "train_failure": 0,
+      "manifest_sha256": "b176c6b75eb0118590cc4c3a558883a7abc1706364a09dd42d00910352ba5e66"
+    },
+    "natural": {
+      "config": "/media/tyshao/fail_WM/FutureWorlds_SFT/experiments_mixed_codec_wm_20261011/natural.json",
+      "original": "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_new_codec_10k.json",
+      "config_changes": {
+        "output": [
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_new_codec_10k",
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/runs/natural_sft_mixed_codec34000_10k_20261011"
+        ],
+        "token_cache": [
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/cache/token_cache/natural_new_codec_10k",
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/cache/token_cache/natural_sft_mixed_codec34000_10k_20261011"
+        ],
+        "bundle": [
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_robocasa_codec_10k",
+          "/media/tyshao/fail_WM/FutureWorlds_SFT/assets/futureworlds_bundle_mixed_codec_step034000_20261011"
+        ]
+      },
+      "train_cases": 800,
+      "train_success": 443,
+      "train_failure": 357,
+      "manifest_sha256": "d5266a10b57557bf640ffaa18683296cd9def454247ca9d737ca76de2bf6d13d"
+    }
+  },
+  "initialization": "Same original RT1 weights and seed; retrain both WMs, not resume old models",
+  "sampling": "Original uniform Schedule; E2 and loss modifications excluded"
+}

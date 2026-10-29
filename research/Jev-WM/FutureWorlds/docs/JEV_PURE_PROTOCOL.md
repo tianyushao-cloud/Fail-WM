@@ -1,0 +1,11 @@
+# Pure Decisions RL versus existing SFT
+
+This experiment starts from the senior author's existing SFT bundle. SFT is not retrained. `reward=decisions` uses only the mean of normalized official object-consistency and temporal-interaction scores. R0, MAE and LPIPS do not contribute training reward. Original MemSPO KL regularization remains unchanged.
+
+`configs/train/bridge_jev_decisions.json` is a portable template with placeholder paths. The actual RoboCasa pilot is prepared by `scripts/jev_pure.py prepare` using the prior pilot's fixed data and source SFT bundle. `train` targets 20 updates, batch 2, horizon 4, four candidates, seed 20261012, LR 1e-6. Every completed update is saved. `train --resume` restores the last saved checkpoint and optimizer/RNG state with the same config. Keys are read with getpass or from OPENAI_API_KEY; SSH must allocate a remote TTY for hidden interactive input. The reverse proxy tunnel must be available at 127.0.0.1:17897.
+
+The API budget is 160 new attempts per invocation, retries zero. Requests are spaced by at least six seconds. Any failure stops the run; a 429 is recorded with quota headers and is not immediately retried. Cached scores may be reused only for identical content-addressed inputs and official response receipts. No missing scores are substituted.
+
+`evaluate` compares the last saved update with the unchanged SFT on the same eight held-out initial states, Beam 4, horizons 4/8, FP32, no future-GT refresh. Existing deterministic SFT evaluation is reused only after checking protocol, model/text assets, implementation and prediction hashes. `scripts/analyze_jev_pure.py` checks these identities and produces paired metrics, bootstrap intervals and motion diagnostics. No checkpoint is selected based on validation performance. Improvement is a hypothesis, not a guarantee.
+
+The unchanged Decisions rubric has known static-frame bias. Action semantics remain unverified, so it does not score action consistency. Validation metrics include GT-based errors for diagnosis, although GT-based reward is absent. This one-seed, eight-state pilot cannot establish robot task success or long-run superiority. Do not tune repeatedly on these validation cases and report them as untouched final-test results.

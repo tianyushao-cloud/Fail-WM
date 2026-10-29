@@ -1,0 +1,43 @@
+===========================================
+RoboCasa Object MemSPO V2 启动说明
+===========================================
+
+一、停止旧实验
+-----------------------------------------
+pkill -f 'torch.distributed.run.*futureworlds'
+
+确认停止：
+ps aux | grep futureworlds
+
+二、启动新实验
+-----------------------------------------
+cd /media/tyshao/Jev-WM/experiments/robocasa_object_memspo_4gpu_v2_20261024
+
+# 后台运行
+nohup bash run_4gpu.sh train > logs/launcher.log 2>&1 &
+
+# 查看日志
+tail -f logs/train.log
+
+三、主要改进
+-----------------------------------------
+1. 修改interaction prompt：从惩罚性改为分级引导
+2. 调整权重：persistence 0.25->0.40, interaction 0.25->0.15
+3. 提高KL系数：0.001->0.005
+4. 提高minimum_group_spread：0.02->0.05
+5. 从step 15恢复（当时分数还健康）
+
+四、监控命令
+-----------------------------------------
+# 查看最新5步
+tail -5 train/metrics.jsonl
+
+# 检查状态
+cat status.json
+
+五、预期
+-----------------------------------------
+如果有效：前10步分数应该稳定在50+，不应该像V1那样快速下降
+如果无效：需要考虑去掉VLM判别器，改用纯rule-based
+
+创建时间: 2024-10-24

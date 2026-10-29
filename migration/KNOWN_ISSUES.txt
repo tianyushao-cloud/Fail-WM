@@ -1,0 +1,31 @@
+2026-10-29 migration audit — original files remain unchanged
+
+1. 最新轨迹奖励和 V6 状态奖励均完成30步；未发现正式val/test生成结果。
+   离线候选排序变好不能替代训练后模型的评测。
+2. V0 step30 的 sibling val/test 改善不等于视觉质量同步改善。
+   reports/ 保留按现有数据重新汇总的结果，包含坏例和分组统计。
+3. sibling_action_eval 的 seed0/1/2 使用确定性 beam 解码，不算三次独立随机实验。
+   它们仍作为原始记录保留，内容去重避免重复占空间。
+4. report.py 的 sibling 指标使用 pred_lift > pred_nolift；旧输出写“0.5=忽略动作”不成立。
+   恒定二值预测为0；独立公平二值随机预测的期望为0.25。
+   其“每个窗口都完全闭爪”的 baseline 说明也不能成立，数据包含 half-close 分支。
+5. 旧 robocasa_object_memspo_4gpu_v2_20261024 的 resume_from 配置没有被实际 trainer 读取。
+   不应声称该运行是从旧 step15 续训；保留原配置与执行代码供追溯。
+6. V0/V6 state reward 的 p_missing/p_contact 记录并不等于已进入奖励公式。
+   仅用 1-|p_lift-GT_lift| 会使GT未抬起而预测物体消失时仍获得较高state项。
+7. 当前轨迹 reward 采用固定相机红色mask、GT夹爪patch模板匹配和二维相对位置。
+   不是完整3D物理约束，也不是全机械臂关键点跟踪。
+   vanish=8 px、cap=80 px；遮挡/物体消失的区分仍是已知弱点。
+   搜索半径40px，匹配分数有记录但未作为可靠性门控。应警惕位移大时饱和或错配。
+8. 旧 RT-1 Qwen A5/FM REPORT.md 标题“MemSPO200”及正文“预测10帧”是遗留文本。
+   实际 train.json/run.json/metrics 是100步、horizon32；原文保留，目录表采用执行记录。
+9. “lift”指标是32帧窗口内的抬升代理，不是整条episode最终success。
+   预测缺失映射为未抬升，会影响乐观率；应结合缺失、闪现和图像指标解释。
+10. 原来的step20小评测仅6条有效配对，不是原计划12条；protocol_used.json为准。
+    那套指标用float预测，较新的sibling预测先存uint8，跨两套均值不应直接比较。
+11. 一些历史checkpoint只保存审计元数据，二进制未选入迁移。
+    选中的完整checkpoint明确列在weights_manifest.json（实际上传）与 full_inventory_checkpoint_selection.json（仅本地盘点）；不要按空目录数量误判。
+12. 原 evaluation/export 目录可能已有历史输出。新评测使用全新label/output，
+    避免旧脚本按文件存在直接跳过的行为掩盖模型/配置变化。
+13. 归档不包含 API key、GitHub token、登录态、机器虚拟环境或过期 broker 心跳。
+    原训练所用外部 API 的模型可用性不由本归档保证；历史裁判响应与配置已保留。

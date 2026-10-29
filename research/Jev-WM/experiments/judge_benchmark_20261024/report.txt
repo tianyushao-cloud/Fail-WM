@@ -1,0 +1,15 @@
+state-QA on GT raw   frames: n=2431 acc=0.763 lifted-recall=0.995 table-recall=0.712
+state-QA on GT recon frames: n=2431 acc=0.764 lifted-recall=0.984 table-recall=0.717
+
+within-group ranking accuracy (fraction of contrast pairs where the h5-better candidate scores higher)
+ALL                          n= 382 | rule 0.88 | vlm_logged 0.65 | point_recon 0.60 | pair 0.76 | state 0.88 | rule+state 0.93
+GT no lift                   n= 239 | rule 0.85 | vlm_logged 0.52 | point_recon 0.44 | pair 0.69 | state 0.86 | rule+state 0.89
+GT lifts                     n= 143 | rule 0.94 | vlm_logged 0.87 | point_recon 0.85 | pair 0.89 | state 0.92 | rule+state 0.99
+  contact_without_lift       n=  69 | rule 0.72 | vlm_logged 0.62 | point_recon 0.54 | pair 0.74 | state 0.75 | rule+state 0.81
+  dropped_before_goal        n=  16 | rule 0.94 | vlm_logged 0.81 | point_recon 0.81 | pair 0.75 | state 0.75 | rule+state 1.00
+  grasp_miss                 n=  94 | rule 0.93 | vlm_logged 0.41 | point_recon 0.34 | pair 0.66 | state 0.95 | rule+state 0.96
+  lifted_but_not_placed      n=  17 | rule 1.00 | vlm_logged 0.88 | point_recon 0.82 | pair 0.88 | state 1.00 | rule+state 1.00
+  object_off_counter         n=  46 | rule 0.91 | vlm_logged 0.59 | point_recon 0.43 | pair 0.72 | state 0.89 | rule+state 0.91
+  success                    n= 140 | rule 0.90 | vlm_logged 0.80 | point_recon 0.80 | pair 0.84 | state 0.89 | rule+state 0.95
+
+pair judge: order-inconsistent 0.54, mean P(answer A) 0.27

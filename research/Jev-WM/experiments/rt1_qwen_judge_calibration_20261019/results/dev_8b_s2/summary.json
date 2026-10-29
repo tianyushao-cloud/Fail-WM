@@ -1,0 +1,95 @@
+{
+  "model": "/media/tyshao/Jev-WM/paper_assets/qwen/Qwen3-VL-8B-Instruct",
+  "name": "dev_8b_s2",
+  "cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "scale": 2,
+  "max_pixels": null,
+  "gates": {
+    "gt_codec>freeze_all": {
+      "rate": 1.0,
+      "required": 0.9,
+      "passed": true
+    },
+    "gt_codec>black": {
+      "rate": 1.0,
+      "required": 0.9,
+      "passed": true
+    },
+    "gt_codec>other_episode": {
+      "rate": 1.0,
+      "required": 0.9,
+      "passed": true
+    },
+    "gt_codec>reverse": {
+      "rate": 0.9375,
+      "required": 0.75,
+      "passed": true
+    },
+    "gt_codec>freeze_half": {
+      "rate": 0.9375,
+      "required": 0.75,
+      "passed": true
+    },
+    "informative_groups": {
+      "rate": 0.6875,
+      "required": 0.5,
+      "passed": true,
+      "tau": 0.02841807776123062
+    }
+  },
+  "all_gates_passed": true,
+  "diagnostics": {
+    "median_order_gap": 0.01420903888061531,
+    "mean_order_bias": -0.06535272129215937,
+    "median_group_spread": 0.044035895134723224,
+    "within_group_spearman_order0_vs_order1": 0.6125,
+    "order_rank_groups_defined": 16,
+    "within_group_spearman_vs_neg_lpips": 0.36249999999999993,
+    "within_group_spearman_vs_neg_repeats": 0.11249999999999996,
+    "groups_with_repeat_variation": 10,
+    "pooled_spearman_vs_neg_lpips": 0.17820512820512815,
+    "mean_scores": {
+      "sft0": 0.9202672515760426,
+      "sft1": 0.9296350686091635,
+      "sft2": 0.8956501368642321,
+      "sft3": 0.9159916985007266,
+      "rl0": 0.9641649231453295,
+      "rl1": 0.9597292856295059,
+      "rl2": 0.9684444678767665,
+      "rl3": 0.973274108309164,
+      "gt_raw": 0.9778117161949129,
+      "gt_codec": 0.9807639519579081,
+      "freeze_all": 0.5608318433520447,
+      "freeze_half": 0.7670229480499213,
+      "reverse": 0.6811516567987667,
+      "black": 0.14673981643210032,
+      "other_episode": 0.1555535715233074
+    },
+    "seconds": 2525.088111145422,
+    "r0rl_minus_sft_window_mean": {
+      "mean": 0.05101715735265024,
+      "ci95": [
+        0.009037471627343406,
+        0.10394968661503835
+      ],
+      "rl_better_rate": 0.625
+    }
+  }
+}

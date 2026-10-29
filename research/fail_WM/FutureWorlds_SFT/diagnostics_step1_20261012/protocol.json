@@ -1,0 +1,594 @@
+{
+  "state": "FROZEN_BEFORE_MODEL_PROBES",
+  "pairs": [
+    {
+      "index": 0,
+      "factor": "skip_descend",
+      "group": "counter_group_00001",
+      "failure": "g00001_b06",
+      "success": "g00001_b00",
+      "targets": [
+        [
+          23,
+          21
+        ],
+        [
+          26,
+          24
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "factor": "grasp_offset",
+      "group": "counter_group_00000",
+      "failure": "g00000_b03",
+      "success": "g00000_b00",
+      "targets": [
+        [
+          24,
+          20
+        ],
+        [
+          27,
+          23
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "factor": "partial_close",
+      "group": "counter_group_00003",
+      "failure": "g00003_b05",
+      "success": "g00003_b00",
+      "targets": [
+        [
+          21,
+          20
+        ],
+        [
+          24,
+          23
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "factor": "early_release",
+      "group": "counter_group_00005",
+      "failure": "g00005_b08",
+      "success": "g00005_b00",
+      "targets": [
+        [
+          48,
+          32
+        ],
+        [
+          51,
+          35
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "factor": "early_release",
+      "group": "counter_group_00008",
+      "failure": "g00008_b07",
+      "success": "g00008_b00",
+      "targets": [
+        [
+          32,
+          32
+        ],
+        [
+          35,
+          35
+        ]
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "key": "g00001_b06_t023",
+      "id": "g00001_b06",
+      "target": 23,
+      "role": "failure",
+      "pair": 0,
+      "factor": "skip_descend",
+      "box": {
+        "raw": [
+          238,
+          172,
+          248,
+          185
+        ],
+        "expanded": [
+          230,
+          164,
+          256,
+          193
+        ],
+        "components": 1,
+        "area": 94
+      }
+    },
+    {
+      "key": "g00001_b00_t021",
+      "id": "g00001_b00",
+      "target": 21,
+      "role": "success",
+      "pair": 0,
+      "factor": "skip_descend",
+      "box": {
+        "raw": [
+          240,
+          157,
+          250,
+          168
+        ],
+        "expanded": [
+          232,
+          149,
+          258,
+          176
+        ],
+        "components": 1,
+        "area": 78
+      }
+    },
+    {
+      "key": "g00001_b06_t026",
+      "id": "g00001_b06",
+      "target": 26,
+      "role": "failure",
+      "pair": 0,
+      "factor": "skip_descend",
+      "box": {
+        "raw": [
+          238,
+          172,
+          248,
+          185
+        ],
+        "expanded": [
+          230,
+          164,
+          256,
+          193
+        ],
+        "components": 1,
+        "area": 91
+      }
+    },
+    {
+      "key": "g00001_b00_t024",
+      "id": "g00001_b00",
+      "target": 24,
+      "role": "success",
+      "pair": 0,
+      "factor": "skip_descend",
+      "box": {
+        "raw": [
+          244,
+          135,
+          255,
+          147
+        ],
+        "expanded": [
+          236,
+          127,
+          263,
+          155
+        ],
+        "components": 1,
+        "area": 88
+      }
+    },
+    {
+      "key": "g00000_b03_t024",
+      "id": "g00000_b03",
+      "target": 24,
+      "role": "failure",
+      "pair": 1,
+      "factor": "grasp_offset",
+      "box": {
+        "raw": [
+          224,
+          173,
+          235,
+          186
+        ],
+        "expanded": [
+          216,
+          165,
+          243,
+          194
+        ],
+        "components": 1,
+        "area": 97
+      }
+    },
+    {
+      "key": "g00000_b00_t020",
+      "id": "g00000_b00",
+      "target": 20,
+      "role": "success",
+      "pair": 1,
+      "factor": "grasp_offset",
+      "box": {
+        "raw": [
+          226,
+          158,
+          236,
+          169
+        ],
+        "expanded": [
+          218,
+          150,
+          244,
+          177
+        ],
+        "components": 1,
+        "area": 67
+      }
+    },
+    {
+      "key": "g00000_b03_t027",
+      "id": "g00000_b03",
+      "target": 27,
+      "role": "failure",
+      "pair": 1,
+      "factor": "grasp_offset",
+      "box": {
+        "raw": [
+          224,
+          173,
+          235,
+          186
+        ],
+        "expanded": [
+          216,
+          165,
+          243,
+          194
+        ],
+        "components": 1,
+        "area": 98
+      }
+    },
+    {
+      "key": "g00000_b00_t023",
+      "id": "g00000_b00",
+      "target": 23,
+      "role": "success",
+      "pair": 1,
+      "factor": "grasp_offset",
+      "box": {
+        "raw": [
+          229,
+          136,
+          240,
+          148
+        ],
+        "expanded": [
+          221,
+          128,
+          248,
+          156
+        ],
+        "components": 1,
+        "area": 83
+      }
+    },
+    {
+      "key": "g00003_b05_t021",
+      "id": "g00003_b05",
+      "target": 21,
+      "role": "failure",
+      "pair": 2,
+      "factor": "partial_close",
+      "box": {
+        "raw": [
+          227,
+          174,
+          236,
+          186
+        ],
+        "expanded": [
+          219,
+          166,
+          244,
+          194
+        ],
+        "components": 1,
+        "area": 87
+      }
+    },
+    {
+      "key": "g00003_b00_t020",
+      "id": "g00003_b00",
+      "target": 20,
+      "role": "success",
+      "pair": 2,
+      "factor": "partial_close",
+      "box": {
+        "raw": [
+          229,
+          161,
+          238,
+          172
+        ],
+        "expanded": [
+          221,
+          153,
+          246,
+          180
+        ],
+        "components": 1,
+        "area": 75
+      }
+    },
+    {
+      "key": "g00003_b05_t024",
+      "id": "g00003_b05",
+      "target": 24,
+      "role": "failure",
+      "pair": 2,
+      "factor": "partial_close",
+      "box": {
+        "raw": [
+          227,
+          174,
+          236,
+          186
+        ],
+        "expanded": [
+          219,
+          166,
+          244,
+          194
+        ],
+        "components": 1,
+        "area": 87
+      }
+    },
+    {
+      "key": "g00003_b00_t023",
+      "id": "g00003_b00",
+      "target": 23,
+      "role": "success",
+      "pair": 2,
+      "factor": "partial_close",
+      "box": {
+        "raw": [
+          232,
+          138,
+          242,
+          149
+        ],
+        "expanded": [
+          224,
+          130,
+          250,
+          157
+        ],
+        "components": 1,
+        "area": 84
+      }
+    },
+    {
+      "key": "g00005_b08_t048",
+      "id": "g00005_b08",
+      "target": 48,
+      "role": "failure",
+      "pair": 3,
+      "factor": "early_release",
+      "box": {
+        "raw": [
+          233,
+          179,
+          244,
+          190
+        ],
+        "expanded": [
+          225,
+          171,
+          252,
+          198
+        ],
+        "components": 1,
+        "area": 88
+      }
+    },
+    {
+      "key": "g00005_b00_t032",
+      "id": "g00005_b00",
+      "target": 32,
+      "role": "success",
+      "pair": 3,
+      "factor": "early_release",
+      "box": {
+        "raw": [
+          235,
+          180,
+          246,
+          191
+        ],
+        "expanded": [
+          227,
+          172,
+          254,
+          199
+        ],
+        "components": 1,
+        "area": 76
+      }
+    },
+    {
+      "key": "g00005_b08_t051",
+      "id": "g00005_b08",
+      "target": 51,
+      "role": "failure",
+      "pair": 3,
+      "factor": "early_release",
+      "box": {
+        "raw": [
+          233,
+          178,
+          244,
+          190
+        ],
+        "expanded": [
+          225,
+          170,
+          252,
+          198
+        ],
+        "components": 1,
+        "area": 92
+      }
+    },
+    {
+      "key": "g00005_b00_t035",
+      "id": "g00005_b00",
+      "target": 35,
+      "role": "success",
+      "pair": 3,
+      "factor": "early_release",
+      "box": {
+        "raw": [
+          235,
+          188,
+          245,
+          199
+        ],
+        "expanded": [
+          227,
+          180,
+          253,
+          207
+        ],
+        "components": 1,
+        "area": 73
+      }
+    },
+    {
+      "key": "g00008_b07_t032",
+      "id": "g00008_b07",
+      "target": 32,
+      "role": "failure",
+      "pair": 4,
+      "factor": "early_release",
+      "box": {
+        "raw": [
+          217,
+          169,
+          227,
+          180
+        ],
+        "expanded": [
+          209,
+          161,
+          235,
+          188
+        ],
+        "components": 1,
+        "area": 76
+      }
+    },
+    {
+      "key": "g00008_b00_t032",
+      "id": "g00008_b00",
+      "target": 32,
+      "role": "success",
+      "pair": 4,
+      "factor": "early_release",
+      "box": {
+        "raw": [
+          207,
+          144,
+          216,
+          155
+        ],
+        "expanded": [
+          199,
+          136,
+          224,
+          163
+        ],
+        "components": 1,
+        "area": 67
+      }
+    },
+    {
+      "key": "g00008_b07_t035",
+      "id": "g00008_b07",
+      "target": 35,
+      "role": "failure",
+      "pair": 4,
+      "factor": "early_release",
+      "box": {
+        "raw": [
+          217,
+          167,
+          227,
+          180
+        ],
+        "expanded": [
+          209,
+          159,
+          235,
+          188
+        ],
+        "components": 1,
+        "area": 90
+      }
+    },
+    {
+      "key": "g00008_b00_t035",
+      "id": "g00008_b00",
+      "target": 35,
+      "role": "success",
+      "pair": 4,
+      "factor": "early_release",
+      "box": {
+        "raw": [
+          205,
+          167,
+          213,
+          177
+        ],
+        "expanded": [
+          197,
+          159,
+          221,
+          185
+        ],
+        "components": 1,
+        "area": 52
+      }
+    }
+  ],
+  "seed": 20261012,
+  "train_manifest_sha256": "d5266a10b57557bf640ffaa18683296cd9def454247ca9d737ca76de2bf6d13d",
+  "source_sha256": "56b9c57139e19e29bd1e5c213edbb84befb2f338d62e0311ca29c0245621e184",
+  "bundle_manifest_sha256": "13b96143effa024620a7d78f8d6159a247c66b7db70b3090602b65cb64f79584",
+  "script_sha256": "34845fbeb41abda40de84fed261a5168471162f43ea7002d873681c19756b0ab",
+  "selection": "Sorted first eligible cases per factor; five distinct train groups; GT ROI visible at phase+2/+5; same-group unperturbed success controls; no model-output selection",
+  "probes": [
+    "same-position other-selected-frame donor 1",
+    "same-position other-selected-frame donor 2",
+    "nearest different FSQ embedding"
+  ],
+  "donor_fallback": "If selected 10 episodes have fewer than 2 distinct alternatives at a position, take ascending distinct codes observed at the same position in all800 training cache episodes; record fallback count",
+  "code_pool_sha256": "4a5e0126531cf9c6db8c4df5fa9f240ef40f0a00994bf8ed9e5db356de6bdc77",
+  "precision": "FP32 TF32off; original pair-aligned codec decoding; perturb one code at a time; 3 alternatives per token",
+  "pixel_influence": "mean absolute RGB change against unmodified decode; minimal highest-energy pixel area covering 50/90 percent plus nominal tile/3x3 tile energy",
+  "history": "fixed context/anchor/actions/text/target token teacher forcing; swap only last6 visual history frames with same-group opposite outcome phase-aligned histories; entire visual history may change arm and cube, diagnostic not physical counterfactual",
+  "limitations": [
+    "20 train frames/5 groups, exploratory mechanistic probe not generalization evaluation",
+    "Full-vocabulary teacher-forced CE is actual SFT token loss; RGB beam4 is free autoregression within the next frame only",
+    "ROI from largest red component expanded8; missing/fragmented detections disclosed",
+    "No WM optimization, no new simulator collection, no test access"
+  ]
+}

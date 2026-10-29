@@ -1,0 +1,21 @@
+{
+  "seed": 20261024,
+  "steps": 50,
+  "global_batch": 16,
+  "world_size": 4,
+  "accumulation_per_rank": 4,
+  "groups": 800,
+  "success": 400,
+  "failure": 400,
+  "counts": {
+    "lifted_but_not_placed": 66,
+    "success": 400,
+    "grasp_miss": 157,
+    "contact_without_lift": 104,
+    "dropped_before_goal": 52,
+    "object_off_counter": 21
+  },
+  "sampling": "Same examples per update as 8-GPU version; each update eight successes + eight failures. Each rank two successes + two failures across four accumulation groups.",
+  "window": "Original first two GT frames and following 32 frames, same as pilot; episode failure labels do not guarantee failure event lies inside this window.",
+  "initialization": "Original mixed SFT step010000, fresh RL optimizer; NOT resuming single-GPU pilot."
+}

@@ -1,0 +1,15 @@
+{
+  "gpus": 4,
+  "accumulation_per_gpu": 4,
+  "scheduled_batches": 200,
+  "global_batch": 16,
+  "horizon": 10,
+  "reward": "pure GT-conditioned Jev; no R0 reward or R0 selection",
+  "initial_variant": "sft",
+  "train_episodes": 512,
+  "validation_episodes": 32,
+  "test_episodes": 64,
+  "original_hyperparameters_match": true,
+  "source_verified": true,
+  "caveat": "200 scheduled batches; all-tied batches skip optimizer and are counted separately"
+}

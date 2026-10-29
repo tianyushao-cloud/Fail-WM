@@ -1,0 +1,65 @@
+{
+  "source_repo": "https://github.com/Alexander-wu/FutureWorlds",
+  "commit": "7b8f26a5d165c58645212093d2e0dfffc4278643",
+  "recipe": "configs/train/rt1_memspo.json",
+  "all_original_training_hyperparameters_unchanged": true,
+  "training_hyperparameters": {
+    "dataset": "rt1",
+    "method": "memspo",
+    "initial_variant": "sft",
+    "device": "cuda",
+    "seed": 20260915,
+    "steps": 200,
+    "global_batch": 16,
+    "lr": 1e-06,
+    "adapter_lr": 0.0001,
+    "warmup_steps": 500,
+    "horizon": 10,
+    "reward": "R0",
+    "clip": 0.2,
+    "kl_coef": 0.001,
+    "diversity_penalty": 0.1,
+    "checkpoint_every": 50
+  },
+  "default_gpus": 4,
+  "accumulation_per_gpu": 4,
+  "evaluation_horizons": [
+    10,
+    20,
+    32
+  ],
+  "data_adaptation": {
+    "manifest_source": "/media/tyshao/Jev-WM/experiments/rt1_memspo_20261017/data_audit.json",
+    "counts": {
+      "train": 512,
+      "validation": 32,
+      "test": 64
+    },
+    "window_start": "one seeded pseudo-random legal 34-frame window per episode, fixed during preparation",
+    "schedule": "original RT1 Schedule permutation sampler, seed20260915; 3200 exposures of custom windows",
+    "original_window_generation": "not published; no claim of reproducing original paper windows",
+    "paper_locked": false
+  },
+  "cuda_launch_status": "COMPLETE",
+  "checkpoint_selection": "fixed step200; no selection by validation/test",
+  "primary_metric": "test mean LPIPS32; paired episode bootstrap 10000 resamples, seed20261017",
+  "evaluation": "2 initial frames, per-frame Beam4, FP32, TF32 off, no future GT refresh",
+  "actual_launch": {
+    "source_commit": "7b8f26a5d165c58645212093d2e0dfffc4278643",
+    "recipe_matches": true,
+    "gpus_requested": 4,
+    "accumulation_per_gpu": 4,
+    "training_steps": 200,
+    "training_horizon": 10,
+    "evaluation_horizons": [
+      10,
+      20,
+      32
+    ],
+    "schedule_entries": 3200,
+    "train_episodes": 512,
+    "test_episodes": 64,
+    "pid": 68,
+    "started_utc": "2026-10-16T22:53:41.815369+00:00"
+  }
+}

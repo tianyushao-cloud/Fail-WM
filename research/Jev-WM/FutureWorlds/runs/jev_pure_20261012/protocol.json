@@ -1,0 +1,42 @@
+{
+  "reward": "decisions",
+  "reward_formula": "mean(object_consistency, temporal_interaction)",
+  "no_reconstruction_reward": true,
+  "unchanged_kl_regularization": 0.001,
+  "initial_variant": "sft",
+  "target_steps": 20,
+  "checkpoint_every": 1,
+  "seed": 20261012,
+  "global_batch": 2,
+  "horizon": 4,
+  "validation_manifest": "/media/tyshao/Jev-WM/FutureWorlds/runs/jev_pilot_20261012/data/validation/manifest.json",
+  "evaluation_horizons": [
+    4,
+    8
+  ],
+  "beam_width": 4,
+  "prior_sft_evaluation": "/media/tyshao/Jev-WM/FutureWorlds/runs/jev_pilot_20261012/evaluation/sft",
+  "copied_official_receipts": [
+    "043dcec34d88322f8187a285495b0333312b81a3f3bc3deef765799579c93ea5",
+    "40c36ba19d312d0d4bc52c7bfa2975936276fb73a375131aa3c842ba19b97990",
+    "450f1d676d90f2716e3911b791b28767f939485aed3e577f559c5107123f5cdc",
+    "5a657ee79252b66e525da9d1692de5b3d12f263548464dac655c6c137926f41c",
+    "60cec11e052aacd27a4fd65317f5cc32d57283a38743e816e154e1ea8b18dbba",
+    "6c1a402c5836cb61fd09ba671c5c48cd395da624bf3c666ea14b4175621858ef",
+    "956aeb6726bf1eeef69cd01e605211b78259d27f9b4fa5cb37878a8288b7007b",
+    "9aa4832c2908ab6cdbf645e0c5ec177c248f839f2cea9dec087acdf02806e2d9",
+    "a6f34b51863248244817ebd9aaf7820f18a9cf1f1d2d343afff33ee1e567ca11",
+    "a9ea276f199c1731d00ce74c30d1209b7b69cc7ca5fb51082e2dc468e77e58c0",
+    "c68dd0651914f87b3e738e28c5ff7585b7152b59cb32b988bfdafddfa40627fd",
+    "ce5b6d6b9c24a57e14d33f38f7a2a570dc7ce55949060d06087701bd9fec8117",
+    "e0dae44150e9602a54f34fd6e396c4df430a880aba2814fe859f429730cf66f1",
+    "e35825fe8bf0dbff2d179bb8e0841626e878175b9b040e3a43b2ecea0fb46400",
+    "e80d708ecfe94af5b46c84feed8fc96e96f415f675ab848579580f528a7602b3",
+    "f1bbd267fe088c5b156cb4492789541c8cbac8bd9d9a40f00b955f1ffb7acc54",
+    "f46af8d41d3ca09ebfdce7961e30404ecce4639e99e7a445da5ca5284cb58737",
+    "f99fc69734a73a52d821a887c093ff159573b6b8154b8cdf49029835e215e8a8"
+  ],
+  "stop_rule": "20 updates or first API/compute/training failure; evaluate last saved update, never select by validation score",
+  "limitations": "Single seed, eight held-out initial states. Rubric unchanged; known static-frame bias. No action-consistency rubric or human preference labels.",
+  "gpu_memory_fraction": 0.2
+}

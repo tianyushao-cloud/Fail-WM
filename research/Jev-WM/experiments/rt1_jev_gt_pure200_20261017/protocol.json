@@ -1,0 +1,33 @@
+{
+  "source_commit": "7b8f26a5d165c58645212093d2e0dfffc4278643",
+  "baseline": "/media/tyshao/Jev-WM/experiments/rt1_memspo200_upstream_20261017",
+  "initial_variant": "sft",
+  "reward": "pure GT-conditioned Decisions preferences; no R0 anywhere in training selection or reward",
+  "pairing": "seeded uniform permutation of four candidates, two disjoint pairs, both presentation orders",
+  "labels": "Official choice A/B/C/D; modal probability>=0.60 and modal margin>=0.20; same physical winner across orders only",
+  "consensus": "same physical winner in both orders gives +1/-1; others 0",
+  "no_signal": "zero advantage for tied groups; all-global-batch ties skip optimizer, consume scheduled batch, explicitly count actual updates",
+  "training": {
+    "gpus": 4,
+    "steps": 200,
+    "global_batch": 16,
+    "horizon": 10,
+    "lr": 1e-06,
+    "kl_coef": 0.001,
+    "seed": 20260915
+  },
+  "gt": "reward only, never generation conditioning",
+  "api_requests": 12800,
+  "shared_http_attempt_limit": 16000,
+  "baseline_comparison": "same SFT and same 3200 scheduled windows; evaluate fixed final batch200; do not select checkpoint by test",
+  "paper_locked": false,
+  "modified_files": [
+    "training.py",
+    "decision_api.py",
+    "jev_judge.py",
+    "jev_gt_reward.py"
+  ],
+  "docs_verification": "https://developers.openai.com/api/docs/guides/decisions fetched 2026-10-17; official choice schema verified",
+  "presentation": "v2 grouped chronological Reference/A/B, full 10 frames each; A/B swapped in second request",
+  "network": "Shared filesystem queue, gateway API service; GPU workers do not need credentials or API egress"
+}

@@ -1,0 +1,95 @@
+{
+  "model": "/media/tyshao/Jev-WM/paper_assets/qwen/Qwen3-VL-8B-Instruct",
+  "name": "dev_8b_s1",
+  "cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "scale": 1,
+  "max_pixels": null,
+  "gates": {
+    "gt_codec>freeze_all": {
+      "rate": 0.9375,
+      "required": 0.9,
+      "passed": true
+    },
+    "gt_codec>black": {
+      "rate": 1.0,
+      "required": 0.9,
+      "passed": true
+    },
+    "gt_codec>other_episode": {
+      "rate": 1.0,
+      "required": 0.9,
+      "passed": true
+    },
+    "gt_codec>reverse": {
+      "rate": 0.9375,
+      "required": 0.75,
+      "passed": true
+    },
+    "gt_codec>freeze_half": {
+      "rate": 0.875,
+      "required": 0.75,
+      "passed": true
+    },
+    "informative_groups": {
+      "rate": 0.5625,
+      "required": 0.5,
+      "passed": true,
+      "tau": 0.03375893114065054
+    }
+  },
+  "all_gates_passed": true,
+  "diagnostics": {
+    "median_order_gap": 0.01687946557032527,
+    "mean_order_bias": -0.08608450072450743,
+    "median_group_spread": 0.035709516030065946,
+    "within_group_spearman_order0_vs_order1": 0.39999999999999997,
+    "order_rank_groups_defined": 16,
+    "within_group_spearman_vs_neg_lpips": 0.1875,
+    "within_group_spearman_vs_neg_repeats": 0.07499999999999998,
+    "groups_with_repeat_variation": 10,
+    "pooled_spearman_vs_neg_lpips": -0.05631868131868131,
+    "mean_scores": {
+      "sft0": 0.9161872803603496,
+      "sft1": 0.9020046690757358,
+      "sft2": 0.8895133064151706,
+      "sft3": 0.9064955417449744,
+      "rl0": 0.9591416087883244,
+      "rl1": 0.9492525129036394,
+      "rl2": 0.9571288776621384,
+      "rl3": 0.9707860696946944,
+      "gt_raw": 0.9618905010198111,
+      "gt_codec": 0.9753742909272288,
+      "freeze_all": 0.6724667332687377,
+      "freeze_half": 0.8035664889111906,
+      "reverse": 0.6898036563125625,
+      "black": 0.1291970149518831,
+      "other_episode": 0.1852063410726598
+    },
+    "seconds": 593.7628169525415,
+    "r0rl_minus_sft_window_mean": {
+      "mean": 0.055527067863141565,
+      "ci95": [
+        -0.0018923406640025937,
+        0.12740657827400917
+      ],
+      "rl_better_rate": 0.625
+    }
+  }
+}

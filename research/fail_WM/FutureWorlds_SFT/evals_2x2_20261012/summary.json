@@ -1,0 +1,3552 @@
+{
+  "rise_threshold_px": 21.166353715161407,
+  "cases_done": 153,
+  "cases_expected": 153,
+  "codec_recon": {
+    "success_control": {
+      "lifted": 60
+    },
+    "unlifted_failure": {
+      "not_lifted": 69,
+      "lifted": 3
+    },
+    "release_failure": {
+      "fell_like_gt": 21
+    }
+  },
+  "lift": [
+    {
+      "model": "B",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 1
+    },
+    {
+      "model": "B",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 159,
+      "vanished_any": 85,
+      "not_lifted": 1
+    },
+    {
+      "model": "B",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 8
+    },
+    {
+      "model": "B",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 160,
+      "vanished_any": 82
+    },
+    {
+      "model": "B",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 24,
+      "not_lifted": 12,
+      "vanished_any": 11,
+      "lifted": 12
+    },
+    {
+      "model": "B",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 192,
+      "not_lifted": 86,
+      "vanished_any": 100,
+      "lifted": 106
+    },
+    {
+      "model": "B",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 24,
+      "not_lifted": 12,
+      "vanished_any": 10,
+      "lifted": 12
+    },
+    {
+      "model": "B",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 192,
+      "not_lifted": 83,
+      "vanished_any": 96,
+      "lifted": 109
+    },
+    {
+      "model": "C",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 2
+    },
+    {
+      "model": "C",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 155,
+      "vanished_any": 74,
+      "not_lifted": 5
+    },
+    {
+      "model": "C",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 3
+    },
+    {
+      "model": "C",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 159,
+      "vanished_any": 81,
+      "not_lifted": 1
+    },
+    {
+      "model": "C",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 18,
+      "vanished_any": 10,
+      "not_lifted": 6
+    },
+    {
+      "model": "C",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 135,
+      "vanished_any": 124,
+      "not_lifted": 57
+    },
+    {
+      "model": "C",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 20,
+      "vanished_any": 11,
+      "not_lifted": 4
+    },
+    {
+      "model": "C",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 192,
+      "lifted": 138,
+      "vanished_any": 104,
+      "not_lifted": 54
+    },
+    {
+      "model": "D",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 20,
+      "not_lifted": 1,
+      "vanished_any": 12,
+      "lifted": 19
+    },
+    {
+      "model": "D",
+      "category": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 155,
+      "vanished_any": 98,
+      "not_lifted": 5
+    },
+    {
+      "model": "D",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 20,
+      "lifted": 20,
+      "vanished_any": 10
+    },
+    {
+      "model": "D",
+      "category": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 160,
+      "lifted": 157,
+      "vanished_any": 93,
+      "not_lifted": 3
+    },
+    {
+      "model": "D",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "n": 24,
+      "lifted": 11,
+      "vanished_any": 9,
+      "not_lifted": 13
+    },
+    {
+      "model": "D",
+      "category": "unlifted_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "n": 192,
+      "not_lifted": 59,
+      "vanished_any": 134,
+      "lifted": 133
+    },
+    {
+      "model": "D",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "n": 24,
+      "not_lifted": 12,
+      "vanished_any": 7,
+      "lifted": 12
+    },
+    {
+      "model": "D",
+      "category": "unlifted_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "n": 192,
+      "not_lifted": 84,
+      "vanished_any": 104,
+      "lifted": 108
+    }
+  ],
+  "release": [
+    {
+      "model": "B",
+      "handoff": "start",
+      "decode": "beam4",
+      "fell_like_gt": 7
+    },
+    {
+      "model": "B",
+      "handoff": "start",
+      "decode": "sampling",
+      "vanished": 16,
+      "fell_like_gt": 32,
+      "other": 4,
+      "still_high": 4
+    },
+    {
+      "model": "B",
+      "handoff": "+2",
+      "decode": "beam4",
+      "fell_like_gt": 6,
+      "vanished": 1
+    },
+    {
+      "model": "B",
+      "handoff": "+2",
+      "decode": "sampling",
+      "fell_like_gt": 43,
+      "other": 4,
+      "vanished": 8,
+      "still_high": 1
+    },
+    {
+      "model": "C",
+      "handoff": "start",
+      "decode": "beam4",
+      "fell_like_gt": 2,
+      "other": 1,
+      "vanished": 3,
+      "still_high": 1
+    },
+    {
+      "model": "C",
+      "handoff": "start",
+      "decode": "sampling",
+      "fell_like_gt": 36,
+      "vanished": 18,
+      "still_high": 2
+    },
+    {
+      "model": "C",
+      "handoff": "+2",
+      "decode": "beam4",
+      "fell_like_gt": 5,
+      "vanished": 2
+    },
+    {
+      "model": "C",
+      "handoff": "+2",
+      "decode": "sampling",
+      "fell_like_gt": 44,
+      "still_high": 4,
+      "vanished": 8
+    },
+    {
+      "model": "D",
+      "handoff": "start",
+      "decode": "beam4",
+      "fell_like_gt": 5,
+      "still_high": 1,
+      "vanished": 1
+    },
+    {
+      "model": "D",
+      "handoff": "start",
+      "decode": "sampling",
+      "fell_like_gt": 33,
+      "vanished": 13,
+      "still_high": 10
+    },
+    {
+      "model": "D",
+      "handoff": "+2",
+      "decode": "beam4",
+      "fell_like_gt": 4,
+      "still_high": 2,
+      "vanished": 1
+    },
+    {
+      "model": "D",
+      "handoff": "+2",
+      "decode": "sampling",
+      "fell_like_gt": 44,
+      "still_high": 7,
+      "vanished": 5
+    }
+  ],
+  "per_case": [
+    {
+      "model": "B",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "vanished": 2
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "other": 1
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 4,
+        "other": 1,
+        "vanished": 4
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 5,
+        "vanished": 2,
+        "other": 2
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 18,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "vanished": 2,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 6
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "vanished": 2,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 5,
+        "vanished": 3,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 1,
+        "vanished": 4,
+        "other": 3,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 45,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 9
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "vanished": 1,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "other": 1
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 38,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "B",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 57,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "B",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 9
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 9
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "other": 1,
+        "vanished": 2,
+        "fell_like_gt": 6
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "still_high": 1,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 18,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 5,
+        "fell_like_gt": 3,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 2,
+        "fell_like_gt": 4,
+        "still_high": 3
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 6
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 9
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 3,
+        "vanished": 5,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 45,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 1,
+        "fell_like_gt": 5,
+        "vanished": 3
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 2,
+        "fell_like_gt": 7
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 38,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 3,
+        "fell_like_gt": 6
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 5,
+        "vanished": 4
+      }
+    },
+    {
+      "model": "C",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 57,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "C",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b00",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b01",
+      "group": "counter_group_00006",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b03",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "vanished": 3
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00006_b04",
+      "group": "counter_group_00006",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 9
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b07",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00006_b08",
+      "group": "counter_group_00006",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b00",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b01",
+      "group": "counter_group_00014",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "still_high": 2
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00014_b03",
+      "group": "counter_group_00014",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b06",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b07",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00014_b08",
+      "group": "counter_group_00014",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00022_b00",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00022_b01",
+      "group": "counter_group_00022",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00022_b05",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 18,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00022_b08",
+      "group": "counter_group_00022",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00037_b00",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00037_b01",
+      "group": "counter_group_00037",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00037_b03",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 25,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.125,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00037_b04",
+      "group": "counter_group_00037",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 7,
+        "still_high": 2
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00037_b05",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "still_high": 3
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 3,
+        "vanished": 3,
+        "still_high": 3
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00037_b08",
+      "group": "counter_group_00037",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 30,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 3,
+        "fell_like_gt": 6
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00059_b00",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00059_b01",
+      "group": "counter_group_00059",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00059_b03",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00059_b07",
+      "group": "counter_group_00059",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00061_b00",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00061_b01",
+      "group": "counter_group_00061",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00061_b05",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00061_b06",
+      "group": "counter_group_00061",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 53,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 2,
+        "fell_like_gt": 3,
+        "vanished": 4
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00061_b08",
+      "group": "counter_group_00061",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 45,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "still_high": 1,
+        "fell_like_gt": 8
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00071_b00",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00071_b01",
+      "group": "counter_group_00071",
+      "category": "success_control",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00071_b03",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 23,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 2,
+        "fell_like_gt": 6,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00071_b04",
+      "group": "counter_group_00071",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 32,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 8,
+        "vanished": 1
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00071_b07",
+      "group": "counter_group_00071",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 15,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00080_b00",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00080_b01",
+      "group": "counter_group_00080",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00080_b07",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 38,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00080_b08",
+      "group": "counter_group_00080",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b00",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b01",
+      "group": "counter_group_00084",
+      "category": "success_control",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b03",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "fell_like_gt": 6,
+        "vanished": 2,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00084_b04",
+      "group": "counter_group_00084",
+      "category": "release_failure",
+      "label": "+2",
+      "k": 31,
+      "sample_lift_rate": null,
+      "release_classes": {
+        "vanished": 5,
+        "fell_like_gt": 3,
+        "still_high": 1
+      }
+    },
+    {
+      "model": "D",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.5,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b07",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 20,
+      "sample_lift_rate": 0.75,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00084_b08",
+      "group": "counter_group_00084",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 24,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b00",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b01",
+      "group": "counter_group_00098",
+      "category": "success_control",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.625,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b03",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 57,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 1.0,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b07",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 21,
+      "sample_lift_rate": 0.875,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "start",
+      "k": 2,
+      "sample_lift_rate": 0.375,
+      "release_classes": null
+    },
+    {
+      "model": "D",
+      "id": "g00098_b08",
+      "group": "counter_group_00098",
+      "category": "unlifted_failure",
+      "label": "+2",
+      "k": 22,
+      "sample_lift_rate": 0.25,
+      "release_classes": null
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+pairs 3 groups 3 candidates 6 episodes 3
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+encoder num cross att blocks 2
+decoder num cross att blocks 1
+codec recon mean abs error 1.28/255 over 3 episodes
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 14.80it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.91it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.50it/s]
+[state] 204 calls to run (0 done)
+[state] 160/204 0.15s/call
+[state] 204/204 0.13s/call
+[pair] 6 calls to run (0 done)
+[pair] 6/6 3.39s/call
+[point_recon] 12 calls to run (0 done)
+[point_recon] 12/12 2.54s/call
+STAGE2 DONE

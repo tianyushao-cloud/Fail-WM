@@ -1,0 +1,20 @@
+{
+  "dataset_protocol_sha256": "8c056c8c44ec8a6b76f7098b339dd141adc3853d2e9d434c900d122e17a844cf",
+  "dataset_manifests": {
+    "train": "74bf461b06d1aff28136151edb9445bd67a6270bb90dd4afd027149cde0af446",
+    "validation": "b24acba44ce12ede35496150406b2266b67256e89746ad0042d20ddfee953696",
+    "test": "f92c36ce11b13a0c2e8fbf282684338b8ccfb043557f81454731a4f9ed1da552"
+  },
+  "initial_reference": "original_episode_frames_0_and_4",
+  "horizon": 32,
+  "selection": "lowest validation mean LPIPS32 across steps50/100/150/200; ties earlier",
+  "validation_metric_horizons": [
+    8,
+    16,
+    32
+  ],
+  "test_used_for_selection": false,
+  "algorithm": "released MemSPO/R0; same settings as local_success_memspo_h32 except new dataset/output/schedule",
+  "base_bundle_manifest_sha256": "7ba52ea43e7c47a9b564b151460de128430459710c3d04a0778cf3f48496085f",
+  "limitations": "New exact initial scenes; same simple counter task. Pixel metrics do not certify correct object behavior."
+}

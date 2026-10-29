@@ -1,0 +1,17 @@
+RoboCasa state-reward MemSPO 续训：step30 -> step50（8 卡）
+==========================================================
+从 robocasa_state_memspo_g8_8gpu_20261025/train/checkpoints/step_000030 继续，
+载入权重 + AdamW 状态 + RNG；reward / lr 1e-6 / KL 0.005 / 8 组 / horizon 32 全部不变。
+使用同一份 schedule.json 的第 481-800 条（steps 31..50，每步 8 成功 + 8 失败，都是新窗口）。
+原 schedule 只有 800 条 = 50 步，所以最多续到 50；再往后要重新生成 schedule。
+
+唯一的代码改动：source/src/futureworlds/training.py 新增 continue_from 分支
+（检查 checkpoint 校验和 + 除 steps/路径外配置逐键一致 + schedule 内容一致）。
+
+启动（训练机，8 张卡可见）：
+  cd /media/tyshao/Jev-WM/experiments/robocasa_state_memspo_g8_8gpu_s50_20261026
+  bash run_8gpu.sh check
+  bash run_8gpu.sh train          # 前台运行，日志同时写入 logs/train.log
+
+中断后：直接再执行一次 train，会从本目录最新的 step_0000xx 恢复。
+预计：20 步 x ~4.7 分钟 ≈ 1.6 小时。checkpoint：train/checkpoints/step_000035 ... step_000050

@@ -1,0 +1,118 @@
+{
+  "id": "control_v2_12",
+  "category": "control_v2",
+  "title": "新版对照 · 场景2 · GT 对冻结",
+  "task": "close middle drawer",
+  "task_id": "6a229b47fceafaae4bc65c33d294e73aa30292dc87db0e4686a403a220078332_0000",
+  "physical_pair": [
+    0,
+    3
+  ],
+  "orders": [
+    {
+      "raw": "C",
+      "filtered": "D",
+      "probabilities": {
+        "A": 0.34,
+        "B": 0.18,
+        "C": 0.48,
+        "D": 0.0
+      },
+      "confidence": 0.31,
+      "model": "gpt-6-luna",
+      "request_id": "req_1e7d2029a0474afdb73f95b710296d18"
+    },
+    {
+      "raw": "B",
+      "filtered": "D",
+      "probabilities": {
+        "A": 0.41,
+        "B": 0.55,
+        "C": 0.04,
+        "D": 0.0
+      },
+      "confidence": 0.4,
+      "model": "gpt-6-luna",
+      "request_id": "req_7731ce952cd64f2cbe4c2bee47ff86d3"
+    }
+  ],
+  "first_candidate_reward": 0,
+  "second_candidate_reward": 0,
+  "reason": "至少一次原始回答未达到概率/领先幅度阈值，被程序转为 D；未形成双顺序可靠偏好。",
+  "paths": {
+    "initial": [
+      "assets/control_v2_adf10bf1ddb9/initial/00.png",
+      "assets/control_v2_adf10bf1ddb9/initial/01.png"
+    ],
+    "reference": [
+      "assets/control_v2_adf10bf1ddb9/reference/00.png",
+      "assets/control_v2_adf10bf1ddb9/reference/01.png",
+      "assets/control_v2_adf10bf1ddb9/reference/02.png",
+      "assets/control_v2_adf10bf1ddb9/reference/03.png",
+      "assets/control_v2_adf10bf1ddb9/reference/04.png",
+      "assets/control_v2_adf10bf1ddb9/reference/05.png",
+      "assets/control_v2_adf10bf1ddb9/reference/06.png",
+      "assets/control_v2_adf10bf1ddb9/reference/07.png",
+      "assets/control_v2_adf10bf1ddb9/reference/08.png",
+      "assets/control_v2_adf10bf1ddb9/reference/09.png"
+    ],
+    "candidate_0": [
+      "assets/control_v2_adf10bf1ddb9/candidate_0/00.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_0/01.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_0/02.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_0/03.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_0/04.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_0/05.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_0/06.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_0/07.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_0/08.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_0/09.png"
+    ],
+    "candidate_1": [
+      "assets/control_v2_adf10bf1ddb9/candidate_1/00.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_1/01.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_1/02.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_1/03.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_1/04.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_1/05.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_1/06.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_1/07.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_1/08.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_1/09.png"
+    ],
+    "candidate_2": [
+      "assets/control_v2_adf10bf1ddb9/candidate_2/00.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_2/01.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_2/02.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_2/03.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_2/04.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_2/05.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_2/06.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_2/07.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_2/08.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_2/09.png"
+    ],
+    "candidate_3": [
+      "assets/control_v2_adf10bf1ddb9/candidate_3/00.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_3/01.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_3/02.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_3/03.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_3/04.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_3/05.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_3/06.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_3/07.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_3/08.png",
+      "assets/control_v2_adf10bf1ddb9/candidate_3/09.png"
+    ]
+  },
+  "video": "cases/control_v2_12/comparison.mp4",
+  "sheet": "cases/control_v2_12/contact_sheet.png",
+  "raw": [
+    "cases/control_v2_12/raw_AB.json",
+    "cases/control_v2_12/raw_BA.json"
+  ],
+  "metadata": "assets/control_v2_adf10bf1ddb9/original_request_metadata.json",
+  "npz": "assets/control_v2_adf10bf1ddb9/original_frames.npz",
+  "prompt": "assets/control_v2_adf10bf1ddb9/prompt.txt",
+  "protocol": "gt_pair_v2_grouped_all10_full256x320"
+}

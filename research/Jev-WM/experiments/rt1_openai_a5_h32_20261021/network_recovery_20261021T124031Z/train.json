@@ -1,0 +1,49 @@
+{
+  "dataset": "rt1",
+  "method": "memspo",
+  "bundle": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1",
+  "train_manifest": "/media/tyshao/Jev-WM/experiments/rt1_memspo200_upstream_20261017/data/train/manifest.json",
+  "evaluation_manifest": "/media/tyshao/Jev-WM/experiments/rt1_memspo200_upstream_20261017/data/test/manifest.json",
+  "output": "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/train",
+  "initial_variant": "sft",
+  "device": "cuda",
+  "seed": 20260915,
+  "steps": 10,
+  "global_batch": 16,
+  "lr": 1e-06,
+  "adapter_lr": 0.0001,
+  "warmup_steps": 500,
+  "horizon": 32,
+  "reward": "openai_gt",
+  "clip": 0.2,
+  "kl_coef": 0.001,
+  "diversity_penalty": 0.1,
+  "checkpoint_every": 5,
+  "paper_locked": false,
+  "schedule": "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/schedule.json",
+  "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+  "openai_judge": {
+    "model": "gpt-6-luna",
+    "scale": 2,
+    "weights": {
+      "fidelity": 0.3846153846153846,
+      "motion": 0.3076923076923077,
+      "task": 0.3076923076923077
+    },
+    "calibration_file": "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/calibration/summary.json",
+    "review_dir": "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/reviews",
+    "log_dir": "/media/tyshao/Jev-WM/experiments/rt1_openai_a5_h32_20261021/judge_log",
+    "max_http_attempts": 12000,
+    "timeout_seconds": 90,
+    "retries": 2,
+    "spacing_seconds": 0.25,
+    "workers": 4,
+    "requested_weights": {
+      "fidelity": 0.2941176470588235,
+      "motion": 0.23529411764705882,
+      "physics": 0.23529411764705882,
+      "task": 0.23529411764705882
+    },
+    "calibration_sha256": "e55f3a82d23eb245e7146456c9ae7293dd740b568f06d25dfc9bee6d8e6b7135"
+  }
+}

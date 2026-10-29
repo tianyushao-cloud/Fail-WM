@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "preview_only": true,
+  "standard_robocasa_benchmark": false,
+  "episodes": [
+    {
+      "directory": "01_drawer_can",
+      "task": "drawer_can",
+      "success": true,
+      "actions": 936,
+      "frames": 937,
+      "duration_seconds": 46.8,
+      "phase_timeouts": [
+        {
+          "phase": "object/descend",
+          "error": 0.008219788393041697
+        },
+        {
+          "phase": "object/lower",
+          "error": 0.010715431617745555
+        }
+      ],
+      "subgoals": [
+        {
+          "label": "drawer_opened",
+          "passed": true,
+          "slide_position": 0.1480917347824705,
+          "handle_contact": true
+        },
+        {
+          "label": "object_lifted",
+          "passed": true,
+          "position": [
+            0.5994535223641858,
+            -0.16431535234668948,
+            1.2333620707727042
+          ]
+        },
+        {
+          "label": "object_placed",
+          "passed": true,
+          "position": [
+            0.44123600168036897,
+            -0.13656057070851296,
+            0.960308310219979
+          ]
+        },
+        {
+          "label": "drawer_closed",
+          "passed": true,
+          "slide_position": 0.0009255006184360091,
+          "handle_contact": true
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "alignment_passed": true,
+        "replay_passed": true,
+        "ordered_physical_milestones_passed": true,
+        "success_stable_on_replay": true,
+        "video_frames": 937,
+        "errors": {
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "object_pose": 0.0,
+          "executed13": 0.0,
+          "rgb_mae": 0.0003461371527777778,
+          "fixture": 0.0,
+          "target13": 0.0
+        }
+      }
+    },
+    {
+      "directory": "02_push_then_bin",
+      "task": "push_then_bin",
+      "success": true,
+      "actions": 539,
+      "frames": 540,
+      "duration_seconds": 26.95,
+      "phase_timeouts": [],
+      "subgoals": [
+        {
+          "label": "puck_pushed_through_lane",
+          "passed": true,
+          "before": [
+            0.46999985132936234,
+            -0.23000039609502748,
+            0.9329721051340714
+          ],
+          "after": [
+            0.6386214915005899,
+            -0.22986543235772136,
+            0.9329161554116017
+          ],
+          "gripper_contact": true
+        },
+        {
+          "label": "object_lifted",
+          "passed": true,
+          "position": [
+            0.6391761015104636,
+            -0.2286072728169111,
+            1.240681880846737
+          ]
+        },
+        {
+          "label": "object_placed",
+          "passed": true,
+          "position": [
+            0.6602246434083697,
+            -0.07459847643128158,
+            0.9439876836522181
+          ]
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "alignment_passed": true,
+        "replay_passed": true,
+        "ordered_physical_milestones_passed": true,
+        "success_stable_on_replay": true,
+        "video_frames": 540,
+        "errors": {
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "object_pose": 0.0,
+          "executed13": 0.0,
+          "rgb_mae": 0.00040364583333333333,
+          "fixture": 0.0,
+          "target13": 0.0
+        }
+      }
+    }
+  ]
+}

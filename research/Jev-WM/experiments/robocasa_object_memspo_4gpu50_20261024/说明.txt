@@ -1,0 +1,15 @@
+4卡50步 RoboCasa 物体奖励 MemSPO
+
+检查（不加载GPU）：bash run_4gpu.sh check
+启动／断点续训：CUDA_VISIBLE_DEVICES=0,1,2,3 bash run_4gpu.sh train
+后台启动：nohup bash run_4gpu.sh train > logs/launcher.log 2>&1 < /dev/null &
+
+单机4卡，global_batch16，每卡累积4组，每组4个候选；每次更新8成功+8失败。训练共800组，400成功400失败。类内打乱无放回，耗尽后重洗，包含全部失败类型。
+原混合SFT step010000初始化，codec固定mixed34k，独立冻结reference，全新RL优化器。不会加载单卡3步试跑的RL权重。
+Horizon32：每条轨迹最初2帧输入，预测后续32帧；并非所有失败事件都在该窗口内。reward以窗口真实画面为准，不把整条轨迹的失败标签强加给窗口。
+位置0.5；存在/闪现0.25；Qwen3-VL-8B GT交互0.25。每卡加载自己的Qwen判别器，无外部API。lr1e-6，warmup5，KL0.001，diversity0.1。
+每5步保存checkpoint，最终step000050。重启自动从最近完整checkpoint恢复优化器和随机状态；未提交的日志/候选/临时checkpoint归档在interrupted/，不删除。配置、采样表或源码改变后禁止续训，需新建实验目录。
+结果：train/checkpoints，train/metrics.jsonl，judge_log，logs/train.log，status.json，完成后summary.json。逐候选视频帧也保留于judge_log/*_clips.npz。
+当前只完成CPU配置/采样/脚本语法检查，尚未在4卡上执行此50步作业。
+
+4卡版本独立输出，与8卡版本使用相同的每步样本，仅重排到4卡；不加载8卡训练checkpoint。

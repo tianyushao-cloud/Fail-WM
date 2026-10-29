@@ -1,0 +1,28 @@
+RoboCasa MemSPO，纯轨迹 reward A（8 卡，30 步，无 VLM）
+=====================================================
+和 robocasa_state_memspo_g8_8gpu_20261025（v0，已完成）只差 reward：
+  v0：.35 position + .15 persistence（红块 tracker） + .5 Qwen 逐帧 state
+  A ：每帧 2D 轨迹偏差，不判断抓没抓起
+      cube     .5   预测红色像素 vs GT 红色像素的对称距离（所有红块，ghost cube 也算）
+      gripper  .25  GT 夹爪 patch 在预测帧里的位移（模板匹配）
+      relative .25  (cube - 夹爪) 相对位置偏差
+      每帧上限 80 px，预测里没红块 = 8 px；reward = 1 - (均值/2 + 最差 1/4 帧均值/2) / 80
+其余全部相同：mixed SFT10k 初始化、codec34k、schedule、seed、lr 1e-6、KL 0.005、8 组、
+horizon 32、minimum_group_spread .02。不加载 Qwen（显存更省，每组 reward 约 8.5 s CPU）。
+
+离线依据：experiments/traj_reward_20261027/REPORT.md（v0 run 的 480 组日志）
+  全 fake 组排序 .91（VLM state .82），grasp_miss .99；组内与 ROI 像素保真度 Spearman +.51（VLM state -.04）
+  弱项：object_off_counter .64（盲评显示部分是标签问题）
+代码改动：新增 source/src/futureworlds/robocasa_traj_reward.py；training.py 只注册 "robocasa_traj"。
+  已在 30 组日志 clip 上跑完整 __call__（stub codec），与离线 reward 最大差 .0067。
+训练日志里 score_sum_cube/gripper/relative 是各分项均值；fake_lift_frames 只用于监控（GT 没抬起窗口里
+预测被 tracker 判成上升的帧数），不进 reward。judge_log/*.json 里 legacy 是旧 rule 分数，也只是监控。
+
+启动（训练机，8 张卡可见）：
+  cd /media/tyshao/Jev-WM/experiments/robocasa_traj_memspo_g8_8gpu_20261027
+  bash run_8gpu.sh check
+  bash run_8gpu.sh train
+
+中断后：再执行一次 train，会从最新的 step_0000xx 恢复。
+checkpoint：train/checkpoints/step_000005 ... step_000030
+跑完后评测：val sibling 测试（step15 / step30）+ frame_metrics_roi + flicker，与 v0 step30 / SFT 对比；test 不动。

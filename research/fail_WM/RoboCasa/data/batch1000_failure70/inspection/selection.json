@@ -1,0 +1,837 @@
+[
+  {
+    "preview": "01_normal_success_g00070_b01.mp4",
+    "kind": "normal_success",
+    "episode_id": "g00070_b01",
+    "initial_state_id": "counter_group_00070",
+    "split": "train",
+    "category": "reference",
+    "success": true,
+    "failure_type": null,
+    "actions": 210,
+    "frames": 211,
+    "perturbation": {
+      "factors": [],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 103,
+        "time_seconds": 5.1499999999996,
+        "grasp_and_lift": true
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 61,
+        "time_seconds": 3.04999999999983
+      },
+      {
+        "event": "grasp",
+        "state_index": 61,
+        "time_seconds": 3.04999999999983
+      },
+      {
+        "event": "lift",
+        "state_index": 82,
+        "time_seconds": 4.099999999999715
+      },
+      {
+        "event": "release",
+        "state_index": 154,
+        "time_seconds": 7.699999999999408
+      },
+      {
+        "event": "place",
+        "state_index": 154,
+        "time_seconds": 7.699999999999408
+      },
+      {
+        "event": "success",
+        "state_index": 173,
+        "time_seconds": 8.649999999999725
+      }
+    ]
+  },
+  {
+    "preview": "02_normal_success_g00055_b01.mp4",
+    "kind": "normal_success",
+    "episode_id": "g00055_b01",
+    "initial_state_id": "counter_group_00055",
+    "split": "train",
+    "category": "reference",
+    "success": true,
+    "failure_type": null,
+    "actions": 220,
+    "frames": 221,
+    "perturbation": {
+      "factors": [],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 103,
+        "time_seconds": 5.1499999999996,
+        "grasp_and_lift": true
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 61,
+        "time_seconds": 3.04999999999983
+      },
+      {
+        "event": "grasp",
+        "state_index": 61,
+        "time_seconds": 3.04999999999983
+      },
+      {
+        "event": "lift",
+        "state_index": 82,
+        "time_seconds": 4.099999999999715
+      },
+      {
+        "event": "release",
+        "state_index": 164,
+        "time_seconds": 8.199999999999575
+      },
+      {
+        "event": "place",
+        "state_index": 165,
+        "time_seconds": 8.249999999999591
+      },
+      {
+        "event": "success",
+        "state_index": 184,
+        "time_seconds": 9.199999999999909
+      }
+    ]
+  },
+  {
+    "preview": "03_grasp_miss_g00039_b03.mp4",
+    "kind": "grasp_miss",
+    "episode_id": "g00039_b03",
+    "initial_state_id": "counter_group_00039",
+    "split": "test",
+    "category": "single",
+    "success": false,
+    "failure_type": "grasp_miss",
+    "actions": 231,
+    "frames": 232,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "grasp_offset",
+          "xyz_m": [
+            0.06729081788876454,
+            -0.11095363972719775,
+            0.0005881383893186366
+          ]
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 123,
+        "time_seconds": 6.14999999999949,
+        "grasp_and_lift": false
+      }
+    ],
+    "events": [
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 123,
+        "time_seconds": 6.14999999999949
+      }
+    ]
+  },
+  {
+    "preview": "04_grasp_miss_g00039_b07.mp4",
+    "kind": "grasp_miss",
+    "episode_id": "g00039_b07",
+    "initial_state_id": "counter_group_00039",
+    "split": "test",
+    "category": "single",
+    "success": false,
+    "failure_type": "grasp_miss",
+    "actions": 212,
+    "frames": 213,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "partial_close",
+          "positive_close_action_steps": 2
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 102,
+        "time_seconds": 5.099999999999605,
+        "grasp_and_lift": false
+      }
+    ],
+    "events": [
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 102,
+        "time_seconds": 5.099999999999605
+      }
+    ]
+  },
+  {
+    "preview": "05_contact_without_lift_g00042_b11.mp4",
+    "kind": "contact_without_lift",
+    "episode_id": "g00042_b11",
+    "initial_state_id": "counter_group_00042",
+    "split": "train",
+    "category": "double",
+    "success": false,
+    "failure_type": "contact_without_lift",
+    "actions": 273,
+    "frames": 274,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "partial_close",
+          "positive_close_action_steps": 1
+        },
+        {
+          "type": "orientation_tilt",
+          "axis": 0,
+          "angle_rad": 0.8060477724186913
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 147,
+        "time_seconds": 7.3499999999993575,
+        "grasp_and_lift": false
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 79,
+        "time_seconds": 3.9499999999997315
+      },
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 147,
+        "time_seconds": 7.3499999999993575
+      }
+    ]
+  },
+  {
+    "preview": "06_contact_without_lift_g00091_b04.mp4",
+    "kind": "contact_without_lift",
+    "episode_id": "g00091_b04",
+    "initial_state_id": "counter_group_00091",
+    "split": "train",
+    "category": "single",
+    "success": false,
+    "failure_type": "contact_without_lift",
+    "actions": 268,
+    "frames": 269,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "orientation_tilt",
+          "axis": 1,
+          "angle_rad": 1.0464608258005612
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 167,
+        "time_seconds": 8.349999999999625,
+        "grasp_and_lift": false
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 56,
+        "time_seconds": 2.7999999999998577
+      },
+      {
+        "event": "contact",
+        "state_index": 94,
+        "time_seconds": 4.699999999999649
+      },
+      {
+        "event": "contact",
+        "state_index": 133,
+        "time_seconds": 6.649999999999435
+      },
+      {
+        "event": "contact",
+        "state_index": 139,
+        "time_seconds": 6.9499999999994015
+      },
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 167,
+        "time_seconds": 8.349999999999625
+      }
+    ]
+  },
+  {
+    "preview": "07_drop_g00093_b08.mp4",
+    "kind": "drop",
+    "episode_id": "g00093_b08",
+    "initial_state_id": "counter_group_00093",
+    "split": "train",
+    "category": "double",
+    "success": false,
+    "failure_type": "dropped_before_goal",
+    "actions": 256,
+    "frames": 257,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "orientation_tilt",
+          "axis": 0,
+          "angle_rad": -0.49886681550688444
+        },
+        {
+          "type": "early_release",
+          "transport_fraction": 0.3158139346816284,
+          "release_height_m": 1.1890707315170208
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 99,
+        "time_seconds": 4.949999999999622,
+        "grasp_and_lift": true
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 62,
+        "time_seconds": 3.0999999999998247
+      },
+      {
+        "event": "grasp",
+        "state_index": 62,
+        "time_seconds": 3.0999999999998247
+      },
+      {
+        "event": "lift",
+        "state_index": 79,
+        "time_seconds": 3.9499999999997315
+      },
+      {
+        "event": "drop",
+        "state_index": 131,
+        "time_seconds": 6.549999999999446
+      },
+      {
+        "event": "release",
+        "state_index": 131,
+        "time_seconds": 6.549999999999446
+      }
+    ]
+  },
+  {
+    "preview": "08_drop_g00028_b31.mp4",
+    "kind": "drop",
+    "episode_id": "g00028_b31",
+    "initial_state_id": "counter_group_00028",
+    "split": "train",
+    "category": "single",
+    "success": false,
+    "failure_type": "dropped_before_goal",
+    "actions": 258,
+    "frames": 259,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "early_release",
+          "transport_fraction": 0.06183890977710776,
+          "release_height_m": 1.1498086593617534
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 98,
+        "time_seconds": 4.899999999999627,
+        "grasp_and_lift": true
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 60,
+        "time_seconds": 2.9999999999998357
+      },
+      {
+        "event": "grasp",
+        "state_index": 60,
+        "time_seconds": 2.9999999999998357
+      },
+      {
+        "event": "lift",
+        "state_index": 77,
+        "time_seconds": 3.8499999999997425
+      },
+      {
+        "event": "drop",
+        "state_index": 117,
+        "time_seconds": 5.849999999999523
+      },
+      {
+        "event": "release",
+        "state_index": 117,
+        "time_seconds": 5.849999999999523
+      }
+    ]
+  },
+  {
+    "preview": "09_wrong_place_g00025_b12.mp4",
+    "kind": "wrong_place",
+    "episode_id": "g00025_b12",
+    "initial_state_id": "counter_group_00025",
+    "split": "train",
+    "category": "single",
+    "success": false,
+    "failure_type": "lifted_but_not_placed",
+    "actions": 207,
+    "frames": 208,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "transport_short",
+          "transport_fraction": 0.05460930995142771
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 108,
+        "time_seconds": 5.399999999999572,
+        "grasp_and_lift": true
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 70,
+        "time_seconds": 3.4999999999997806
+      },
+      {
+        "event": "grasp",
+        "state_index": 70,
+        "time_seconds": 3.4999999999997806
+      },
+      {
+        "event": "lift",
+        "state_index": 88,
+        "time_seconds": 4.399999999999682
+      },
+      {
+        "event": "release",
+        "state_index": 151,
+        "time_seconds": 7.549999999999358
+      }
+    ]
+  },
+  {
+    "preview": "10_wrong_place_g00020_b14.mp4",
+    "kind": "wrong_place",
+    "episode_id": "g00020_b14",
+    "initial_state_id": "counter_group_00020",
+    "split": "train",
+    "category": "single",
+    "success": false,
+    "failure_type": "lifted_but_not_placed",
+    "actions": 202,
+    "frames": 203,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "place_offset",
+          "xyz_m": [
+            0.09272308227168502,
+            0.002799438249126427,
+            0.0
+          ]
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 103,
+        "time_seconds": 5.1499999999996,
+        "grasp_and_lift": true
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 65,
+        "time_seconds": 3.249999999999808
+      },
+      {
+        "event": "grasp",
+        "state_index": 65,
+        "time_seconds": 3.249999999999808
+      },
+      {
+        "event": "lift",
+        "state_index": 83,
+        "time_seconds": 4.14999999999971
+      },
+      {
+        "event": "release",
+        "state_index": 146,
+        "time_seconds": 7.299999999999363
+      }
+    ]
+  },
+  {
+    "preview": "11_off_counter_g00070_b13.mp4",
+    "kind": "off_counter",
+    "episode_id": "g00070_b13",
+    "initial_state_id": "counter_group_00070",
+    "split": "train",
+    "category": "single",
+    "success": false,
+    "failure_type": "object_off_counter",
+    "actions": 373,
+    "frames": 374,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "push",
+          "axis": 1,
+          "sign": -1,
+          "sweep_distance_m": 0.27832821586363005
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 265,
+        "time_seconds": 13.250000000001261,
+        "grasp_and_lift": false
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 80,
+        "time_seconds": 3.999999999999726
+      },
+      {
+        "event": "grasp",
+        "state_index": 80,
+        "time_seconds": 3.999999999999726
+      },
+      {
+        "event": "contact",
+        "state_index": 95,
+        "time_seconds": 4.749999999999644
+      },
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 265,
+        "time_seconds": 13.250000000001261
+      }
+    ]
+  },
+  {
+    "preview": "12_off_counter_g00033_b11.mp4",
+    "kind": "off_counter",
+    "episode_id": "g00033_b11",
+    "initial_state_id": "counter_group_00033",
+    "split": "train",
+    "category": "single",
+    "success": false,
+    "failure_type": "object_off_counter",
+    "actions": 353,
+    "frames": 354,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "push",
+          "axis": 1,
+          "sign": -1,
+          "sweep_distance_m": 0.22410383702441175
+        }
+      ],
+      "recovery_requested": false,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 250,
+        "time_seconds": 12.50000000000101,
+        "grasp_and_lift": false
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 77,
+        "time_seconds": 3.8499999999997425
+      },
+      {
+        "event": "grasp",
+        "state_index": 77,
+        "time_seconds": 3.8499999999997425
+      },
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 250,
+        "time_seconds": 12.50000000000101
+      }
+    ]
+  },
+  {
+    "preview": "13_recovery_success_g00063_b09.mp4",
+    "kind": "recovery_success",
+    "episode_id": "g00063_b09",
+    "initial_state_id": "counter_group_00063",
+    "split": "train",
+    "category": "recovery",
+    "success": true,
+    "failure_type": null,
+    "actions": 458,
+    "frames": 459,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "push",
+          "axis": 0,
+          "sign": 1,
+          "sweep_distance_m": 0.10855507378845025
+        }
+      ],
+      "recovery_requested": true,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 221,
+        "time_seconds": 11.050000000000527,
+        "grasp_and_lift": false
+      },
+      {
+        "attempt_index": 1,
+        "end_state_index": 343,
+        "time_seconds": 17.150000000001096,
+        "grasp_and_lift": true
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 71,
+        "time_seconds": 3.5499999999997756
+      },
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 221,
+        "time_seconds": 11.050000000000527
+      },
+      {
+        "event": "contact",
+        "state_index": 305,
+        "time_seconds": 15.25000000000193
+      },
+      {
+        "event": "grasp",
+        "state_index": 305,
+        "time_seconds": 15.25000000000193
+      },
+      {
+        "event": "lift",
+        "state_index": 322,
+        "time_seconds": 16.10000000000168
+      },
+      {
+        "event": "release",
+        "state_index": 402,
+        "time_seconds": 20.09999999999946
+      },
+      {
+        "event": "place",
+        "state_index": 403,
+        "time_seconds": 20.149999999999434
+      },
+      {
+        "event": "success",
+        "state_index": 421,
+        "time_seconds": 21.049999999998935
+      }
+    ]
+  },
+  {
+    "preview": "14_recovery_success_g00016_b09.mp4",
+    "kind": "recovery_success",
+    "episode_id": "g00016_b09",
+    "initial_state_id": "counter_group_00016",
+    "split": "train",
+    "category": "recovery",
+    "success": true,
+    "failure_type": null,
+    "actions": 309,
+    "frames": 310,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "grasp_offset",
+          "xyz_m": [
+            -0.12184112445625572,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "recovery_requested": true,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 97,
+        "time_seconds": 4.849999999999633,
+        "grasp_and_lift": false
+      },
+      {
+        "attempt_index": 1,
+        "end_state_index": 207,
+        "time_seconds": 10.350000000000293,
+        "grasp_and_lift": true
+      }
+    ],
+    "events": [
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 97,
+        "time_seconds": 4.849999999999633
+      },
+      {
+        "event": "contact",
+        "state_index": 169,
+        "time_seconds": 8.449999999999658
+      },
+      {
+        "event": "grasp",
+        "state_index": 169,
+        "time_seconds": 8.449999999999658
+      },
+      {
+        "event": "lift",
+        "state_index": 187,
+        "time_seconds": 9.349999999999959
+      },
+      {
+        "event": "release",
+        "state_index": 253,
+        "time_seconds": 12.65000000000106
+      },
+      {
+        "event": "place",
+        "state_index": 254,
+        "time_seconds": 12.700000000001078
+      },
+      {
+        "event": "success",
+        "state_index": 272,
+        "time_seconds": 13.600000000001378
+      }
+    ]
+  },
+  {
+    "preview": "15_recovery_failure_g00067_b09.mp4",
+    "kind": "recovery_failure",
+    "episode_id": "g00067_b09",
+    "initial_state_id": "counter_group_00067",
+    "split": "train",
+    "category": "recovery",
+    "success": false,
+    "failure_type": "object_off_counter",
+    "actions": 314,
+    "frames": 315,
+    "perturbation": {
+      "factors": [
+        {
+          "type": "push",
+          "axis": 1,
+          "sign": -1,
+          "sweep_distance_m": 0.14160613064082184
+        }
+      ],
+      "recovery_requested": true,
+      "parameters_are_action_intents_not_outcome_labels": true
+    },
+    "attempt_results": [
+      {
+        "attempt_index": 0,
+        "end_state_index": 235,
+        "time_seconds": 11.75000000000076,
+        "grasp_and_lift": false
+      }
+    ],
+    "events": [
+      {
+        "event": "contact",
+        "state_index": 76,
+        "time_seconds": 3.799999999999748
+      },
+      {
+        "event": "grasp",
+        "state_index": 76,
+        "time_seconds": 3.799999999999748
+      },
+      {
+        "event": "grasp_attempt_failed",
+        "state_index": 235,
+        "time_seconds": 11.75000000000076
+      }
+    ]
+  }
+]

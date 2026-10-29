@@ -1,0 +1,19 @@
+{
+  "source_manifest": "/media/tyshao/fail_WM/RoboCasa/data/batch1000/manifest.jsonl",
+  "source_manifest_sha256": "56b9c57139e19e29bd1e5c213edbb84befb2f338d62e0311ca29c0245621e184",
+  "episodes": 1000,
+  "train": 800,
+  "train_success": 443,
+  "train_failure": 357,
+  "train_balanced": 714,
+  "val": 100,
+  "test": 100,
+  "instruction": "Pick up the cube and place it at the goal.",
+  "image_shape": [
+    256,
+    320,
+    3
+  ],
+  "action_shape_per_case": "[frames, 52]",
+  "pack": 4
+}

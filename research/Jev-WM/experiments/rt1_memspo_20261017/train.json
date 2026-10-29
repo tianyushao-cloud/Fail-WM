@@ -1,0 +1,23 @@
+{
+  "dataset": "rt1",
+  "method": "memspo",
+  "bundle": "/media/tyshao/Jev-WM/paper_assets/futureworlds_rt1",
+  "text_model": "/media/tyshao/fail_WM/FutureWorlds_workspace/assets/t5-base",
+  "initial_variant": "sft",
+  "device": "cuda",
+  "seed": 20261017,
+  "steps": 200,
+  "global_batch": 16,
+  "lr": 1e-06,
+  "horizon": 10,
+  "reward": "R0",
+  "clip": 0.2,
+  "kl_coef": 0.001,
+  "diversity_penalty": 0.1,
+  "checkpoint_every": 10,
+  "paper_locked": false,
+  "cpu_threads": 2,
+  "train_manifest": "/media/tyshao/Jev-WM/experiments/rt1_memspo_20261017/data/train/manifest.json",
+  "evaluation_manifest": "/media/tyshao/Jev-WM/experiments/rt1_memspo_20261017/data/test/manifest.json",
+  "output": "/media/tyshao/Jev-WM/experiments/rt1_memspo_20261017/train"
+}

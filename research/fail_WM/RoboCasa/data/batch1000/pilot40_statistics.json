@@ -1,0 +1,50 @@
+{
+  "status": "pilot_complete",
+  "requested_episodes": 1000,
+  "completed": 40,
+  "workers": 4,
+  "wall_seconds_this_run": 116.44,
+  "successes": 20,
+  "failures": 20,
+  "actual_failure_types": {
+    "grasp_miss": 7,
+    "contact_without_lift": 5,
+    "dropped_before_goal": 3,
+    "lifted_but_not_placed": 4,
+    "object_off_counter": 1
+  },
+  "completed_by_category": {
+    "reference": 12,
+    "single": 20,
+    "double": 4,
+    "recovery": 4
+  },
+  "perturbation_counts": {
+    "grasp_offset": 4,
+    "orientation_tilt": 3,
+    "delayed_close": 2,
+    "partial_close": 3,
+    "early_close": 4,
+    "early_release": 4,
+    "place_offset": 3,
+    "transport_short": 2,
+    "skip_descend": 1,
+    "push": 2,
+    "mass": 1,
+    "waypoint": 2,
+    "friction": 1
+  },
+  "recovery_attempted": 4,
+  "recovery_successes": 4,
+  "replay_passed": 40,
+  "alignment_passed": 40,
+  "total_actions": 9784,
+  "total_rgb_frames": 9824,
+  "groups_by_split": {
+    "train": 3,
+    "val": 0,
+    "test": 1
+  },
+  "split_group_overlap": 0,
+  "unresolved_errors": []
+}

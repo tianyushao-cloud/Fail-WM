@@ -1,0 +1,118 @@
+{
+  "id": "real_02",
+  "category": "real",
+  "title": "真实候选 · 场景1 · 配对2",
+  "task": "place coke can into middle drawer",
+  "task_id": "5be7352342499212c1bf1af1e975322bca617323643c9440dbd3ccbf8f64feff_0007",
+  "physical_pair": [
+    2,
+    0
+  ],
+  "orders": [
+    {
+      "raw": "C",
+      "filtered": "C",
+      "probabilities": {
+        "A": 0.05,
+        "B": 0.07,
+        "C": 0.88,
+        "D": 0.0
+      },
+      "confidence": 0.84,
+      "model": "gpt-6-luna",
+      "request_id": "req_60168b8f215d485b9d440ed856f0ee84"
+    },
+    {
+      "raw": "C",
+      "filtered": "C",
+      "probabilities": {
+        "A": 0.09,
+        "B": 0.22,
+        "C": 0.69,
+        "D": 0.0
+      },
+      "confidence": 0.59,
+      "model": "gpt-6-luna",
+      "request_id": "req_78a4e50d485f488594ef199c5c88a404"
+    }
+  ],
+  "first_candidate_reward": 0,
+  "second_candidate_reward": 0,
+  "reason": "两次原始回答均为 C：裁判认为无明显差异。不是阈值过滤导致归零。",
+  "paths": {
+    "initial": [
+      "assets/real_3146a9a01973/initial/00.png",
+      "assets/real_3146a9a01973/initial/01.png"
+    ],
+    "reference": [
+      "assets/real_3146a9a01973/reference/00.png",
+      "assets/real_3146a9a01973/reference/01.png",
+      "assets/real_3146a9a01973/reference/02.png",
+      "assets/real_3146a9a01973/reference/03.png",
+      "assets/real_3146a9a01973/reference/04.png",
+      "assets/real_3146a9a01973/reference/05.png",
+      "assets/real_3146a9a01973/reference/06.png",
+      "assets/real_3146a9a01973/reference/07.png",
+      "assets/real_3146a9a01973/reference/08.png",
+      "assets/real_3146a9a01973/reference/09.png"
+    ],
+    "candidate_0": [
+      "assets/real_3146a9a01973/candidate_0/00.png",
+      "assets/real_3146a9a01973/candidate_0/01.png",
+      "assets/real_3146a9a01973/candidate_0/02.png",
+      "assets/real_3146a9a01973/candidate_0/03.png",
+      "assets/real_3146a9a01973/candidate_0/04.png",
+      "assets/real_3146a9a01973/candidate_0/05.png",
+      "assets/real_3146a9a01973/candidate_0/06.png",
+      "assets/real_3146a9a01973/candidate_0/07.png",
+      "assets/real_3146a9a01973/candidate_0/08.png",
+      "assets/real_3146a9a01973/candidate_0/09.png"
+    ],
+    "candidate_1": [
+      "assets/real_3146a9a01973/candidate_1/00.png",
+      "assets/real_3146a9a01973/candidate_1/01.png",
+      "assets/real_3146a9a01973/candidate_1/02.png",
+      "assets/real_3146a9a01973/candidate_1/03.png",
+      "assets/real_3146a9a01973/candidate_1/04.png",
+      "assets/real_3146a9a01973/candidate_1/05.png",
+      "assets/real_3146a9a01973/candidate_1/06.png",
+      "assets/real_3146a9a01973/candidate_1/07.png",
+      "assets/real_3146a9a01973/candidate_1/08.png",
+      "assets/real_3146a9a01973/candidate_1/09.png"
+    ],
+    "candidate_2": [
+      "assets/real_3146a9a01973/candidate_2/00.png",
+      "assets/real_3146a9a01973/candidate_2/01.png",
+      "assets/real_3146a9a01973/candidate_2/02.png",
+      "assets/real_3146a9a01973/candidate_2/03.png",
+      "assets/real_3146a9a01973/candidate_2/04.png",
+      "assets/real_3146a9a01973/candidate_2/05.png",
+      "assets/real_3146a9a01973/candidate_2/06.png",
+      "assets/real_3146a9a01973/candidate_2/07.png",
+      "assets/real_3146a9a01973/candidate_2/08.png",
+      "assets/real_3146a9a01973/candidate_2/09.png"
+    ],
+    "candidate_3": [
+      "assets/real_3146a9a01973/candidate_3/00.png",
+      "assets/real_3146a9a01973/candidate_3/01.png",
+      "assets/real_3146a9a01973/candidate_3/02.png",
+      "assets/real_3146a9a01973/candidate_3/03.png",
+      "assets/real_3146a9a01973/candidate_3/04.png",
+      "assets/real_3146a9a01973/candidate_3/05.png",
+      "assets/real_3146a9a01973/candidate_3/06.png",
+      "assets/real_3146a9a01973/candidate_3/07.png",
+      "assets/real_3146a9a01973/candidate_3/08.png",
+      "assets/real_3146a9a01973/candidate_3/09.png"
+    ]
+  },
+  "video": "cases/real_02/comparison.mp4",
+  "sheet": "cases/real_02/contact_sheet.png",
+  "raw": [
+    "cases/real_02/raw_AB.json",
+    "cases/real_02/raw_BA.json"
+  ],
+  "metadata": "assets/real_3146a9a01973/original_request_metadata.json",
+  "npz": "assets/real_3146a9a01973/original_frames.npz",
+  "prompt": "assets/real_3146a9a01973/prompt.txt",
+  "protocol": "gt_pair_v2_grouped_all10_full256x320"
+}

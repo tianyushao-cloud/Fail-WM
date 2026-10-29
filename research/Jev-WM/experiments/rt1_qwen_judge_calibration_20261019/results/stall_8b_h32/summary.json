@@ -1,0 +1,62 @@
+{
+  "model": "/media/tyshao/Jev-WM/paper_assets/qwen/Qwen3-VL-8B-Instruct",
+  "cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "move_threshold": 1.0,
+  "segment_spearman_score_vs_neg_exact": 0.856286109087366,
+  "auc_clean_vs_stall_ge_3of8": 0.9893680393680394,
+  "auc_clean_vs_any_stall": 0.9391284319145016,
+  "mean_score_clean": 0.7761889604463138,
+  "mean_score_stall_ge_half": 0.09229713875120787,
+  "median_order_gap": 0.032231608841788495,
+  "within_group_spearman_total_score_vs_neg_exact": 0.3499999999999999,
+  "groups_with_exact_variation": 24,
+  "by_segment_position": {
+    "seg0": {
+      "sft_exact_stall_mean": 0.15885416666666666,
+      "sft_judge_score_mean": 0.613830789356777
+    },
+    "seg1": {
+      "sft_exact_stall_mean": 0.2955729166666667,
+      "sft_judge_score_mean": 0.5211130463963579
+    },
+    "seg2": {
+      "sft_exact_stall_mean": 0.3580729166666667,
+      "sft_judge_score_mean": 0.4864171762883647
+    },
+    "seg3": {
+      "sft_exact_stall_mean": 0.4388020833333333,
+      "sft_judge_score_mean": 0.42909599880553695
+    }
+  },
+  "controls": {
+    "gt_codec": 0.8615088691317911,
+    "freeze_all": 1.4469162266514885e-06,
+    "freeze_second_half": 0.42471356375169345
+  },
+  "seconds": 405.55771116539836
+}

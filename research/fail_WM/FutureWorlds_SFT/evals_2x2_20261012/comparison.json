@@ -1,0 +1,2578 @@
+{
+  "state": "COMPLETE",
+  "cohorts": {
+    "partial_close": [
+      "g00006_b03",
+      "g00006_b08",
+      "g00014_b08",
+      "g00022_b08",
+      "g00037_b04",
+      "g00071_b03",
+      "g00084_b03",
+      "g00098_b08"
+    ],
+    "release_failure": [
+      "g00006_b04",
+      "g00014_b03",
+      "g00037_b05",
+      "g00037_b08",
+      "g00061_b08",
+      "g00071_b04",
+      "g00084_b04"
+    ],
+    "clean_closed_never_lift": [
+      "g00006_b07",
+      "g00014_b06",
+      "g00014_b07",
+      "g00022_b05",
+      "g00037_b03",
+      "g00059_b07",
+      "g00061_b05",
+      "g00061_b06",
+      "g00071_b07",
+      "g00080_b07",
+      "g00080_b08",
+      "g00084_b07",
+      "g00084_b08",
+      "g00098_b03",
+      "g00098_b07"
+    ],
+    "success_control": [
+      "g00006_b00",
+      "g00006_b01",
+      "g00014_b00",
+      "g00014_b01",
+      "g00022_b00",
+      "g00022_b01",
+      "g00037_b00",
+      "g00037_b01",
+      "g00059_b00",
+      "g00059_b01",
+      "g00061_b00",
+      "g00061_b01",
+      "g00071_b00",
+      "g00071_b01",
+      "g00080_b00",
+      "g00080_b01",
+      "g00084_b00",
+      "g00084_b01",
+      "g00098_b00",
+      "g00098_b01"
+    ]
+  },
+  "codec_disagreements": [],
+  "rates": [
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "A",
+      "cases": 8,
+      "n": 72,
+      "numerator": 7,
+      "rate": 0.09722222222222222,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.09722222222222222,
+      "any_vanished": 21
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "A",
+      "cases": 8,
+      "n": 8,
+      "numerator": 1,
+      "rate": 0.125,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.125,
+      "any_vanished": 1
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "A",
+      "cases": 8,
+      "n": 64,
+      "numerator": 6,
+      "rate": 0.09375,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.09375,
+      "any_vanished": 20
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "B",
+      "cases": 8,
+      "n": 72,
+      "numerator": 3,
+      "rate": 0.041666666666666664,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.041666666666666664,
+      "any_vanished": 24
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "B",
+      "cases": 8,
+      "n": 8,
+      "numerator": 0,
+      "rate": 0.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.0,
+      "any_vanished": 1
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "B",
+      "cases": 8,
+      "n": 64,
+      "numerator": 3,
+      "rate": 0.046875,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.046875,
+      "any_vanished": 23
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "C",
+      "cases": 8,
+      "n": 72,
+      "numerator": 33,
+      "rate": 0.4583333333333333,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.4583333333333333,
+      "any_vanished": 49
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "C",
+      "cases": 8,
+      "n": 8,
+      "numerator": 6,
+      "rate": 0.75,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.75,
+      "any_vanished": 4
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "C",
+      "cases": 8,
+      "n": 64,
+      "numerator": 27,
+      "rate": 0.421875,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.421875,
+      "any_vanished": 45
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "D",
+      "cases": 8,
+      "n": 72,
+      "numerator": 32,
+      "rate": 0.4444444444444444,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.4444444444444444,
+      "any_vanished": 48
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "D",
+      "cases": 8,
+      "n": 8,
+      "numerator": 2,
+      "rate": 0.25,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.25,
+      "any_vanished": 3
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "D",
+      "cases": 8,
+      "n": 64,
+      "numerator": 30,
+      "rate": 0.46875,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.46875,
+      "any_vanished": 45
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "A",
+      "cases": 8,
+      "n": 72,
+      "numerator": 2,
+      "rate": 0.027777777777777776,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.027777777777777776,
+      "any_vanished": 22
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "A",
+      "cases": 8,
+      "n": 8,
+      "numerator": 1,
+      "rate": 0.125,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.125,
+      "any_vanished": 0
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "A",
+      "cases": 8,
+      "n": 64,
+      "numerator": 1,
+      "rate": 0.015625,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.015625,
+      "any_vanished": 22
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "B",
+      "cases": 8,
+      "n": 72,
+      "numerator": 8,
+      "rate": 0.1111111111111111,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.1111111111111111,
+      "any_vanished": 27
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "B",
+      "cases": 8,
+      "n": 8,
+      "numerator": 0,
+      "rate": 0.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.0,
+      "any_vanished": 2
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "B",
+      "cases": 8,
+      "n": 64,
+      "numerator": 8,
+      "rate": 0.125,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.125,
+      "any_vanished": 25
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "C",
+      "cases": 8,
+      "n": 72,
+      "numerator": 35,
+      "rate": 0.4861111111111111,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.4861111111111111,
+      "any_vanished": 38
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "C",
+      "cases": 8,
+      "n": 8,
+      "numerator": 7,
+      "rate": 0.875,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.875,
+      "any_vanished": 7
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "C",
+      "cases": 8,
+      "n": 64,
+      "numerator": 28,
+      "rate": 0.4375,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.4375,
+      "any_vanished": 31
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "D",
+      "cases": 8,
+      "n": 72,
+      "numerator": 15,
+      "rate": 0.20833333333333334,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.20833333333333334,
+      "any_vanished": 39
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "D",
+      "cases": 8,
+      "n": 8,
+      "numerator": 1,
+      "rate": 0.125,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.125,
+      "any_vanished": 1
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "D",
+      "cases": 8,
+      "n": 64,
+      "numerator": 14,
+      "rate": 0.21875,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.21875,
+      "any_vanished": 38
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "A",
+      "cases": 7,
+      "n": 63,
+      "numerator": 23,
+      "rate": 0.36507936507936506,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.36507936507936506,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "A",
+      "cases": 7,
+      "n": 7,
+      "numerator": 4,
+      "rate": 0.5714285714285714,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.5714285714285714,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "A",
+      "cases": 7,
+      "n": 56,
+      "numerator": 19,
+      "rate": 0.3392857142857143,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.3392857142857143,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "B",
+      "cases": 7,
+      "n": 63,
+      "numerator": 16,
+      "rate": 0.25396825396825395,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.25396825396825395,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "B",
+      "cases": 7,
+      "n": 7,
+      "numerator": 0,
+      "rate": 0.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.0,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "B",
+      "cases": 7,
+      "n": 56,
+      "numerator": 16,
+      "rate": 0.2857142857142857,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.2857142857142857,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "C",
+      "cases": 7,
+      "n": 63,
+      "numerator": 21,
+      "rate": 0.3333333333333333,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.3333333333333333,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "C",
+      "cases": 7,
+      "n": 7,
+      "numerator": 3,
+      "rate": 0.42857142857142855,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.42857142857142855,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "C",
+      "cases": 7,
+      "n": 56,
+      "numerator": 18,
+      "rate": 0.32142857142857145,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.32142857142857145,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "D",
+      "cases": 7,
+      "n": 63,
+      "numerator": 14,
+      "rate": 0.2222222222222222,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.2222222222222222,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "D",
+      "cases": 7,
+      "n": 7,
+      "numerator": 1,
+      "rate": 0.14285714285714285,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.14285714285714285,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "D",
+      "cases": 7,
+      "n": 56,
+      "numerator": 13,
+      "rate": 0.23214285714285715,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.23214285714285715,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "A",
+      "cases": 7,
+      "n": 63,
+      "numerator": 24,
+      "rate": 0.38095238095238093,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.38095238095238093,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "A",
+      "cases": 7,
+      "n": 7,
+      "numerator": 4,
+      "rate": 0.5714285714285714,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.5714285714285714,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "A",
+      "cases": 7,
+      "n": 56,
+      "numerator": 20,
+      "rate": 0.35714285714285715,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.35714285714285715,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "B",
+      "cases": 7,
+      "n": 63,
+      "numerator": 9,
+      "rate": 0.14285714285714285,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.14285714285714285,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "B",
+      "cases": 7,
+      "n": 7,
+      "numerator": 1,
+      "rate": 0.14285714285714285,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.14285714285714285,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "B",
+      "cases": 7,
+      "n": 56,
+      "numerator": 8,
+      "rate": 0.14285714285714285,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.14285714285714285,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "C",
+      "cases": 7,
+      "n": 63,
+      "numerator": 10,
+      "rate": 0.15873015873015872,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.15873015873015872,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "C",
+      "cases": 7,
+      "n": 7,
+      "numerator": 2,
+      "rate": 0.2857142857142857,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.2857142857142857,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "C",
+      "cases": 7,
+      "n": 56,
+      "numerator": 8,
+      "rate": 0.14285714285714285,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.14285714285714285,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "D",
+      "cases": 7,
+      "n": 63,
+      "numerator": 6,
+      "rate": 0.09523809523809523,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.09523809523809523,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "D",
+      "cases": 7,
+      "n": 7,
+      "numerator": 1,
+      "rate": 0.14285714285714285,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.14285714285714285,
+      "any_vanished": null
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "D",
+      "cases": 7,
+      "n": 56,
+      "numerator": 5,
+      "rate": 0.08928571428571429,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.08928571428571429,
+      "any_vanished": null
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "A",
+      "cases": 15,
+      "n": 135,
+      "numerator": 103,
+      "rate": 0.762962962962963,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.762962962962963,
+      "any_vanished": 75
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "A",
+      "cases": 15,
+      "n": 15,
+      "numerator": 10,
+      "rate": 0.6666666666666666,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.6666666666666666,
+      "any_vanished": 4
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "A",
+      "cases": 15,
+      "n": 120,
+      "numerator": 93,
+      "rate": 0.775,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.775,
+      "any_vanished": 71
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "B",
+      "cases": 15,
+      "n": 135,
+      "numerator": 106,
+      "rate": 0.7851851851851852,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.7851851851851852,
+      "any_vanished": 81
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "B",
+      "cases": 15,
+      "n": 15,
+      "numerator": 11,
+      "rate": 0.7333333333333333,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.7333333333333333,
+      "any_vanished": 10
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "B",
+      "cases": 15,
+      "n": 120,
+      "numerator": 95,
+      "rate": 0.7916666666666666,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.7916666666666666,
+      "any_vanished": 71
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "C",
+      "cases": 15,
+      "n": 135,
+      "numerator": 112,
+      "rate": 0.8296296296296296,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.8296296296296296,
+      "any_vanished": 78
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "C",
+      "cases": 15,
+      "n": 15,
+      "numerator": 11,
+      "rate": 0.7333333333333333,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.7333333333333333,
+      "any_vanished": 6
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "C",
+      "cases": 15,
+      "n": 120,
+      "numerator": 101,
+      "rate": 0.8416666666666667,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.8416666666666667,
+      "any_vanished": 72
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "D",
+      "cases": 15,
+      "n": 135,
+      "numerator": 103,
+      "rate": 0.762962962962963,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.762962962962963,
+      "any_vanished": 88
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "D",
+      "cases": 15,
+      "n": 15,
+      "numerator": 8,
+      "rate": 0.5333333333333333,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.5333333333333333,
+      "any_vanished": 6
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "D",
+      "cases": 15,
+      "n": 120,
+      "numerator": 95,
+      "rate": 0.7916666666666666,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.7916666666666666,
+      "any_vanished": 82
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "A",
+      "cases": 15,
+      "n": 135,
+      "numerator": 120,
+      "rate": 0.8888888888888888,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.8888888888888888,
+      "any_vanished": 67
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "A",
+      "cases": 15,
+      "n": 15,
+      "numerator": 12,
+      "rate": 0.8,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.8,
+      "any_vanished": 4
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "A",
+      "cases": 15,
+      "n": 120,
+      "numerator": 108,
+      "rate": 0.9,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.9,
+      "any_vanished": 63
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "B",
+      "cases": 15,
+      "n": 135,
+      "numerator": 104,
+      "rate": 0.7703703703703704,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.7703703703703704,
+      "any_vanished": 76
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "B",
+      "cases": 15,
+      "n": 15,
+      "numerator": 11,
+      "rate": 0.7333333333333333,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.7333333333333333,
+      "any_vanished": 8
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "B",
+      "cases": 15,
+      "n": 120,
+      "numerator": 93,
+      "rate": 0.775,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.775,
+      "any_vanished": 68
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "C",
+      "cases": 15,
+      "n": 135,
+      "numerator": 114,
+      "rate": 0.8444444444444444,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.8444444444444444,
+      "any_vanished": 73
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "C",
+      "cases": 15,
+      "n": 15,
+      "numerator": 12,
+      "rate": 0.8,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.8,
+      "any_vanished": 4
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "C",
+      "cases": 15,
+      "n": 120,
+      "numerator": 102,
+      "rate": 0.85,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.85,
+      "any_vanished": 69
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "D",
+      "cases": 15,
+      "n": 135,
+      "numerator": 96,
+      "rate": 0.7111111111111111,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.7111111111111111,
+      "any_vanished": 69
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "D",
+      "cases": 15,
+      "n": 15,
+      "numerator": 10,
+      "rate": 0.6666666666666666,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.6666666666666666,
+      "any_vanished": 6
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "D",
+      "cases": 15,
+      "n": 120,
+      "numerator": 86,
+      "rate": 0.7166666666666667,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.7166666666666667,
+      "any_vanished": 63
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "A",
+      "cases": 20,
+      "n": 180,
+      "numerator": 178,
+      "rate": 0.9888888888888889,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.9888888888888889,
+      "any_vanished": 78
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "A",
+      "cases": 20,
+      "n": 20,
+      "numerator": 20,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 4
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "A",
+      "cases": 20,
+      "n": 160,
+      "numerator": 158,
+      "rate": 0.9875,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.9875,
+      "any_vanished": 74
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "B",
+      "cases": 20,
+      "n": 180,
+      "numerator": 179,
+      "rate": 0.9944444444444445,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.9944444444444445,
+      "any_vanished": 86
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "B",
+      "cases": 20,
+      "n": 20,
+      "numerator": 20,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 1
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "B",
+      "cases": 20,
+      "n": 160,
+      "numerator": 159,
+      "rate": 0.99375,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.99375,
+      "any_vanished": 85
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "C",
+      "cases": 20,
+      "n": 180,
+      "numerator": 175,
+      "rate": 0.9722222222222222,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.9722222222222222,
+      "any_vanished": 76
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "C",
+      "cases": 20,
+      "n": 20,
+      "numerator": 20,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 2
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "C",
+      "cases": 20,
+      "n": 160,
+      "numerator": 155,
+      "rate": 0.96875,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.96875,
+      "any_vanished": 74
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "D",
+      "cases": 20,
+      "n": 180,
+      "numerator": 174,
+      "rate": 0.9666666666666667,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.9666666666666667,
+      "any_vanished": 110
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "D",
+      "cases": 20,
+      "n": 20,
+      "numerator": 19,
+      "rate": 0.95,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.95,
+      "any_vanished": 12
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "D",
+      "cases": 20,
+      "n": 160,
+      "numerator": 155,
+      "rate": 0.96875,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.96875,
+      "any_vanished": 98
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "A",
+      "cases": 20,
+      "n": 180,
+      "numerator": 180,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 82
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "A",
+      "cases": 20,
+      "n": 20,
+      "numerator": 20,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 8
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "A",
+      "cases": 20,
+      "n": 160,
+      "numerator": 160,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 74
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "B",
+      "cases": 20,
+      "n": 180,
+      "numerator": 180,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 90
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "B",
+      "cases": 20,
+      "n": 20,
+      "numerator": 20,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 8
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "B",
+      "cases": 20,
+      "n": 160,
+      "numerator": 160,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 82
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "C",
+      "cases": 20,
+      "n": 180,
+      "numerator": 179,
+      "rate": 0.9944444444444445,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.9944444444444445,
+      "any_vanished": 84
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "C",
+      "cases": 20,
+      "n": 20,
+      "numerator": 20,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 3
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "C",
+      "cases": 20,
+      "n": 160,
+      "numerator": 159,
+      "rate": 0.99375,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.99375,
+      "any_vanished": 81
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "D",
+      "cases": 20,
+      "n": 180,
+      "numerator": 177,
+      "rate": 0.9833333333333333,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.9833333333333333,
+      "any_vanished": 103
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "D",
+      "cases": 20,
+      "n": 20,
+      "numerator": 20,
+      "rate": 1.0,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 1.0,
+      "any_vanished": 10
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "D",
+      "cases": 20,
+      "n": 160,
+      "numerator": 157,
+      "rate": 0.98125,
+      "undetected_or_gt_missing": 0,
+      "rate_among_detected": 0.98125,
+      "any_vanished": 93
+    }
+  ],
+  "group_bootstrap": [
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "B",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.05555555555555556,
+      "ci95": [
+        -0.133395061728395,
+        0.047619047619047616
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "C",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.3611111111111111,
+      "ci95": [
+        0.20634920634920634,
+        0.49206349206349204
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "D",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.3472222222222222,
+      "ci95": [
+        0.23809523809523808,
+        0.4444444444444444
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "B",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.125,
+      "ci95": [
+        -0.42857142857142855,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "C",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.625,
+      "ci95": [
+        0.25,
+        0.9
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "D",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.125,
+      "ci95": [
+        0.0,
+        0.30000000000000004
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "B",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.046875,
+      "ci95": [
+        -0.1388888888888889,
+        0.07142857142857142
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "C",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.328125,
+      "ci95": [
+        0.17857142857142855,
+        0.45007812499999894
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "D",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.375,
+      "ci95": [
+        0.265625,
+        0.48214285714285715
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "B",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.08333333333333333,
+      "ci95": [
+        0.013888888888888888,
+        0.1746031746031746
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "C",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.4583333333333333,
+      "ci95": [
+        0.30158730158730157,
+        0.5694444444444444
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "D",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.18055555555555558,
+      "ci95": [
+        0.06944444444444445,
+        0.31746031746031744
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "B",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.125,
+      "ci95": [
+        -0.42857142857142855,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "C",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.75,
+      "ci95": [
+        0.42857142857142855,
+        1.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "D",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        -0.375,
+        0.375
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "B",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.109375,
+      "ci95": [
+        0.015625,
+        0.25
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "C",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.421875,
+      "ci95": [
+        0.26785714285714285,
+        0.5535714285714286
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "partial_close",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "D",
+      "groups": 7,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.203125,
+      "ci95": [
+        0.078125,
+        0.35714285714285715
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "B",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.1111111111111111,
+      "ci95": [
+        -0.19753086419753085,
+        0.037037037037037035
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "C",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.031746031746031744,
+      "ci95": [
+        -0.14814814814814817,
+        0.047619047619047616
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "D",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.14285714285714285,
+      "ci95": [
+        -0.22222222222222224,
+        -0.037037037037037035
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "B",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.5714285714285714,
+      "ci95": [
+        -0.8888888888888888,
+        -0.16666666666666666
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "C",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.14285714285714285,
+      "ci95": [
+        -0.5,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "D",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.42857142857142855,
+      "ci95": [
+        -0.8888888888888888,
+        0.2857142857142857
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "B",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.0535714285714286,
+      "ci95": [
+        -0.15625,
+        0.08333333333333331
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "C",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.01785714285714285,
+      "ci95": [
+        -0.10714285714285715,
+        0.05357142857142855
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "D",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.10714285714285715,
+      "ci95": [
+        -0.21428571428571427,
+        0.02083333333333337
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "B",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.23809523809523808,
+      "ci95": [
+        -0.3194444444444445,
+        -0.12698412698412698
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "C",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.2222222222222222,
+      "ci95": [
+        -0.4305555555555555,
+        0.018518518518518517
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "D",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.2857142857142857,
+      "ci95": [
+        -0.5185185185185186,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "B",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.42857142857142855,
+      "ci95": [
+        -0.7142857142857142,
+        -0.14285714285714285
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "C",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.2857142857142857,
+      "ci95": [
+        -0.7142857142857142,
+        0.3333333333333333
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "D",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.42857142857142855,
+      "ci95": [
+        -0.7777777777777778,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "B",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.2142857142857143,
+      "ci95": [
+        -0.28125,
+        -0.10416666666666669
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "C",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.2142857142857143,
+      "ci95": [
+        -0.4166666666666667,
+        0.04166666666666666
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "release_failure",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "D",
+      "groups": 6,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.26785714285714285,
+      "ci95": [
+        -0.4861111111111111,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.022222222222222254,
+      "ci95": [
+        -0.0793650793650793,
+        0.0980392156862745
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.06666666666666665,
+      "ci95": [
+        -0.04629629629629628,
+        0.16666666666666663
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        -0.10416666666666674,
+        0.11111111111111116
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.06666666666666665,
+      "ci95": [
+        -0.23076923076923073,
+        0.3529411764705882
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.06666666666666665,
+      "ci95": [
+        -0.33333333333333326,
+        0.4375
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.1333333333333333,
+      "ci95": [
+        -0.4166666666666667,
+        0.11127450980391923
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.016666666666666607,
+      "ci95": [
+        -0.08333333333333337,
+        0.1015625
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.06666666666666665,
+      "ci95": [
+        -0.04807692307692313,
+        0.1875
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.016666666666666607,
+      "ci95": [
+        -0.1160714285714286,
+        0.16666666666666663
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.11851851851851847,
+      "ci95": [
+        -0.19259259259259254,
+        -0.04761904761904756
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.0444444444444444,
+      "ci95": [
+        -0.16666666666666663,
+        0.051851851851851816
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.1777777777777777,
+      "ci95": [
+        -0.2857142857142857,
+        -0.09629629629629632
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.06666666666666676,
+      "ci95": [
+        -0.2666666666666667,
+        0.1428571428571429
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        -0.20000000000000007,
+        0.2142857142857142
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.13333333333333341,
+      "ci95": [
+        -0.46153846153846156,
+        0.17647058823529405
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.125,
+      "ci95": [
+        -0.2142857142857143,
+        -0.044642857142857206
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.050000000000000044,
+      "ci95": [
+        -0.16666666666666663,
+        0.04166666666666663
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "clean_closed_never_lift",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.18333333333333335,
+      "ci95": [
+        -0.28846153846153844,
+        -0.09375
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.005555555555555536,
+      "ci95": [
+        -0.011111111111111183,
+        0.022222222222222254
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.01666666666666672,
+      "ci95": [
+        -0.05555555555555558,
+        0.01666666666666672
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "combined",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.022222222222222254,
+      "ci95": [
+        -0.06666666666666665,
+        0.01666666666666672
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "beam4",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.050000000000000044,
+      "ci95": [
+        -0.15000000000000002,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.006249999999999978,
+      "ci95": [
+        -0.012500000000000067,
+        0.025000000000000022
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.018750000000000044,
+      "ci95": [
+        -0.0625,
+        0.018750000000000044
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "start",
+      "decode": "sampling",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.018750000000000044,
+      "ci95": [
+        -0.0625,
+        0.018750000000000044
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.005555555555555536,
+      "ci95": [
+        -0.01666666666666672,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "combined",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.01666666666666672,
+      "ci95": [
+        -0.033333333333333326,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "beam4",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "B",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "C",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.006249999999999978,
+      "ci95": [
+        -0.018750000000000044,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    },
+    {
+      "cohort": "success_control",
+      "handoff": "+2",
+      "decode": "sampling",
+      "model": "D",
+      "groups": 10,
+      "bootstrap_repeats": 10000,
+      "valid_repeats": 10000,
+      "difference": -0.018750000000000044,
+      "ci95": [
+        -0.03749999999999998,
+        0.0
+      ],
+      "unit": "initial_state_group",
+      "seed": 20261012
+    }
+  ],
+  "frame_metrics": {
+    "A": {
+      "10": {
+        "mse": 0.0017531837065616856,
+        "mae": 0.009849818690679968,
+        "psnr": 30.34868554115296,
+        "lpips": 0.02238033554470166,
+        "ssim": 0.9574311245083809
+      },
+      "20": {
+        "mse": 0.002153739051325829,
+        "mae": 0.010862177255796268,
+        "psnr": 28.933799962043764,
+        "lpips": 0.026741625800495963,
+        "ssim": 0.9504804561436176
+      }
+    },
+    "B": {
+      "10": {
+        "mse": 0.002462542821573152,
+        "mae": 0.011677087438991292,
+        "psnr": 28.711545005798335,
+        "lpips": 0.029408327554352583,
+        "ssim": 0.9467433559894561
+      },
+      "20": {
+        "mse": 0.0030706904808721447,
+        "mae": 0.013152197201154191,
+        "psnr": 27.059415051460263,
+        "lpips": 0.03577625782624819,
+        "ssim": 0.9374766044020653
+      }
+    },
+    "C": {
+      "10": {
+        "mse": 0.0028610023346845996,
+        "mae": 0.012684820141876116,
+        "psnr": 28.353785348892217,
+        "lpips": 0.03317577196750789,
+        "ssim": 0.9424945720434189
+      },
+      "20": {
+        "mse": 0.0036068706199148433,
+        "mae": 0.01441132698173169,
+        "psnr": 26.658476593017575,
+        "lpips": 0.040653157103806736,
+        "ssim": 0.9326097466051578
+      }
+    },
+    "D": {
+      "10": {
+        "mse": 0.003194460587168579,
+        "mae": 0.013517303703818468,
+        "psnr": 27.890854850769045,
+        "lpips": 0.03533075640583411,
+        "ssim": 0.9386184138655662
+      },
+      "20": {
+        "mse": 0.003942487405249267,
+        "mae": 0.015249612346058712,
+        "psnr": 26.342333945274355,
+        "lpips": 0.04333796986355445,
+        "ssim": 0.9290995774269105
+      }
+    }
+  },
+  "guardrails": {
+    "B": {
+      "checks": {
+        "success_ge_95pct/start": true,
+        "partial_close_le_A/start": true,
+        "release_vanished_le_A/start": true,
+        "success_ge_95pct/+2": true,
+        "partial_close_le_A/+2": false,
+        "release_vanished_le_A/+2": true,
+        "lpips_mean_first20_le_1.05A": false
+      },
+      "all_pass": false
+    },
+    "C": {
+      "checks": {
+        "success_ge_95pct/start": true,
+        "partial_close_le_A/start": false,
+        "release_vanished_le_A/start": true,
+        "success_ge_95pct/+2": true,
+        "partial_close_le_A/+2": false,
+        "release_vanished_le_A/+2": true,
+        "lpips_mean_first20_le_1.05A": false
+      },
+      "all_pass": false
+    },
+    "D": {
+      "checks": {
+        "success_ge_95pct/start": true,
+        "partial_close_le_A/start": false,
+        "release_vanished_le_A/start": true,
+        "success_ge_95pct/+2": true,
+        "partial_close_le_A/+2": false,
+        "release_vanished_le_A/+2": true,
+        "lpips_mean_first20_le_1.05A": false
+      },
+      "all_pass": false
+    }
+  },
+  "caveats": [
+    "Rates use all outputs as denominator and report undetected separately; a lower lift rate from missing cubes is not demonstrated improvement.",
+    "LPIPS@20 here is the original evaluator mean over the first 20 generated frames, not only frame 20.",
+    "Clean cohort is the intersection of codec_recon.pred_lifted=False across all four models; discrepancies are disclosed.",
+    "Guardrails are checked separately at start and +2. No test set used. Numeric results only; no causal or solved claim."
+  ]
+}

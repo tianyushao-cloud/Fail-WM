@@ -1,0 +1,16 @@
+                                    |   rule  VLMst  v0tot Tc80v8  TfullTfull+.2persTfull+.3pers Tc+VLM
+A. lift-timeline label (diff>=.25)
+ALL                          n= 447 |   0.79   0.87   0.89   0.84   0.83   0.78   0.72   0.92
+GT no lift                   n= 367 |   0.76   0.87   0.87   0.83   0.83   0.75   0.69   0.92
+GT lifts                     n=  80 |   0.90   0.86   0.97   0.85   0.82   0.89   0.90   0.93
+  contact_without_lift       n= 110 |   0.58   0.76   0.69   0.74   0.74   0.61   0.55   0.82
+  dropped_before_goal        n=  14 |   0.64   0.86   0.93   1.00   0.93   0.93   0.93   0.93
+  grasp_miss                 n= 143 |   0.88   0.97   0.99   1.00   0.99   0.92   0.81   0.99
+  object_off_counter         n=  89 |   0.80   0.84   0.91   0.64   0.64   0.64   0.64   0.90
+  success                    n=  91 |   0.90   0.88   0.97   0.87   0.85   0.87   0.86   0.95
+B. artifacts (dup+vanish+jump diff>=4, lift agreement equal +-.05)
+artifact pairs               n= 707 |   0.95   0.63   0.90   0.78   0.68   0.93   0.97   0.70
+D. all-fake GT-no-lift groups: fewer fake-lift frames (diff>=3)
+all-fake (34 groups)         n= 260 |   0.60   0.82   0.87   0.89   0.91   0.66   0.54   0.91
+C. groups with score range > .02
+                                    |   0.85   0.79   0.90   0.63   0.68   0.82   0.84   0.79
