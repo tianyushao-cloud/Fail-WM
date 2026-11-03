@@ -102,3 +102,20 @@ export_model(
 
 公共裁判模型 Qwen3-VL-8B 的固定 revision 见 `migration/public_dependencies.json`。
 纯轨迹奖励和世界模型推理不需要加载 Qwen。OpenAI 路线需要另行配置 API 凭证，凭证不归档。
+
+## 1000 条原始混合数据（2026-11-03 补充迁移）
+私有数据集：[tianyushao1124/Fail-WM-data](https://huggingface.co/datasets/tianyushao1124/Fail-WM-data)。
+完整保存原始 natural mixed batch1000：训练 800、验证 100、测试 100；共 555 成功、445 失败。
+包含 1000 个 MP4、1000 个原始 HDF5 轨迹（动作、状态、RGB）、模型 XML、标签及验证记录，以及训练使用的 1000 个 NPZ 和原始数据划分。约 32.2 GiB。
+这是此前精简迁移范围的补充；旧文档中的“原始训练数据未上传”仅描述 2026-10-29 的迁移状态。独立的 failure70 重采样数据及额外候选集仍不在本次上传范围。
+固定版本、清单哈希和核验结果见 migration/dataset_release.json。
+
+使用有权限的 Hugging Face 账号登录后：
+
+    python tools/fetch_dataset.py --output /your/data/Fail-WM-data
+
+可选：按旧配置期望的路径恢复（复制文件，需要额外磁盘空间）：
+
+    python tools/fetch_dataset.py --output /your/data/Fail-WM-data --restore-root /media/tyshao
+
+脚本核对每个文件的 SHA256；已有且内容不同的文件不会被覆盖。所有传输和迁移暂存均在原服务器进行。
